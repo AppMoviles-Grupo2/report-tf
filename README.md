@@ -209,6 +209,43 @@ Durante la fase de elaboración del informe, se realizaron las siguientes activi
 ## 4.1. Strategic-Level Domain-Driven Design
 
 ### 4.1.1. EventStorming
+Durante la sesión de Event Storming, el equipo de desarrollo llevó a cabo una reunión en la que compartimos propuestas sobre las funciones y características que debería tener el proyecto. A lo largo del encuentro, se establecieron diversas ideas para la plataforma, así como los primeros esbozos de los bounded context.
+
+- **Step 01: Collect Domain Events**
+
+   En esta etapa inicial, el equipo recopiló los eventos de dominio a partir de conversaciones colaborativas, centrándose en acciones clave que ocurren dentro del sistema, como "Solicitud de servicio creada", "Solicitud aceptada" o "Pago confirmado". Estos eventos representan hechos importantes que tienen significado dentro del negocio y sirven como base para entender cómo fluye la información entre los distintos actores del sistema.
+
+  ![step1](Images/Event%20Storming/step01.jpg)
+
+- **Step 02: Timelines**
+
+   En esta fase, los eventos detectados se organizaron en conjuntos jerarquizados, donde cada conjunto fue liderado por un evento principal que representa la funcionalidad central del grupo. Se distinguieron flujos exitosos (happy paths) que reflejan interacciones óptimas, así como flujos alternos o fallidos (unhappy paths) que visibilizan posibles fricciones en el proceso. Esta estructuración permitió entender con mayor claridad la lógica temporal del sistema.
+  ![step1](Images/Event%20Storming/step02.jpg)
+- **Step 03: Pain Points**
+  
+   Aquí se identificaron los puntos críticos donde los usuarios —tanto cuidadores como padres— podrían enfrentar dificultades al interactuar con la plataforma. Estos insights resultan fundamentales para replantear procesos y mejorar la usabilidad general del sistema.
+  ![step1](Images/Event%20Storming/step03.jpg)
+- **Step 04: Pivotal Points**
+
+   Se destacaron eventos que representan momentos determinantes en el flujo de interacción, ya sea por su impacto en la toma de decisiones, validación de acuerdos o activación de funcionalidades relevantes. Estos eventos ayudan a centrar la atención en aspectos esenciales del comportamiento del sistema.
+  ![step1](Images/Event%20Storming/step04.jpg)
+- **Step 05 & 6: Commands and Polices**
+
+   Durante esta fase, se establecieron los comandos que desencadenan los eventos dentro del sistema, así como las políticas que regulan su ejecución. Cada comando fue vinculado a un actor específico (como un padre de familia o un cuidador) y se definieron las condiciones bajo las cuales dichos comandos pueden ser ejecutados. Estas políticas incluyeron validaciones de negocio, restricciones de acceso y reglas que aseguran la integridad de las operaciones, como verificar la disponibilidad del cuidador antes de confirmar una solicitud o validar los datos antes de generar un pago. Esta combinación permitió comprender tanto la intención detrás de cada acción como las reglas que la gobiernan.
+  ![step1](Images/Event%20Storming/step0506.jpg)
+- **Step 07: Read /View Models**
+
+   Se diseñaron modelos de consulta para exponer la información relevante a cada tipo de usuario. Estos modelos fueron pensados para optimizar el acceso a datos como historiales de servicios, disponibilidad de cuidadores o solicitudes pendientes, garantizando eficiencia y claridad.
+  ![step1](Images/Event%20Storming/step07.jpg)
+- **Step 08: External Systems**
+
+   Se identificó un sistema externo con el que será necesario integrar la plataforma, el servicio externo a considerar es stripe, nos brindará interfaces con funcionalidades de pasarelas de pago. Se definieron también las interfaces necesarias para lograr una integración fluida y segura.
+  ![step1](Images/Event%20Storming/step08.jpg)
+- **Step 09: Aggregates**
+
+   Se definieron agregados que agrupan entidades relacionadas en torno a transacciones coherentes, asegurando consistencia en operaciones como la creación de contratos, evaluaciones del servicio o gestión de perfiles. Estos agregados estructuran el dominio de manera robusta frente a cambios o escalabilidad.
+  ![step1](Images/Event%20Storming/step09.jpg)
+
 ### 4.1.1.1. Candidate Context Discovery
 ### 4.1.1.2. Domain Message Flows Modeling
 ### 4.1.1.3. Bounded Context Canvases
