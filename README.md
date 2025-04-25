@@ -294,7 +294,7 @@ Durante la fase de elaboración del informe, se realizaron las siguientes activi
 
 ## 3.4. Impact Mapping
 
-![UserPersona Fabrizio](./assets/chapter03/ImpactMap.png)
+![Impact Map](./assets/chapter03/ImpactMap.png)
 
 
 ----
