@@ -206,7 +206,7 @@ Durante la fase de elaboración del informe, se realizaron las siguientes activi
 
 ## Capítulo IV: Product Design
 
-### 4.1. Strategic-Level Domain-Driven Design
+## 4.1. Strategic-Level Domain-Driven Design
 
 ### 4.1.1. EventStorming
 ### 4.1.1.1. Candidate Context Discovery
@@ -216,8 +216,27 @@ Durante la fase de elaboración del informe, se realizaron las siguientes activi
 ### 4.1.2. Context Mapping
 
 ### 4.1.3. Software Architecture
+En los apartados siguientes se podrá visualizar los diagramas C4 que detallan la arquitectura de nuestra aplicación.
+
 ### 4.1.3.1. Software Architecture Context Level Diagrams
+Los elementos que están presentes en la capa de contexto son:
+- Tutors (Padres o tutores): Interactua con el software.
+- Nannies and Teachers (Cuidadores): Interactua con el software.
+- SafeChild: Software que utilizan los usuarios.
+  
+![Context](Images/c4model/structurizr-101687-SystemContext-001.png)
+
 ### 4.1.3.2. Software Architecture Container Level Diagrams
+Los elementos presentes en esta capa de contenedores son:
+- Tutors (Padres o tutores): Interactua con la landing page o la aplicación móvil.
+- Nannies and Teachers (Cuidadores): Interactua con la landing page o la aplicación móvil.
+- Landing Page: Página de presentación de nuestro producto, redirecciona a los visitantes a la aplicación móvil.
+- Mobile App: Frontend donde los usuarios interactúan con la aplicación móvil.
+- API Application: Conexión entre el Frontend y el Backend.
+- Database: Base de datos donde se almacenarán toda la información concerniente al software.
+  
+![Containers](Images/c4model/structurizr-101687-Containers.png)
+
 ### 4.1.3.3. Software Architecture Deployment Diagrams
 
 ----
