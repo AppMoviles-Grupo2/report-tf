@@ -247,6 +247,98 @@ Durante la sesión de Event Storming, el equipo de desarrollo llevó a cabo una 
   ![step1](Images/Event%20Storming/step09.jpg)
 
 ### 4.1.1.1. Candidate Context Discovery
+Para este punto decidimos identificar los valores principales de la aplicación móvil lo que, por consecuencia, nos dió una mayor claridad.
+
+**Identificación de Valores del Negocio**
+
+El desarrollo de la aplicación móvil tiene como propósito principal facilitar la conexión entre padres de familia y cuidadores de confianza para la atención de sus hijos. En este contexto, se han identificado los siguientes valores clave del negocio:
+
+- Confianza y seguridad en el servicio: Se busca garantizar que los usuarios, tanto padres como cuidadores, cuenten con una plataforma segura y confiable, donde el proceso de verificación de identidades, historial y reputación sea claro y transparente.
+- Facilidad en la gestión de citas: El sistema debe permitir que la programación, modificación y seguimiento de citas se realicen de manera eficiente e intuitiva, reduciendo la fricción en la coordinación entre usuarios.
+- Eficiencia en el proceso de pagos: Se promueve una experiencia fluida al momento de realizar transacciones por los servicios, incluyendo la automatización de pagos, confirmaciones y reportes financieros.
+- Comunicación efectiva: Facilitar la interacción entre padres y cuidadores, especialmente una vez que se ha confirmado una cita, es esencial para asegurar una buena experiencia de usuario y una atención adecuada.
+- Experiencia de usuario optimizada: La aplicación debe brindar una interfaz amigable, accesible y centrada en las necesidades de los usuarios, priorizando la rapidez y claridad en cada proceso.
+
+**Identificación de Funcionalidades Clave**
+
+Las funcionalidades esenciales que contribuyen directamente a la entrega de los valores de negocio anteriormente mencionados son las siguientes:
+
+- Gestión de usuarios (User Management): Registro, autenticación y validación de usuarios (padres y cuidadores), incluyendo verificación de identidad y roles.
+- Agenda de citas (Appointments): Creación, aceptación, rechazo y programación de citas, permitiendo la visualización y administración de agendas personalizadas.
+- Sistema de notificaciones (Notifications): Envío automático de recordatorios, confirmaciones y alertas relevantes respecto a citas y mensajes.
+- Gestión de pagos (Payments): Procesamiento seguro de pagos, registro de transacciones y aplicación de tarifas según el servicio ofrecido.
+- Mensajería interna (Messaging): Canal de comunicación en tiempo real entre padres y cuidadores, habilitado solo cuando existe una cita aceptada, promoviendo la coordinación y confianza.
+
+
+**Candidate para Bounded Context: User Management**
+
+Este contexto está enfocado en gestionar el ciclo de vida de los usuarios dentro de la aplicación, incluyendo tanto a los padres de familia como a los cuidadores. Se encarga del proceso de registro, validación de identidad y administración de roles, asegurando una experiencia segura y personalizada según el tipo de usuario.
+
+Posibles responsabilidades del Bounded Context:
+
+- Gestionar el registro y autenticación de nuevos usuarios.
+- Validar la identidad de los cuidadores mediante documentos o procesos adicionales de verificación.
+- Administrar los roles y permisos según el tipo de usuario (padre o cuidador).
+- Implementar estándares de seguridad para el acceso, como autenticación con tokens JWT.
+
+![Bounded Context: User Management](Images/Event%20Storming/Bounded%20Context%20-%20User%20Management.png)
+
+**Candidate para Bounded Context: Notifications**
+
+Este contexto está encargado de gestionar todas las notificaciones relevantes del sistema, especialmente aquellas relacionadas con la creación, actualización o cancelación de citas. Asegura que los usuarios estén informados de eventos importantes en tiempo real.
+
+Posibles responsabilidades del Bounded Context:
+
+- Enviar notificaciones push sobre citas creadas, modificadas o canceladas.
+- Gestionar la configuración de notificaciones personalizadas por usuario.
+- Integrarse con el sistema de citas y el sistema de mensajería para alertar sobre mensajes nuevos o recordatorios.
+- Monitorear la entrega y recepción de notificaciones para garantizar la comunicación efectiva.
+
+![Bounded Context: Notifications](Images/Event%20Storming/Bounded%20Context%20-%20Notifications.png)
+
+**Candidate para Bounded Context: Payments**
+
+Este contexto gestiona el proceso de pago entre padres y cuidadores por los servicios acordados en una cita. Se encarga de validar transacciones, aplicar comisiones y mantener un historial financiero confiable.
+
+Posibles responsabilidades del Bounded Context:
+
+- Procesar pagos seguros a través de plataformas externas (como Stripe).
+- Registrar el estado de pagos: pendiente, realizado, fallido o reembolsado.
+- Aplicar políticas de tarifas y comisiones según el tipo de servicio o duración de la cita.
+- Generar reportes financieros y comprobantes de pago para los usuarios.
+
+![Bounded Context: Payments](Images/Event%20Storming/Bounded%20Context%20-%20Payments.png)
+
+**Candidate para Bounded Context: Appointments**
+
+Este contexto centraliza la lógica relacionada a la gestión de citas, incluyendo su creación, aceptación, rechazo y programación. Asegura que tanto padres como cuidadores tengan control y visibilidad sobre sus agendas.
+
+Posibles responsabilidades del Bounded Context:
+
+- Permitir la creación y solicitud de nuevas citas por parte de los padres.
+- Gestionar las respuestas de los cuidadores (aceptación o rechazo).
+- Coordinar los horarios y disponibilidad de ambas partes.
+- Registrar el estado de cada cita y su historial asociado.
+
+![Bounded Context: Appointments](Images/Event%20Storming/Bounded%20Context%20-%20Appointments.png)
+
+**Candidate para Bounded Context: Messaging**
+
+Este contexto habilita la comunicación directa entre padres y cuidadores únicamente cuando una cita ha sido aceptada, promoviendo la coordinación y confianza entre las partes.
+
+Posibles responsabilidades del Bounded Context:
+
+- Proveer un sistema de mensajería en tiempo real dentro de la aplicación.
+- Activar el canal de comunicación únicamente para citas aceptadas.
+- Almacenar el historial de mensajes por cita, asegurando la privacidad y trazabilidad.
+- Notificar sobre mensajes nuevos mediante el sistema de notificaciones.
+
+![Bounded Context: Messaging](Images/Event%20Storming/Bounded%20Context%20-%20Messaging.png)
+
+La siguiente image muestra la vista general de los bounded contexts.
+
+![Bounded Contexts](Images/Event%20Storming/Bounded%20Contexts.png)
+
 ### 4.1.1.2. Domain Message Flows Modeling
 ### 4.1.1.3. Bounded Context Canvases
 
