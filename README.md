@@ -148,3 +148,89 @@ Durante la fase de elaboración del informe, se realizaron las siguientes activi
 |Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.|**Bernaola Pérez, André Arturo**<br>*TB1*<br>TEXTO.<br></br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br>TEXTO<br></br>**Sanchez Ignacio, Jefrey Martin**<br>*TB1*<br>TEXTO. <br></br> **Velarde Luyo, Piero Alberto**<br>*TB1*<br>TEXTO. | TB1: <br> TEXTO.|
 
 ----
+
+# Objetivos SMART
+
+----
+
+# Capítulo I: Introducción
+
+## 1.1. Startup Profile
+
+### 1.1.1. Descripción de la Startup  
+### 1.1.2. Perfiles de integrantes del equipo  
+
+## 1.2. Solution Profile
+
+### 1.2.1. Antecedentes y problemática  
+### 1.2.2. Lean UX Process  
+#### 1.2.2.1. Lean UX Problem Statements  
+#### 1.2.2.2. Lean UX Assumptions  
+#### 1.2.2.3. Lean UX Hypothesis Statements  
+#### 1.2.2.4. Lean UX Canvas  
+
+## 1.3. Segmentos objetivo  
+
+----
+
+# Capítulo II: Requirements Elicitation & Analysis
+
+## 2.1. Competidores  
+### 2.1.1. Análisis competitivo  
+### 2.1.2. Estrategias y tácticas frente a competidores  
+
+## 2.2. Entrevistas  
+### 2.2.1. Diseño de entrevistas  
+### 2.2.2. Registro de entrevistas  
+### 2.2.3. Análisis de entrevistas  
+
+## 2.3. Needfinding  
+### 2.3.1. User Personas  
+### 2.3.2. User Task Matrix  
+### 2.3.3. User Journey Mapping  
+### 2.3.4. Empathy Mapping  
+### 2.3.5. As-is Scenario Mapping  
+
+## 2.4. Ubiquitous Language  
+
+----
+
+# Capítulo III: Requirements Specification
+
+## 3.1. To-Be Scenario Mapping  
+## 3.2. User Stories  
+## 3.3. Product Backlog  
+## 3.4. Impact Mapping
+
+----
+
+## Capítulo IV: Product Design
+
+### 4.1. Strategic-Level Domain-Driven Design
+
+### 4.1.1. EventStorming
+### 4.1.1.1. Candidate Context Discovery
+### 4.1.1.2. Domain Message Flows Modeling
+### 4.1.1.3. Bounded Context Canvases
+
+### 4.1.2. Context Mapping
+
+### 4.1.3. Software Architecture
+### 4.1.3.1. Software Architecture Context Level Diagrams
+### 4.1.3.2. Software Architecture Container Level Diagrams
+### 4.1.3.3. Software Architecture Deployment Diagrams
+
+----
+
+## Conclusiones
+### Conclusiones y Recomendaciones
+
+## Bibliografía
+
+Del Rosario Rivero Pérez, M., & De Educación, P. M. (2013). _El valor educativo de los cuidados infantiles: para la atención de los niños y niñas de 0 a 3 años. Guía de orientación_. En Ministerio de Educación eBooks. [http://disde.minedu.gob.pe/handle/20.500.12799/5177](http://disde.minedu.gob.pe/handle/20.500.12799/5177)
+
+Marin, H. M. (2022, 23 junio). “Uno de los grandes desafíos es reducir la brecha entre los niños que atendemos y los que aún nos necesitan”. _El Comercio Perú_. [https://elcomercio.pe/lima/sucesos/aldeas-infantiles-uno-de-los-grandes-desafios-es-reducir-la-brecha-entre-los-ninos-que-atendemos-y-los-que-aun-nos-necesitan-dereje-wordofa-presidente-internacional-de-aldeas-infantiles-sos-peru-noticia/](https://elcomercio.pe/lima/sucesos/aldeas-infantiles-uno-de-los-grandes-desafios-es-reducir-la-brecha-entre-los-ninos-que-atendemos-y-los-que-aun-nos-necesitan-dereje-wordofa-presidente-internacional-de-aldeas-infantiles-sos-peru-noticia/)
+
+Condiciones de vida en el Perú: impacto económico de los servicios de cuidado infantil. (2021). En Instituto Nacional de Estadística E Informática (INEI). Recuperado 22 de agosto de 2024, de https://www.inei.gob.pe
+
+## Anexos
