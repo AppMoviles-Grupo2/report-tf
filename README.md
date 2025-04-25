@@ -253,7 +253,7 @@ Los elementos que están presentes en la capa de contexto son:
 - Nannies and Teachers (Cuidadores): Interactua con el software.
 - SafeChild: Software que utilizan los usuarios.
   
-![Context](Images/c4model/structurizr-101687-SystemContext-001.png)
+![Context](Images/C4%20Model/structurizr-101687-SystemContext-001.png)
 
 ### 4.1.3.2. Software Architecture Container Level Diagrams
 Los elementos presentes en esta capa de contenedores son:
@@ -264,7 +264,7 @@ Los elementos presentes en esta capa de contenedores son:
 - API Application: Conexión entre el Frontend y el Backend.
 - Database: Base de datos donde se almacenarán toda la información concerniente al software.
   
-![Containers](Images/c4model/structurizr-101687-Containers.png)
+![Containers](Images/C4%20Model/structurizr-101687-Containers.png)
 
 ### 4.1.3.3. Software Architecture Deployment Diagrams
 
