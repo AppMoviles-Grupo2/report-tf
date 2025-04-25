@@ -545,7 +545,7 @@ Este lenguaje facilita la comprensión y el consenso en torno a los conceptos y 
 
 ----
 
-## Capítulo IV: Product Design
+## Capítulo IV: Solution Software Design
 
 ### 4.1. Strategic-Level Domain-Driven Design
 
