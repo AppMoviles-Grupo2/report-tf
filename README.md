@@ -448,11 +448,11 @@ Estas representaciones ficticias se basan en los datos recopilados durante el pr
 
 #### **User Persona 1: Segmento Padres/Tutores**
 
-![UserPersona 1](./assets/chapter02/journeymap1.png)
+![UserPersona 1](./assets/chapter02/user2.png)
 
 #### **User Persona 2: Segmento Cuidadores/Educadores**
 
-![UserPersona 2](./assets/chapter02/journeymap2.png)
+![UserPersona 2](./assets/chapter02/user1.png)
 
 ### 2.3.2. User Task Matrix
 
@@ -497,11 +497,11 @@ emociones y acciones de los usuarios a lo largo de su recorrido, identificando o
 
 ### Journey Map Padres
 
-![UserJourneyMap Padres](./assets/chapter02/UJM-Padres.png)
+![UserJourneyMap Padres](./assets/chapter02/journeymap1.png)
 
 ### Journey Map Cuidadores
 
-![UserJourneyMap Tutores](./assets/chapter02/UJM-Tutor.png)
+![UserJourneyMap Tutores](./assets/chapter02/journeymap2.png)
 
 ### 2.3.4. Empathy Mapping
 
