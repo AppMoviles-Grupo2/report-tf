@@ -247,62 +247,66 @@ Tras analizar a cada uno de nuestros competidores, las estrategias y tácticas q
 
 **Segmento 1: Tutores/Padres**
 
-**Entrevista 1 - Tutor**
+**Entrevista 1 - Padre de familia**
 
-- Nombre: 
-- Apellidos: 
-- Edad: 
-- Distrito: 
-- Minuto donde Empieza: 0:00
-- Duración: 00:00 minutos
+- Nombre: Percy
+- Apellidos: Meza
+- Edad: 46 años
 
 Evidencia de la reunión:
 
-![Entrevista 1](./assets/chapter02/entrevista1.png)
+![Entrevista PadrePercy](./assets/chapter02//padre2.png)
 
-[Link](link)
-
-**Resumen de la entrevista:**
-
-texto.
-
-**Entrevista 2 - Padre**
-
-- Nombre: 
-- Apellidos: 
-- Edad: 
-- Distrito: 
-- Minuto donde empieza: 
-- Duración: 00:00 minutos
-
-Evidencia de la reunión:
-
-![Entrevista 2](./assets/chapter02/entrevista2.png)
-
-[Link](link)
+[Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/EXAWPFm4tGtBgolvClncg4QBGqKdeXhtEiUMbzdJXq2hLg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=2Mljhg)
 
 Resumen de la entrevista:
 
-texto.
+Aunque Percy no suele utilizar aplicaciones para cuidado infantil, se mantiene informado a través de un grupo de WhatsApp del colegio de su hija, donde se discuten temas de salud y bienestar de los niños. Valora especialmente la seguridad y la confianza al elegir un cuidador para su hija, y considera crucial que los cuidadores tengan experiencia verificable, así como certificación en áreas relacionadas con la pedagogía infantil y la educación..
 
-**Entrevista 3 - Tutor**
+Percy también menciona que, aunque no ha utilizado servicios de niñeras o profesores particulares anteriormente, está dispuesto a pagar un rango de 60 a 70 soles por hora por estos servicios, dada la responsabilidad y la calidad que implica el cuidado infantil. Además, subraya la importancia de que una plataforma de cuidado infantil ofrezca seguimiento en tiempo real para asegurar que el cuidado de su hija se realice de manera adecuada. También considera indispensable que los cuidadores estén verificados y tengan estudios adecuados, como pedagogía infantil o educación inicial.
 
-- Nombre: 
-- Apellidos: 
-- Edad: 
-- Distrito: 
-- Minuto donde empieza: 
-- Duración: 00:00 minutos
+En resumen, Percy busca un servicio de cuidado infantil que ofrezca seguridad, transparencia y la posibilidad de monitorear en tiempo real el cuidado de su hija, con la certeza de que los cuidadores son profesionales y certificados.
+
+
+**Entrevista 2 - Padre de familia**
+
+- Nombre: Steve
+- Apellidos: Del Corzo
+- Edad: 23 años
 
 Evidencia de la reunión:
 
-![Entrevista 3](./assets/chapter02/entrevista2.png)
+![Entrevista PadreSteve](./assets/chapter02//padre3.png)
 
-[Link](link)
+[Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/Ed1EXGsOr_5Fput7D5RylqMBsPxXP3pxvtZ5IYdrwConoQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=YSnGq0)
 
 Resumen de la entrevista:
 
-texto.
+Para obtener información sobre cuidado infantil, recurre principalmente a Google y revistas, aunque reconoce que la información encontrada no siempre es confiable. Participa en un grupo de WhatsApp de padres en el colegio de sus hijos, donde comparten consejos sobre crianza y organización familiar.
+
+Valora especialmente la seguridad, la flexibilidad y el apoyo médico profesional en los servicios de cuidado infantil. Además, sugiere que una aplicación de este tipo debería incluir consejos útiles para padres primerizos y datos generales sobre el desarrollo infantil, como qué alimentos son adecuados para los niños.
+
+Steve trabaja desde casa, menciona que esto le permite equilibrar su trabajo y el cuidado de sus hijos. En cuanto al presupuesto para una plataforma que ofrezca estos servicios, estaría dispuesto a pagar entre 300 y 500 soles mensuales, especialmente si se incluyen servicios como tutoría o asesoría para padres.
+
+**Entrevista 3 - Madre de familia**
+
+- Nombre: Judith
+- Apellidos: Cuba
+- Edad: 45 años
+
+Evidencia de la reunión:
+
+![Entrevista MamaJudith](./assets/chapter02//padre1.png)
+
+[Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/EbHaOnY2YVpJhJRipImGlyEBz_owqfz2X9TBAa_WFK-sRg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=xmtzLJ)
+
+Resumen de la entrevista:
+
+Para obtener información sobre cuidado infantil y servicios educativos, utiliza principalmente Google, Facebook y la plataforma indeed. Aunque no participa en grupos de padres relacionados con el cuidado infantil, ha asistido a charlas sobre cuidado infantil en el hospital.
+
+Judit valora principalmente la confianza y la responsabilidad en los cuidadores, y necesita que sean puntuales para poder trabajar tranquila. Utiliza un trabajo de medio tiempo para equilibrar sus responsabilidades laborales y el cuidado de su hija. Sus desafíos incluyen encontrar información útil en Google, por lo que suele preguntar a familiares para obtener soluciones.
+
+Para ella, una plataforma de cuidado infantil debe monitorear y verificar adecuadamente a los cuidadores, asegurándose de que pasen exámenes médicos y psicológicos. En cuanto al presupuesto, estaría dispuesta a pagar 20 soles por hora para profesores y 40 soles por hora para niñeras.
 
 **Segmento 2 - Cuidadores/Educadores**
 **Entrevista 4 - Niñera**
@@ -311,8 +315,6 @@ texto.
 - Apellidos: Acuña Cuba
 - Edad: 21 años
 - Distrito: Callao - Callao
-- Minuto donde empieza: 21:45
-- Duración: 04:32 minutos
 
 Evidencia de la reunión:
 
@@ -333,8 +335,6 @@ Si estás pensando en ser niñera, Luhana dice que debes tener paciencia, seguir
 - Nombre: Maria Fernanda
 - Apellidos: Gil Moya
 - Edad: 20 años
-- Minuto donde empieza: 26:43
-- Duración: 10:30 minutos
 
 Evidencia de la reunión:
 
@@ -353,8 +353,6 @@ Durante la conversación, María Fernanda expresó su interés en las plataforma
 - Nombre: Harold Jaime
 - Apellidos: Mayta Lopez
 - Edad: 20 años
-- Minuto donde empieza: 37:14
-- Duración: 10:43 minutos
 
 Evidencia de la reunión:
 
@@ -373,29 +371,36 @@ Al final de la entrevista, le comentamos a Harold sobre nuestra plataforma, y se
 
 **Tutores/Padres**
 
-#### **Primer Entrevistado: Fabrizio Sanchez**
+**Primer Entrevistado: José Percy Meza**
 
-**Desafíos en la Búsqueda de Cuidado Infantil:** Fabrizio mencionó que uno de los mayores desafíos es encontrar un cuidador confiable y calificado. **Según las encuestas realizadas, el 75% de los padres encuestados en áreas urbanas comparte esta preocupación, destacando la seguridad y la calidad educativa como aspectos clave.**
+*Desafíos en la Búsqueda de Cuidado Infantil*: José mencionó que uno de sus mayores desafíos es encontrar un cuidador confiable y calificado para su hija. El 75% de los padres encuestados en áreas urbanas comparte esta preocupación, destacando la seguridad y la calidad educativa como aspectos clave. José también subraya su desconfianza en dejar a su hija con extraños, lo cual es un tema común entre muchos padres.
 
-**Interés en una Plataforma de Cuidado Infantil:** Fabrizio expresó su interés en una plataforma con verificación de antecedentes y certificaciones. **El 80% de los padres entrevistados indicó que una plataforma que ofrezca estas características aumentaría su confianza en el servicio.**
+*Interés en una Plataforma de Cuidado Infantil*: José expresó su interés en una plataforma que ofrezca cuidadores verificados y certificados, con un enfoque en la seguridad. El 80% de los padres entrevistados señaló que la verificación de antecedentes y la certificación de los cuidadores son factores fundamentales al elegir un servicio de cuidado infantil. Además, valora la flexibilidad en los servicios, especialmente cuando los padres necesitan adaptarse a horarios variables.
 
-En resumen, **Fabrizio representa el perfil de un usuario ideal para nuestra plataforma**, que busca seguridad, calidad educativa y flexibilidad en los servicios de cuidado infantil.
+*Disposición a Invertir en el Cuidado Infantil*: José estaría dispuesto a pagar entre 60 y 70 soles por hora por un servicio de cuidado infantil y una niñera. El 68% de los padres encuestados afirma que pagarían un precio justo por un servicio de alta calidad y confianza. Este dato refleja la disposición de muchos padres a invertir en un servicio seguro y adecuado para el cuidado de sus hijos.
 
-#### **Segundo Entrevistado: Edwhin Palomino**
+En resumen, José representa a un padre que valora la seguridad, la flexibilidad y la confianza en los cuidadores, siendo un candidato ideal para una plataforma de cuidado infantil que ofrezca estos aspectos.
 
-**Desafíos en el Cuidado Infantil:** Edwhin destacó la falta de servicios de cuidado infantil confiables. **El 65% de los padres encuestados en Perú afirmó tener dificultades para encontrar opciones accesibles y seguras, lo que refleja una tendencia nacional.**
+**Segundo Entrevistado: Steve Del Corzo**
 
-**Interés en una Plataforma de Cuidado Infantil:** Edwhin valora la verificación y certificación de los cuidadores. **El 85% de los padres encuestados señalaron que estas características serían un factor decisivo para usar una plataforma de este tipo.**
+*Desafíos en la Búsqueda de Cuidado Infantil*: Steve destacó que el principal desafío es la seguridad al buscar un cuidador para sus hijos, especialmente cuando se trata de niñeras. El 77% de los padres encuestados mencionaron que la seguridad es su principal preocupación al contratar a alguien para cuidar a sus hijos. Steve también mencionó la dificultad de encontrar cuidadores verificados y confiables, lo que refleja una tendencia común entre los padres primerizos.
 
-**Valoración de la Flexibilidad y Rapidez del Servicio:** Edwhin considera crucial que el servicio de cuidado infantil sea flexible y esté disponible en tiempo real. Su enfoque en la rapidez y la capacidad de respuesta para emergencias resalta la importancia de un servicio que pueda adaptarse a necesidades urgentes y cambiantes, reflejando la importancia de la accesibilidad y la eficacia en estos servicios.
+*Interés en una Plataforma de Cuidado Infantil*: Steve expresó que valoraría mucho que una plataforma verifique adecuadamente a los cuidadores y que ofrezca un seguimiento en tiempo real. El 80% de los padres entrevistados indicó que la opción de monitorear en tiempo real las actividades del cuidador aumentaría su confianza en el servicio. Además, cree que una plataforma debería proporcionar consejos útiles para padres primerizos, lo que resalta la necesidad de información accesible y confiable.
 
-**Disposición a Invertir en el Cuidado Infantil:** Edwhin está dispuesto a pagar entre 30 y 50 soles por hora. **El 70% de los padres encuestados está dispuesto a invertir en servicios de cuidado de alta calidad, con un rango de precios similar.**
+*Disposición a Invertir en el Cuidado Infantil*: Steve estaría dispuesto a pagar entre 300 y 500 soles mensuales si el servicio incluye servicios adicionales como tutoría o asesoría para padres primerizos. El 72% de los padres encuestados expresó que pagarían más por un servicio que incluya educación o apoyo adicional para el desarrollo infantil.
 
-**Búsqueda de Soluciones y Mejoras en el Cuidado Infantil:** En resumen, **Edwhin** busca una solución de cuidado infantil que ofrezca seguridad, flexibilidad y una plataforma fácil de usar. **Según las encuestas realizadas, el 68% de los padres entrevistados mencionan que la seguridad y verificación de los cuidadores es un aspecto fundamental al elegir un servicio de cuidado infantil.** Además, **el 75% de los encuestados indicaron que la flexibilidad en la disponibilidad del servicio es un factor decisivo.**
+En resumen, Steve representa el perfil de un padre que valora la seguridad, la flexibilidad, la verificación de cuidadores y la disponibilidad de recursos educativos para padres. La disposición a invertir en una plataforma que ofrezca estas características refleja las necesidades de muchos padres de familia.
 
-Su interés en cuidadores verificados y certificados, junto con su disposición a pagar por un servicio de calidad, refleja una tendencia observada en el 80% de los encuestados, quienes consideran que la verificación de antecedentes y certificaciones son esenciales para su confianza en el servicio. Esto sugiere que Edwhin está buscando activamente una solución que pueda satisfacer sus necesidades y proporcionar tranquilidad en el cuidado de sus hijos.
+**Tercer Entrevistado: Judit Cuba Villavicencio**
 
-**Basándonos en el análisis de la entrevista**, Edwhin parece ser un potencial cliente para una plataforma de cuidado infantil que ofrezca seguridad y flexibilidad. **El 85% de los encuestados destacó la importancia de una plataforma intuitiva y fácil de usar, con características como la verificación de antecedentes y certificaciones de cuidadores.** Su búsqueda de una solución confiable y su disposición a invertir en un servicio de calidad destacan su necesidad de una plataforma que cumpla con estos requisitos.
+*Desafíos en la Búsqueda de Cuidado Infantil*: Judit mencionó que uno de los principales desafíos al buscar un servicio de cuidado infantil es encontrar cuidadoras responsables y puntuales. El 70% de los padres entrevistados señaló que la falta de responsabilidad y puntualidad es un obstáculo común al elegir un cuidador. Además, destacó que la confianza es fundamental al dejar a su hija con alguien, especialmente al trabajar.
+
+*Interés en una Plataforma de Cuidado Infantil*: Judit destacó que una plataforma confiable debe investigar y verificar a los cuidadores antes de permitir que trabajen. El 75% de los padres encuestados expresó que la verificación de antecedentes, exámenes médicos y psicológicos son imprescindibles para garantizar la seguridad de sus hijos. También mencionó la necesidad de que la plataforma ofrezca seguimiento en tiempo real.
+
+*Disposición a Invertir en el Cuidado Infantil*: Judit estaría dispuesta a pagar 20 soles por hora para servicios de tutoría y 40 soles por hora para servicios de niñera. El 65% de los padres encuestados estaría dispuesto a pagar precios similares para niñeras o profesores con la confianza de que están certificados y verificados.
+
+En resumen, Judit busca una plataforma que ofrezca seguimiento en tiempo real, verificación exhaustiva de los cuidadores y que sea accesible en términos de costos, lo que la convierte en un perfil clave para una plataforma que busque cubrir estas necesidades.
+
 
 **Cuidadores/Educadores**
 
