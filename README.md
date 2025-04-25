@@ -214,6 +214,35 @@ Durante la fase de elaboración del informe, se realizaron las siguientes activi
 ### 4.1.1.3. Bounded Context Canvases
 
 ### 4.1.2. Context Mapping
+A partir del proceso de EventStorming se identificaron cinco bounded contexts: User Management, Appointments, Notifications, Payments y Messaging. Para definir sus interacciones, se optó por aplicar los siguientes patrones de integración:
+
+1. Appointments ↔ Notifications
+
+Patrón: Publisher-Suscriber
+
+Explicación: El contexto de Appointments publica eventos relacionados con la creación, modificación o cancelación de appointments. El contexto de Notifications se suscribe a estos eventos para enviar recordatorios o alertas a los usuarios. Esta relación permite una integración desacoplada, donde Appointments no necesita conocer los detalles internos de Notifications.
+
+
+2. Appointments ↔ Payments
+
+Patrón: Anticurroption Layer
+
+Explicación: El contexto de Appointments necesita consultar o interactuar con el sistema de Payments para validar pagos realizados por appointments. Para evitar acoplarse directamente al modelo interno del contexto Payments, Appointments implementa una capa anti-corrupción que traduce las solicitudes y respuestas, protegiendo su modelo de dominio del modelo ajeno.
+
+3. User Management ↔ Appointments
+
+Patrón: Customer-Supplier
+
+Explicación: El contexto de Appointments actúa como customer al requerir datos del contexto User Management (información del usuario y roles). User Management, como supplier, expone endpoints que Appointments consume para asociar los appointments al perfil correcto del usuario. Ambos contextos evolucionan de forma independiente, pero coordinan sus contratos para no afectarse mutuamente.
+
+
+4. User Management ↔ Messaging
+
+Patrón: Customer-Supplier
+
+Explicación: El contexto de Messaging requiere información del contexto User Management, como identificadores de los usuarios. Ambos equipos colaboran para garantizar que los servicios ofrecidos por User Management satisfacen los requerimientos funcionales de Messaging. Por tanto, Messaging actúa como customer e influye activamente en las interfaces que User Management, como supplier, expone.
+
+![Context Mapping](Images/ContextMapping.svg)
 
 ### 4.1.3. Software Architecture
 En los apartados siguientes se podrá visualizar los diagramas C4 que detallan la arquitectura de nuestra aplicación.
@@ -238,6 +267,7 @@ Los elementos presentes en esta capa de contenedores son:
 ![Containers](Images/c4model/structurizr-101687-Containers.png)
 
 ### 4.1.3.3. Software Architecture Deployment Diagrams
+
 
 ----
 
