@@ -295,7 +295,7 @@ Nuestro segmento objetivo abarca a todos aquellos padres y tutores que buscan so
 
 ----
 
-## Capítulo IV: Product Design
+## Capítulo IV: Solution Software Design
 
 ### 4.1. Strategic-Level Domain-Driven Design
 
