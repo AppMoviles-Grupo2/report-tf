@@ -204,7 +204,7 @@ Durante la fase de elaboración del informe, se realizaron las siguientes activi
 
 ----
 
-## Capítulo IV: Product Design
+## Capítulo IV: Solution Software Design
 
 ### 4.1. Strategic-Level Domain-Driven Design
 
