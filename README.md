@@ -463,7 +463,7 @@ En esta sección se presentará el **User Task Matrix**, una herramienta que per
 
 El siguiente cuadro muestra la relación entre las tareas principales que realizan estos segmentos, junto con la frecuencia e importancia asignada a cada una de ellas.
 
-| **User Task Matrix**                        | **Fabrizio**   |                 | **Johan**      |                 |
+| **User Task Matrix**                        | **Percy**   |                 | **Maria Fernanda**      |                 |
 | ------------------------------------------- | -------------- | --------------- | -------------- | --------------- |
 |                                             | **Frecuencia** | **Importancia** | **Frecuencia** | **Importancia** |
 | Búsqueda de cuidadores confiables           | Siempre        | Alta            | Nunca          | Baja            |
