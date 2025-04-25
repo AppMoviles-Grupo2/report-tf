@@ -207,6 +207,8 @@ La misión de SafeGroup es diseñar y desarrollar soluciones tecnológicas innov
 
 ## 1.2. Solution Profile
 
+Ante esta problemática, proponemos una plataforma digital que conecte de forma rápida, segura y eficiente a familias con cuidadores infantiles calificados. Esta solución busca reducir las barreras de acceso al cuidado infantil confiable, ofreciendo herramientas como perfiles verificados, reseñas de usuarios, filtros de búsqueda personalizados y opciones de reserva y pago en línea. Además, se prioriza la inclusión de cuidadores certificados y se promueve la formación continua para garantizar un servicio de calidad. De esta manera, la plataforma no solo atiende las necesidades de los padres, sino que también genera oportunidades laborales formales para los cuidadores en un mercado en crecimiento.
+
 ### 1.2.1. Antecedentes y problemática 
 
 ### What (¿Qué?)
