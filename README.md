@@ -1152,6 +1152,8 @@ Este modelo de flujos documenta cómo el Tutor y el Cuidador intercambian mensaj
 
 ### 4.1.1.3. Bounded Context Canvases
 
+En esta sección se describen en detalle los criterios aplicados a cada Bounded Context Canvas, una herramienta diseñada para estructurar y documentar de forma independiente cada contexto acotado. El proceso de definición de cada uno de estos canvases se orientó a resaltar su relevancia dentro de la arquitectura de la solución móvil, priorizando aquellos aspectos que garantizan una experiencia de usuario fluida y una integración sólida entre los distintos módulos de la aplicación. De este modo, cada contexto se concibe no solo como una unidad lógica de dominio, sino también como un componente clave para el correcto funcionamiento y escalabilidad de la plataforma móvil.
+
 #### **User Management**
 **Explicación de diseño:**  
 El diseño del bounded context de User Management se basa en la gestión de identidad y acceso (Identity & Access Management). Este contexto es esencial para administrar usuarios, manejar la autenticación, autorización y control de acceso dentro del sistema. Es fundamental para garantizar la seguridad y privacidad de los datos de la plataforma. Separar esta funcionalidad permite una mejor modularidad y escalabilidad del sistema, facilitando además la implementación de políticas de seguridad robustas.
