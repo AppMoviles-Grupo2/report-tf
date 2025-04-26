@@ -766,19 +766,461 @@ Este lenguaje facilita la comprensión y el consenso en torno a los conceptos y 
 
 ## Capítulo IV: Solution Software Design
 
-### 4.1. Strategic-Level Domain-Driven Design
+## 4.1. Strategic-Level Domain-Driven Design
 
 ### 4.1.1. EventStorming
+Durante la sesión de Event Storming, el equipo de desarrollo llevó a cabo una reunión en la que compartimos propuestas sobre las funciones y características que debería tener el proyecto. A lo largo del encuentro, se establecieron diversas ideas para la plataforma, así como los primeros esbozos de los bounded context.
+
+- **Step 01: Collect Domain Events**
+
+   En esta etapa inicial, el equipo recopiló los eventos de dominio a partir de conversaciones colaborativas, centrándose en acciones clave que ocurren dentro del sistema, como "Solicitud de servicio creada", "Solicitud aceptada" o "Pago confirmado". Estos eventos representan hechos importantes que tienen significado dentro del negocio y sirven como base para entender cómo fluye la información entre los distintos actores del sistema.
+
+  ![step1](Images/Event%20Storming/step01.jpg)
+
+- **Step 02: Timelines**
+
+   En esta fase, los eventos detectados se organizaron en conjuntos jerarquizados, donde cada conjunto fue liderado por un evento principal que representa la funcionalidad central del grupo. Se distinguieron flujos exitosos (happy paths) que reflejan interacciones óptimas, así como flujos alternos o fallidos (unhappy paths) que visibilizan posibles fricciones en el proceso. Esta estructuración permitió entender con mayor claridad la lógica temporal del sistema.
+  ![step1](Images/Event%20Storming/step02.jpg)
+- **Step 03: Pain Points**
+  
+   Aquí se identificaron los puntos críticos donde los usuarios —tanto cuidadores como padres— podrían enfrentar dificultades al interactuar con la plataforma. Estos insights resultan fundamentales para replantear procesos y mejorar la usabilidad general del sistema.
+  ![step1](Images/Event%20Storming/step03.jpg)
+- **Step 04: Pivotal Points**
+
+   Se destacaron eventos que representan momentos determinantes en el flujo de interacción, ya sea por su impacto en la toma de decisiones, validación de acuerdos o activación de funcionalidades relevantes. Estos eventos ayudan a centrar la atención en aspectos esenciales del comportamiento del sistema.
+  ![step1](Images/Event%20Storming/step04.jpg)
+- **Step 05 & 6: Commands and Polices**
+
+   Durante esta fase, se establecieron los comandos que desencadenan los eventos dentro del sistema, así como las políticas que regulan su ejecución. Cada comando fue vinculado a un actor específico (como un padre de familia o un cuidador) y se definieron las condiciones bajo las cuales dichos comandos pueden ser ejecutados. Estas políticas incluyeron validaciones de negocio, restricciones de acceso y reglas que aseguran la integridad de las operaciones, como verificar la disponibilidad del cuidador antes de confirmar una solicitud o validar los datos antes de generar un pago. Esta combinación permitió comprender tanto la intención detrás de cada acción como las reglas que la gobiernan.
+  ![step1](Images/Event%20Storming/step0506.jpg)
+- **Step 07: Read /View Models**
+
+   Se diseñaron modelos de consulta para exponer la información relevante a cada tipo de usuario. Estos modelos fueron pensados para optimizar el acceso a datos como historiales de servicios, disponibilidad de cuidadores o solicitudes pendientes, garantizando eficiencia y claridad.
+  ![step1](Images/Event%20Storming/step07.jpg)
+- **Step 08: External Systems**
+
+   Se identificó un sistema externo con el que será necesario integrar la plataforma, el servicio externo a considerar es stripe, nos brindará interfaces con funcionalidades de pasarelas de pago. Se definieron también las interfaces necesarias para lograr una integración fluida y segura.
+  ![step1](Images/Event%20Storming/step08.jpg)
+- **Step 09: Aggregates**
+
+   Se definieron agregados que agrupan entidades relacionadas en torno a transacciones coherentes, asegurando consistencia en operaciones como la creación de contratos, evaluaciones del servicio o gestión de perfiles. Estos agregados estructuran el dominio de manera robusta frente a cambios o escalabilidad.
+  ![step1](Images/Event%20Storming/step09.jpg)
+
 ### 4.1.1.1. Candidate Context Discovery
+Para este punto decidimos identificar los valores principales de la aplicación móvil lo que, por consecuencia, nos dió una mayor claridad.
+
+**Identificación de Valores del Negocio**
+
+El desarrollo de la aplicación móvil tiene como propósito principal facilitar la conexión entre padres de familia y cuidadores de confianza para la atención de sus hijos. En este contexto, se han identificado los siguientes valores clave del negocio:
+
+- Confianza y seguridad en el servicio: Se busca garantizar que los usuarios, tanto padres como cuidadores, cuenten con una plataforma segura y confiable, donde el proceso de verificación de identidades, historial y reputación sea claro y transparente.
+- Facilidad en la gestión de citas: El sistema debe permitir que la programación, modificación y seguimiento de citas se realicen de manera eficiente e intuitiva, reduciendo la fricción en la coordinación entre usuarios.
+- Eficiencia en el proceso de pagos: Se promueve una experiencia fluida al momento de realizar transacciones por los servicios, incluyendo la automatización de pagos, confirmaciones y reportes financieros.
+- Comunicación efectiva: Facilitar la interacción entre padres y cuidadores, especialmente una vez que se ha confirmado una cita, es esencial para asegurar una buena experiencia de usuario y una atención adecuada.
+- Experiencia de usuario optimizada: La aplicación debe brindar una interfaz amigable, accesible y centrada en las necesidades de los usuarios, priorizando la rapidez y claridad en cada proceso.
+
+**Identificación de Funcionalidades Clave**
+
+Las funcionalidades esenciales que contribuyen directamente a la entrega de los valores de negocio anteriormente mencionados son las siguientes:
+
+- Gestión de usuarios (User Management): Registro, autenticación y validación de usuarios (padres y cuidadores), incluyendo verificación de identidad y roles.
+- Agenda de citas (Appointments): Creación, aceptación, rechazo y programación de citas, permitiendo la visualización y administración de agendas personalizadas.
+- Sistema de notificaciones (Notifications): Envío automático de recordatorios, confirmaciones y alertas relevantes respecto a citas y mensajes.
+- Gestión de pagos (Payments): Procesamiento seguro de pagos, registro de transacciones y aplicación de tarifas según el servicio ofrecido.
+- Mensajería interna (Messaging): Canal de comunicación en tiempo real entre padres y cuidadores, habilitado solo cuando existe una cita aceptada, promoviendo la coordinación y confianza.
+
+
+**Candidate para Bounded Context: User Management**
+
+Este contexto está enfocado en gestionar el ciclo de vida de los usuarios dentro de la aplicación, incluyendo tanto a los padres de familia como a los cuidadores. Se encarga del proceso de registro, validación de identidad y administración de roles, asegurando una experiencia segura y personalizada según el tipo de usuario.
+
+Posibles responsabilidades del Bounded Context:
+
+- Gestionar el registro y autenticación de nuevos usuarios.
+- Validar la identidad de los cuidadores mediante documentos o procesos adicionales de verificación.
+- Administrar los roles y permisos según el tipo de usuario (padre o cuidador).
+- Implementar estándares de seguridad para el acceso, como autenticación con tokens JWT.
+
+![Bounded Context: User Management](Images/Event%20Storming/Bounded%20Context%20-%20User%20Management.png)
+
+**Candidate para Bounded Context: Notifications**
+
+Este contexto está encargado de gestionar todas las notificaciones relevantes del sistema, especialmente aquellas relacionadas con la creación, actualización o cancelación de citas. Asegura que los usuarios estén informados de eventos importantes en tiempo real.
+
+Posibles responsabilidades del Bounded Context:
+
+- Enviar notificaciones push sobre citas creadas, modificadas o canceladas.
+- Gestionar la configuración de notificaciones personalizadas por usuario.
+- Integrarse con el sistema de citas y el sistema de mensajería para alertar sobre mensajes nuevos o recordatorios.
+- Monitorear la entrega y recepción de notificaciones para garantizar la comunicación efectiva.
+
+![Bounded Context: Notifications](Images/Event%20Storming/Bounded%20Context%20-%20Notifications.png)
+
+**Candidate para Bounded Context: Payments**
+
+Este contexto gestiona el proceso de pago entre padres y cuidadores por los servicios acordados en una cita. Se encarga de validar transacciones, aplicar comisiones y mantener un historial financiero confiable.
+
+Posibles responsabilidades del Bounded Context:
+
+- Procesar pagos seguros a través de plataformas externas (como Stripe).
+- Registrar el estado de pagos: pendiente, realizado, fallido o reembolsado.
+- Aplicar políticas de tarifas y comisiones según el tipo de servicio o duración de la cita.
+- Generar reportes financieros y comprobantes de pago para los usuarios.
+
+![Bounded Context: Payments](Images/Event%20Storming/Bounded%20Context%20-%20Payments.png)
+
+**Candidate para Bounded Context: Appointments**
+
+Este contexto centraliza la lógica relacionada a la gestión de citas, incluyendo su creación, aceptación, rechazo y programación. Asegura que tanto padres como cuidadores tengan control y visibilidad sobre sus agendas.
+
+Posibles responsabilidades del Bounded Context:
+
+- Permitir la creación y solicitud de nuevas citas por parte de los padres.
+- Gestionar las respuestas de los cuidadores (aceptación o rechazo).
+- Coordinar los horarios y disponibilidad de ambas partes.
+- Registrar el estado de cada cita y su historial asociado.
+
+![Bounded Context: Appointments](Images/Event%20Storming/Bounded%20Context%20-%20Appointments.png)
+
+**Candidate para Bounded Context: Messaging**
+
+Este contexto habilita la comunicación directa entre padres y cuidadores únicamente cuando una cita ha sido aceptada, promoviendo la coordinación y confianza entre las partes.
+
+Posibles responsabilidades del Bounded Context:
+
+- Proveer un sistema de mensajería en tiempo real dentro de la aplicación.
+- Activar el canal de comunicación únicamente para citas aceptadas.
+- Almacenar el historial de mensajes por cita, asegurando la privacidad y trazabilidad.
+- Notificar sobre mensajes nuevos mediante el sistema de notificaciones.
+
+![Bounded Context: Messaging](Images/Event%20Storming/Bounded%20Context%20-%20Messaging.png)
+
+La siguiente image muestra la vista general de los bounded contexts.
+
+![Bounded Contexts](Images/Event%20Storming/Bounded%20Contexts.png)
+
 ### 4.1.1.2. Domain Message Flows Modeling
+
+Una vez definidos los Bounded Contexts en la etapa previa, el equipo llevó a cabo una sesión de Domain Storytelling con el objetivo de modelar la interacción entre estos contextos para abordar distintos escenarios del negocio. Esta metodología facilitó una comprensión clara de los flujos de comunicación entre contextos, así como del comportamiento esperado del sistema desde el punto de vista de los usuarios. Durante la sesión, se enfocaron principalmente en el análisis de dos casos de uso significativos.
+
+
+**Usuario:**
+Usuario Final
+
+**Scenario:**
+El usuario desea iniciar sesión en la plataforma.
+
+**Explicación del proceso**
+
+El flujo de inicio de sesión permite que el usuario autentique sus credenciales y obtenga acceso a la aplicación. Primero, el usuario ingresa su información en la interfaz; luego la app la envía al servicio IAM, que a su vez valida la información contra su base de datos. Si las credenciales son correctas, el servicio IAM devuelve un token y los datos de usuario autenticado, y la aplicación muestra la pantalla principal al usuario.
+
+
+**Identificación de Actores**
+
+- Usuario (actor principal)
+
+- Aplicación Web/Móvil (interfaz de usuario)
+
+- Servicio de Autenticación (IAM) (gestiona credenciales y emite tokens)
+
+- Base de Datos de Usuarios (almacena credenciales y roles)
+
+
+
+**Explicación del escenario**
+
+Este diagrama modela el proceso de inicio de sesión en la plataforma:
+
+El Usuario ingresa sus credenciales en la Aplicación.
+
+La Aplicación envía un AuthRequest al Servicio IAM, que delega la validación al almacén de usuarios.
+
+La Base de Datos de Usuarios responde si las credenciales son válidas.
+
+El Servicio IAM construye un AuthResponse con un token y los datos de usuario autenticado.
+
+La Aplicación muestra el resultado al Usuario, permitiéndole acceder si la autenticación fue exitosa.
+
+![DMFM1](./Images/DomainMessageFlow%20odeling/DMFM1.png)
+
+**Usuario:**
+Usuario (Cliente que desea reservar una niñera)
+
+**Scenario:**
+El usuario desea reservar una niñera a través de la aplicación móvil.
+
+**Explicación del proceso**
+
+El usuario introduce la fecha y hora que necesita el servicio de niñera en la app. La aplicación envía esa información al backend, que consulta la base de datos para filtrar niñeras disponibles. A continuación muestra las opciones al usuario, permite que seleccione una niñera y confirma su disponibilidad. Si es necesario, procesa el pago y finalmente notifica al usuario con los detalles finales de la reserva.
+
+**Identificación de Actores**
+
+- Usuario (cliente que reserva)
+
+- Aplicación Móvil (interfaz de usuario)
+
+- Backend (servicio de mensajería interna y lógica de negocio)
+
+- Base de Datos (almacena disponibilidad y reservas)
+
+- Sistema de Pagos (procesa el cobro)
+
+**Definición de los eventos y mensajes clave**
+
+1. RequestAvailability
+
+Origen: Usuario
+
+Destino: Aplicación Móvil
+
+Datos:
+- Fecha
+- Hora
+
+2. AvailabilityRequest
+
+Origen: Aplicación Móvil
+
+Destino: Backend
+
+Datos:
+- Fecha
+- Hora
+
+3. FilterBabysitters
+
+Origen: Backend
+
+Destino: Base de Datos
+
+Datos:
+- Fecha
+- Hora
+
+4. AvailableBabysittersList
+
+Origen: Backend
+
+Destino: Aplicación Móvil
+
+Datos:
+- [ { NiñeraID, Nombre, Experiencia, Precio }… ]
+
+5. BookingRequest
+
+Origen: Aplicación Móvil
+
+Destino: Backend
+
+Datos:
+- UsuarioID
+- NiñeraID
+- Fecha
+- Hora
+
+6. ConfirmAvailability
+
+Origen: Backend
+
+Destino: Base de Datos
+
+Datos:
+- NiñeraID
+- Fecha
+- Hora
+
+7. AvailabilityConfirmed
+
+Origen: Backend
+
+Destino: Aplicación Móvil
+
+Datos:
+- ReservaID
+- Estado: “confirmada”
+
+**Explicación del escenario**
+
+Este diagrama modela detalladamente cómo viaja la información desde que el Usuario solicita niñeras disponibles hasta que recibe la confirmación de reserva. Muestra claramente:
+
+Solicitud de disponibilidad
+
+Filtrado de niñeras en la base de datos
+
+Selección y confirmación de reserva
+
+Procesamiento del pago
+
+Notificación final con todos los detalles
+
+![DMFM2](./Images/DomainMessageFlow%20odeling/DMFM2.png)
+
+**Usuario:**
+Tutor
+
+**Scenario:**
+Comunicación entre Tutor y Cuidador a través de la plataforma.
+
+**Explicación del proceso**
+
+El Tutor, ya autenticado en la aplicación móvil, accede a la función de mensajería para iniciar o continuar una conversación con un Cuidador. La app solicita al backend el historial de mensajes, lo muestra al Tutor y le permite redactar y enviar nuevos mensajes. Cada envío se guarda en la base de datos y dispara una notificación al Cuidador, quien a su vez recibe el aviso y puede responder en tiempo real.
+
+**Identificación de Actores**
+ - Tutor (actor principal)
+
+- Aplicación Móvil (interfaz de usuario)
+
+- Servicio de Mensajería (Backend) (gestiona persistencia y distribución)
+
+- Base de Datos (almacena los mensajes)
+
+- Servicio de Notificaciones (envía alertas push/in-app)
+
+- Cuidador (receptor y emisor de respuestas)
+
+**Definición de los eventos y mensajes clave**
+1. RequestConversations
+
+Origen: Aplicación Móvil
+
+Destino: Servicio de Mensajería
+
+Datos:
+ - TutorID
+
+
+ 2. ConversationsList
+
+Origen: Servicio de Mensajería
+
+Destino: Aplicación Móvil
+
+Datos: 
+- [ { CuidadorID, MensajesPrevios… } ]
+
+3. SendMessage
+
+Origen: Aplicación Móvil
+
+Destino: Servicio de Mensajería
+
+Datos:
+- TutorID
+- CuidadorID
+- Contenido
+
+4. SaveMessage
+
+Origen: Servicio de Mensajería
+
+Destino: Base de Datos
+
+Datos:
+- MensajeID
+- TutorID
+- CuidadorID
+- Contenido
+- Timestamp
+
+5. NotifyCaregiver
+
+Origen: Servicio de Mensajería
+
+Destino: Servicio de Notificaciones
+
+Datos:
+- CuidadorID
+- MensajeID
+- PushPayload
+
+6. NotificationReceived
+
+Origen: Servicio de Notificaciones
+
+Destino: Cuidador
+
+Datos:
+- MensajeID
+
+**Explicación del escenario**
+
+Este modelo de flujos documenta cómo el Tutor y el Cuidador intercambian mensajes de forma fiable y en tiempo real. Permite entender qué componentes intervienen (app, backend, base de datos, notificaciones), qué datos viajan en cada paso y cómo se detona la alerta al Cuidador para mantener siempre activa la comunicación bidireccional.
+
+
+
+![DMFM3](./Images/DomainMessageFlow%20odeling/DMFM3.png)
+
 ### 4.1.1.3. Bounded Context Canvases
 
 ### 4.1.2. Context Mapping
+A partir del proceso de EventStorming se identificaron cinco bounded contexts: User Management, Appointments, Notifications, Payments y Messaging. Para definir sus interacciones, se optó por aplicar los siguientes patrones de integración:
+
+1. Appointments ↔ Notifications
+
+Patrón: Publisher-Suscriber
+
+Explicación: El contexto de Appointments publica eventos relacionados con la creación, modificación o cancelación de appointments. El contexto de Notifications se suscribe a estos eventos para enviar recordatorios o alertas a los usuarios. Esta relación permite una integración desacoplada, donde Appointments no necesita conocer los detalles internos de Notifications.
+
+
+2. Appointments ↔ Payments
+
+Patrón: Anticurroption Layer
+
+Explicación: El contexto de Appointments necesita consultar o interactuar con el sistema de Payments para validar pagos realizados por appointments. Para evitar acoplarse directamente al modelo interno del contexto Payments, Appointments implementa una capa anti-corrupción que traduce las solicitudes y respuestas, protegiendo su modelo de dominio del modelo ajeno.
+
+3. User Management ↔ Appointments
+
+Patrón: Customer-Supplier
+
+Explicación: El contexto de Appointments actúa como customer al requerir datos del contexto User Management (información del usuario y roles). User Management, como supplier, expone endpoints que Appointments consume para asociar los appointments al perfil correcto del usuario. Ambos contextos evolucionan de forma independiente, pero coordinan sus contratos para no afectarse mutuamente.
+
+
+4. User Management ↔ Messaging
+
+Patrón: Customer-Supplier
+
+Explicación: El contexto de Messaging requiere información del contexto User Management, como identificadores de los usuarios. Ambos equipos colaboran para garantizar que los servicios ofrecidos por User Management satisfacen los requerimientos funcionales de Messaging. Por tanto, Messaging actúa como customer e influye activamente en las interfaces que User Management, como supplier, expone.
+
+![Context Mapping](Images/ContextMapping.svg)
 
 ### 4.1.3. Software Architecture
+En los apartados siguientes se podrá visualizar los diagramas C4 que detallan la arquitectura de nuestra aplicación.
+
 ### 4.1.3.1. Software Architecture Context Level Diagrams
+Los elementos que están presentes en la capa de contexto son:
+- Tutors (Padres o tutores): Interactua con el software.
+- Nannies and Teachers (Cuidadores): Interactua con el software.
+- SafeChild: Software que utilizan los usuarios.
+  
+![Context](Images/C4%20Model/structurizr-101687-SystemContext-001.png)
+
 ### 4.1.3.2. Software Architecture Container Level Diagrams
+Los elementos presentes en esta capa de contenedores son:
+- Tutors (Padres o tutores): Interactua con la landing page o la aplicación móvil.
+- Nannies and Teachers (Cuidadores): Interactua con la landing page o la aplicación móvil.
+- Landing Page: Página de presentación de nuestro producto, redirecciona a los visitantes a la aplicación móvil.
+- Mobile App: Frontend donde los usuarios interactúan con la aplicación móvil.
+- API Application: Conexión entre el Frontend y el Backend.
+- Database: Base de datos donde se almacenarán toda la información concerniente al software.
+  
+![Containers](Images/C4%20Model/structurizr-101687-Containers.png)
+
 ### 4.1.3.3. Software Architecture Deployment Diagrams
+
+El diagrama ilustra el despliegue de un sistema distribuido conformado por distintos componentes: una aplicación móvil, una API back-end, una base de datos y una landing page, organizados según sus respectivos nodos de despliegue. Los elementos principales son:
+
+- Landing Page (HTML, CSS, JavaScript): Se ejecuta en el navegador web del cliente (Chrome, Firefox, Safari o Edge). Su función principal es redirigir al usuario a la descarga de la aplicación móvil mediante un llamado a acción (CTA).
+
+
+- Aplicación Móvil (Kotlin y Flutter): Se instala directamente en el dispositivo del usuario (iOS o Android). Esta aplicación interactúa con el back-end realizando peticiones a la API a través de JSON sobre HTTP.
+
+
+- API Back-End (Spring Boot): Está desplegada en Azure mediante contenedores Docker, alojados en un Azure App Service. Esta API funciona como intermediario entre la aplicación móvil y la base de datos, gestionando la lógica del negocio y el acceso a datos.
+
+
+- Base de Datos (MySQL): Implementada en Azure utilizando Azure Database for MySQL Flexible Server. Es responsable del almacenamiento y recuperación de datos, mantiene una comunicación directa con la API a través de JDBC.
+
+![Deployment Diagram](Images/C4%20Model/DeploymentDiagram.png)
 
 ----
 
