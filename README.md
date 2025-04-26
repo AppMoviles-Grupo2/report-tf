@@ -340,6 +340,256 @@ La siguiente image muestra la vista general de los bounded contexts.
 ![Bounded Contexts](Images/Event%20Storming/Bounded%20Contexts.png)
 
 ### 4.1.1.2. Domain Message Flows Modeling
+
+Una vez definidos los Bounded Contexts en la etapa previa, el equipo llevó a cabo una sesión de Domain Storytelling con el objetivo de modelar la interacción entre estos contextos para abordar distintos escenarios del negocio. Esta metodología facilitó una comprensión clara de los flujos de comunicación entre contextos, así como del comportamiento esperado del sistema desde el punto de vista de los usuarios. Durante la sesión, se enfocaron principalmente en el análisis de dos casos de uso significativos.
+
+
+**Usuario:**
+Usuario Final
+
+**Scenario:**
+El usuario desea iniciar sesión en la plataforma.
+
+**Explicación del proceso**
+
+El flujo de inicio de sesión permite que el usuario autentique sus credenciales y obtenga acceso a la aplicación. Primero, el usuario ingresa su información en la interfaz; luego la app la envía al servicio IAM, que a su vez valida la información contra su base de datos. Si las credenciales son correctas, el servicio IAM devuelve un token y los datos de usuario autenticado, y la aplicación muestra la pantalla principal al usuario.
+
+
+**Identificación de Actores**
+
+- Usuario (actor principal)
+
+- Aplicación Web/Móvil (interfaz de usuario)
+
+- Servicio de Autenticación (IAM) (gestiona credenciales y emite tokens)
+
+- Base de Datos de Usuarios (almacena credenciales y roles)
+
+
+
+**Explicación del escenario**
+
+Este diagrama modela el proceso de inicio de sesión en la plataforma:
+
+El Usuario ingresa sus credenciales en la Aplicación.
+
+La Aplicación envía un AuthRequest al Servicio IAM, que delega la validación al almacén de usuarios.
+
+La Base de Datos de Usuarios responde si las credenciales son válidas.
+
+El Servicio IAM construye un AuthResponse con un token y los datos de usuario autenticado.
+
+La Aplicación muestra el resultado al Usuario, permitiéndole acceder si la autenticación fue exitosa.
+
+![DMFM1](./Images/DomainMessageFlow%20odeling/DMFM1.png)
+
+**Usuario:**
+Usuario (Cliente que desea reservar una niñera)
+
+**Scenario:**
+El usuario desea reservar una niñera a través de la aplicación móvil.
+
+**Explicación del proceso**
+
+El usuario introduce la fecha y hora que necesita el servicio de niñera en la app. La aplicación envía esa información al backend, que consulta la base de datos para filtrar niñeras disponibles. A continuación muestra las opciones al usuario, permite que seleccione una niñera y confirma su disponibilidad. Si es necesario, procesa el pago y finalmente notifica al usuario con los detalles finales de la reserva.
+
+**Identificación de Actores**
+
+- Usuario (cliente que reserva)
+
+- Aplicación Móvil (interfaz de usuario)
+
+- Backend (servicio de mensajería interna y lógica de negocio)
+
+- Base de Datos (almacena disponibilidad y reservas)
+
+- Sistema de Pagos (procesa el cobro)
+
+**Definición de los eventos y mensajes clave**
+
+1. RequestAvailability
+
+Origen: Usuario
+
+Destino: Aplicación Móvil
+
+Datos:
+- Fecha
+- Hora
+
+2. AvailabilityRequest
+
+Origen: Aplicación Móvil
+
+Destino: Backend
+
+Datos:
+- Fecha
+- Hora
+
+3. FilterBabysitters
+
+Origen: Backend
+
+Destino: Base de Datos
+
+Datos:
+- Fecha
+- Hora
+
+4. AvailableBabysittersList
+
+Origen: Backend
+
+Destino: Aplicación Móvil
+
+Datos:
+- [ { NiñeraID, Nombre, Experiencia, Precio }… ]
+
+5. BookingRequest
+
+Origen: Aplicación Móvil
+
+Destino: Backend
+
+Datos:
+- UsuarioID
+- NiñeraID
+- Fecha
+- Hora
+
+6. ConfirmAvailability
+
+Origen: Backend
+
+Destino: Base de Datos
+
+Datos:
+- NiñeraID
+- Fecha
+- Hora
+
+7. AvailabilityConfirmed
+
+Origen: Backend
+
+Destino: Aplicación Móvil
+
+Datos:
+- ReservaID
+- Estado: “confirmada”
+
+**Explicación del escenario**
+
+Este diagrama modela detalladamente cómo viaja la información desde que el Usuario solicita niñeras disponibles hasta que recibe la confirmación de reserva. Muestra claramente:
+
+Solicitud de disponibilidad
+
+Filtrado de niñeras en la base de datos
+
+Selección y confirmación de reserva
+
+Procesamiento del pago
+
+Notificación final con todos los detalles
+
+![DMFM2](./Images/DomainMessageFlow%20odeling/DMFM2.png)
+
+**Usuario:**
+Tutor
+
+**Scenario:**
+Comunicación entre Tutor y Cuidador a través de la plataforma.
+
+**Explicación del proceso**
+
+El Tutor, ya autenticado en la aplicación móvil, accede a la función de mensajería para iniciar o continuar una conversación con un Cuidador. La app solicita al backend el historial de mensajes, lo muestra al Tutor y le permite redactar y enviar nuevos mensajes. Cada envío se guarda en la base de datos y dispara una notificación al Cuidador, quien a su vez recibe el aviso y puede responder en tiempo real.
+
+**Identificación de Actores**
+ - Tutor (actor principal)
+
+- Aplicación Móvil (interfaz de usuario)
+
+- Servicio de Mensajería (Backend) (gestiona persistencia y distribución)
+
+- Base de Datos (almacena los mensajes)
+
+- Servicio de Notificaciones (envía alertas push/in-app)
+
+- Cuidador (receptor y emisor de respuestas)
+
+**Definición de los eventos y mensajes clave**
+1. RequestConversations
+
+Origen: Aplicación Móvil
+
+Destino: Servicio de Mensajería
+
+Datos:
+ - TutorID
+
+
+ 2. ConversationsList
+
+Origen: Servicio de Mensajería
+
+Destino: Aplicación Móvil
+
+Datos: 
+- [ { CuidadorID, MensajesPrevios… } ]
+
+3. SendMessage
+
+Origen: Aplicación Móvil
+
+Destino: Servicio de Mensajería
+
+Datos:
+- TutorID
+- CuidadorID
+- Contenido
+
+4. SaveMessage
+
+Origen: Servicio de Mensajería
+
+Destino: Base de Datos
+
+Datos:
+- MensajeID
+- TutorID
+- CuidadorID
+- Contenido
+- Timestamp
+
+5. NotifyCaregiver
+
+Origen: Servicio de Mensajería
+
+Destino: Servicio de Notificaciones
+
+Datos:
+- CuidadorID
+- MensajeID
+- PushPayload
+
+6. NotificationReceived
+
+Origen: Servicio de Notificaciones
+
+Destino: Cuidador
+
+Datos:
+- MensajeID
+
+**Explicación del escenario**
+
+Este modelo de flujos documenta cómo el Tutor y el Cuidador intercambian mensajes de forma fiable y en tiempo real. Permite entender qué componentes intervienen (app, backend, base de datos, notificaciones), qué datos viajan en cada paso y cómo se detona la alerta al Cuidador para mantener siempre activa la comunicación bidireccional.
+
+
+
+![DMFM3](./Images/DomainMessageFlow%20odeling/DMFM3.png)
+
 ### 4.1.1.3. Bounded Context Canvases
 
 ### 4.1.2. Context Mapping
