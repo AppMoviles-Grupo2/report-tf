@@ -68,11 +68,9 @@ Durante la fase de elaboración del informe, se realizaron las siguientes activi
 -  Se generaron los recursos necesarios y agregaron las imagenes al repositorio en la carpeta "assets" en cada rama del informe.
 
 - Se organizaron reuniones para coordinar el avance de los componentes del informe y para proporcionar actualizaciones sobre los progresos del Sprint 1, que se centró en el desarrollo del diseño del software. <br>
-![Insight1](./assets/Introduction/insight1.png)
-![Insight2](./assets/Introduction/insight2.png)
-![Insight4](./assets/Introduction/insight4.png)
-![Insight3](./assets/Introduction/insight3.png)
-![Insight5](./assets/Introduction/insight5.png)
+![Insight1](./assets/intro/insight1.png)
+![Insight2](./assets/intro/insight2.png)
+![Insight3](./assets/intro/insight3.png)
 
 # Contenido
 ## Tabla de contenidos
