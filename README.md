@@ -342,6 +342,253 @@ La siguiente image muestra la vista general de los bounded contexts.
 ### 4.1.1.2. Domain Message Flows Modeling
 ### 4.1.1.3. Bounded Context Canvases
 
+#### **User Management**
+**Explicación de diseño:**  
+El diseño del bounded context de User Management se basa en la gestión de identidad y acceso (Identity & Access Management). Este contexto es esencial para administrar usuarios, manejar la autenticación, autorización y control de acceso dentro del sistema. Es fundamental para garantizar la seguridad y privacidad de los datos de la plataforma. Separar esta funcionalidad permite una mejor modularidad y escalabilidad del sistema, facilitando además la implementación de políticas de seguridad robustas.
+
+**Propósito (Purpose):**  
+El objetivo principal de este contexto es administrar la creación, registro y autenticación de usuarios en la plataforma, asegurando que los usuarios puedan acceder de manera segura y conforme a las políticas definidas.
+
+**Clasificación Estratégica (Strategic Classification):**
+- Dominio: generic
+- Modelo de Negocio: compliance
+- Evolución: product
+
+**Roles del Dominio (Domain Roles):**  
+Execution Context
+
+**Comunicación Entrante (Inbound Communication):**
+- **Colaborador principal:** Mobile UI
+    - Mensajes:
+        - `Usuario Creado`
+        - `Usuario Registrado`
+        - `Usuario Autenticado`
+
+**Comunicación Saliente (Outbound Communication):**
+- Mensajes:
+    - `Usuario Creado`
+    - `Usuario Autenticado`
+- Colaboradores: Messaging, Appointments, Payments
+
+**Lenguaje Ubicuo (Ubiquitous Language):**
+- **User:** Persona que se registra en la plataforma, ya sea como padre de familia o cuidador.
+- **Autenticación:** Proceso de verificar la identidad de un usuario que accede al sistema, generalmente mediante credenciales.
+
+**Decisiones de Negocio (Business Decisions):**
+- “El usuario no puede solicitar servicios hasta haber completado una verificación de identidad.”
+- “El token de sesión expira tras 72 horas de inactividad.”
+- “Solo los roles ‘Cuidador’ y ‘Padres’ pueden acceder a funcionalidades específicas.”
+
+**Suposiciones (Assumptions):**
+- Todos los usuarios deben pasar por un proceso de autenticación seguro antes de interactuar con otras funcionalidades.
+- Los roles de usuario determinan los accesos permitidos en el sistema.
+
+**Métricas de Verificación (Verification Metrics):**
+- Número de usuarios registrados y autenticados exitosamente.
+- Tasa de expiración de tokens por inactividad.
+
+![USER MANAGEMENT](Images/Event%20Storming/Canvas/user%20management%20canvas.jpeg)
+
+#### **Appointments**
+
+**Explicación de diseño:**  
+El contexto de Appointments está diseñado para orquestar todo el ciclo de vida de una cita de cuidado: desde la solicitud inicial hasta su aceptación, rechazo o cancelación. Su responsabilidad principal es gestionar la disponibilidad de los cuidadores y sincronizar los estados de las solicitudes con el resto de la plataforma. Al separarlo como un bounded context independiente, se garantiza que la lógica de agenda sea modular, escalable y susceptible de evolucionar sin afectar otros componentes.
+
+**Propósito (Purpose):**  
+Facilitar la creación, aceptación, rechazo y seguimiento de citas de cuidado entre padres y cuidadores.
+
+**Clasificación Estratégica (Strategic Classification):**
+- Dominio: core
+- Modelo de Negocio: engagement
+- Evolución: custom built
+
+**Roles del Dominio (Domain Roles):**  
+Draft Context
+
+**Comunicación Entrante (Inbound Communication):**
+- **Colaborador principal:** Web/Mobile UI
+    - Mensajes:
+        - `Crear cita`
+        - `Aceptar cita`
+        - `Cancelar cita`
+
+**Comunicación Saliente (Outbound Communication):**
+- Mensajes:
+    - `Cita creada`
+    - `Cita aceptada`
+    - `Cita cancelada`
+- Colaboradores: Notifications, Messaging, Payments
+
+**Lenguaje Ubicuo (Ubiquitous Language):**
+- **Cita:** Solicitud de cuidado en una fecha y franja horaria concreta.
+- **Disponibilidad:** Horarios libres declarados por el cuidador.
+- **Estado de cita:** “pendiente”, “aceptada” o “cancelada”.
+
+**Decisiones de Negocio (Business Decisions):**
+- “No se puede aceptar una cita fuera del horario definido por el cuidador.”
+- “Al aceptar una cita, se habilita el canal de mensajería entre padre y cuidador.”
+- “Cancelar una cita con menos de 24 h de antelación genera penalización.”
+
+**Suposiciones (Assumptions):**
+- Los cuidadores actualizan su disponibilidad en su perfil.
+- Los padres pueden reservar con hasta 7 días de antelación.
+- Cada franja horaria admite una única cita por cuidador.
+
+**Métricas de Verificación (Verification Metrics):**
+- Número de citas creadas por semana.
+- Tasa de aceptación de citas.
+- Porcentaje de cancelaciones.
+
+
+![APPOINTMENTS](Images/Event%20Storming/Canvas/appointments%20canvas.jpeg)
+APPOINTMENTS
+#### **Notifications**
+
+**Explicación de diseño:**  
+Notifications se encarga de orquestar el envío de alertas y recordatorios a los usuarios, suscribiéndose a los eventos críticos generados por los demás contextos. Al implementarse como un bounded context autónomo, permite definir y evolucionar las reglas de notificación (canales, formatos, reintentos) sin interferir en la lógica de dominio principal.
+
+**Propósito (Purpose):**  
+Orquestar el envío de alertas y recordatorios a los usuarios sobre eventos críticos de la plataforma.
+
+**Clasificación Estratégica (Strategic Classification):**
+- Dominio: supporting
+- Modelo de Negocio: engagement
+- Evolución: commodity
+
+**Roles del Dominio (Domain Roles):**  
+Gateway Context
+
+**Comunicación Entrante (Inbound Communication):**
+- Appointments → `Cita creada`, `Cita aceptada`, `Cita cancelada`
+- Messaging   → `Mensaje enviado`
+
+**Comunicación Saliente (Outbound Communication):**
+- Mensajes:
+    - `Notificación enviada`
+    - `Notificación fallida`
+- Colaborador: Web/Mobile UI
+
+**Lenguaje Ubicuo (Ubiquitous Language):**
+- **Notificación:** Alerta push, email o SMS que informa de un evento.
+- **Canal:** Medio de envío (push, email, SMS).
+- **Preferencias de notificación:** Configuración de tipos y frecuencia por usuario.
+
+**Decisiones de Negocio (Business Decisions):**
+- “Solo se envían notificaciones para eventos críticos: nueva cita, mensaje o cancelación.”
+- “Si falla el envío push, reintentar vía email hasta dos veces.”
+- “El usuario puede desactivar notificaciones no críticas.”
+
+**Suposiciones (Assumptions):**
+- Cada usuario dispone de un token de dispositivo válido.
+- Se utiliza un servicio externo (p. ej. FCM/APNs).
+- Las preferencias se almacenan y aplican en tiempo real.
+
+**Métricas de Verificación (Verification Metrics):**
+- Tasa de entrega exitosa.
+- Tasa de apertura (open rate).
+- Tiempo medio de envío.
+
+
+![NOTIFICATIONS](Images/Event%20Storming/Canvas/notifications%20canvas.jpeg)
+
+
+#### **Payments**
+
+**Explicación de diseño:**  
+El contexto de Payments abstrae la gestión de transacciones económicas mediante la integración con un gateway externo (Stripe). Su diseño como bounded context independiente protege la lógica de negocio de cobros y comisiones, permitiendo evolucionar políticas de tarifas y flujos de reembolso sin impactar otros dominios.
+
+**Propósito (Purpose):**  
+Procesar y validar transacciones económicas a través de un gateway externo, manteniendo historial y aplicando tarifas.
+
+**Clasificación Estratégica (Strategic Classification):**
+- Dominio: core
+- Modelo de Negocio: revenue
+- Evolución: product
+
+**Roles del Dominio (Domain Roles):**  
+Gateway Context
+
+**Comunicación Entrante (Inbound Communication):**
+- Appointments  → `Pago Procesado`
+- Web/Mobile UI → `Pago confirmado`
+
+**Comunicación Saliente (Outbound Communication):**
+- Mensajes:
+    - `Procesar pago`
+    - `Confirmar pago`
+- Colaboradores: Appointments, Web/Mobile UI
+
+**Lenguaje Ubicuo (Ubiquitous Language):**
+- **Transacción:** Intento de cobro a través de Stripe.
+- **Estado de pago:** “pendiente”, “realizado”, “fallido” o “reembolsado”.
+- **Tarifa:** Monto calculado según duración y tipo de servicio.
+
+**Decisiones de Negocio (Business Decisions):**
+- “El pago debe aprobarse antes de confirmar la cita como ‘aceptada’.”
+- “Aplicar comisión del 5 % por gestión de plataforma.”
+- “Reembolsos solo si la cancelación ocurre con > 24 h de antelación.”
+
+**Suposiciones (Assumptions):**
+- Integración activa con Stripe.
+- Todas las transacciones en moneda local.
+- Los reembolsos se procesan en < 48 h.
+
+**Métricas de Verificación (Verification Metrics):**
+- Tasa de éxito de transacciones.
+- Tiempo medio de liquidación.
+- Ingresos generados por periodo.
+
+![PAYMENTS](Images/Event%20Storming/Canvas/payments%20canvas.jpeg)
+
+#### **Messaging**
+
+**Explicación de diseño:**  
+Messaging proporciona el canal de comunicación en tiempo real entre padres y cuidadores, habilitado únicamente tras la aceptación de una cita. Como bounded context separado, encapsula la lógica de chat (envío, reintentos, almacenamiento) y puede escalar o evolucionar el servicio de mensajería sin afectar la gestión de citas o notificaciones.
+
+**Propósito (Purpose):**  
+Habilitar y garantizar la comunicación en tiempo real entre padres y cuidadores una vez aceptada una cita.
+
+**Clasificación Estratégica (Strategic Classification):**
+- Dominio: supporting
+- Modelo de Negocio: engagement
+- Evolución: commodity
+
+**Roles del Dominio (Domain Roles):**  
+Analysis Context
+
+**Comunicación Entrante (Inbound Communication):**
+- Appointments    → `Activar canal de mensajería`
+- Web/Mobile UI   → `Enviar mensaje`
+
+**Comunicación Saliente (Outbound Communication):**
+- Mensajes:
+    - `Mensajes enviados`
+    - `Mensajes fallidos`
+- Colaboradores: Notifications, Web/Mobile UI
+
+**Lenguaje Ubicuo (Ubiquitous Language):**
+- **Mensaje:** Texto o multimedia enviado entre padre y cuidador.
+- **Canal habilitado:** Chat disponible solo tras aceptación de cita.
+- **Historial:** Registro cronológico de mensajes por cita.
+
+**Decisiones de Negocio (Business Decisions):**
+- “El chat solo se activa cuando la cita está en estado ‘aceptada’.”
+- “Cada mensaje fallido se reintenta hasta 3 veces.”
+- “Los mensajes se archivan tras 30 días.”
+
+**Suposiciones (Assumptions):**
+- Conexión WebSocket establecida durante la sesión.
+- Historial almacenado en base de datos.
+- Tamaño máximo de archivos adjuntos: 5 MB.
+
+**Métricas de Verificación (Verification Metrics):**
+- Mensajes intercambiados por cita.
+- Tasa de fallos en envío de mensajes.
+- Tiempo medio de respuesta del interlocutor.
+
+
+![MESSAGING](Images/Event%20Storming/Canvas/messaging%20canvas.jpeg)
+
 ### 4.1.2. Context Mapping
 A partir del proceso de EventStorming se identificaron cinco bounded contexts: User Management, Appointments, Notifications, Payments y Messaging. Para definir sus interacciones, se optó por aplicar los siguientes patrones de integración:
 
