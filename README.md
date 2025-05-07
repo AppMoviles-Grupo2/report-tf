@@ -339,6 +339,94 @@ Nuestro segmento objetivo abarca a todos aquellos padres y tutores que buscan so
 ### 4.1.3.2. Software Architecture Container Level Diagrams
 ### 4.1.3.3. Software Architecture Deployment Diagrams
 
+## 4.2. Tactical-Level Domain-Driven Design 
+
+### ### 4.2.1.   Bounded Context: Bounded Context: User Managmentt
+### 4.2.1.1. Domain Layer   
+### 4.2.1.2.  Interface Layer 
+### 4.2.1.3.  Application Layer 
+### 4.2.1.4. Infrastructure Layer 
+### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams 
+### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams 
+### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams 
+### 4.2.1.6.2. Bounded Context Database Design Diagram
+
+### 4.2.2.   Bounded Context: Bounded Context: Payments
+### 4.2.2.1. Domain Layer   
+### 4.2.2.2.  Interface Layer 
+### 4.2.2.3.  Application Layer 
+### 4.2.2.4. Infrastructure Layer 
+### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams 
+### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams 
+### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams 
+### 4.2.2.6.2. Bounded Context Database Design Diagram
+
+### 4.2.3.   Bounded Context: Bounded Context: Appoiments
+### 4.2.3.1. Domain Layer   
+### 4.2.3.2.  Interface Layer 
+### 4.2.3.3.  Application Layer 
+### 4.2.3.4. Infrastructure Layer 
+### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams 
+### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams 
+### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams 
+### 4.2.3.6.2. Bounded Context Database Design Diagram
+
+### 4.2.4.   Bounded Context: Bounded Context: Messaging
+### 4.2.4.1. Domain Layer   
+### 4.2.4.2.  Interface Layer 
+### 4.2.4.3.  Application Layer 
+### 4.2.4.4. Infrastructure Layer 
+### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams 
+### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams 
+### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams 
+### 4.2.4.6.2. Bounded Context Database Design Diagram
+
+----
+
+# Capítulo V: Solution UI/UX Design
+
+## 5.1. Product design 
+### 5.1.1. Style Guidelines 
+### 5.1.1.1. General Style Guidelines 
+### 5.1.2. Information Architecture 
+### 5.1.2.1. Organization Systems 
+### 5.1.2.2. Labelling Systems 
+### 5.1.2.3. SEO Tags and Meta Tags 
+### 5.1.2.4. Searching Systems 
+### 5.1.2.5. Navigation Systems 
+### 5.1.3. Landing Page UI Design 
+### 5.1.3.1. Landing Page Wireframe 
+### 5.1.3.2. Landing Page Mock-up 
+### 5.1.4. Mobile Applications UX/UI Design 
+### 5.1.4.1. Mobile Applications Wireframes 
+### 5.1.4.2. Mobile Applications Wireflow Diagrams 
+### 5.1.4.3. Mobile Applications Mock-ups 
+### 5.1.4.4. Mobile Applications User Flow Diagrams 
+### 5.1.4.5. Mobile Applications Prototyping 
+
+----
+
+# Capítulo VI: Product Implementation, Validation & Deployment
+
+## 6.1. Software Configuration Management
+
+### 6.1.1. Software Development Environment Configuration 
+### 6.1.2. Source Code Management 
+### 6.1.3. Source Code Style Guide & Conventions 
+### 6.1.4. Software Deployment Configuration 
+
+## 6.2. Landing Page & Mobile Application Implementation 
+
+### 6.2.1. Sprint 1
+### 6.2.1.1. Sprint Planning 1
+### 6.2.1.2. Sprint Backlog 1
+### 6.2.1.3. Development Evidence for Sprint Review 
+### 6.2.1.4. Testing Suite Evidence for Sprint Review 
+### 6.2.1.5. Execution Evidence for Sprint Review 
+### 6.2.1.6. Services Documentation Evidence for Sprint Review 
+### 6.2.1.7. Software Deployment Evidence for Sprint Review 
+### 6.2.1.8. Team Collaboration Insights during Sprint
+
 ----
 
 ## Conclusiones
