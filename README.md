@@ -386,14 +386,186 @@ Nuestro segmento objetivo abarca a todos aquellos padres y tutores que buscan so
 # Capítulo V: Solution UI/UX Design
 
 ## 5.1. Product design 
-### 5.1.1. Style Guidelines 
+
+El diseño del producto es una fase crucial en el desarrollo de SafeChild, ya que determina cómo los padres interactuarán con la plataforma, asegurando que la experiencia de usuario sea simple, eficiente y confiable. En este capítulo, detallamos el proceso de diseño seguido para SafeChild, desde las pautas de estilo general hasta la arquitectura de software y la base de datos. Cada sección refleja nuestro enfoque en crear una experiencia de usuario que priorice la facilidad de uso y la confianza en la conexión con niñeras y profesores calificados, tanto en la landing page como en las aplicaciones web.
+
+### 5.1.1. Style Guidelines
+
+En SafeChild, establecimos pautas de estilo claras para garantizar una experiencia visual coherente y profesional. Definimos tanto aspectos generales como específicos para la web, con el objetivo de transmitir confianza y accesibilidad a los usuarios.
+
 ### 5.1.1.1. General Style Guidelines 
+
+**Task:**
+En esta sección, se detallarán las directrices generales de estilo que guiarán el diseño y la presentación de SafeChild. Estas directrices asegurarán que todos los elementos visuales y textuales sean coherentes y alineados con la identidad de nuestra marca, proporcionando una experiencia de usuario fluida, confiable y profesional.
+
+**Insight:**
+La consistencia en el estilo y diseño es crucial para establecer una identidad de marca sólida y reconocible en SafeChild. Una guía de estilo clara ayuda a mantener la coherencia a lo largo del proyecto, asegurando que la plataforma refleje confianza y profesionalismo en cada interacción, facilitando la navegación y el uso para los padres que buscan cuidadores y profesores confiables.
+
+**Branding:**
+Nuestro logo representa a SafeChild mediante la imagen de dos manos que sostienen a un niño, con una casa y un oso de fondo. Este conjunto visual simboliza protección, cuidado y un entorno seguro, que son los pilares fundamentales de nuestra propuesta. Los colores celeste, blanco y celeste oscuro refuerzan sensaciones de calma, confianza y profesionalismo. La tipografía utilizada es moderna y accesible, asegurando legibilidad y fácil reconocimiento del nombre de la marca.
+
+<div align="center">
+<img src="assets/chapter05/SafechildLogo.png" alt="logo safe child" width="800"></a><br>
+<br>
+</div>
+
+**Typography:**
+Se seleccionó una tipografía moderna, limpia y accesible, diseñada para ser legible en dispositivos móviles y de escritorio. La elección de la tipografía tiene como objetivo mejorar la experiencia de lectura y navegación, asegurando que toda la información relevante sea clara para los usuarios.
+
+**Nunito**
+
+<div align="center">
+<img src="assets/chapter05/tipografia.png"" alt="logo safe child" width="800"></a><br>
+<br>
+</div>
+
+Colors:
+
+La paleta de colores de SafeChild ha sido cuidadosamente seleccionada para transmitir una sensación de seguridad, confianza y serenidad. Estos tonos refuerzan la identidad visual de la plataforma y mejoran la experiencia del usuario, asegurando coherencia en todos los elementos gráficos.
+
+**#F7F6F6:** Utilizado como color de fondo neutro, este tono claro brinda una sensación de limpieza, orden y simplicidad, facilitando la lectura y reduciendo la fatiga visual.<br>
+**#4AADBE:** Este tono azul verdoso actúa como el color principal de la marca, evocando frescura, calma y confianza. Se aplica en botones, iconos destacados y elementos de navegación.<br>
+**#89CFD7:** Funciona como color complementario para aportar equilibrio visual. Su suavidad ayuda a destacar secciones secundarias sin robar protagonismo al contenido principal.<br>
+**#0D3A5A:** Este azul profundo garantiza una excelente legibilidad como color principal de texto. Además, aporta un contraste sobrio y profesional en toda la interfaz.<br>
+**#72C3CF:** Este color intermedio es empleado para generar dinamismo y variedad sin perder coherencia visual. Aparece en tarjetas informativas, íconos ilustrativos y transiciones.<br>
+**#ADE3E0:** Este tono claro y amigable refuerza la sensación de tranquilidad y cercanía. Se utiliza en fondos de secciones secundarias o elementos decorativos suaves.<br>
+
+<div align="center">
+<img src="assets/chapter05/colors.png" alt="logo safe child" width="800"></a><br>
+<br>
+</div>
+
+**Spacing:**
+Se utiliza un espaciado base de 4px para padding y margin en todos los elementos, lo que asegura una apariencia uniforme y ordenada en la interfaz. Este enfoque crea una estructura visual clara y organizada que facilita la navegación, mejorando la experiencia de usuario en dispositivos móviles y web.
+
 ### 5.1.2. Information Architecture 
+
+En SafeChild, buscamos ofrecer una plataforma intuitiva, segura y confiable para conectar a padres que buscan servicios de cuidado infantil y cuidadores que desean registrarse para ofrecer sus servicios. Debido a la naturaleza de los servicios que involucran cuidado infantil y transacciones seguras, la arquitectura de la información es clave para lograr nuestros objetivos. A continuación, se presenta el diseño y organización de la plataforma.
+
+<b> 1. Vista Home: </b>
+
+- Vista Previa de Cuidadores Disponibles: <br>
+  Muestra cuidadores destacados o populares para captar la atención de los padres que buscan servicios.
+
+- Registro de Cuidadores: <br>
+  Enlace directo para que nuevos cuidadores puedan registrarse en la plataforma y comenzar a ofrecer sus servicios.
+
+<b> 2. Buscar Cuidadores (Para Padres y Tutores): </b>
+
+- Categorías de Servicios: <br>
+  Sección que agrupa los servicios de cuidado infantil según las necesidades específicas: cuidado a tiempo completo, cuidado parcial, cuidado de niños con necesidades especiales, etc.
+
+- Filtros de Búsqueda: <br>
+  Herramientas que permiten a los padres filtrar cuidadores según criterios como experiencia, calificaciones, precio, ubicación y disponibilidad.
+
+- Vista Detallada de Perfiles: <br>
+  Cada cuidador cuenta con una página individual que muestra su experiencia, calificaciones, tarifas, disponibilidad y certificaciones.
+
+<b> 3. Registro de Cuidadores: </b>
+
+- Formulario de Registro: <br>
+  Formulario para que los cuidadores se registren en la plataforma, ingresando información como experiencia, habilidades, certificaciones y disponibilidad.
+
+- Gestión de Servicios: <br>
+  Una vez registrados, los cuidadores pueden crear o editar su perfil, subir certificaciones y gestionar su disponibilidad.
+
+- Historial de Servicios y Pagos: <br>
+  Los cuidadores pueden revisar un historial de los servicios que han realizado, las calificaciones obtenidas y los pagos recibidos.
+
+<b> 4. Reservar Servicios de Cuidado: </b>
+
+- Interfaz de Reserva: <br>
+  Una interfaz simple para que los padres seleccionen el cuidador, fecha y hora para reservar el servicio de cuidado infantil.
+
+- Vista Previa y Confirmación: <br>
+  Los padres pueden visualizar los detalles de la reserva antes de confirmar, incluyendo la tarifa total y la duración del servicio.
+
 ### 5.1.2.1. Organization Systems 
-### 5.1.2.2. Labelling Systems 
-### 5.1.2.3. SEO Tags and Meta Tags 
-### 5.1.2.4. Searching Systems 
-### 5.1.2.5. Navigation Systems 
+
+El sistema de organización de SafeChild está diseñado para brindar la mejor experiencia posible tanto para los padres que buscan contratar servicios como para los cuidadores que desean ofrecerlos.
+
+<b> 1. Categorización de la Información: </b>
+
+- Perfiles de Cuidadores: <br>
+  Categorizados por experiencia, tipo de cuidado (niños pequeños, cuidado especializado, cuidado nocturno) y calificaciones.
+
+- Servicios de Cuidado: <br>
+  Categorizados por tiempo completo, medio tiempo, ocasional, etc.
+
+<b> 2. Filtros y Búsqueda: </b>
+
+- Filtros para Padres: <br>
+  Los padres pueden filtrar los cuidadores según la ubicación, experiencia, precio, calificaciones, disponibilidad y otros parámetros.
+
+<b> 3. Interfaz de Usuario Intuitiva: </b>
+
+- Menú Principal: <br>
+  Un menú claro y accesible que incluye las secciones clave: Buscar Cuidadores, Registro de Cuidadores, Historial de Servicios, y Perfil de Usuario.
+
+<b> 4. Funcionalidades Específicas: </b>
+
+- Perfiles de Cuidadores: <br>
+  Cada cuidador tiene una página individual que muestra su experiencia, calificaciones, tarifas y disponibilidad, junto con una opción para reservar un servicio.
+
+- Reservas: <br>
+  Los padres pueden gestionar y ver sus reservas previas, y repetir servicios con cuidadores específicos desde su historial.
+
+### 5.1.2.2. Labelling Systems
+
+Para mejorar la navegación y comprensión, SafeChild utilizará un sistema de etiquetado claro y descriptivo. Ejemplos de etiquetas incluyen:
+
+- Buscar Cuidadores
+- Registrar como Cuidador
+- Reserva de Servicios
+- Perfiles de Cuidadores
+- Historial de Servicios
+
+### 5.1.2.3. SEO Tags and Meta Tags
+
+<div align="center">
+<img src="assets/chapter05/metamobile.png" alt="logo safe child" width="800"></a><br>
+<br>
+</div>
+
+**Insight:**
+
+Estos metadatos mantienen la coherencia de SEO y marca con la versión web de SafeChild. Aunque no influyen en los motores de búsqueda tradicionales, resultan útiles para indexación interna, análisis y optimización en la tienda (ASO). Además, desde la consola de Google Play puedes completar y afinar el título, la descripción, los íconos y las capturas de pantalla para mejorar aún más la visibilidad.
+
+### 5.1.2.4. Searching Systems
+
+El sistema de búsqueda dentro de la aplicaion permitirá a los padres y cuidadores encontrar la información que necesitan de manera rápida y eficaz.
+
+<b> 1. Búsqueda por Tipo de Cuidado: </b> <br>
+Los padres pueden buscar cuidadores por tipo de cuidado, como "cuidado nocturno", "cuidado a tiempo completo" o "cuidado de niños con necesidades especiales".
+
+<b> 2. Búsqueda por Disponibilidad: </b> <br>
+Se ofrece una búsqueda avanzada que permite a los padres buscar cuidadores según la disponibilidad en días y horarios específicos.
+
+<b> 3. Búsqueda por Calificaciones: </b> <br>
+Los padres pueden buscar cuidadores con las mejores calificaciones y opiniones de otros usuarios.
+
+
+### 5.1.2.5. Navigation Systems
+
+
+El sistema de navegación está diseñado para ofrecer una experiencia fluida, fácil de usar y segura para ambos segmentos (padres y cuidadores).
+
+<b> 1. Menú Principal: </b> <br>
+El menú principal incluirá enlaces a las secciones más importantes: Inicio, Buscar Cuidadores, Registro de Cuidadores, Historial de Servicios y Perfil.
+
+<b> 2. Navegación Contextual: </b> <br>
+Cada sección principal tendrá submenús específicos para ayudar a los usuarios a acceder a opciones más detalladas dentro de la plataforma, como filtros de búsqueda o ajustes de perfil.
+
+<b> 3. Botones de Acción Destacados: </b> <br>
+Botones llamativos como "Buscar Cuidadores", "Registrar como Cuidador" y "Reservar Servicio" estarán estratégicamente ubicados para facilitar la interacción.
+
+<b> 4. Búsqueda y Filtros Visibles: </b> <br>
+La barra de búsqueda y los filtros estarán siempre visibles para que los usuarios puedan ajustar rápidamente los resultados y encontrar cuidadores de acuerdo a sus preferencias.
+
+<b> 5. Flujo de Navegación Intuitivo: </b> <br>
+Desde la búsqueda hasta la reserva de servicios, se establecerá un flujo lógico y claro que guía a los usuarios en cada etapa, con mensajes de acción y señales visuales que facilitan el proceso.
+
+
 ### 5.1.3. Landing Page UI Design 
 ### 5.1.3.1. Landing Page Wireframe 
 ### 5.1.3.2. Landing Page Mock-up 
