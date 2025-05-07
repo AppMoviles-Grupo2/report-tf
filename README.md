@@ -411,21 +411,446 @@ Nuestro segmento objetivo abarca a todos aquellos padres y tutores que buscan so
 ## 6.1. Software Configuration Management
 
 ### 6.1.1. Software Development Environment Configuration 
-### 6.1.2. Source Code Management 
+
+Esta sección aborda la configuración de las herramientas necesarias para el desarrollo del software, organizadas de acuerdo con las distintas fases y actividades del proyecto.
+
+**Gestión de Proyectos**
+
+Para planificar y coordinar el desarrollo del software, incluyendo la asignación de tareas y el seguimiento del progreso, utilizamos:
+
+- Trello: Esta plataforma de gestión de proyectos basada en tableros nos ayuda a organizar tareas y colaborar en tiempo real, facilitando la visualización del avance y la coordinación entre los miembros del equipo.
+<td><img src="./assets/chapter06/trello.png" alt="auto" width="350"></td>
+
+  Link de Trello: [ Click aqui para ver el Trello](https://trello.com/invite/b/681b510bf50b705cf834a1d2/ATTI7e16229a5018f84fd61f1a2e59b3ed3a1CC3293D/agile-board-safechild-safegroup)
+
+**Diseño UX/UI**
+
+En esta sección nos centramos en la creación de interfaces atractivas e intuitivas, considerando las necesidades y preferencias de los usuarios. Las herramientas empleadas son:
+
+- Figma: Permite diseñar y compartir interfaces de usuario de manera colaborativa y eficiente.
+
+<td><img src="./assets/chapter06/figma.png" alt="auto" width="350"></td>
+
+  Link de figma: [ Click aqui para ver el Figma](https://www.figma.com/design/OsdXkbtYPJ2961luVVtQa4/SafeChild-Figma?node-id=11-2&t=ChaHyaCZm2qRNwnH-1)
+
+- Miro: Usado para la lluvia de ideas, definición de problemas y necesidades del cliente, así como la identificación de los Bounded Contexts del proyecto. Tambien se utlizó para crear diagramas UML y diagramas de flujo, ayudando a representar visualmente la arquitectura y los procesos del proyecto.
+
+<td><img src="./assets/chapter06/miro.png" alt="auto" width="200"></td>
+
+  Link de Miro:[ Click aqui para el Miro](https://miro.com/welcomeonboard/ejhTN05YVFhxa3p2b3IwTFdmWVI3R2p1TTJ0WXQ1N1RYZG5yY0xGVWI3a2xXOW5tR0JRamJ5YTVUREYxcjBUYzd3ZEZvR3ZzQW1XTlI0Zk5ITjlvZ044NThCUWdqSzB3MVB5aWU3UmJONi9XbTdZR2kybmNnemROVVo5MFNUSGRBS2NFMDFkcUNFSnM0d3FEN050ekl3PT0hdjE=?share_link_id=206065220670)
+
+- UXpressia: Herramienta para crear User Personas, Empathy Maps, Journey Maps e Impact Maps, facilitando una comprensión más profunda de los usuarios y sus necesidades.
+
+**Desarrollo de Software**
+
+Para el proceso de creación y programación del software móvil, utilizamos las siguientes herramientas y tecnologías:
+
+- Android Studio: Entorno de desarrollo oficial para Android que ofrece herramientas especializadas como emuladores, diseño visual de interfaces (UI), y compatibilidad directa con Kotlin. Permite una integración eficiente del ciclo de desarrollo, pruebas y despliegue de la aplicación móvil.
+
+<td><img src="./assets/chapter06/andoridst.png" alt="auto" width="200"></td>
+
+- GitHub: Plataforma para alojar el repositorio del proyecto y gestionar el control de versiones del código fuente y la documentación, facilitando la colaboración y el seguimiento de cambios.
+
+<td><img src="./assets/chapter06/github.png" alt="auto" width="200"></td>
+
+  Link: <https://github.com/>
+
+
+**Documentación de Software**
+
+La documentación técnica es crucial para el mantenimiento y comprensión del software. Utilizamos:
+
+- Markdown: Un lenguaje de marcado ligero y sencillo para crear documentos con formato, empleándose para redactar la documentación del proyecto de manera clara y estructurada.
+
+<td><img src="./assets/chapter06/md.png" alt="auto" width="200"></td>
+
+### 6.1.2. Source Code Management
+
+Durante el desarrollo de los sprints futuros, utilizaremos Git Flow para gestionar el desarrollo de nuevas características, realizar correcciones y preparar lanzamientos. Esta metodología proporciona una estructura organizada que mejora la colaboración y la comprensión del flujo de trabajo entre los desarrolladores. Al seguir Git Flow, garantizamos que todos los cambios se integren de manera eficiente, facilitando la coordinación del equipo y la entrega de un producto de alta calidad.
+
+**Repositorios GitHub**
+
+Los repositorios de GitHub que utilizaremos para cada uno de los productos del proyecto son los siguientes:
+
+- **Landing Page:** [Repositorio de GitHub - Landing Page]()
+- **Documentacion:** [Repositorio de GitHub - Report]()
+- **BackEnd API:** [Repositorio de GitHub - Backend API]()
+
+#### Implementación de Git Flow
+
+Git Flow se implementará como el **workflow principal** de control de versiones para gestionar eficientemente el desarrollo del software. La estructura de Git Flow organiza las ramas de la siguiente manera:
+
+- **Ramas Principales**:
+
+  - `master` o `main`: Contiene el código estable y listo para el despliegue en producción.
+  - `develop`: Rama de integración donde se consolidan las nuevas características que se preparan para el próximo lanzamiento.
+
+- **Ramas de Soporte**:
+
+  - **Feature branches:** Se crean desde `develop` para desarrollar nuevas características.
+
+    - Convención de nombres: `feature/[nombre-de-la-caracteristica]`
+    - Ejemplo:
+      ```bash
+      git checkout -b feature/autenticacion-usuario
+      git add .
+      git commit -m "feat: Implementa autenticación de usuario"
+      git push -u origin feature/autenticacion-usuario
+      ```
+
+  - **Release branches:** Se crean cuando una versión está lista para ser lanzada, permitiendo preparar la rama para la producción.
+
+    - Convención de nombres: `release/[version]`
+    - Ejemplo:
+      ```bash
+      git checkout -b release/1.0.0
+      ```
+
+  - **Hotfix branches:** Se utilizan para corregir problemas críticos en la rama `master` sin interrumpir el trabajo en `develop`.
+    - Convención de nombres: `hotfix/[version-fix]`
+    - Ejemplo:
+      ```bash
+      git checkout -b hotfix/1.0.1
+      git add .
+      git commit -m "fix: Corrige error crítico en autenticación"
+      git push -u origin hotfix/1.0.1
+      ```
+
+#### Flujo de Trabajo en Git Flow:
+
+1. **Desarrollo de Características (Feature)**: Las nuevas funcionalidades se desarrollan en ramas `feature` creadas a partir de `develop`. Una vez finalizadas, se fusionan de nuevo en `develop`.
+   ```bash
+   git checkout -b feature/[nombre-de-la-caracteristica]
+   git add .
+   git commit -m "feat: [descripcion-de-la-caracteristica]"
+   git push -u origin feature/[nombre-de-la-caracteristica]
+   ```
+
+**Convenciones de Commits**
+
+Para los nombres de los commits, usamos el estándar Conventional Commits, que proporciona una estructura clara para los mensajes en los commits, facilitando la colaboración y el seguimiento de cambios:
+
+- feat: Nueva característica
+
+```
+git commit -m "feat: [descripcion de la caracteristica]"
+```
+
+- fix: Corrección de errores
+
+```
+git commit -m "fix: [descripcion del error]"
+```
+
+- docs: Cambios en la documentación
+
+```
+git commit -m "docs: [descripcion de los cambios en la documentacion]"
+```
+
+- style: Cambios en el estilo
+
+```
+git commit -m "style: [descripcion de los cambios en el estilo que no afectan a la logica del codigo]"
+```
+
+- refactor: Refactorización del código
+
+```
+git commit -m "refactor: [descripcion de la refactorizacion]"
+```
+
+- test: Cambios en las pruebas
+
+```
+git commit -m "test: [descripcion de los cambios en las pruebas]"
+```
+
+- chore: Cambios en la configuración
+
+```
+git commit -m "chore: [descripcion de los cambios en la configuracion]"
+```
+
+Este modelo proporciona una estructura organizada que ayuda a los desarrolladores a entender el flujo de trabajo y colaborar de manera efectiva.
+
+
 ### 6.1.3. Source Code Style Guide & Conventions 
-### 6.1.4. Software Deployment Configuration 
+
+En el desarrollo de la app móvil de SafeChild utilizamos principalmente Kotlin, el Android SDK y librerías de Android Jetpack. Para garantizar la consistencia y calidad del código, se adoptan las siguientes convenciones:
+
+**Lenguajes y tecnologías**
+
+- **Kotlin:** <br> Lenguaje de programación moderno y conciso, totalmente interoperable con Java. Ofrece características de seguridad de tipo y null‑safety que reducen errores en tiempo de ejecución, junto con corutinas para manejo sencillo de operaciones asíncronas (por ejemplo llamadas a APIs o acceso a base de datos) sin bloqueos de la interfaz.
+- **Android SDK:** (API nivel mínimo acorde al mercado objetivo)
+<br>
+Conjunto de librerías y APIs base que permiten acceder a funcionalidades nativas de Android —como gestión de ciclo de vida de Activity/Fragment, dibujo en pantalla, acceso a sensores (GPS, cámara), almacenamiento, y servicios en segundo plano— asegurando compatibilidad con la mayoría de dispositivos en el mercado.
+- **Android Jetpack:** <br>Colección de bibliotecas y componentes recomendados por Google para simplificar patrones de arquitectura y acelerar el desarrollo: ViewModel, LiveData / StateFlow, Navigation, Hilt (DI), Retrofit (HTTP), Room (persistencia).
+- **Jetpack Compose** (UI declarativa):<br> Nuevo toolkit declarativo para construir interfaces en Kotlin puro. Permite describir la UI como funciones @Composable que reaccionan automáticamente a cambios de estado, reduciendo el boilerplate de XML y mejorando la legibilidad. Integra fácilmente animaciones y theming.
+- **XML Layouts** (UI tradicional):<br>
+Sistema basado en archivos .xml donde se definen jerarquías de vistas (View, ViewGroup) y estilos. Requiere findViewById o View Binding/DataBinding para conectar con el código. Ofrece separación clara entre vista y lógica, y sigue siendo compatible con la mayoría de librerías y patrones existentes.
+
+**Convenciones generales de Kotlin**
+
+- **Indentación:** 4 espacios por nivel.
+- **Sin punto y coma** al final de líneas.
+- **Nombres de ficheros:** Deben coincidir con el nombre de la clase o función pública que contienen.
+
+```
+// Archivo: LoginViewModel.kt
+class LoginViewModel @HiltViewModel constructor(
+    private val authRepo: AuthRepository
+) : ViewModel() { … }
+'
+```
+
+**Clases y objetos:** UpperCamelCase.
+
+**Funciones y propiedades:** lowerCamelCase.
+
+**Constantes:** UPPER_SNAKE_CASE y declaradas en companion object o en un objeto separado.
+
+```
+companion object {
+  const val BASE_URL = "https://api.safechild.com/"
+}
+```
+
+**Paquetes:** todo en minúsculas, separados por puntos, reflejando la capa y la funcionalidad.
+
+```
+com.safechild.mobile.ui.login
+com.safechild.mobile.data.payments
+com.safechild.mobile.domain.appointments
+```
+
+**Arquitectura y organización de carpetas**
+
+**Patrón MVVM**  (Model–View–ViewModel)
+
+```
+
+├─ data/           // Repositorios, mappers y fuentes de datos
+├─ domain/         // Use cases, entidades y lógica de negocio
+├─ ui/             // Activities/Fragments o Composables, adapters
+├─ di/             // Módulos de Hilt para inyección de dependencias
+└─ utils/          // Extensiones y helpers generales
+```
+**Feature modules (opcional):**  agrupar funcionalidades grandes en módulos Gradle independientes
+
+
+**UI (Jetpack Compose o XML)** 
+**Composables:** 
+
+Funciones anotadas con @Composable, UpperCamelCase.
+
+Parámetros nombrados y con valores por defecto cuando sea posible.
+
+kotlin
+Copiar
+Editar
+
+```
+@Composable
+fun ReservationItem(reservation: Reservation, onClick: () -> Unit) { … }
+```
+
+**Layouts XML:** 
+
+Archivos en res/layout/ con nombre feature_action_screen.xml (snake_case).
+
+IDs de vistas en snake_case: @+id/btn_confirm_reservation.
+
+**Resumen**
+
+- Estructura del Proyecto: Mantener una estructura clara y consistente para los módulos, componentes y servicios.
+- Nombres de Archivos: Utilizar el formato kebab-case para nombres de archivos y carpetas.
+- Servicios: Seguir el patrón de inyección de dependencias para gestionar servicios y mantener una alta cohesión y bajo acoplamiento.
+
+### 6.1.4. Software Deployment Configuration
+Para el despliegue de la página de inicio del proyecto, hemos optado por **GitHub Pages**, una plataforma que ofrece alojamiento gratuito para sitios web estáticos directamente desde un repositorio de GitHub. Este enfoque permite gestionar y publicar de manera sencilla las versiones del proyecto, garantizando que el sitio web esté accesible en todo momento. A continuación, se detallan los pasos específicos para configurar y realizar el despliegue.
+
+#### Pasos para el despliegue en GitHub Pages:
+
+1. **Creación del repositorio en GitHub:**
+
+   - Primero, se debe crear un nuevo repositorio en GitHub. Asegúrate de que el repositorio sea público para que GitHub Pages pueda generar y alojar el sitio.
+   - Clona el repositorio a tu máquina local para realizar los desarrollos necesarios.
+   - **Ejemplo:**
+     ```bash
+     git clone https://github.com/landingmoviles
+
+2. **Desarrollo del sitio estático:**
+
+   - El desarrollo del **Landing Page** se realiza utilizando HTML, CSS y JavaScript. Estos archivos deben estar en la raíz del repositorio o en la carpeta `docs`, dependiendo de la configuración elegida para GitHub Pages.
+
+3. **Configuración de GitHub Pages:**
+
+   - Dirígete a la configuración del repositorio en GitHub:
+     - Ve a la pestaña `Settings`.
+     - Desplázate hacia abajo hasta la sección **GitHub Pages**.
+     - En el menú desplegable "Source", selecciona la rama `main` o `master` y la carpeta raíz (`/root`) o `docs/` si los archivos están organizados dentro de esa carpeta.
+   - Una vez seleccionado, GitHub Pages generará una URL para acceder a tu sitio web.
+
+4. **Subir y actualizar los archivos al repositorio:**
+
+   - Una vez que los archivos del proyecto estén listos, súbelos al repositorio. Para ello, puedes usar los siguientes comandos:
+     ```bash
+     git add .
+     git commit -m "Subida inicial del proyecto"
+     git push origin main
+     ```
+
+5. **Verificar el despliegue:**
+   - Después de haber configurado GitHub Pages y haber subido los archivos, espera unos minutos para que el sitio se despliegue. GitHub te proporcionará un enlace donde podrás verificar que el sitio web está activo.
+   - En este caso, el **Link del Landing Page desplegado** es:  
+     [Landing Page SafeChild]()
 
 ## 6.2. Landing Page & Mobile Application Implementation 
 
 ### 6.2.1. Sprint 1
 ### 6.2.1.1. Sprint Planning 1
+<table>
+  <tr>
+    <th> Sprint # </th>
+    <th> Sprint 1 </th>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;" colspan="2"> Sprint Planning Background </td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;"> Date </td>
+    <td> 07/05/2025 </td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;"> Time </td>
+    <td> 19:00 horas (GMT-5) </td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;"> Location </td>
+    <td> Virtual (Google Meet) </td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;"> Prepared By </td>
+    <td> Gutierrez Garcia, Jose Eduardo </td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;"> Attendees (to planning meeting) </td>
+    <td>
+      Bernaola Pérez, André Arturo<br>
+      Gutierrez Garcia, Jose Eduardo<br>
+      Sanchez Ignacio, Jefrey Martin<br>
+      Velarde Luyo, Piero Alberto
+    </td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;"> Sprint 1 Review Summary </td>
+    <td> Al este ser nuestro primer sprint de desarrollo no existe un review summary del sprint </td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;"> Sprint 1 Retrospective Summary </td>
+    <td> Ya que es nuestro primer sprint aún no identificamos ningun plane de mejora. </td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;" colspan="2"> Sprint Goal & User Stories </td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;"> Sprint 1 Goal </td>
+    <td> Diseñar e implementar las secciones clave de la Landing Page y las pantallas de onboarding y registro en la app móvil, para que los usuarios puedan conocer la propuesta de valor de SafeChild y crear su cuenta desde el primer acceso. </td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;"> Sprint 1 Velocity </td>
+    <td> <strong>8 </strong><br> El equipo ha establecido una capacidad de 8 Story Points para este Sprint, en un tiempo de 2 semanas basada en la experiencia y la carga de trabajo estimada. </td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;"> Sum of Story Points </td>
+    <td> 8 </td>
+  </tr>
+</table>
+
 ### 6.2.1.2. Sprint Backlog 1
+
+| id   | Title                  | Id  | Title                                                    | Description                                                                                                   | Estimations(Hours) | Assigned To   | Status(To-do /InProcess/ToReview/Done) |
+| ---- | ---------------------- | --- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------ | ------------- | -------------------------------------- |
+| US12 | Barra de navegación en la Landing Page     | TS01 |Barra de navegación en la Landing Page (Desarrollado en HTML, CSS y JS).| Implementación del header y la barra de navegación, desarrollados en HTML, CSS y JS con diseño responsive. | 8                  | Diego | Done                                   |
+| US13 | Sección "Why Choose Us?"    | TS02 | Sección "Why Choose Us?" (Desarrollado en HTML, CSS y JS).|Implementación de la sección "Why Choose Us", con diseño responsive y optimización en HTML, CSS y JS. | 6                | David | Done                                   |
+| US03 | Sección de suscripciones           | TS03 | Sección de suscripciones (Desarrollado en HTML, CSS y JS).| Desarrollo de la sección de suscripciones, con integración de opciones de pago, en HTML, CSS y JS.           | 4                 | Jose   | Done                                   |
+| US04 | Reseñas de clientes | TS04 | Reseñas de clientes (Desarrollado en HTML, CSS y JS).| Implementación de la sección de reseñas de clientes, con diseño responsive en HTML, CSS y JS.| 4 | Ario & Gabriel | Done
+
+Este enfoque asegura que el equipo se concentre en las partes esenciales de la Landing Page, permitiendo que los usuarios exploren la plataforma de manera efectiva.
+
 ### 6.2.1.3. Development Evidence for Sprint Review 
-### 6.2.1.4. Testing Suite Evidence for Sprint Review 
-### 6.2.1.5. Execution Evidence for Sprint Review 
+
+Durante el Sprint 1, se lograron avances significativos en la implementación de las principales secciones de la página de inicio del proyecto. El equipo se centró en completar las funcionalidades clave, incluyendo la sección Home, el Navbar, el apartado de "Why Choose Us?", las reseñas, el pie de página, y las suscripciones. Estos componentes son fundamentales para asegurar que el landing page esté listo para su despliegue en GitHub Pages. A continuación se detallan los commits correspondientes a las tareas implementadas en este sprint.
+
+| **Repository** | **Branch** | **Commit Id**                            | **Commit Message**                                                 | **Commit Message Body**                                             | **Commited on (Date)** |
+| -------------- | ---------- | ---------------------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------- | ---------------------- |
+| Landing-page   | Develop    | 55374c84feddb94a8ea197a2b0f0ee36ede9c450 | git commit                                              | Agrego el modelo del landing page y el apartado de reseñas y footer | 06/09/2024             |
+| Landing-page   | Develop    | b0b34b6bdfd01cc0133ca3d9084c9b585af60b59 | git commit feat: implementation of the home section and the header | Se implementó la sección Home y el navbar                           | 09/04/2024             |
+| Landing-page   | Develop    | 921d85b952c47c44c9151eed615b0c6eb32a544f | git commit feat: section subscription added                        | Se implementó la sección de suscripción                             | 13/03/2024             |
+| Landing-page   | Develop    | 83c5dc7a9de846dcae063591e5fe48bc6a29de5e | feat: Update Landing                                               | Se implementó "Why Choose Us?"                                      | 09/09/2024             |
+
+### 6.2.1.4. Testing Suite Evidence for Sprint Review
+
+
+Durante el Sprint 1, se implementaron una serie de pruebas unitarias (Unit Tests) que verificaron el correcto funcionamiento de las principales funcionalidades desarrolladas para la página de inicio. Estas pruebas son fundamentales para asegurar la estabilidad del código y la integridad de las nuevas características introducidas, permitiendo identificar posibles fallos antes del despliegue final. A continuación se presenta un resumen de los commits relacionados con los tests desarrollados y una explicación detallada de cada uno.
+
+| **Repository** | **Branch** | **Commit Id**                            | **Commit Message**                  | **Commit Message Body**                      | **Commited on (Date)** |
+| -------------- | ---------- | ---------------------------------------- | ----------------------------------- | -------------------------------------------- | ---------------------- |
+| Unit-Test      | main       | aed6eb913afc1e9a16dc81bf35b41423e90197eb | git commit feat: Unit test Sprint 1 | Se desarrollaron los Unit Tests del Sprint 1 | 09/09/2024             |
+
+### **5.2.1.5. Execution Evidence for Sprint Review**
+
+Durante el Sprint 1, el equipo logró desarrollar y desplegar la página de inicio (landing page) del proyecto. Las principales características implementadas incluyen el **Navbar**, la sección de **Home**, la sección **Why Choose Us?**, las **suscripciones**, las **reseñas**, y el **footer con el apartado de contacto**. Este progreso asegura que el sitio web cuenta con una estructura básica y funcional que puede ser mejorada en los sprints posteriores.
+
+La implementación fue exitosa y se cumplió con el objetivo de entregar una versión funcional del landing page. El sitio fue desplegado utilizando GitHub Pages, permitiendo que el equipo de desarrollo y los stakeholders puedan visualizar los resultados directamente desde un navegador web.
+
+A continuación, presentamos capturas de pantalla de las principales vistas implementadas en este Sprint:
+
+- **Navbar**:
+
+  ![Navbar](Images/nabvar-landing-page.png)
+
+- **Home**:
+
+  ![Home](Images/home-landingPage.png)
+
+- **Why Choose Us?**:
+
+  ![Why Choose Us?](Images/Why%20Choose%20Us-landingPage.png)
+
+- **Subscriptions**:
+
+  ![Subscriptions](Images/Suscription-landingpage.png)
+
+- **Reviews**:
+
+  ![Reviews](Images/review-landingPage.png)
+
+- **Footer and Contact**:
+
+  ![Footer and Contact](Images/footer-contact-landingPage.png)
+
+Link del landing page desplegado:
+
 ### 6.2.1.6. Services Documentation Evidence for Sprint Review 
+
+En el alcance del sprint 1, se ha dado prioridad al desarrollo de la landing page y de la aplicación movil, lo que significa que en este sprint no se observa la utilización de servicios web.
+
 ### 6.2.1.7. Software Deployment Evidence for Sprint Review 
+
+Durante este sprint, se ha completado el desarrollo de la landing page asi como la aplicación movil. Para el despliegue, se utilizaron las siguientes herramientas y servicios:
+
+  <li>Git: Sistema de control de versiones que utilizamos para trabajar de forma colaborativa y monitorear las versiones de la aplicación web en un repositorio remoto.</li>
+  <li>Gitflow: Este flujo de trabajo colaborativo nos ha permitido dividir el trabajo en ramas dentro de nuestro repositorio, lo que facilita la colaboración en el desarrollo.</li>
+  <li>GitHub: La plataforma que nos proporcionó la herramienta para crear nuestro repositorio y almacenar las versiones de nuestro proyecto.</li>
+  <li>GitHub Pages: Para desplegar la Landing page, el cual nos sirvio para, a partir de un código en un repositorio poder desplegar la página </li>
+
 ### 6.2.1.8. Team Collaboration Insights during Sprint
+
+Para llevar a cabo este proyecto se usaron distintas herramientas como Visual Studio Code; junto con manejo de versiones en Git. En este caso se dividio la landing page y la aplicacion movil ambas mostradas anteriormente en sectores, a partir de esto cada uno presentó su parte y luego un miembro juntó las partes para finalmente tener el resultado deseado.
+
+<img src="./assets/Chapter06/commit1.png">
 
 ----
 
