@@ -770,25 +770,11 @@ Para el despliegue de la página de inicio del proyecto, hemos optado por **GitH
 
 ### 6.2.1.2. Sprint Backlog 1
 
-| id   | Title                  | Id  | Title                                                    | Description                                                                                                   | Estimations(Hours) | Assigned To   | Status(To-do /InProcess/ToReview/Done) |
-| ---- | ---------------------- | --- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------ | ------------- | -------------------------------------- |
-| US12 | Barra de navegación en la Landing Page     | TS01 |Barra de navegación en la Landing Page (Desarrollado en HTML, CSS y JS).| Implementación del header y la barra de navegación, desarrollados en HTML, CSS y JS con diseño responsive. | 8                  | Diego | Done                                   |
-| US13 | Sección "Why Choose Us?"    | TS02 | Sección "Why Choose Us?" (Desarrollado en HTML, CSS y JS).|Implementación de la sección "Why Choose Us", con diseño responsive y optimización en HTML, CSS y JS. | 6                | David | Done                                   |
-| US03 | Sección de suscripciones           | TS03 | Sección de suscripciones (Desarrollado en HTML, CSS y JS).| Desarrollo de la sección de suscripciones, con integración de opciones de pago, en HTML, CSS y JS.           | 4                 | Jose   | Done                                   |
-| US04 | Reseñas de clientes | TS04 | Reseñas de clientes (Desarrollado en HTML, CSS y JS).| Implementación de la sección de reseñas de clientes, con diseño responsive en HTML, CSS y JS.| 4 | Ario & Gabriel | Done
 
-Este enfoque asegura que el equipo se concentre en las partes esenciales de la Landing Page, permitiendo que los usuarios exploren la plataforma de manera efectiva.
 
 ### 6.2.1.3. Development Evidence for Sprint Review 
 
-Durante el Sprint 1, se lograron avances significativos en la implementación de las principales secciones de la página de inicio del proyecto. El equipo se centró en completar las funcionalidades clave, incluyendo la sección Home, el Navbar, el apartado de "Why Choose Us?", las reseñas, el pie de página, y las suscripciones. Estos componentes son fundamentales para asegurar que el landing page esté listo para su despliegue en GitHub Pages. A continuación se detallan los commits correspondientes a las tareas implementadas en este sprint.
 
-| **Repository** | **Branch** | **Commit Id**                            | **Commit Message**                                                 | **Commit Message Body**                                             | **Commited on (Date)** |
-| -------------- | ---------- | ---------------------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------- | ---------------------- |
-| Landing-page   | Develop    | 55374c84feddb94a8ea197a2b0f0ee36ede9c450 | git commit                                              | Agrego el modelo del landing page y el apartado de reseñas y footer | 06/09/2024             |
-| Landing-page   | Develop    | b0b34b6bdfd01cc0133ca3d9084c9b585af60b59 | git commit feat: implementation of the home section and the header | Se implementó la sección Home y el navbar                           | 09/04/2024             |
-| Landing-page   | Develop    | 921d85b952c47c44c9151eed615b0c6eb32a544f | git commit feat: section subscription added                        | Se implementó la sección de suscripción                             | 13/03/2024             |
-| Landing-page   | Develop    | 83c5dc7a9de846dcae063591e5fe48bc6a29de5e | feat: Update Landing                                               | Se implementó "Why Choose Us?"                                      | 09/09/2024             |
 
 ### 6.2.1.4. Testing Suite Evidence for Sprint Review
 
@@ -797,7 +783,7 @@ Durante el Sprint 1, se implementaron una serie de pruebas unitarias (Unit Tests
 
 | **Repository** | **Branch** | **Commit Id**                            | **Commit Message**                  | **Commit Message Body**                      | **Commited on (Date)** |
 | -------------- | ---------- | ---------------------------------------- | ----------------------------------- | -------------------------------------------- | ---------------------- |
-| Unit-Test      | main       | aed6eb913afc1e9a16dc81bf35b41423e90197eb | git commit feat: Unit test Sprint 1 | Se desarrollaron los Unit Tests del Sprint 1 | 09/09/2024             |
+| Unit-Test      | main       | a | a | a | 09/05/2025             |
 
 ### **5.2.1.5. Execution Evidence for Sprint Review**
 
