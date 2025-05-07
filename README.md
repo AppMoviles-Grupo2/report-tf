@@ -472,7 +472,7 @@ Durante el desarrollo de los sprints futuros, utilizaremos Git Flow para gestion
 
 Los repositorios de GitHub que utilizaremos para cada uno de los productos del proyecto son los siguientes:
 
-- **Landing Page:** [Repositorio de GitHub - Landing Page]()
+- **Landing Page:** [Repositorio de GitHub - Landing Page](https://upc-pre-202501-1acc0238-356-safegroup.github.io/SafeChild_LandingPage.github.io/)
 - **Documentacion:** [Repositorio de GitHub - Report]()
 - **BackEnd API:** [Repositorio de GitHub - Backend API]()
 
@@ -659,7 +659,7 @@ fun ReservationItem(reservation: Reservation, onClick: () -> Unit) { … }
 
 Archivos en res/layout/ con nombre feature_action_screen.xml (snake_case).
 
-IDs de vistas en snake_case: @+id/btn_confirm_reservation.
+IDs de vistas en snake_case:``` @+id/btn_confirm_reservation.```
 
 **Resumen**
 
@@ -678,7 +678,7 @@ Para el despliegue de la página de inicio del proyecto, hemos optado por **GitH
    - Clona el repositorio a tu máquina local para realizar los desarrollos necesarios.
    - **Ejemplo:**
      ```bash
-     git clone https://github.com/landingmoviles
+     git clone https://upc-pre-202501-1acc0238-356-safegroup.github.io/SafeChild_LandingPage.github.io/
 
 2. **Desarrollo del sitio estático:**
 
@@ -704,7 +704,7 @@ Para el despliegue de la página de inicio del proyecto, hemos optado por **GitH
 5. **Verificar el despliegue:**
    - Después de haber configurado GitHub Pages y haber subido los archivos, espera unos minutos para que el sitio se despliegue. GitHub te proporcionará un enlace donde podrás verificar que el sitio web está activo.
    - En este caso, el **Link del Landing Page desplegado** es:  
-     [Landing Page SafeChild]()
+     [Landing Page SafeChild](https://upc-pre-202501-1acc0238-356-safegroup.github.io/SafeChild_LandingPage.github.io/)
 
 ## 6.2. Landing Page & Mobile Application Implementation 
 
@@ -831,7 +831,7 @@ A continuación, presentamos capturas de pantalla de las principales vistas impl
 
   ![Footer and Contact](Images/footer-contact-landingPage.png)
 
-Link del landing page desplegado:
+Link del landing page desplegado: https://upc-pre-202501-1acc0238-356-safegroup.github.io/SafeChild_LandingPage.github.io/
 
 ### 6.2.1.6. Services Documentation Evidence for Sprint Review 
 
