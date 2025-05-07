@@ -910,88 +910,8 @@ El diagrama ilustra el despliegue de un sistema distribuido conformado por disti
 ![Deployment Diagram](Images/C4%20Model/DeploymentDiagram.png)
 
 ## 4.2. Tactical-Level Domain-Driven Design
-### 4.2.1. Bounded Context: Notifications
-#### 4.2.1.1. Domain Layer
+### 4.2.1. Bounded Context: User Managent
 
-## Entidades
-
-### Notificación
-Esta entidad representa una notificación que se envía a los usuarios (padres, cuidadores, administradores).
-
-**Atributos:**
-- `id`: Identificador único de la notificación.
-- `mensaje`: El contenido del mensaje.
-- `tipo`: Tipo de notificación (ej. alerta, recordatorio, etc.).
-- `fecha_creación`: Fecha en la que se generó la notificación.
-- `estado`: Estado de la notificación (`enviada`, `pendiente`, `leída`).
-
-### Usuario
-Representa a los usuarios que recibirán la notificación (padre, cuidador, administrador).
-
-**Atributos:**
-- `id_usuario`: Identificador del usuario.
-- `nombre`: Nombre del usuario.
-- `email`: Correo electrónico o información de contacto.
-
-## Reglas de negocio
-
-1. Validar si el usuario tiene configurada una notificación activada para el tipo de mensaje.
-2. Determinar la frecuencia o el canal (email, app) en el que se enviará la notificación.
-
-#### 4.2.1.2. Interface Layer
-
-## API de Notificaciones
-
-**Endpoints:**
-
-* `POST /notificaciones`: Crea una nueva notificación.
-* `GET /notificaciones/{id}`: Obtiene los detalles de una notificación específica identificada por `{id}`.
-* `GET /notificaciones/usuario/{id_usuario}`: Recupera las notificaciones pendientes de un usuario específico identificado por `{id_usuario}`.
-
-## Interfaces de usuario (UI)
-
-* Mostrar las notificaciones en la aplicación móvil o web.
-* Ofrecer opciones para activar/desactivar notificaciones.
-
-#### 4.2.1.3. Application Layer
-
-## Servicio de Notificaciones
-
-* **Crear Notificación:** Llama a la capa de dominio para crear una nueva notificación.
-* **Enviar Notificación:** Orquesta el envío de la notificación a través de los diferentes canales disponibles (ej., email, aplicación móvil).
-* **Gestionar Preferencias:** Permite a los usuarios modificar sus preferencias de notificación, como el tipo de notificación que desean recibir, la frecuencia de las notificaciones y el canal preferido.
-
-## Reglas de Orquestación
-
-* **Verificar envío:** Determina si las notificaciones deben ser enviadas a un usuario específico basándose en su perfil y las configuraciones de notificación previas.
-
-#### 4.2.1.4. Infrastructure Layer
-
-## Base de Datos
-
-* **Tabla de Notificaciones:** Almacena la información de todas las notificaciones generadas por el sistema.
-* **Tabla de Preferencias de Notificación:** Guarda las configuraciones de cada usuario sobre los tipos de notificaciones que desean recibir y cómo prefieren recibirlas.
-
-## Servicios Externos
-
-* **Proveedor de Correo:** Servicio externo encargado del envío de notificaciones a través de correo electrónico.
-* **Proveedor de Push Notifications:** Servicio externo utilizado para enviar notificaciones push directamente a la aplicación móvil de los usuarios.
-
-#### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
-
-![Bounded Context Software Architecture Component Level Diagrams](Images/Bounded%20Context/imagen4.2.1.5.png)
-
-#### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
-
-![Bounded Context Software Architecture Code Level Diagrams](Images/Bounded%20Context/imagen4.2.1.6.png)
-
-##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
-
-![Bounded Context Domain Layer Class Diagrams](Images/Bounded%20Context/imagen4.2.1.6.1.png)
-
-##### 4.2.1.6.2. Bounded Context Database Design Diagram
-
-![Bounded Context Database Design Diagram](Images/Bounded%20Context/imagen4.2.1.6.2.png)
 
 ### 4.2.2. Bounded Context: Appoiments
 
