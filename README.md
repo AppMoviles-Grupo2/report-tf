@@ -994,15 +994,95 @@ El diagrama ilustra el despliegue de un sistema distribuido conformado por disti
 ### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams 
 ### 4.2.1.6.2. Bounded Context Database Design Diagram
 
-### 4.2.2.   Bounded Context: Bounded Context: Payments
-### 4.2.2.1. Domain Layer  
-### 4.2.2.2.  Interface Layer 
-### 4.2.2.3.  Application Layer 
-### 4.2.2.4. Infrastructure Layer 
-### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams 
-### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams 
-### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams 
-### 4.2.2.6.2. Bounded Context Database Design Diagram
+### 4.2.2. Bounded Context: Payments
+
+En este bounded context aplicado mediante un patrón en capas con CQRS, se modela todo el ciclo de vida de una transacción financiera: desde su creación hasta la facturación, el reembolso y la conciliación con un gateway de pagos genérico. Cada capa tiene responsabilidades claras y se mantiene la separación entre comandos y consultas.
+
+### 4.2.2.1. Domain Layer
+
+En la capa de dominio de este contexto reside la lógica de negocio pura: entidades, agregados, objetos de valor y servicios de dominio que garantizan invariantes como idempotencia, validación de límites y políticas de reembolso.
+
+| **Elemento**                       | **Descripción**                                                                                       |
+|------------------------------------|-------------------------------------------------------------------------------------------------------|
+| **Aggregate: Payment**             | Raíz que encapsula una transacción: atributos (monto, método, estado) y comportamientos (authorize, capture, refund). |
+| **Entity: Invoice**                | Documento de cargo asociado a un pago exitoso; calcula total = subtotal + comisión.                   |
+| **Entity: Refund**                 | Registro de devolución; valida elegibilidad según política.                                           |
+| **Value Object: Money**            | Representa de modo inmutable monto y moneda.                                                          |
+| **Value Object: PaymentMethod**    | Encapsula detalles del medio de pago (tipo, token).                                                   |
+| **Value Object: PaymentStatus**    | Enum de estados: PENDING, SUCCEEDED, FAILED, REFUNDED.                                                |
+| **Domain Service: FeeCalculator**  | Calcula la comisión aplicable a un `Payment`.                                                         |
+| **Domain Service: ReconciliationService** | Compara registros internos vs. reportes del gateway para detectar discrepancias.                |
+
+
+
+### 4.2.2.2. Interface Layer
+
+La capa de interfaz expone la API REST que consumen las aplicaciones móviles (y otros sistemas) y define los contratos de entrada. No contiene lógica de negocio, sino validaciones sintácticas y mapeo a comandos/consultas.
+
+| **Controlador**            | **Ruta**                         | **Verbo HTTP** | **Funcionalidad**                              |
+|----------------------------|----------------------------------|----------------|------------------------------------------------|
+| `PaymentsController`       | `/api/v1/payments`               | POST           | `CreatePaymentRequest` → genera comando CreatePaymentCommand. |
+| `PaymentsController`       | `/api/v1/payments/{id}`          | GET            | `GetPaymentByIdQuery` → retorna estado y detalles. |
+| `PaymentsController`       | `/api/v1/payments/{id}/refund`   | POST           | `RefundPaymentRequest` → genera comando RefundPaymentCommand. |
+
+
+
+### 4.2.2.3. Application Layer
+
+Aquí se orquesta CQRS:
+- **Command Handlers** reciben y procesan comandos que modifican el estado.
+- **Query Handlers** atienden consultas de lectura.
+
+No aplican reglas de negocio complejas (estas residen en el Domain Layer), pero coordinan servicios de dominio e infraestructura.
+
+#### Command Handlers
+
+| **Clase**                         | **Responsabilidad**                                                                 |
+|-----------------------------------|-------------------------------------------------------------------------------------|
+| `CreatePaymentCommandHandler`     | Valida comando, crea `Payment` e `Invoice`, pide autorización al gateway.          |
+| `ConfirmPaymentCommandHandler`    | Maneja resultado de autorización, marca `Payment` como SUCCEEDED, publica evento.   |
+| `RefundPaymentCommandHandler`     | Valida política de reembolso, crea `Refund`, solicita operación al gateway.         |
+
+#### Query Handlers
+
+| **Clase**                       | **Responsabilidad**                                           |
+|---------------------------------|---------------------------------------------------------------|
+| `GetPaymentByIdQueryHandler`    | Recupera y devuelve el estado y los detalles de un `Payment`. |
+| `GetAllPaymentsQueryHandler`    | Lista pagos de un usuario o de todo el sistema.              |
+
+---
+
+### 4.2.2.4. Infrastructure Layer
+
+Implementa los repositorios (persistencia) y adaptadores a servicios externos (gateway genérico, mensajería, notificaciones).
+
+| **Componente**               | **Tipo**             | **Responsabilidad**                                                     |
+|------------------------------|----------------------|-------------------------------------------------------------------------|
+| `PaymentRepositoryImpl`      | Repositorio (JPA)    | Persiste y consulta entidades `Payment`.                                |
+| `InvoiceRepositoryImpl`      | Repositorio (JPA)    | Persiste y consulta entidades `Invoice`.                                |
+| `RefundRepositoryImpl`       | Repositorio (JPA)    | Persiste y consulta entidades `Refund`.                                 |
+| `PaymentGatewayAdapter`      | Servicio externo     | Envía solicitudes de authorization, capture y refund a gateway genérico. |
+| `NotificationServiceImpl`    | Servicio interno     | Envía notificaciones push o mensajes a otros bounded contexts.           |
+| `EventPublisherImpl`         | Bus de mensajes      | Publica eventos de dominio (PaymentCreated, PaymentSucceeded, etc.).     |
+
+### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+El diagrama de componentes muestra la arquitectura del bounded context de Payments, incluyendo los módulos y sus interacciones. Se muestra el uso del patrón CQRS, donde los comandos y consultas están separados.
+![Payments Component Level Diagram](Images/C4%20Model/components/payments.png)
+
+### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
+### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+Se han definido las siguientes clases en el Domain Layer para este bounded context:
+![Payments Domain Layer Class Diagrams](Images/Bounded_Context/class%20diagrams/payments_domain.png)
+
+Adicionalmente, se han definido las siguientes clases en la Infrastructure Layer:
+![Payments Infrastructure Layer Class Diagram](Images/Bounded_Context/class%20diagrams/payments_infrastructure.png)
+
+### 4.2.1.6.2. Bounded Context Database Design Diagram
+
+Se han definido las siguientes tablas en la base de datos para este bounded context:
+![Payments Database Design Diagram](Images/Bounded_Context/database%20diagrams/payments.png)
 
 
 ### 4.2.3.   Bounded Context: Appointments
