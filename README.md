@@ -3,7 +3,7 @@
 ---
 
 <p align="center">
-    <strong>Universidad Peruana de Ciencias Aplicadas (UPC)</strong><br>    
+    <strong>Universidad Peruana de Ciencias Aplicadas (UPC)</strong><br>  
     <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png"></img><br>
     <strong>Carrera de Ingeniería de Software - Ciclo VI</strong><br><br>
     <strong>Aplicaciones para Dispositivos Móviles - 1ACC0238</strong><br>
@@ -51,11 +51,13 @@
 <br>
 
 ---
+
 # Registro de Versiones del Informe
 
-| Versión | Fecha | Autor | Descripción de la modificación |
-|----|----|----|----|
-| TB1 | 25/04/2025 | SafeGroup | Redacción de los Capítulos I: Presentación, II: Requirements Elicitation & Analysis, III: Requirements Specification, IV: Solution Software Design. |
+
+| Versión | Fecha      | Autor     | Descripción de la modificación                                                                                                                       |
+| -------- | ---------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| TB1      | 25/04/2025 | SafeGroup | Redacción de los Capítulos I: Presentación, II: Requirements Elicitation & Analysis, III: Requirements Specification, IV: Solution Software Design. |
 
 # Project Report Collaboration Insights
 
@@ -64,25 +66,26 @@
 Durante la fase de elaboración del informe, se realizaron las siguientes actividades:
 
 - Se crearon y redactaron los contenidos asignados a cada miembro utilizando formato Markdown, y se realizaron "Conventional Commits" para registrar el progreso en el repositorio.
-
--  Se generaron los recursos necesarios y agregaron las imagenes al repositorio en la carpeta "assets" en cada rama del informe.
-
+- Se generaron los recursos necesarios y agregaron las imagenes al repositorio en la carpeta "assets" en cada rama del informe.
 - Se organizaron reuniones para coordinar el avance de los componentes del informe y para proporcionar actualizaciones sobre los progresos del Sprint 1, que se centró en el desarrollo del diseño del software. <br>
-![Insight1](./assets/Introduction/insight1.png)
-![Insight2](./assets/Introduction/insight2.png)
-![Insight4](./assets/Introduction/insight4.png)
-![Insight3](./assets/Introduction/insight3.png)
-![Insight5](./assets/Introduction/insight5.png)
+  ![Insight1](./assets/Introduction/insight1.png)
+  ![Insight2](./assets/Introduction/insight2.png)
+  ![Insight4](./assets/Introduction/insight4.png)
+  ![Insight3](./assets/Introduction/insight3.png)
+  ![Insight5](./assets/Introduction/insight5.png)
 
 # Contenido
+
 ## Tabla de contenidos
+
 - [**Registro de Versiones del Informe**](#registro-de-versiones-del-informe)
 - [**Project Report Collaboration Insights**](#project-report-collaboration-insights)
 - [**Contenido**](#contenido)
-    - [Tabla de contenidos](#tabla-de-contenidos)
+  - [Tabla de contenidos](#tabla-de-contenidos)
 - [**Student Outcome**](#student-outcome)
 - [**Objetivos SMART**](#objetivos-smart)
 - ## [ **Capítulo I: Introducción** ](#-capítulo-i-introducción-)
+
   - [**1.1. Startup Profile**](#11-startup-profile)
     - [**1.1.1. Descripción de la Startup**](#111-descripción-de-la-startup)
     - [**1.1.2. Perfiles de integrantes del equipo**](#112-perfiles-de-integrantes-del-equipo)
@@ -102,6 +105,7 @@ Durante la fase de elaboración del informe, se realizaron las siguientes activi
     - [**1.2.2.4. Lean UX Canvas**](#1224-lean-ux-canvas)
   - [**1.3. Segmentos objetivo**](#13-segmentos-objetivo)
 - ## [ **Capítulo II: Requirements Elicitation \& Analysis**](#-capítulo-ii-requirements-elicitation--analysis)
+
   - [**2.1. Competidores**](#21-competidores)
     - [**2.1.1. Análisis competitivo**](#211-análisis-competitivo)
     - [**2.1.2. Estrategias y tácticas frente a competidores**](#212-estrategias-y-tácticas-frente-a-competidores)
@@ -117,11 +121,13 @@ Durante la fase de elaboración del informe, se realizaron las siguientes activi
     - [**2.3.5. As-is Scenario Mapping**](#235-as-is-scenario-mapping)
   - [**2.4. Ubiquitous Language**](#24-ubiquitous-language)
 - ## [ **Capítulo III: Requirements Specification**](#-capítulo-iii-requirements-specification)
+
   - [**3.1. To-Be Scenario Mapping**](#31-to-be-scenario-mapping)
   - [**3.2. User Stories**](#32-user-stories)
   - [**3.3. Impact Mapping**](#33-impact-mapping)
   - [**3.4. Product Backlog**](#34-product-backlog)
 - ## [**Capítulo IV: Solution Software Design**](#capítulo-iv-solution-software-design)
+
   - [**4.1. Strategic-Level Domain-Driven Design**](#41-strategic-level-domain-driven-design)
     - [**4.1.1. EventStorming**](#411-eventstorming)
       - [**4.1.1.1. Candidate Context Discovery**](#4111-candidate-context-discovery)
@@ -129,9 +135,9 @@ Durante la fase de elaboración del informe, se realizaron las siguientes activi
       - [**4.1.1.3. Bounded Context Canvases**](#4113-bounded-context-canvases)
   - [**4.1.2. Context Mapping**](#412-context-mapping)
   - [**4.1.3. Software Architecture.**](#413-software-architecture)
-      - [**4.1.3.1. Software Architecture Context Level Diagrams.**](#4131-software-architecture-context-level-diagrams)
-      - [**4.1.3.2. Software Architecture Container Level Diagrams.**](#4132-software-architecture-context-level-diagrams)
-      - [**4.1.3.3. Software Architecture Deploymnet Diagrams.**](#4133-software-architecture-deploymnet-diagrams)
+    - [**4.1.3.1. Software Architecture Context Level Diagrams.**](#4131-software-architecture-context-level-diagrams)
+    - [**4.1.3.2. Software Architecture Container Level Diagrams.**](#4132-software-architecture-context-level-diagrams)
+    - [**4.1.3.3. Software Architecture Deploymnet Diagrams.**](#4133-software-architecture-deploymnet-diagrams)
 - [**Conclusiones**](#conclusiones)
 - [**Conclusiones y recomendaciones**](#conclusiones-y-recomendaciones)
 - [**Bibliografía**](#bibliografía)
@@ -139,45 +145,52 @@ Durante la fase de elaboración del informe, se realizaron las siguientes activi
 
 # Student Outcome
 
-| Criterio específico | Acciones realizadas | Conclusiones |
-|----|----|----|
-|Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.| **Bernaola Pérez, André Arturo**<br>*TB1*<br>TEXTO.<br></br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br>TEXTO<br></br>**Sanchez Ignacio, Jefrey Martin**<br>*TB1*<br>TEXTO. <br></br> **Velarde Luyo, Piero Alberto**<br>*TB1*<br>TEXTO. | TB1: <br> TEXTO.|
 
-| Criterio específico | Acciones realizadas | Conclusiones |
-|----|----|----|
-|Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.|**Bernaola Pérez, André Arturo**<br>*TB1*<br>TEXTO.<br></br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br>TEXTO<br></br>**Sanchez Ignacio, Jefrey Martin**<br>*TB1*<br>TEXTO. <br></br> **Velarde Luyo, Piero Alberto**<br>*TB1*<br>TEXTO. | TB1: <br> TEXTO.|
+| Criterio específico                                                                                                                    | Acciones realizadas                                                                                                                                                                                                                           | Conclusiones    |
+| --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
+| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. | **Bernaola Pérez, André Arturo**<br>*TB1*<br>TEXTO.<br></br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br>TEXTO<br></br>**Sanchez Ignacio, Jefrey Martin**<br>*TB1*<br>TEXTO. <br></br> **Velarde Luyo, Piero Alberto**<br>*TB1*<br>TEXTO. | TB1:<br> TEXTO. |
 
-----
+
+| Criterio específico                                                                                                                    | Acciones realizadas                                                                                                                                                                                                                           | Conclusiones    |
+| --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
+| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | **Bernaola Pérez, André Arturo**<br>*TB1*<br>TEXTO.<br></br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br>TEXTO<br></br>**Sanchez Ignacio, Jefrey Martin**<br>*TB1*<br>TEXTO. <br></br> **Velarde Luyo, Piero Alberto**<br>*TB1*<br>TEXTO. | TB1:<br> TEXTO. |
+
+---
 
 # Objetivos SMART
+
 ### André
+
 Objetivo 1:
+
 - Finalizar un programa intensivo especializado en desarrollo full-stack (como los ofrecidos por freeCodeCamp o The Odin Project) dentro de los primeros ocho meses posteriores a la graduación, con el propósito de fortalecer mi perfil técnico e incrementar mi competitividad en el mercado laboral.
 
 Objetivo 2:
+
 - Acceder a un programa de especialización en arquitectura de software dentro de los dos primeros años tras concluir la carrera, como parte de mi proyección profesional hacia el rol de arquitecto de software.
 
 ### Jose
-- Objetivo 1:
-Obtener una certificación reconocida en tecnologías de desarrollo backend (por ejemplo, Node.js o Java Spring) en un plazo no mayor a seis meses después de la graduación, con el fin de potenciar mi perfil profesional y acceder a oportunidades laborales en el área de desarrollo de software.
 
+- Objetivo 1:
+  Obtener una certificación reconocida en tecnologías de desarrollo backend (por ejemplo, Node.js o Java Spring) en un plazo no mayor a seis meses después de la graduación, con el fin de potenciar mi perfil profesional y acceder a oportunidades laborales en el área de desarrollo de software.
 - Objetivo 2:
-Participar activamente en al menos tres proyectos de código abierto en plataformas colaborativas como GitHub durante el primer año posterior a mi egreso, con el objetivo de adquirir experiencia práctica y establecer vínculos con la comunidad tecnológica.
+  Participar activamente en al menos tres proyectos de código abierto en plataformas colaborativas como GitHub durante el primer año posterior a mi egreso, con el objetivo de adquirir experiencia práctica y establecer vínculos con la comunidad tecnológica.
 
 ### Jefrey
-- Objetivo 1:
-Asistir a un mínimo de dos talleres o cursos especializados en tecnologías frontend (como React o Vue.js) en los seis meses siguientes a la finalización de la carrera, a fin de complementar mis conocimientos previos en HTML, CSS y JavaScript y consolidar mis habilidades en desarrollo web.
 
+- Objetivo 1:
+  Asistir a un mínimo de dos talleres o cursos especializados en tecnologías frontend (como React o Vue.js) en los seis meses siguientes a la finalización de la carrera, a fin de complementar mis conocimientos previos en HTML, CSS y JavaScript y consolidar mis habilidades en desarrollo web.
 - Objetivo 2:
-Obtener una posición como desarrollador junior, ya sea mediante una pasantía o empleo formal, en un periodo no mayor a cuatro meses después de egresar, para iniciar mi trayectoria profesional y aplicar de forma práctica los conocimientos adquiridos en la universidad.
+  Obtener una posición como desarrollador junior, ya sea mediante una pasantía o empleo formal, en un periodo no mayor a cuatro meses después de egresar, para iniciar mi trayectoria profesional y aplicar de forma práctica los conocimientos adquiridos en la universidad.
 
 ### Piero
-- Objetivo 1:
-Matricularme en un curso especializado en tecnologías emergentes (como inteligencia artificial o blockchain) en el transcurso del primer año posterior a la graduación, con la finalidad de mantenerme actualizado respecto a las innovaciones tecnológicas y explorar nuevas áreas de especialización.
 
+- Objetivo 1:
+  Matricularme en un curso especializado en tecnologías emergentes (como inteligencia artificial o blockchain) en el transcurso del primer año posterior a la graduación, con la finalidad de mantenerme actualizado respecto a las innovaciones tecnológicas y explorar nuevas áreas de especialización.
 - Objetivo 2:
-Diseñar, desarrollar y publicar una aplicación (móvil o web) dentro de los primeros diez meses luego de finalizar mis estudios, con el objetivo de construir un portafolio profesional sólido que refleje mis competencias técnicas y creatividad en el desarrollo de software.
-----
+  Diseñar, desarrollar y publicar una aplicación (móvil o web) dentro de los primeros diez meses luego de finalizar mis estudios, con el objetivo de construir un portafolio profesional sólido que refleje mis competencias técnicas y creatividad en el desarrollo de software.
+
+---
 
 # Capítulo I: Introducción
 
@@ -198,18 +211,19 @@ La misión de SafeGroup es diseñar y desarrollar soluciones tecnológicas innov
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
-|                    Photo                        |                                                                                                                                                                                                                                                                                                    Description                                                                                                                                                                                                                                                                                                    |
-| :------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| ![Andre](./assets/Chapter01/Andrepfp.jpg) |                                                                         Soy André Bernaola, estudiante de Ingeniería de Software con interés en videojuegos y aprendizaje constante. Mi objetivo profesional es desarrollarme como full-stack y luego como arquitecto de software.                                                                                                                         |
-|  ![Jose](./assets/Chapter01/Josepfp.png)  | Mi nombre es Jose Gutierrez, tengo 21 años, actualmente me encuentro cruzando mi 6to ciclo de la carrera de ingeniería de software en la UPC. Me gusta jugar videojuegos y practicar natación, soy un gran aficionado de la tecnología y del ensamblaje de computadoras. Me considero una persona dispuesta siempre a aprender tecnologías nuevas, creativa y responsable.|
-| ![Jefrey](./assets/Chapter01/Jefreypfp.png)  | Mi nombre es Jefrey Sanchez, me considero una persona amable, que trabaja en equipo, tengo habilidades en html, css, javascript, C++. Estoy con muchas ganas de aprender del curso y de mis compañeros.|
-|  ![Piero](./assets/Chapter01/Pieropfp.jpg)  |                                                                                                                              Soy Piero, estudio la carrera de ingeniería de software en la Universidad Peruana de Ciencias Aplicadas. Escogí esta carrera por mi facilidad en el uso de las computadoras. Asimismo, por mi interés en el funcionamiento de las anteriores mencionadas y todo respecto a la programación y las tecnologías emergentes.|
+
+|                    Photo                    |                                                                                                                                                                                   Description                                                                                                                                                                                   |
+| :-----------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|  ![Andre](./assets/Chapter01/Andrepfp.jpg)  |                                                                                 Soy André Bernaola, estudiante de Ingeniería de Software con interés en videojuegos y aprendizaje constante. Mi objetivo profesional es desarrollarme como full-stack y luego como arquitecto de software.                                                                                 |
+|   ![Jose](./assets/Chapter01/Josepfp.png)   | Mi nombre es Jose Gutierrez, tengo 21 años, actualmente me encuentro cruzando mi 6to ciclo de la carrera de ingeniería de software en la UPC. Me gusta jugar videojuegos y practicar natación, soy un gran aficionado de la tecnología y del ensamblaje de computadoras. Me considero una persona dispuesta siempre a aprender tecnologías nuevas, creativa y responsable. |
+| ![Jefrey](./assets/Chapter01/Jefreypfp.png) |                                                                                    Mi nombre es Jefrey Sanchez, me considero una persona amable, que trabaja en equipo, tengo habilidades en html, css, javascript, C++. Estoy con muchas ganas de aprender del curso y de mis compañeros.                                                                                    |
+|  ![Piero](./assets/Chapter01/Pieropfp.jpg)  |                         Soy Piero, estudio la carrera de ingeniería de software en la Universidad Peruana de Ciencias Aplicadas. Escogí esta carrera por mi facilidad en el uso de las computadoras. Asimismo, por mi interés en el funcionamiento de las anteriores mencionadas y todo respecto a la programación y las tecnologías emergentes.                         |
 
 ## 1.2. Solution Profile
 
 Ante esta problemática, proponemos una plataforma digital que conecte de forma rápida, segura y eficiente a familias con cuidadores infantiles calificados. Esta solución busca reducir las barreras de acceso al cuidado infantil confiable, ofreciendo herramientas como perfiles verificados, reseñas de usuarios, filtros de búsqueda personalizados y opciones de reserva y pago en línea. Además, se prioriza la inclusión de cuidadores certificados y se promueve la formación continua para garantizar un servicio de calidad. De esta manera, la plataforma no solo atiende las necesidades de los padres, sino que también genera oportunidades laborales formales para los cuidadores en un mercado en crecimiento.
 
-### 1.2.1. Antecedentes y problemática 
+### 1.2.1. Antecedentes y problemática
 
 ### What (¿Qué?)
 
@@ -239,7 +253,7 @@ La falta de una plataforma eficiente para conectar a los cuidadores con las fami
 
 El impacto económico es significativo. Muchas familias no pueden permitirse los costos elevados del cuidado infantil, lo que a menudo las obliga a tomar decisiones que pueden comprometer el bienestar de sus hijos. La escasez de cuidadores capacitados también incrementa los precios, lo que hace que el cuidado infantil de calidad esté fuera del alcance de muchas familias, perpetuando desigualdades socioeconómicas.
 
-### 1.2.2. Lean UX Process 
+### 1.2.2. Lean UX Process
 
 #### 1.2.2.1. Lean UX Problem Statements
 
@@ -261,21 +275,20 @@ Nuestra plataforma "SafeChild" busca abordar un problema significativo en el cui
 
 <ol> <li><b>Creemos que</b> los padres estarán satisfechos con la capacidad de buscar y seleccionar cuidadores verificados de acuerdo con sus necesidades específicas. <b>Sabremos que</b> esta afirmación es cierta <b>cuando</b> observemos un alto índice de retención de usuarios y una frecuencia creciente en las reservas de servicios dentro de la plataforma.</li> <li><b>Creemos que</b> los cuidadores valorarán la facilidad de uso de la plataforma para conectarse con familias que buscan sus servicios. <b>Sabremos que</b> esta afirmación es cierta <b>cuando</b> veamos un aumento en el número de cuidadores registrados y activos, así como una alta tasa de interacción con los perfiles de las familias.</li> <li><b>Creemos que</b> la implementación de un proceso de verificación riguroso para los cuidadores y educadores fortalecerá la confianza de los padres en la plataforma. <b>Sabremos que</b> esta afirmación es cierta <b>cuando</b> notemos una disminución en las consultas relacionadas con la seguridad y un aumento en el número de usuarios que completan el proceso de registro y confirman sus reservas.</li> <li><b>Creemos que</b> ofrecer actualizaciones en tiempo real sobre las actividades de los niños será un factor decisivo para los padres al elegir utilizar la plataforma. <b>Sabremos que</b> esta afirmación es cierta <b>cuando</b> observemos una alta tasa de uso de la función de actualizaciones en tiempo real y una mayor satisfacción reportada por los padres en sus evaluaciones.</li> <li><b>Creemos que</b> la disponibilidad de recursos educativos y herramientas de seguimiento del desarrollo infantil mejorará la retención de usuarios tanto para padres como para cuidadores. <b>Sabremos que</b> esta afirmación es cierta <b>cuando</b> notemos un uso continuo de estos recursos y una mayor fidelización de usuarios a lo largo del tiempo.</li> </ol>
 
-#### 1.2.2.4. Lean UX Canvas  
+#### 1.2.2.4. Lean UX Canvas
 
 <table> <tr> <th valign="top"> <p><b>1. Business Problem</b></p>
  <p>La creciente demanda de servicios de cuidado infantil y la falta de acceso a cuidadores calificados y confiables en Perú afectan a padres y cuidadores. Las familias enfrentan estrés por la escasez de opciones seguras y adecuadas, mientras que los cuidadores luchan por encontrar oportunidades laborales. La falta de una plataforma eficiente para conectar estos dos grupos agrava el problema.</p> </th> <th valign="top"> <p><b>2. Business Outcomes</b></p> <p>- Aumento en la retención de usuarios (padres y cuidadores).</p> <p>- Incremento en la tasa de reservas repetidas.</p> <p>- Mejora en la satisfacción del usuario.</p> <p>- Expansión de la base de usuarios.</p> </th> <th rowspan="2" valign="top"> <p><b>5. Solutions</b></p> <p>- Desarrollo de una plataforma que conecte a padres con cuidadores verificados.</p> <p>- Funcionalidades como la programación de sesiones, actualizaciones en tiempo real, recursos educativos, y seguimiento del desarrollo infantil.</p> </th> </tr> <tr> <td valign="top"> <p><b>3. Users</b></p> <p>- Usuarios primarios: Padres que necesitan servicios de cuidado infantil y educación en el hogar.</p> <p>- Usuarios secundarios: Niñeras, tutores, y educadores en busca de oportunidades laborales.</p> <p>- Clientes: Familias que pagan por los servicios y cuidadores que pagan por publicidad o acceso a más oportunidades.</p> </td> <td valign="top"> <p><b>4. User Benefits</b></p> <p>- Padres: Acceso a perfiles verificados de cuidadores y educadores, posibilidad de programar servicios según sus necesidades, y recibir actualizaciones en tiempo real sobre las actividades de sus hijos.</p> <p>- Cuidadores: Oportunidades laborales directas y una plataforma que valida y promueve sus servicios.</p> </td> </tr> <tr> <td valign="top"> <p><b>6. Hypothesis</b></p> <p>- Creemos que los padres estarán satisfechos con la capacidad de buscar y seleccionar cuidadores verificados. Sabremos que esta afirmación es cierta cuando observemos un alto índice de retención de usuarios y una frecuencia creciente en las reservas.</p> <p>- Creemos que los cuidadores valorarán la facilidad de uso para conectarse con familias. Sabremos que esta afirmación es cierta cuando veamos un aumento en el número de cuidadores registrados y activos, así como una alta tasa de interacción con los perfiles de las familias.</p> <p>- Creemos que un proceso de verificación riguroso fortalecerá la confianza de los padres. Sabremos que esta afirmación es cierta cuando notemos una disminución en las consultas relacionadas con la seguridad y un aumento en el número de usuarios que completan el proceso de registro y confirman sus reservas.</p> <p>- Creemos que ofrecer actualizaciones en tiempo real será un factor decisivo para los padres. Sabremos que esta afirmación es cierta cuando observemos una alta tasa de uso de esta función y una mayor satisfacción reportada por los padres.</p> <p>- Creemos que la disponibilidad de recursos educativos y herramientas de seguimiento mejorará la retención de usuarios. Sabremos que esta afirmación es cierta cuando notemos un uso continuo de estos recursos y una mayor fidelización a lo largo del tiempo.</p> </td> <td valign="top"> <p><b>7. What’s the most important thing we need to learn first?</b></p> <p>Necesitamos validar si los usuarios valorarán la seguridad, personalización y la calidad del servicio proporcionado por la plataforma.</p> </td> <td valign="top"> <p><b>8. What’s the least amount of work we need to do to learn the next most important thing?</b></p> <p>Lanzaremos una versión beta con funcionalidades clave y analizaremos la adopción y el feedback para validar la propuesta de valor.</p> </td> </tr> </table>
 
-
-## 1.3. Segmentos objetivo  
+## 1.3. Segmentos objetivo
 
 Nuestro segmento objetivo abarca a todos aquellos padres y tutores que buscan soluciones confiables y flexibles para el cuidado infantil permitiéndoles combinar sus responsabilidades laborales con la tranquilidad de saber que sus hijos están bien atendidos.Además, la plataforma también se dirige a cuidadores, tutores y educadores que desean expandir sus oportunidades laborales y generar ingresos a través de la prestación de servicios personalizados y verificados. A continuación, se presenta características demográficas relevantes y información estadística que respalda la importancia de cada segmento.
 
 **1.Padres**
 
 - Este segmento abarca a todos los padres y tutores que buscan soluciones confiables y flexibles para el cuidado infantil y la educacion para el hogar. Ademas, incluye a familias que buscan servicios de cuidado infantil y opciones educativas personalizadas en el hogar.
-
 - #### Caracteristicas Demograficas
+
   - Edad: 20-45 años.
   - Estado Civil: Casados, en pareja, o monoparentales.
   - Motivaciones: Seguridad, conveniencia, eduación de calidad, flexibilidad del programa
@@ -283,109 +296,160 @@ Nuestro segmento objetivo abarca a todos aquellos padres y tutores que buscan so
 **2.Cuidadores (Niñeras y Tutores)**
 
 - Este segmento está abarca a todas las personas que trabajan como niñeras, cuidadoras infantiles, o asistentes domésticas. Son profesionales que buscan incrementar sus ingresos y expandir sus oportunidades laborales ofreciendo servicios de cuidado infantil de alta calidad. Estos cuidadores suelen estar altamente motivados por la flexibilidad laboral que les permite manejar su propio horario y trabajar en diferentes entornos.
-
 - #### Caracteristicas Demograficas
+
   - **Edad:** 18-45 años.
   - **Educación:** Varía desde secundaria completa hasta educación superior, con algunos poseyendo certificaciones específicas en cuidado infantil.
   - **Estado Civil:** Casados, en pareja, o monoparentales.
   - **Motivaciones:** Flexibilidad de sus horarios, la posibilidad de trabajar con familias que valoran sus habilidades y para establecer relaciones laborales estables y duraderas con las familias a las que sirven.
 
-----
+---
 
 # Capítulo II: Requirements Elicitation & Analysis
 
-## 2.1. Competidores  
-### 2.1.1. Análisis competitivo  
-### 2.1.2. Estrategias y tácticas frente a competidores  
+## 2.1. Competidores
 
-## 2.2. Entrevistas  
-### 2.2.1. Diseño de entrevistas  
-### 2.2.2. Registro de entrevistas  
-### 2.2.3. Análisis de entrevistas  
+### 2.1.1. Análisis competitivo
 
-## 2.3. Needfinding  
-### 2.3.1. User Personas  
-### 2.3.2. User Task Matrix  
-### 2.3.3. User Journey Mapping  
-### 2.3.4. Empathy Mapping  
-### 2.3.5. As-is Scenario Mapping  
+### 2.1.2. Estrategias y tácticas frente a competidores
 
-## 2.4. Ubiquitous Language  
+## 2.2. Entrevistas
 
-----
+### 2.2.1. Diseño de entrevistas
+
+### 2.2.2. Registro de entrevistas
+
+### 2.2.3. Análisis de entrevistas
+
+## 2.3. Needfinding
+
+### 2.3.1. User Personas
+
+### 2.3.2. User Task Matrix
+
+### 2.3.3. User Journey Mapping
+
+### 2.3.4. Empathy Mapping
+
+### 2.3.5. As-is Scenario Mapping
+
+## 2.4. Ubiquitous Language
+
+---
 
 # Capítulo III: Requirements Specification
 
-## 3.1. To-Be Scenario Mapping  
-## 3.2. User Stories  
-## 3.3. Product Backlog  
+## 3.1. To-Be Scenario Mapping
+
+## 3.2. User Stories
+
+## 3.3. Product Backlog
+
 ## 3.4. Impact Mapping
 
-----
+---
 
 ## Capítulo IV: Solution Software Design
 
 ### 4.1. Strategic-Level Domain-Driven Design
 
 ### 4.1.1. EventStorming
+
 ### 4.1.1.1. Candidate Context Discovery
+
 ### 4.1.1.2. Domain Message Flows Modeling
+
 ### 4.1.1.3. Bounded Context Canvases
 
 ### 4.1.2. Context Mapping
 
 ### 4.1.3. Software Architecture
+
 ### 4.1.3.1. Software Architecture Context Level Diagrams
+
 ### 4.1.3.2. Software Architecture Container Level Diagrams
+
 ### 4.1.3.3. Software Architecture Deployment Diagrams
 
-## 4.2. Tactical-Level Domain-Driven Design 
+## 4.2. Tactical-Level Domain-Driven Design
 
 ### ### 4.2.1.   Bounded Context: Bounded Context: User Managmentt
-### 4.2.1.1. Domain Layer   
-### 4.2.1.2.  Interface Layer 
-### 4.2.1.3.  Application Layer 
-### 4.2.1.4. Infrastructure Layer 
-### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams 
-### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams 
-### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams 
+
+### 4.2.1.1. Domain Layer
+
+### 4.2.1.2.  Interface Layer
+
+### 4.2.1.3.  Application Layer
+
+### 4.2.1.4. Infrastructure Layer
+
+### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
+
+### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
+
 ### 4.2.1.6.2. Bounded Context Database Design Diagram
 
 ### 4.2.2.   Bounded Context: Bounded Context: Payments
-### 4.2.2.1. Domain Layer   
-### 4.2.2.2.  Interface Layer 
-### 4.2.2.3.  Application Layer 
-### 4.2.2.4. Infrastructure Layer 
-### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams 
-### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams 
-### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams 
+
+### 4.2.2.1. Domain Layer
+
+### 4.2.2.2.  Interface Layer
+
+### 4.2.2.3.  Application Layer
+
+### 4.2.2.4. Infrastructure Layer
+
+### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
+
+### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
+
+### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
+
 ### 4.2.2.6.2. Bounded Context Database Design Diagram
 
 ### 4.2.3.   Bounded Context: Bounded Context: Appoiments
-### 4.2.3.1. Domain Layer   
-### 4.2.3.2.  Interface Layer 
-### 4.2.3.3.  Application Layer 
-### 4.2.3.4. Infrastructure Layer 
-### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams 
-### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams 
-### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams 
+
+### 4.2.3.1. Domain Layer
+
+### 4.2.3.2.  Interface Layer
+
+### 4.2.3.3.  Application Layer
+
+### 4.2.3.4. Infrastructure Layer
+
+### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
+
+### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
+
+### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
+
 ### 4.2.3.6.2. Bounded Context Database Design Diagram
 
 ### 4.2.4.   Bounded Context: Bounded Context: Messaging
-### 4.2.4.1. Domain Layer   
-### 4.2.4.2.  Interface Layer 
-### 4.2.4.3.  Application Layer 
-### 4.2.4.4. Infrastructure Layer 
-### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams 
-### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams 
-### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams 
+
+### 4.2.4.1. Domain Layer
+
+### 4.2.4.2.  Interface Layer
+
+### 4.2.4.3.  Application Layer
+
+### 4.2.4.4. Infrastructure Layer
+
+### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
+
+### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
+
+### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
+
 ### 4.2.4.6.2. Bounded Context Database Design Diagram
 
-----
+---
 
 # Capítulo V: Solution UI/UX Design
 
-## 5.1. Product design 
+## 5.1. Product design
 
 El diseño del producto es una fase crucial en el desarrollo de SafeChild, ya que determina cómo los padres interactuarán con la plataforma, asegurando que la experiencia de usuario sea simple, eficiente y confiable. En este capítulo, detallamos el proceso de diseño seguido para SafeChild, desde las pautas de estilo general hasta la arquitectura de software y la base de datos. Cada sección refleja nuestro enfoque en crear una experiencia de usuario que priorice la facilidad de uso y la confianza en la conexión con niñeras y profesores calificados, tanto en la landing page como en las aplicaciones web.
 
@@ -393,7 +457,7 @@ El diseño del producto es una fase crucial en el desarrollo de SafeChild, ya qu
 
 En SafeChild, establecimos pautas de estilo claras para garantizar una experiencia visual coherente y profesional. Definimos tanto aspectos generales como específicos para la web, con el objetivo de transmitir confianza y accesibilidad a los usuarios.
 
-### 5.1.1.1. General Style Guidelines 
+### 5.1.1.1. General Style Guidelines
 
 **Task:**
 En esta sección, se detallarán las directrices generales de estilo que guiarán el diseño y la presentación de SafeChild. Estas directrices asegurarán que todos los elementos visuales y textuales sean coherentes y alineados con la identidad de nuestra marca, proporcionando una experiencia de usuario fluida, confiable y profesional.
@@ -415,7 +479,7 @@ Se seleccionó una tipografía moderna, limpia y accesible, diseñada para ser l
 **Nunito**
 
 <div align="center">
-<img src="assets/chapter05/tipografia.png"" alt="logo safe child" width="800"></a><br>
+<img src="assets/chapter05/tipografia.png" alt="logo safe child" width="800"></a><br>
 <br>
 </div>
 
@@ -438,7 +502,7 @@ La paleta de colores de SafeChild ha sido cuidadosamente seleccionada para trans
 **Spacing:**
 Se utiliza un espaciado base de 4px para padding y margin en todos los elementos, lo que asegura una apariencia uniforme y ordenada en la interfaz. Este enfoque crea una estructura visual clara y organizada que facilita la navegación, mejorando la experiencia de usuario en dispositivos móviles y web.
 
-### 5.1.2. Information Architecture 
+### 5.1.2. Information Architecture
 
 En SafeChild, buscamos ofrecer una plataforma intuitiva, segura y confiable para conectar a padres que buscan servicios de cuidado infantil y cuidadores que desean registrarse para ofrecer sus servicios. Debido a la naturaleza de los servicios que involucran cuidado infantil y transacciones seguras, la arquitectura de la información es clave para lograr nuestros objetivos. A continuación, se presenta el diseño y organización de la plataforma.
 
@@ -446,7 +510,6 @@ En SafeChild, buscamos ofrecer una plataforma intuitiva, segura y confiable para
 
 - Vista Previa de Cuidadores Disponibles: <br>
   Muestra cuidadores destacados o populares para captar la atención de los padres que buscan servicios.
-
 - Registro de Cuidadores: <br>
   Enlace directo para que nuevos cuidadores puedan registrarse en la plataforma y comenzar a ofrecer sus servicios.
 
@@ -454,10 +517,8 @@ En SafeChild, buscamos ofrecer una plataforma intuitiva, segura y confiable para
 
 - Categorías de Servicios: <br>
   Sección que agrupa los servicios de cuidado infantil según las necesidades específicas: cuidado a tiempo completo, cuidado parcial, cuidado de niños con necesidades especiales, etc.
-
 - Filtros de Búsqueda: <br>
   Herramientas que permiten a los padres filtrar cuidadores según criterios como experiencia, calificaciones, precio, ubicación y disponibilidad.
-
 - Vista Detallada de Perfiles: <br>
   Cada cuidador cuenta con una página individual que muestra su experiencia, calificaciones, tarifas, disponibilidad y certificaciones.
 
@@ -465,10 +526,8 @@ En SafeChild, buscamos ofrecer una plataforma intuitiva, segura y confiable para
 
 - Formulario de Registro: <br>
   Formulario para que los cuidadores se registren en la plataforma, ingresando información como experiencia, habilidades, certificaciones y disponibilidad.
-
 - Gestión de Servicios: <br>
   Una vez registrados, los cuidadores pueden crear o editar su perfil, subir certificaciones y gestionar su disponibilidad.
-
 - Historial de Servicios y Pagos: <br>
   Los cuidadores pueden revisar un historial de los servicios que han realizado, las calificaciones obtenidas y los pagos recibidos.
 
@@ -476,11 +535,10 @@ En SafeChild, buscamos ofrecer una plataforma intuitiva, segura y confiable para
 
 - Interfaz de Reserva: <br>
   Una interfaz simple para que los padres seleccionen el cuidador, fecha y hora para reservar el servicio de cuidado infantil.
-
 - Vista Previa y Confirmación: <br>
   Los padres pueden visualizar los detalles de la reserva antes de confirmar, incluyendo la tarifa total y la duración del servicio.
 
-### 5.1.2.1. Organization Systems 
+### 5.1.2.1. Organization Systems
 
 El sistema de organización de SafeChild está diseñado para brindar la mejor experiencia posible tanto para los padres que buscan contratar servicios como para los cuidadores que desean ofrecerlos.
 
@@ -488,7 +546,6 @@ El sistema de organización de SafeChild está diseñado para brindar la mejor e
 
 - Perfiles de Cuidadores: <br>
   Categorizados por experiencia, tipo de cuidado (niños pequeños, cuidado especializado, cuidado nocturno) y calificaciones.
-
 - Servicios de Cuidado: <br>
   Categorizados por tiempo completo, medio tiempo, ocasional, etc.
 
@@ -506,7 +563,6 @@ El sistema de organización de SafeChild está diseñado para brindar la mejor e
 
 - Perfiles de Cuidadores: <br>
   Cada cuidador tiene una página individual que muestra su experiencia, calificaciones, tarifas y disponibilidad, junto con una opción para reservar un servicio.
-
 - Reservas: <br>
   Los padres pueden gestionar y ver sus reservas previas, y repetir servicios con cuidadores específicos desde su historial.
 
@@ -544,9 +600,7 @@ Se ofrece una búsqueda avanzada que permite a los padres buscar cuidadores seg�
 <b> 3. Búsqueda por Calificaciones: </b> <br>
 Los padres pueden buscar cuidadores con las mejores calificaciones y opiniones de otros usuarios.
 
-
 ### 5.1.2.5. Navigation Systems
-
 
 El sistema de navegación está diseñado para ofrecer una experiencia fluida, fácil de usar y segura para ambos segmentos (padres y cuidadores).
 
@@ -565,42 +619,74 @@ La barra de búsqueda y los filtros estarán siempre visibles para que los usuar
 <b> 5. Flujo de Navegación Intuitivo: </b> <br>
 Desde la búsqueda hasta la reserva de servicios, se establecerá un flujo lógico y claro que guía a los usuarios en cada etapa, con mensajes de acción y señales visuales que facilitan el proceso.
 
+### 5.1.3. Landing Page UI Design
 
-### 5.1.3. Landing Page UI Design 
-### 5.1.3.1. Landing Page Wireframe 
-### 5.1.3.2. Landing Page Mock-up 
-### 5.1.4. Mobile Applications UX/UI Design 
-### 5.1.4.1. Mobile Applications Wireframes 
-### 5.1.4.2. Mobile Applications Wireflow Diagrams 
-### 5.1.4.3. Mobile Applications Mock-ups 
-### 5.1.4.4. Mobile Applications User Flow Diagrams 
-### 5.1.4.5. Mobile Applications Prototyping 
+En esta sección, el equipo presentará la propuesta de Interfaz de Usuario para la Landing Page. Inicialmente, se ofrecerá una introducción que detallará cómo el equipo ha interpretado y aplicado las decisiones de diseño y la arquitectura de información previamente definidas en la elaboración visual de la página. Se mostrará la evolución del diseño, evidenciando la implementación de las Guías de Estilo y la Arquitectura de la Información en el prototipo desarrollado con Figma.
 
-----
+### 5.1.3.1. Landing Page Wireframe
+
+La siguiente sección presenta el wireframe de la landing page diseñada para la aplicación. Este diseño tiene como objetivo principal captar la atención de nuevos usuarios, destacando los beneficios del servicio y facilitando el acceso a funciones clave como el registro, la información de contacto y las características del producto. La estructura propuesta incluye secciones como el encabezado de navegación, beneficios principales, suscripciones, testimonios de clientes y un formulario de contacto. Este wireframe proporciona una guía visual preliminar que servirá de base para el desarrollo de la interfaz de usuario final.
+
+![Landing Page Wireframe](assets/chapter05/landing_wireframe.png)
+
+
+### 5.1.3.2. Landing Page Mock-up
+
+En esta sección se presenta el mockup visual de la landing page, el cual representa una versión más detallada y cercana al producto final en comparación con el wireframe. Este diseño incorpora los elementos visuales clave como colores, tipografías, íconos e imágenes, alineados con la identidad visual de la plataforma SafeChild. El objetivo del mockup es mostrar cómo se verá la interfaz una vez implementada, permitiendo validar decisiones de diseño antes del desarrollo. Cada sección ha sido diseñada para garantizar una experiencia de usuario clara, accesible y centrada en la confianza y seguridad que la plataforma desea transmitir.
+
+![Landing Page Mock-up](assets/chapter05/landing_mockup.png)
+
+
+### 5.1.4. Mobile Applications UX/UI Design
+
+### 5.1.4.1. Mobile Applications Wireframes
+
+
+
+### 5.1.4.3. Mobile Applications Mock-ups
+
+### 5.1.4.4. Mobile Applications User Flow Diagrams
+
+### 5.1.4.5. Mobile Applications Prototyping
+
+---
 
 # Capítulo VI: Product Implementation, Validation & Deployment
 
 ## 6.1. Software Configuration Management
 
-### 6.1.1. Software Development Environment Configuration 
-### 6.1.2. Source Code Management 
-### 6.1.3. Source Code Style Guide & Conventions 
-### 6.1.4. Software Deployment Configuration 
+### 6.1.1. Software Development Environment Configuration
 
-## 6.2. Landing Page & Mobile Application Implementation 
+### 6.1.2. Source Code Management
+
+### 6.1.3. Source Code Style Guide & Conventions
+
+### 6.1.4. Software Deployment Configuration
+
+## 6.2. Landing Page & Mobile Application Implementation
 
 ### 6.2.1. Sprint 1
+
 ### 6.2.1.1. Sprint Planning 1
+
 ### 6.2.1.2. Sprint Backlog 1
-### 6.2.1.3. Development Evidence for Sprint Review 
-### 6.2.1.4. Testing Suite Evidence for Sprint Review 
-### 6.2.1.5. Execution Evidence for Sprint Review 
-### 6.2.1.6. Services Documentation Evidence for Sprint Review 
-### 6.2.1.7. Software Deployment Evidence for Sprint Review 
+
+### 6.2.1.3. Development Evidence for Sprint Review
+
+### 6.2.1.4. Testing Suite Evidence for Sprint Review
+
+### 6.2.1.5. Execution Evidence for Sprint Review
+
+### 6.2.1.6. Services Documentation Evidence for Sprint Review
+
+### 6.2.1.7. Software Deployment Evidence for Sprint Review
+
 ### 6.2.1.8. Team Collaboration Insights during Sprint
-----
+
+---
 
 ## Conclusiones
+
 ### Conclusiones y Recomendaciones
 
 ## Bibliografía
