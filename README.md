@@ -641,6 +641,52 @@ En esta sección se presenta el mockup visual de la landing page, el cual repres
 
 ### 5.1.4.1. Mobile Applications Wireframes
 
+### 5.1.4.2. Mobile Applications Wireflow Diagrams
+
+En esta sección se presentan los wireflow de las aplicaciones móviles, que ilustran el flujo de interacción del usuario a través de las diferentes pantallas y funciones de la aplicación. Estos diagramas son esenciales para comprender cómo los usuarios navegarán por la plataforma, desde la pantalla de inicio hasta la comunicación entre usuarios. Cada paso del proceso está representado visualmente, lo que permite identificar posibles mejoras en la experiencia del usuario y garantizar que todas las funcionalidades estén claramente definidas y accesibles.
+
+#### User Goal 1: Un padre quiere contratar un(a) cuidador(a)
+
+#### Task Flow:
+1. Abrir la app y ver pantalla de inicio.
+2. Seleccionar **"Soy Padre"**.
+3. Iniciar sesión (o registrarse si no tiene cuenta).
+4. Ver lista de cuidadores disponibles según tipo de servicio.
+5. Seleccionar un cuidador.
+6. Ver detalles del cuidador.
+7. Confirmar datos y proceder al pago.
+8. Ingresar información de tarjeta.
+9. Confirmar el pago.
+10. Acceder a la sección de **Reservas** para ver el estado del servicio.
+
+![WIREFLOW 1](assets/chapter05/user%20goals/wireflow1.png)
+
+#### User Goal 2: Un cuidador quiere ofrecer sus servicios
+
+#### Task Flow:
+1. Abrir la app y ver pantalla de inicio.
+2. Seleccionar **"Soy Cuidador(a)"**.
+3. Iniciar sesión (o registrarse si no tiene cuenta).
+4. Completar el formulario de registro incluyendo experiencia y tipo de servicio.
+5. Subir documentos necesarios.
+6. Acceder a **"Servicios Disponibles"**.
+7. Ver detalles del servicio solicitado por un padre.
+8. Aceptar o rechazar la solicitud.
+9. Acceder a la sección de **Mis servicios** para ver servicios aceptados.
+
+![WIREFLOW 2](assets/chapter05/user%20goals/wireflow2.png)
+#### User Goal 3: Un usuario quiere comunicarse con el otro rol mediante chat
+
+#### Task Flow:
+1. Iniciar sesión como padre o cuidador.
+2. Acceder a la sección de **Chat Online**.
+3. Ver lista de contactos (padres o cuidadores según el rol).
+4. Seleccionar un contacto.
+5. Enviar y recibir mensajes en tiempo real.
+
+![WIREFLOW 3](assets/chapter05/user%20goals/wireflow3.png)
+
+
 
 
 ### 5.1.4.3. Mobile Applications Mock-ups
