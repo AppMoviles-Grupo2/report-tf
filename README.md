@@ -72,6 +72,7 @@ Durante la fase de elaboración del informe, se realizaron las siguientes activi
 ![Insight2](./assets/intro/insight2.png)
 ![Insight3](./assets/intro/insight3.png)
 
+
 # Contenido
 ## Tabla de contenidos
 - [**Registro de Versiones del Informe**](#registro-de-versiones-del-informe)
@@ -130,6 +131,78 @@ Durante la fase de elaboración del informe, se realizaron las siguientes activi
       - [**4.1.3.1. Software Architecture Context Level Diagrams.**](#4131-software-architecture-context-level-diagrams)
       - [**4.1.3.2. Software Architecture Container Level Diagrams.**](#4132-software-architecture-context-level-diagrams)
       - [**4.1.3.3. Software Architecture Deploymnet Diagrams.**](#4133-software-architecture-deploymnet-diagrams)
+  - [**4.2.Tactical-Level Domain-Driven Design**](#42-tactical-level-domain-driven-design)
+    - [**4.2.1. Bounded Context: Bounded Context: User Managment**](#421-bounded-context:-user-managment)
+      - [**4.2.1.1. Domain Layer**](#4211-domain-layer)
+      - [**4.2.1.2. Interface Layer**](#4212-interface-layer)
+      - [**4.2.1.3. Application Layer**](#4213-application-layer)
+      - [**4.2.1.4. Infrastructure Layer**](#4214-infrastructure-layer)
+      - [**4.2.1.5. Bounded Context Software Architecture Component Level Diagrams**](#4215-bounded-context-software-architecture-component-level-diagrams)
+      - [**4.2.1.6. Bounded Context Software Architecture Code Level Diagrams**](#4216-bounded-context-software-architecture-code-level-diagrams)
+        - [**4.2.1.6.1. Bounded Context Domain Layer Class Diagrams**](#42161-bounded-context-domain-layer-class-diagrams)
+        - [**4.2.1.6.2. Bounded Context Database Design Diagram**](#42162-bounded-context-database-design-diagram)
+    - [**4.2.2. Bounded Context: Bounded Context: Payments**](#422-bounded-context:payments)
+      - [**4.2.2.1. Domain Layer**](#4221-domain-layer)
+      - [**4.2.2.2. Interface Layer**](#4222-interface-layer)
+      - [**4.2.2.3. Application Layer**](#4223-application-layer)
+      - [**4.2.2.4. Infrastructure Layer**](#4224-infrastructure-layer)
+      - [**4.2.2.5. Bounded Context Software Architecture Component Level Diagrams**](#4225-bounded-context-software-architecture-component-level-diagrams)
+      - [**4.2.2.6. Bounded Context Software Architecture Code Level Diagrams**](#4226-bounded-context-software-architecture-code-level-diagrams)
+        - [**4.2.2.6.1. Bounded Context Domain Layer Class Diagrams**](#42261-bounded-context-domain-layer-class-diagrams)
+        - [**4.2.2.6.2. Bounded Context Database Design Diagram**](#42262-bounded-context-database-design-diagram)
+    - [**4.2.3. Bounded Context: Bounded Context: Appoiments**](#423-bounded-context:-appoiments)
+      - [**4.2.3.1. Domain Layer**](#4231-domain-layer)
+      - [**4.2.3.2. Interface Layer**](#4232-interface-layer)
+      - [**4.2.3.3. Application Layer**](#4233-application-layer)
+      - [**4.2.3.4. Infrastructure Layer**](#4234-infrastructure-layer)
+      - [**4.2.3.5. Bounded Context Software Architecture Component Level Diagrams**](#4235-bounded-context-software-architecture-component-level-diagrams)
+      - [**4.2.3.6. Bounded Context Software Architecture Code Level Diagrams**](#4236-bounded-context-software-architecture-code-level-diagrams)
+        - [**4.2.3.6.1. Bounded Context Domain Layer Class Diagrams**](#42361-bounded-context-domain-layer-class-diagrams)
+        - [**4.2.3.6.2. Bounded Context Database Design Diagram**](#42362-bounded-context-database-design-diagram)
+    - [**4.2.4. Bounded Context: Bounded Context: Messaging**](#424-bounded-context:-messaging)
+      - [**4.2.4.1. Domain Layer**](#4241-domain-layer)
+      - [**4.2.4.2. Interface Layer**](#4242-interface-layer)
+      - [**4.2.4.3. Application Layer**](#4243-application-layer)
+      - [**4.2.4.4. Infrastructure Layer**](#4244-infrastructure-layer)
+      - [**4.2.4.5. Bounded Context Software Architecture Component Level Diagrams**](#4245-bounded-context-software-architecture-component-level-diagrams)
+      - [**4.2.4.6. Bounded Context Software Architecture Code Level Diagrams**](#4246-bounded-context-software-architecture-code-level-diagrams)
+        - [**4.2.4.6.1. Bounded Context Domain Layer Class Diagrams**](#42461-bounded-context-domain-layer-class-diagrams)
+        - [**4.2.4.6.2. Bounded Context Database Design Diagram**](#42462-bounded-context-database-design-diagram)
+- ## [**Capítulo V: Solution UI/UX Design**](#capítulo-v-solution-ui/ux-design)
+  - [**5.1. Product Design**](#51-product-design)
+    - [**5.1.1. Style Guidelines**](#511-style-guidelines)
+      - [**5.1.1.1. General Style Guidelines**](#5111-general-style-guidelines)
+    - [**5.1.2. Information Architecture**](#512-information-architecture)
+      - [**5.1.2.1. Organization Systems**](#5121-organization-systems)
+      - [**5.1.2.2. Labeling Systems**](#51212-labeling-systems)
+      - [**5.1.2.3. SEO Tags and Meta Tags**](#51213-seo-tags-and-meta-tags)
+      - [**5.1.2.4. Searching Systems**](#51214-searching-systems)
+      - [**5.1.2.5. Navigation Systems**](#51215-navigation-systems)
+    - [**5.1.3. Landing Page UI Design**](#513-landing-page-ui-design)
+      - [**5.1.3.1. Landing Page Wireframe**](#5131-landing-page-wireframe)
+      - [**5.1.3.2. Landing Page Mock-up**](#5132-landing-page-mock-up)
+    - [**5.1.4. Mobile Applications UX/UI Design**](#514-mobile-applications-uxui-design)
+    - [**5.1.4.1. Mobile Applications Wireframes**](#5141-mobile-applications-wireframes)
+    - [**5.1.4.2. Mobile Applications Wireflow Diagrams**](#5142-mobile-applications-wireflow-diagrams)
+    - [**5.1.4.3. Mobile Applications Mock-ups**](#5143-mobile-applications-mock-ups)
+    - [**5.1.4.4. Mobile Applications User Flow Diagrams**](#5144-mobile-applications-user-flow-diagrams)
+    - [**5.1.4.5. Mobile Applications Prototyping**](#5145-mobile-applications-prototyping)
+- ## [**Capítulo VI: Product Implementation, Validation & Deployment**](#capítulo-vi-product-implementation-validation-&-deployment)
+  - [**6.1. Software Configuration Management**](#61-software-configuration-management)
+    - [**6.1.1. Software Development Environment Configuration**](#611-software-development-environment-configuration)
+    - [**6.1.2. Source Code Management**](#612-source-code-management)
+    - [**6.1.3. Source Code Style Guide & Conventions**](#613-source-code-style-guide--conventions)
+    - [**6.1.4. Software Deployment Configuration**](#614-software-deployment-configuration)
+  - [**6.2. Landing Page, Services & Mobile Application Implementation**](#52-landing-page-services--mobile-application-implementation)
+    - [**6.2.1. Sprint 1**](#621-sprint-1)
+    - [**6.2.1.1. Sprint Planning 1**](#6211-sprint-planning-1)
+    - [**6.2.1.2. Sprint Backlog 1**](#6212-sprint-backlog-1)
+    - [**6.2.1.3. Development Evidence for Sprint Review**](#6213-development-evidence-for-sprint-review)
+    - [**6.2.1.4. Testing Suite Evidence for Sprint Review**](#6214-testing-suite-evidence-for-sprint-review)
+    - [**6.2.1.5. Execution Evidence for Sprint Review**](#6215-execution-evidence-for-sprint-review)
+    - [**6.2.1.6. Services Documentation Evidence for Sprint Review**](#6216-services-documentation-evidence-for-sprint-review)
+    - [**6.2.1.7. Software Deployment Evidence for Sprint Review**](#6217-software-deployment-evidence-for-sprint-review)
+    - [**6.2.1.8. Team Collaboration Insights during Sprint**](#6218-team-collaboration-insights-during-sprint)
 - [**Conclusiones**](#conclusiones)
 - [**Conclusiones y recomendaciones**](#conclusiones-y-recomendaciones)
 - [**Bibliografía**](#bibliografía)
@@ -1468,6 +1541,293 @@ El diagrama ilustra el despliegue de un sistema distribuido conformado por disti
 - Base de Datos (MySQL): Implementada en Azure utilizando Azure Database for MySQL Flexible Server. Es responsable del almacenamiento y recuperación de datos, mantiene una comunicación directa con la API a través de JDBC.
 
 ![Deployment Diagram](Images/C4%20Model/DeploymentDiagram.png)
+
+## 4.2. Tactical-Level Domain-Driven Design 
+
+### 4.2.1.   Bounded Context: Bounded Context: User Management
+### 4.2.1.1. Domain Layer   
+### 4.2.1.2.  Interface Layer 
+### 4.2.1.3.  Application Layer 
+### 4.2.1.4. Infrastructure Layer 
+### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams 
+### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams 
+### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams 
+### 4.2.1.6.2. Bounded Context Database Design Diagram
+
+### 4.2.2. Bounded Context: Payments
+
+En este bounded context aplicado mediante un patrón en capas con CQRS, se modela todo el ciclo de vida de una transacción financiera: desde su creación hasta la facturación, el reembolso y la conciliación con un gateway de pagos genérico. Cada capa tiene responsabilidades claras y se mantiene la separación entre comandos y consultas.
+
+### 4.2.2.1. Domain Layer
+
+En la capa de dominio de este contexto reside la lógica de negocio pura: entidades, agregados, objetos de valor y servicios de dominio que garantizan invariantes como idempotencia, validación de límites y políticas de reembolso.
+
+| **Elemento**                       | **Descripción**                                                                                       |
+|------------------------------------|-------------------------------------------------------------------------------------------------------|
+| **Aggregate: Payment**             | Raíz que encapsula una transacción: atributos (monto, método, estado) y comportamientos (authorize, capture, refund). |
+| **Entity: Invoice**                | Documento de cargo asociado a un pago exitoso; calcula total = subtotal + comisión.                   |
+| **Entity: Refund**                 | Registro de devolución; valida elegibilidad según política.                                           |
+| **Value Object: Money**            | Representa de modo inmutable monto y moneda.                                                          |
+| **Value Object: PaymentMethod**    | Encapsula detalles del medio de pago (tipo, token).                                                   |
+| **Value Object: PaymentStatus**    | Enum de estados: PENDING, SUCCEEDED, FAILED, REFUNDED.                                                |
+| **Domain Service: FeeCalculator**  | Calcula la comisión aplicable a un `Payment`.                                                         |
+| **Domain Service: ReconciliationService** | Compara registros internos vs. reportes del gateway para detectar discrepancias.                |
+
+
+
+### 4.2.2.2. Interface Layer
+
+La capa de interfaz expone la API REST que consumen las aplicaciones móviles (y otros sistemas) y define los contratos de entrada. No contiene lógica de negocio, sino validaciones sintácticas y mapeo a comandos/consultas.
+
+| **Controlador**            | **Ruta**                         | **Verbo HTTP** | **Funcionalidad**                              |
+|----------------------------|----------------------------------|----------------|------------------------------------------------|
+| `PaymentsController`       | `/api/v1/payments`               | POST           | `CreatePaymentRequest` → genera comando CreatePaymentCommand. |
+| `PaymentsController`       | `/api/v1/payments/{id}`          | GET            | `GetPaymentByIdQuery` → retorna estado y detalles. |
+| `PaymentsController`       | `/api/v1/payments/{id}/refund`   | POST           | `RefundPaymentRequest` → genera comando RefundPaymentCommand. |
+
+
+
+### 4.2.2.3. Application Layer
+
+Aquí se orquesta CQRS:
+- **Command Handlers** reciben y procesan comandos que modifican el estado.
+- **Query Handlers** atienden consultas de lectura.
+
+No aplican reglas de negocio complejas (estas residen en el Domain Layer), pero coordinan servicios de dominio e infraestructura.
+
+#### Command Handlers
+
+| **Clase**                         | **Responsabilidad**                                                                 |
+|-----------------------------------|-------------------------------------------------------------------------------------|
+| `CreatePaymentCommandHandler`     | Valida comando, crea `Payment` e `Invoice`, pide autorización al gateway.          |
+| `ConfirmPaymentCommandHandler`    | Maneja resultado de autorización, marca `Payment` como SUCCEEDED, publica evento.   |
+| `RefundPaymentCommandHandler`     | Valida política de reembolso, crea `Refund`, solicita operación al gateway.         |
+
+#### Query Handlers
+
+| **Clase**                       | **Responsabilidad**                                           |
+|---------------------------------|---------------------------------------------------------------|
+| `GetPaymentByIdQueryHandler`    | Recupera y devuelve el estado y los detalles de un `Payment`. |
+| `GetAllPaymentsQueryHandler`    | Lista pagos de un usuario o de todo el sistema.              |
+
+---
+
+### 4.2.2.4. Infrastructure Layer
+
+Implementa los repositorios (persistencia) y adaptadores a servicios externos (gateway genérico, mensajería, notificaciones).
+
+| **Componente**               | **Tipo**             | **Responsabilidad**                                                     |
+|------------------------------|----------------------|-------------------------------------------------------------------------|
+| `PaymentRepositoryImpl`      | Repositorio (JPA)    | Persiste y consulta entidades `Payment`.                                |
+| `InvoiceRepositoryImpl`      | Repositorio (JPA)    | Persiste y consulta entidades `Invoice`.                                |
+| `RefundRepositoryImpl`       | Repositorio (JPA)    | Persiste y consulta entidades `Refund`.                                 |
+| `PaymentGatewayAdapter`      | Servicio externo     | Envía solicitudes de authorization, capture y refund a gateway genérico. |
+| `NotificationServiceImpl`    | Servicio interno     | Envía notificaciones push o mensajes a otros bounded contexts.           |
+| `EventPublisherImpl`         | Bus de mensajes      | Publica eventos de dominio (PaymentCreated, PaymentSucceeded, etc.).     |
+
+### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+El diagrama de componentes muestra la arquitectura del bounded context de Payments, incluyendo los módulos y sus interacciones. Se muestra el uso del patrón CQRS, donde los comandos y consultas están separados.
+![Payments Component Level Diagram](Images/C4%20Model/components/payments.png)
+
+### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
+### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+Se han definido las siguientes clases en el Domain Layer para este bounded context:
+![Payments Domain Layer Class Diagrams](Images/Bounded_Context/class%20diagrams/payments_domain.png)
+
+Adicionalmente, se han definido las siguientes clases en la Infrastructure Layer:
+![Payments Infrastructure Layer Class Diagram](Images/Bounded_Context/class%20diagrams/payments_infrastructure.png)
+
+### 4.2.1.6.2. Bounded Context Database Design Diagram
+
+Se han definido las siguientes tablas en la base de datos para este bounded context:
+![Payments Database Design Diagram](Images/Bounded_Context/database%20diagrams/payments.png)
+
+
+### 4.2.3.   Bounded Context: Appointments
+### 4.2.3.1. Domain Layer   
+Esta capa representa el núcleo de la lógica de negocio de nuestra aplicación en lo referente a la gestión de citas. En este contexto específico, el dominio de Appointments abarca las entidades fundamentales y las reglas de negocio esenciales que definen cómo las citas son creadas, aceptadas, rechazadas y canceladas entre padres y cuidadores dentro de nuestro sistema.
+
+### Entidades Clave
+
+Dentro de este dominio, algunas entidades son cruciales para su funcionamiento:
+
+* **Cita (Appointment):** Esta es la entidad central. Una cita encapsula el acuerdo programado para el cuidado de un niño, incluyendo el padre que la solicita, el cuidador que la acepta, la fecha y hora de inicio y fin, la ubicación y su estado actual (por ejemplo, pendiente, aceptada, cancelada). Además, puede contener información relevante como un identificador único, notas especiales o el precio acordado.
+
+* **Disponibilidad (Availability):** Representa los periodos de tiempo en los que un cuidador ha indicado que está disponible para ser agendado. Incluye la fecha y hora de inicio y fin de la disponibilidad, el cuidador al que pertenece y si la disponibilidad es recurrente.
+
+* **Solicitud de Cita (AppointmentRequest):** Representa la intención de un padre de solicitar un cuidador para un periodo específico. Contiene la fecha y hora deseada, la duración, la ubicación y el padre que realiza la solicitud. Su estado puede ser (por ejemplo, pendiente, enviada a cuidadores, respondida).
+
+### Reglas de Negocio
+
+Para asegurar la integridad y el correcto funcionamiento del sistema de gestión de citas, se aplican las siguientes reglas de negocio:
+
+* **Validación de Disponibilidad para Aceptar Cita:** Una cita solo puede ser aceptada si el periodo de tiempo solicitado se encuentra dentro de la disponibilidad declarada por el cuidador.
+
+* **Habilitación de Comunicación al Aceptar Cita:** Cuando el estado de una cita cambia a "aceptada", se debe activar la posibilidad de comunicación entre el padre y el cuidador a través del bounded context de Messaging.
+
+* **Aplicación de Política de Cancelación:** La cancelación de una cita dentro de un cierto periodo de tiempo previo a su inicio puede generar una penalización, lo que involucra al bounded context de Payments.
+
+* **Restricción de Reserva Anticipada:** Los padres solo pueden crear solicitudes de cita con una antelación máxima de 7 días.
+
+* **Garantizar Unicidad de Cita en Franja Horaria:** Un cuidador no puede tener múltiples citas aceptadas que se solapen en el mismo periodo de tiempo.
+
+### Responsabilidad del Domain Layer
+
+La principal responsabilidad del Domain Layer es contener la lógica de negocio pura relacionada con las citas. Esto significa definir las reglas que dictan cómo y por qué se pueden crear, aceptar o cancelar citas, y cómo se relacionan las entidades de Cita, Disponibilidad y Solicitud de Cita entre sí. Además, aquí se definen las entidades que modelan la realidad de la gestión de citas y las interacciones que se dan entre ellas.
+
+### 4.2.3.2.  Interface Layer 
+
+Esta capa está específicamente diseñada para facilitar la interacción directa de los usuarios (padres y cuidadores) con nuestro sistema de gestión de citas. Actúa como la puerta de entrada a la aplicación, proporcionando los medios a través de los cuales los usuarios pueden acceder y utilizar la lógica subyacente de las citas.
+
+### Elementos Clave
+
+* **Interfaz de Usuario (UI):** Implementada utilizando Flutter en nuestra aplicación móvil, la UI ofrecerá un entorno visual intuitivo para que los usuarios interactúen con la plataforma de citas. A través de ella, los padres podrán crear solicitudes de cita y revisar el estado de sus citas, mientras que los cuidadores podrán gestionar su disponibilidad y aceptar o rechazar citas.
+
+* **API de Citas:** Esta capa expondrá una serie de endpoints de la API (Application Programming Interface) para que la aplicación móvil se comunique con el sistema de gestión de citas de manera eficiente. Ejemplos incluyen un endpoint `POST /appointments/requests` para crear una nueva solicitud, `POST /appointments/{id}/accept` para aceptar una cita, y `POST /appointments/{id}/cancel` para cancelar una cita.
+
+* **Notificaciones:** Se encarga de la presentación de alertas sobre eventos importantes relacionados con las citas a los usuarios en tiempo real. Esto se logrará a través de sistemas de notificaciones push que informarán sobre nuevas solicitudes, aceptaciones o cancelaciones de citas.
+
+### Responsabilidad del Interface Layer
+
+La principal responsabilidad del Interface Layer radica en presentar la información del sistema de citas de una manera clara y fácilmente comprensible para el usuario. Esto implica mostrar las citas programadas, las solicitudes pendientes y proporcionar los mecanismos necesarios, como formularios y botones, para que puedan realizar acciones como crear solicitudes, aceptar o cancelar citas. Adicionalmente, esta capa tiene la tarea de tomar las acciones e intenciones del usuario y traducirlas en comandos concretos que serán posteriormente procesados por la Capa de Aplicación.
+
+### 4.2.3.3.  Application Layer 
+
+Esta capa actúa como el cerebro coordinador entre las interacciones del usuario y la lógica fundamental de nuestro negocio de gestión de citas. Es importante destacar que aquí no reside la lógica de negocio en sí misma, sino que esta capa se dedica a orquestar los diversos servicios que interactúan directamente con la Capa de Dominio para llevar a cabo operaciones específicas solicitadas por el usuario.
+
+### Elementos Clave
+
+* **Servicios de Aplicación:** Estos son los responsables de gestionar los flujos de trabajo y la lógica de negocio de alto nivel relacionados con las citas. Ejemplos ilustrativos serían un "Servicio de Agendamiento de Citas" que coordina la creación y aceptación de citas, un "Servicio de Gestión de Cancelaciones" que aplica la política correspondiente, y un "Servicio de Gestión de Disponibilidad" que permite a los cuidadores actualizar sus horarios.
+
+* **Gestión de Estado:** El seguimiento y la actualización del estado de las citas y las solicitudes se gestionan en esta capa. Por ejemplo, cuando una cita es aceptada por un cuidador, este componente se encarga de actualizar su estado a "aceptada" y de coordinar la notificación al padre.
+
+* **Notificaciones y Alertas:** La gestión de las notificaciones que informan a los usuarios sobre eventos importantes de las citas (nuevas solicitudes, citas aceptadas o canceladas) es otra responsabilidad clave de esta capa. Esto implicará la creación y el envío de notificaciones push a través del servicio correspondiente.
+
+### Responsabilidad del Application Layer
+
+El Application Layer tiene la responsabilidad fundamental de orquestar la ejecución de los diferentes casos de uso del sistema de gestión de citas. Esto incluye acciones como la creación de solicitudes, la aceptación y cancelación de citas, y la actualización de sus estados a medida que avanzan por el sistema. En esencia, esta capa actúa como un intermediario, coordinando las interacciones entre la Capa de Interfaz (donde el usuario interactúa) y la Capa de Dominio (donde reside la lógica de negocio), sin implementar directamente las reglas de negocio que son la competencia de la capa de dominio.
+
+### 4.2.3.4. Infrastructure Layer 
+
+Esta capa fundamental proporciona la base técnica necesaria para el correcto funcionamiento de todas las demás capas de nuestro sistema de gestión de citas. Aquí se gestionan aspectos cruciales como la persistencia de los datos y la integración con otros bounded contexts para funcionalidades como la mensajería y los pagos.
+
+Elementos Clave
+
+* **Repositorios:** Los repositorios son los responsables de la persistencia de las entidades definidas en la Capa de Dominio de Appointments. Esto incluiría un Repositorio de Citas para guardar y recuperar la información de las citas, un Repositorio de Disponibilidad para gestionar la disponibilidad de los cuidadores, y un Repositorio de Solicitudes de Cita para administrar las solicitudes de los padres. Su función principal es abstraer la forma en que los datos se almacenan y se acceden en la base de datos.
+
+* **Integración con Otros Bounded Contexts:** Esta capa se encarga de gestionar la comunicación con los bounded contexts de Messaging (para habilitar la conversación al aceptar una cita) y Payments (para procesar pagos o penalizaciones por cancelación). Esto podría implicar el uso de eventos de dominio, colas de mensajes o llamadas a APIs de otros contextos.
+  
+* **Bases de Datos:** La configuración y gestión de las bases de datos son una parte integral de esta capa. Estas bases de datos son las encargadas de almacenar de forma segura y eficiente todos los datos esenciales del sistema de gestión de citas, incluyendo las citas, la disponibilidad y las solicitudes.
+
+### Responsabilidad del Infrastructure Layer
+
+La principal responsabilidad del Infrastructure Layer es asegurar que los datos del sistema de gestión de citas sean almacenados, recuperados y procesados de manera eficiente y confiable. Además, se encarga de establecer y mantener las conexiones necesarias con otros bounded contexts que son fundamentales para el funcionamiento del sistema de citas. Esto también incluye la configuración y administración de los servidores, las bases de datos y cualquier otro servicio esencial que proporcione el entorno de ejecución para nuestra aplicación.
+
+### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams 
+![Appointments Software Architecture Component Level Diagrams](Images/Bounded_Context/image4.2.3.5.png)
+### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams 
+### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams 
+![Appointments Domain Layer Class Diagrams](Images/Bounded_Context/image4.2.3.6.1.png)
+### 4.2.3.6.2. Bounded Context Database Design Diagram
+![Appointments Database Design Diagram](Images/Bounded_Context/image4.6.3.6.2.png)
+
+
+
+### 4.2.4.   Bounded Context: Bounded Context: Messaging
+### 4.2.4.1. Domain Layer  
+Esta capa representa el núcleo de la lógica de negocio de nuestra aplicación. En este contexto específico, el dominio de mensajería abarca las entidades fundamentales y las reglas de negocio esenciales que definen cómo los mensajes son creados, enviados y recibidos entre los usuarios de nuestro sistema.
+
+### Entidades Clave
+
+Dentro de este dominio, algunas entidades son cruciales para su funcionamiento:
+
+* **Mensaje:** Esta es la entidad central. Un mensaje encapsula la información que un usuario desea comunicar, incluyendo el texto en sí, el destinatario al que va dirigido, la fecha en que fue creado y su estado actual (por ejemplo, pendiente de envío, ya enviado, leído por el destinatario). Además, puede contener información adicional relevante, como un identificador único para rastrearlo o etiquetas para categorizarlo.
+
+* **Usuario:** Representa a cualquier actor dentro del sistema que tiene la capacidad de enviar o recibir mensajes. En nuestro caso, estos usuarios pueden ser tanto Padres como Cuidadores. Cada usuario se identifica por atributos como su nombre, dirección de correo electrónico, preferencias sobre cómo recibir notificaciones y un registro de todas sus interacciones previas.
+
+* **Conversación:** Un mensaje nunca existe de forma aislada; siempre está vinculado a una conversación. Una conversación representa una interacción continua entre dos o más usuarios a lo largo del tiempo. Cada conversación puede contener múltiples mensajes, y cada usuario puede participar en diversas conversaciones simultáneamente.
+
+### Reglas de Negocio
+
+Para asegurar la integridad y el correcto funcionamiento del sistema de mensajería, se aplican las siguientes reglas de negocio:
+
+* **Autenticación y Autorización:** Un mensaje solo puede ser enviado si el usuario que intenta hacerlo ha sido correctamente autenticado dentro del sistema y tiene la autorización necesaria para realizar esta acción.
+
+* **Gestión de Estado del Mensaje:** Los mensajes atraviesan un ciclo de vida con diferentes estados. Estos estados reflejan su progreso dentro del sistema (por ejemplo, inicialmente "pendiente" hasta que se envía, luego "enviado" y finalmente, potencialmente, "entregado" o "leído").
+
+* **Validación de Mensajes:** Antes de que un mensaje sea enviado, debe pasar por un proceso de validación. Esto asegura que cumple con ciertos criterios predefinidos, como no exceder una longitud máxima establecida o no contener palabras que hayan sido marcadas como prohibidas.
+
+* **Registro de Actividad:** Se mantiene un registro detallado de cada mensaje que se envía y se recibe. Este historial es fundamental para tener trazabilidad y para futuras auditorías o consultas.
+
+### Responsabilidad del Domain Layer
+
+La principal responsabilidad del Domain Layer es contener la lógica de negocio pura. Esto significa definir las reglas que dictan cómo y por qué ocurren ciertos eventos dentro del sistema, como la creación de un nuevo mensaje o la conclusión de una conversación. Además, aquí se definen las entidades que modelan la realidad de nuestro sistema de mensajería y las interacciones que se dan entre ellas.
+
+### 4.2.4.2.  Interface Layer 
+Esta capa está específicamente diseñada para facilitar la interacción directa de los usuarios con nuestro sistema. Actúa como la puerta de entrada a la aplicación, proporcionando los medios a través de los cuales los usuarios pueden acceder y utilizar la lógica subyacente.
+
+### Elementos Clave
+
+Dentro de Interface Layer, encontramos los siguientes elementos esenciales:
+
+* **Interfaz de Usuario (UI):** Implementada utilizando tecnologías modernas y reactivas como React o Flutter, la UI ofrece un entorno visual intuitivo para que los usuarios interactúen con la plataforma. A través de ella, los usuarios pueden realizar acciones clave como enviar mensajes, revisar el historial de conversaciones, visualizar notificaciones importantes y gestionar sus preferencias de configuración, incluyendo cómo desean recibir las notificaciones.
+
+* **API de Mensajes:** En el caso de que nuestro sistema siga una arquitectura RESTful, esta capa también expone una serie de endpoints de la API (Application Programming Interface). Estos endpoints definen cómo las aplicaciones, tanto móviles como web, pueden comunicarse con el sistema de mensajería de manera eficiente. Ejemplos incluyen un endpoint `POST /messages` para la acción de enviar un nuevo mensaje y un endpoint `GET /conversations` para recuperar la lista de todas las conversaciones en las que un usuario participa.
+
+* **Notificaciones:** Una funcionalidad crucial para mantener a los usuarios informados es el sistema de notificaciones. Esta capa se encarga de la presentación de alertas sobre nuevos mensajes a los usuarios en tiempo real. Esto puede lograrse a través de sistemas de notificaciones push que llegan directamente a sus dispositivos o mediante notificaciones visuales integradas dentro de la propia aplicación.
+
+### Responsabilidad del Interface Layer
+
+La principal responsabilidad del Interface Layer radica en presentar la información del sistema de una manera clara y fácilmente comprensible para el usuario. Esto implica mostrar los mensajes que han recibido, las notificaciones relevantes y proporcionar los mecanismos necesarios, como formularios, para que puedan iniciar nuevas comunicaciones. Adicionalmente, esta capa tiene la tarea de tomar las acciones e intenciones del usuario y traducirlas en comandos concretos que serán posteriormente procesados por la Capa de Aplicación.
+
+### 4.2.4.3.  Application Layer 
+Esta capa actúa como el cerebro coordinador entre las interacciones del usuario y la lógica fundamental de nuestro negocio. Es importante destacar que aquí no reside la lógica de negocio en sí misma, sino que esta capa se dedica a orquestar los diversos servicios que interactúan directamente con la Capa de Dominio para llevar a cabo operaciones específicas solicitadas por el usuario.
+
+### Elementos Clave
+
+Dentro del Application Layer, identificamos los siguientes componentes principales:
+
+* **Servicios de Aplicación:** Estos son los responsables de gestionar los flujos de trabajo y la lógica de negocio de alto nivel. Un ejemplo ilustrativo sería un "Servicio de Envío de Mensajes". Este servicio no solo se encarga de la creación del mensaje, sino que también coordina su envío, gestiona el proceso de validación para asegurar su corrección y realiza el seguimiento para confirmar que el mensaje ha sido entregado exitosamente al destinatario.
+
+* **Gestión de Estado:** El seguimiento y la actualización del estado de las conversaciones y los mensajes se gestionan en esta capa. Por ejemplo, una vez que el "Servicio de Envío de Mensajes" confirma que un mensaje ha sido enviado, este componente se encarga de actualizar su estado a "enviado" y, potencialmente, de desencadenar una notificación para el receptor.
+
+* **Notificaciones y Alertas:** La gestión de las notificaciones que informan a los usuarios sobre la llegada de nuevos mensajes es otra responsabilidad clave de esta capa. Esto puede implicar la creación y el envío de notificaciones push a sus dispositivos móviles o el envío de alertas a través de correo electrónico, dependiendo de las preferencias del usuario y la configuración del sistema.
+
+### Responsabilidad del Application Layer
+
+El Application Layer tiene la responsabilidad fundamental de orquestar la ejecución de los diferentes casos de uso del sistema. Esto incluye acciones como el envío de mensajes, el registro de nuevas conversaciones y la actualización del estado de los mensajes a medida que avanzan por el sistema. En esencia, esta capa actúa como un intermediario, coordinando las interacciones entre la Capa de Interfaz (donde el usuario interactúa) y la Capa de Dominio (donde reside la lógica de negocio), sin implementar directamente las reglas de negocio que son la competencia de la capa de dominio.
+
+
+### 4.2.4.4. Infrastructure Layer 
+Esta capa fundamental proporciona la base técnica necesaria para el correcto funcionamiento de todas las demás capas de nuestro sistema. Aquí se gestionan aspectos cruciales como la persistencia de los datos, la integración con servicios externos (como el envío de correos electrónicos o notificaciones push) y la configuración de toda la infraestructura subyacente, incluyendo servidores y otras dependencias técnicas.
+
+### Elementos Clave
+
+Dentro del Infrastructure Layer, encontramos los siguientes componentes esenciales:
+
+* **Repositorios:** Los repositorios son los responsables de la persistencia de las entidades definidas en la Capa de Dominio. En nuestro contexto de mensajería, esto podría incluir un Repositorio de Mensajes encargado de guardar y recuperar la información de los mensajes, un Repositorio de Usuarios para gestionar la información de los usuarios, y un Repositorio de Conversaciones para administrar los datos relacionados con las conversaciones. Su función principal es abstraer la forma en que los datos se almacenan y se acceden en la base de datos.
+
+* **Servicios de Mensajería Externa:** Si nuestro sistema requiere la interacción con servicios de terceros para funcionalidades como el envío de mensajes SMS o correos electrónicos, Infrastructure Layer se encarga de gestionar la integración con estos servicios externos, proporcionando las interfaces necesarias para su uso por parte de las otras capas.
+
+* **Bases de Datos:** La configuración y gestión de las bases de datos son una parte integral de esta capa. Estas bases de datos son las encargadas de almacenar de forma segura y eficiente todos los datos esenciales del sistema, incluyendo los mensajes, las conversaciones y las preferencias de los usuarios. La elección entre una base de datos relacional (como PostgreSQL o MySQL) o una base de datos NoSQL (como MongoDB o Cassandra) dependerá de las necesidades específicas de nuestro sistema en términos de escalabilidad, estructura de datos y rendimiento.
+
+### Responsabilidad del Infraestructure Layer
+
+La principal responsabilidad del Infraestructure Layer es asegurar que los datos del sistema sean almacenados, recuperados y procesados de manera eficiente y confiable. Además, se encarga de establecer y mantener las conexiones necesarias con cualquier servicio externo que sea fundamental para el funcionamiento del sistema. Esto también incluye la configuración y administración de los servidores, las bases de datos y cualquier otro servicio esencial que proporcione el entorno de ejecución para nuestra aplicación.
+
+### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams 
+![Bounded Context Software Architecture Component Level Diagrams](Images/Bounded_Context/imagen4.2.4.5.png)
+
+### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams 
+![Bounded Context Software Architecture Code Level Diagrams](Images/Bounded_Context/imagen4.2.4.6.png)
+
+### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams 
+![Bounded Context Domain Layer Class Diagrams](Images/Bounded_Context/imagen4.2.4.6.1.png)
+
+### 4.2.4.6.2. Bounded Context Database Design Diagram
+![Bounded Context Database Design Diagram](Images/Bounded_Context/imagen4.6.4.6.2.png)
 
 ----
 
