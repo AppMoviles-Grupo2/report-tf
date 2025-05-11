@@ -68,11 +68,10 @@ Durante la fase de elaboración del informe, se realizaron las siguientes activi
 -  Se generaron los recursos necesarios y agregaron las imagenes al repositorio en la carpeta "assets" en cada rama del informe.
 
 - Se organizaron reuniones para coordinar el avance de los componentes del informe y para proporcionar actualizaciones sobre los progresos del Sprint 1, que se centró en el desarrollo del diseño del software. <br>
-![Insight1](./assets/Introduction/insight1.png)
-![Insight2](./assets/Introduction/insight2.png)
-![Insight4](./assets/Introduction/insight4.png)
-![Insight3](./assets/Introduction/insight3.png)
-![Insight5](./assets/Introduction/insight5.png)
+![Insight1](./assets/intro/insight1.png)
+![Insight2](./assets/intro/insight2.png)
+![Insight3](./assets/intro/insight3.png)
+
 
 # Contenido
 ## Tabla de contenidos
@@ -132,6 +131,78 @@ Durante la fase de elaboración del informe, se realizaron las siguientes activi
       - [**4.1.3.1. Software Architecture Context Level Diagrams.**](#4131-software-architecture-context-level-diagrams)
       - [**4.1.3.2. Software Architecture Container Level Diagrams.**](#4132-software-architecture-context-level-diagrams)
       - [**4.1.3.3. Software Architecture Deploymnet Diagrams.**](#4133-software-architecture-deploymnet-diagrams)
+  - [**4.2.Tactical-Level Domain-Driven Design**](#42-tactical-level-domain-driven-design)
+    - [**4.2.1. Bounded Context: Bounded Context: User Managment**](#421-bounded-context:-user-managment)
+      - [**4.2.1.1. Domain Layer**](#4211-domain-layer)
+      - [**4.2.1.2. Interface Layer**](#4212-interface-layer)
+      - [**4.2.1.3. Application Layer**](#4213-application-layer)
+      - [**4.2.1.4. Infrastructure Layer**](#4214-infrastructure-layer)
+      - [**4.2.1.5. Bounded Context Software Architecture Component Level Diagrams**](#4215-bounded-context-software-architecture-component-level-diagrams)
+      - [**4.2.1.6. Bounded Context Software Architecture Code Level Diagrams**](#4216-bounded-context-software-architecture-code-level-diagrams)
+        - [**4.2.1.6.1. Bounded Context Domain Layer Class Diagrams**](#42161-bounded-context-domain-layer-class-diagrams)
+        - [**4.2.1.6.2. Bounded Context Database Design Diagram**](#42162-bounded-context-database-design-diagram)
+    - [**4.2.2. Bounded Context: Bounded Context: Payments**](#422-bounded-context:payments)
+      - [**4.2.2.1. Domain Layer**](#4221-domain-layer)
+      - [**4.2.2.2. Interface Layer**](#4222-interface-layer)
+      - [**4.2.2.3. Application Layer**](#4223-application-layer)
+      - [**4.2.2.4. Infrastructure Layer**](#4224-infrastructure-layer)
+      - [**4.2.2.5. Bounded Context Software Architecture Component Level Diagrams**](#4225-bounded-context-software-architecture-component-level-diagrams)
+      - [**4.2.2.6. Bounded Context Software Architecture Code Level Diagrams**](#4226-bounded-context-software-architecture-code-level-diagrams)
+        - [**4.2.2.6.1. Bounded Context Domain Layer Class Diagrams**](#42261-bounded-context-domain-layer-class-diagrams)
+        - [**4.2.2.6.2. Bounded Context Database Design Diagram**](#42262-bounded-context-database-design-diagram)
+    - [**4.2.3. Bounded Context: Bounded Context: Appoiments**](#423-bounded-context:-appoiments)
+      - [**4.2.3.1. Domain Layer**](#4231-domain-layer)
+      - [**4.2.3.2. Interface Layer**](#4232-interface-layer)
+      - [**4.2.3.3. Application Layer**](#4233-application-layer)
+      - [**4.2.3.4. Infrastructure Layer**](#4234-infrastructure-layer)
+      - [**4.2.3.5. Bounded Context Software Architecture Component Level Diagrams**](#4235-bounded-context-software-architecture-component-level-diagrams)
+      - [**4.2.3.6. Bounded Context Software Architecture Code Level Diagrams**](#4236-bounded-context-software-architecture-code-level-diagrams)
+        - [**4.2.3.6.1. Bounded Context Domain Layer Class Diagrams**](#42361-bounded-context-domain-layer-class-diagrams)
+        - [**4.2.3.6.2. Bounded Context Database Design Diagram**](#42362-bounded-context-database-design-diagram)
+    - [**4.2.4. Bounded Context: Bounded Context: Messaging**](#424-bounded-context:-messaging)
+      - [**4.2.4.1. Domain Layer**](#4241-domain-layer)
+      - [**4.2.4.2. Interface Layer**](#4242-interface-layer)
+      - [**4.2.4.3. Application Layer**](#4243-application-layer)
+      - [**4.2.4.4. Infrastructure Layer**](#4244-infrastructure-layer)
+      - [**4.2.4.5. Bounded Context Software Architecture Component Level Diagrams**](#4245-bounded-context-software-architecture-component-level-diagrams)
+      - [**4.2.4.6. Bounded Context Software Architecture Code Level Diagrams**](#4246-bounded-context-software-architecture-code-level-diagrams)
+        - [**4.2.4.6.1. Bounded Context Domain Layer Class Diagrams**](#42461-bounded-context-domain-layer-class-diagrams)
+        - [**4.2.4.6.2. Bounded Context Database Design Diagram**](#42462-bounded-context-database-design-diagram)
+- ## [**Capítulo V: Solution UI/UX Design**](#capítulo-v-solution-ui/ux-design)
+  - [**5.1. Product Design**](#51-product-design)
+    - [**5.1.1. Style Guidelines**](#511-style-guidelines)
+      - [**5.1.1.1. General Style Guidelines**](#5111-general-style-guidelines)
+    - [**5.1.2. Information Architecture**](#512-information-architecture)
+      - [**5.1.2.1. Organization Systems**](#5121-organization-systems)
+      - [**5.1.2.2. Labeling Systems**](#51212-labeling-systems)
+      - [**5.1.2.3. SEO Tags and Meta Tags**](#51213-seo-tags-and-meta-tags)
+      - [**5.1.2.4. Searching Systems**](#51214-searching-systems)
+      - [**5.1.2.5. Navigation Systems**](#51215-navigation-systems)
+    - [**5.1.3. Landing Page UI Design**](#513-landing-page-ui-design)
+      - [**5.1.3.1. Landing Page Wireframe**](#5131-landing-page-wireframe)
+      - [**5.1.3.2. Landing Page Mock-up**](#5132-landing-page-mock-up)
+    - [**5.1.4. Mobile Applications UX/UI Design**](#514-mobile-applications-uxui-design)
+    - [**5.1.4.1. Mobile Applications Wireframes**](#5141-mobile-applications-wireframes)
+    - [**5.1.4.2. Mobile Applications Wireflow Diagrams**](#5142-mobile-applications-wireflow-diagrams)
+    - [**5.1.4.3. Mobile Applications Mock-ups**](#5143-mobile-applications-mock-ups)
+    - [**5.1.4.4. Mobile Applications User Flow Diagrams**](#5144-mobile-applications-user-flow-diagrams)
+    - [**5.1.4.5. Mobile Applications Prototyping**](#5145-mobile-applications-prototyping)
+- ## [**Capítulo VI: Product Implementation, Validation & Deployment**](#capítulo-vi-product-implementation-validation-&-deployment)
+  - [**6.1. Software Configuration Management**](#61-software-configuration-management)
+    - [**6.1.1. Software Development Environment Configuration**](#611-software-development-environment-configuration)
+    - [**6.1.2. Source Code Management**](#612-source-code-management)
+    - [**6.1.3. Source Code Style Guide & Conventions**](#613-source-code-style-guide--conventions)
+    - [**6.1.4. Software Deployment Configuration**](#614-software-deployment-configuration)
+  - [**6.2. Landing Page, Services & Mobile Application Implementation**](#52-landing-page-services--mobile-application-implementation)
+    - [**6.2.1. Sprint 1**](#621-sprint-1)
+    - [**6.2.1.1. Sprint Planning 1**](#6211-sprint-planning-1)
+    - [**6.2.1.2. Sprint Backlog 1**](#6212-sprint-backlog-1)
+    - [**6.2.1.3. Development Evidence for Sprint Review**](#6213-development-evidence-for-sprint-review)
+    - [**6.2.1.4. Testing Suite Evidence for Sprint Review**](#6214-testing-suite-evidence-for-sprint-review)
+    - [**6.2.1.5. Execution Evidence for Sprint Review**](#6215-execution-evidence-for-sprint-review)
+    - [**6.2.1.6. Services Documentation Evidence for Sprint Review**](#6216-services-documentation-evidence-for-sprint-review)
+    - [**6.2.1.7. Software Deployment Evidence for Sprint Review**](#6217-software-deployment-evidence-for-sprint-review)
+    - [**6.2.1.8. Team Collaboration Insights during Sprint**](#6218-team-collaboration-insights-during-sprint)
 - [**Conclusiones**](#conclusiones)
 - [**Conclusiones y recomendaciones**](#conclusiones-y-recomendaciones)
 - [**Bibliografía**](#bibliografía)
@@ -903,8 +974,6 @@ La siguiente image muestra la vista general de los bounded contexts.
 
 Una vez definidos los Bounded Contexts en la etapa previa, el equipo llevó a cabo una sesión de Domain Storytelling con el objetivo de modelar la interacción entre estos contextos para abordar distintos escenarios del negocio. Esta metodología facilitó una comprensión clara de los flujos de comunicación entre contextos, así como del comportamiento esperado del sistema desde el punto de vista de los usuarios. Durante la sesión, se enfocaron principalmente en el análisis de dos casos de uso significativos.
 
-
-**Usuario:**
 Usuario Final
 
 **Scenario:**
@@ -1151,6 +1220,8 @@ Este modelo de flujos documenta cómo el Tutor y el Cuidador intercambian mensaj
 ![DMFM3](./Images/DomainMessageFlow%20odeling/DMFM3.png)
 
 ### 4.1.1.3. Bounded Context Canvases
+
+En esta sección se describen en detalle los criterios aplicados a cada Bounded Context Canvas, una herramienta diseñada para estructurar y documentar de forma independiente cada contexto acotado. El proceso de definición de cada uno de estos canvases se orientó a resaltar su relevancia dentro de la arquitectura de la solución móvil, priorizando aquellos aspectos que garantizan una experiencia de usuario fluida y una integración sólida entre los distintos módulos de la aplicación. De este modo, cada contexto se concibe no solo como una unidad lógica de dominio, sino también como un componente clave para el correcto funcionamiento y escalabilidad de la plataforma móvil.
 
 #### **User Management**
 **Explicación de diseño:**  
@@ -1469,7 +1540,1057 @@ El diagrama ilustra el despliegue de un sistema distribuido conformado por disti
 
 ![Deployment Diagram](Images/C4%20Model/DeploymentDiagram.png)
 
-----
+## 4.2. Tactical-Level Domain-Driven Design 
+
+### 4.2.1.   Bounded Context: Bounded Context: User Management
+### 4.2.1.1. Domain Layer   
+### 4.2.1.2.  Interface Layer 
+### 4.2.1.3.  Application Layer 
+### 4.2.1.4. Infrastructure Layer 
+### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams 
+### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams 
+### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams 
+### 4.2.1.6.2. Bounded Context Database Design Diagram
+
+### 4.2.2. Bounded Context: Payments
+
+En este bounded context aplicado mediante un patrón en capas con CQRS, se modela todo el ciclo de vida de una transacción financiera: desde su creación hasta la facturación, el reembolso y la conciliación con un gateway de pagos genérico. Cada capa tiene responsabilidades claras y se mantiene la separación entre comandos y consultas.
+
+### 4.2.2.1. Domain Layer
+
+En la capa de dominio de este contexto reside la lógica de negocio pura: entidades, agregados, objetos de valor y servicios de dominio que garantizan invariantes como idempotencia, validación de límites y políticas de reembolso.
+
+| **Elemento**                       | **Descripción**                                                                                       |
+|------------------------------------|-------------------------------------------------------------------------------------------------------|
+| **Aggregate: Payment**             | Raíz que encapsula una transacción: atributos (monto, método, estado) y comportamientos (authorize, capture, refund). |
+| **Entity: Invoice**                | Documento de cargo asociado a un pago exitoso; calcula total = subtotal + comisión.                   |
+| **Entity: Refund**                 | Registro de devolución; valida elegibilidad según política.                                           |
+| **Value Object: Money**            | Representa de modo inmutable monto y moneda.                                                          |
+| **Value Object: PaymentMethod**    | Encapsula detalles del medio de pago (tipo, token).                                                   |
+| **Value Object: PaymentStatus**    | Enum de estados: PENDING, SUCCEEDED, FAILED, REFUNDED.                                                |
+| **Domain Service: FeeCalculator**  | Calcula la comisión aplicable a un `Payment`.                                                         |
+| **Domain Service: ReconciliationService** | Compara registros internos vs. reportes del gateway para detectar discrepancias.                |
+
+
+
+### 4.2.2.2. Interface Layer
+
+La capa de interfaz expone la API REST que consumen las aplicaciones móviles (y otros sistemas) y define los contratos de entrada. No contiene lógica de negocio, sino validaciones sintácticas y mapeo a comandos/consultas.
+
+| **Controlador**            | **Ruta**                         | **Verbo HTTP** | **Funcionalidad**                              |
+|----------------------------|----------------------------------|----------------|------------------------------------------------|
+| `PaymentsController`       | `/api/v1/payments`               | POST           | `CreatePaymentRequest` → genera comando CreatePaymentCommand. |
+| `PaymentsController`       | `/api/v1/payments/{id}`          | GET            | `GetPaymentByIdQuery` → retorna estado y detalles. |
+| `PaymentsController`       | `/api/v1/payments/{id}/refund`   | POST           | `RefundPaymentRequest` → genera comando RefundPaymentCommand. |
+
+
+
+### 4.2.2.3. Application Layer
+
+Aquí se orquesta CQRS:
+- **Command Handlers** reciben y procesan comandos que modifican el estado.
+- **Query Handlers** atienden consultas de lectura.
+
+No aplican reglas de negocio complejas (estas residen en el Domain Layer), pero coordinan servicios de dominio e infraestructura.
+
+#### Command Handlers
+
+| **Clase**                         | **Responsabilidad**                                                                 |
+|-----------------------------------|-------------------------------------------------------------------------------------|
+| `CreatePaymentCommandHandler`     | Valida comando, crea `Payment` e `Invoice`, pide autorización al gateway.          |
+| `ConfirmPaymentCommandHandler`    | Maneja resultado de autorización, marca `Payment` como SUCCEEDED, publica evento.   |
+| `RefundPaymentCommandHandler`     | Valida política de reembolso, crea `Refund`, solicita operación al gateway.         |
+
+#### Query Handlers
+
+| **Clase**                       | **Responsabilidad**                                           |
+|---------------------------------|---------------------------------------------------------------|
+| `GetPaymentByIdQueryHandler`    | Recupera y devuelve el estado y los detalles de un `Payment`. |
+| `GetAllPaymentsQueryHandler`    | Lista pagos de un usuario o de todo el sistema.              |
+
+---
+
+### 4.2.2.4. Infrastructure Layer
+
+Implementa los repositorios (persistencia) y adaptadores a servicios externos (gateway genérico, mensajería, notificaciones).
+
+| **Componente**               | **Tipo**             | **Responsabilidad**                                                     |
+|------------------------------|----------------------|-------------------------------------------------------------------------|
+| `PaymentRepositoryImpl`      | Repositorio (JPA)    | Persiste y consulta entidades `Payment`.                                |
+| `InvoiceRepositoryImpl`      | Repositorio (JPA)    | Persiste y consulta entidades `Invoice`.                                |
+| `RefundRepositoryImpl`       | Repositorio (JPA)    | Persiste y consulta entidades `Refund`.                                 |
+| `PaymentGatewayAdapter`      | Servicio externo     | Envía solicitudes de authorization, capture y refund a gateway genérico. |
+| `NotificationServiceImpl`    | Servicio interno     | Envía notificaciones push o mensajes a otros bounded contexts.           |
+| `EventPublisherImpl`         | Bus de mensajes      | Publica eventos de dominio (PaymentCreated, PaymentSucceeded, etc.).     |
+
+### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+El diagrama de componentes muestra la arquitectura del bounded context de Payments, incluyendo los módulos y sus interacciones. Se muestra el uso del patrón CQRS, donde los comandos y consultas están separados.
+![Payments Component Level Diagram](Images/C4%20Model/components/payments.png)
+
+### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
+### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+Se han definido las siguientes clases en el Domain Layer para este bounded context:
+![Payments Domain Layer Class Diagrams](Images/Bounded_Context/class%20diagrams/payments_domain.png)
+
+Adicionalmente, se han definido las siguientes clases en la Infrastructure Layer:
+![Payments Infrastructure Layer Class Diagram](Images/Bounded_Context/class%20diagrams/payments_infrastructure.png)
+
+### 4.2.1.6.2. Bounded Context Database Design Diagram
+
+Se han definido las siguientes tablas en la base de datos para este bounded context:
+![Payments Database Design Diagram](Images/Bounded_Context/database%20diagrams/payments.png)
+
+
+### 4.2.3.   Bounded Context: Appointments
+### 4.2.3.1. Domain Layer   
+Esta capa representa el núcleo de la lógica de negocio de nuestra aplicación en lo referente a la gestión de citas. En este contexto específico, el dominio de Appointments abarca las entidades fundamentales y las reglas de negocio esenciales que definen cómo las citas son creadas, aceptadas, rechazadas y canceladas entre padres y cuidadores dentro de nuestro sistema.
+
+### Entidades Clave
+
+Dentro de este dominio, algunas entidades son cruciales para su funcionamiento:
+
+* **Cita (Appointment):** Esta es la entidad central. Una cita encapsula el acuerdo programado para el cuidado de un niño, incluyendo el padre que la solicita, el cuidador que la acepta, la fecha y hora de inicio y fin, la ubicación y su estado actual (por ejemplo, pendiente, aceptada, cancelada). Además, puede contener información relevante como un identificador único, notas especiales o el precio acordado.
+
+* **Disponibilidad (Availability):** Representa los periodos de tiempo en los que un cuidador ha indicado que está disponible para ser agendado. Incluye la fecha y hora de inicio y fin de la disponibilidad, el cuidador al que pertenece y si la disponibilidad es recurrente.
+
+* **Solicitud de Cita (AppointmentRequest):** Representa la intención de un padre de solicitar un cuidador para un periodo específico. Contiene la fecha y hora deseada, la duración, la ubicación y el padre que realiza la solicitud. Su estado puede ser (por ejemplo, pendiente, enviada a cuidadores, respondida).
+
+### Reglas de Negocio
+
+Para asegurar la integridad y el correcto funcionamiento del sistema de gestión de citas, se aplican las siguientes reglas de negocio:
+
+* **Validación de Disponibilidad para Aceptar Cita:** Una cita solo puede ser aceptada si el periodo de tiempo solicitado se encuentra dentro de la disponibilidad declarada por el cuidador.
+
+* **Habilitación de Comunicación al Aceptar Cita:** Cuando el estado de una cita cambia a "aceptada", se debe activar la posibilidad de comunicación entre el padre y el cuidador a través del bounded context de Messaging.
+
+* **Aplicación de Política de Cancelación:** La cancelación de una cita dentro de un cierto periodo de tiempo previo a su inicio puede generar una penalización, lo que involucra al bounded context de Payments.
+
+* **Restricción de Reserva Anticipada:** Los padres solo pueden crear solicitudes de cita con una antelación máxima de 7 días.
+
+* **Garantizar Unicidad de Cita en Franja Horaria:** Un cuidador no puede tener múltiples citas aceptadas que se solapen en el mismo periodo de tiempo.
+
+### Responsabilidad del Domain Layer
+
+La principal responsabilidad del Domain Layer es contener la lógica de negocio pura relacionada con las citas. Esto significa definir las reglas que dictan cómo y por qué se pueden crear, aceptar o cancelar citas, y cómo se relacionan las entidades de Cita, Disponibilidad y Solicitud de Cita entre sí. Además, aquí se definen las entidades que modelan la realidad de la gestión de citas y las interacciones que se dan entre ellas.
+
+### 4.2.3.2.  Interface Layer 
+
+Esta capa está específicamente diseñada para facilitar la interacción directa de los usuarios (padres y cuidadores) con nuestro sistema de gestión de citas. Actúa como la puerta de entrada a la aplicación, proporcionando los medios a través de los cuales los usuarios pueden acceder y utilizar la lógica subyacente de las citas.
+
+### Elementos Clave
+
+* **Interfaz de Usuario (UI):** Implementada utilizando Flutter en nuestra aplicación móvil, la UI ofrecerá un entorno visual intuitivo para que los usuarios interactúen con la plataforma de citas. A través de ella, los padres podrán crear solicitudes de cita y revisar el estado de sus citas, mientras que los cuidadores podrán gestionar su disponibilidad y aceptar o rechazar citas.
+
+* **API de Citas:** Esta capa expondrá una serie de endpoints de la API (Application Programming Interface) para que la aplicación móvil se comunique con el sistema de gestión de citas de manera eficiente. Ejemplos incluyen un endpoint `POST /appointments/requests` para crear una nueva solicitud, `POST /appointments/{id}/accept` para aceptar una cita, y `POST /appointments/{id}/cancel` para cancelar una cita.
+
+* **Notificaciones:** Se encarga de la presentación de alertas sobre eventos importantes relacionados con las citas a los usuarios en tiempo real. Esto se logrará a través de sistemas de notificaciones push que informarán sobre nuevas solicitudes, aceptaciones o cancelaciones de citas.
+
+### Responsabilidad del Interface Layer
+
+La principal responsabilidad del Interface Layer radica en presentar la información del sistema de citas de una manera clara y fácilmente comprensible para el usuario. Esto implica mostrar las citas programadas, las solicitudes pendientes y proporcionar los mecanismos necesarios, como formularios y botones, para que puedan realizar acciones como crear solicitudes, aceptar o cancelar citas. Adicionalmente, esta capa tiene la tarea de tomar las acciones e intenciones del usuario y traducirlas en comandos concretos que serán posteriormente procesados por la Capa de Aplicación.
+
+### 4.2.3.3.  Application Layer 
+
+Esta capa actúa como el cerebro coordinador entre las interacciones del usuario y la lógica fundamental de nuestro negocio de gestión de citas. Es importante destacar que aquí no reside la lógica de negocio en sí misma, sino que esta capa se dedica a orquestar los diversos servicios que interactúan directamente con la Capa de Dominio para llevar a cabo operaciones específicas solicitadas por el usuario.
+
+### Elementos Clave
+
+* **Servicios de Aplicación:** Estos son los responsables de gestionar los flujos de trabajo y la lógica de negocio de alto nivel relacionados con las citas. Ejemplos ilustrativos serían un "Servicio de Agendamiento de Citas" que coordina la creación y aceptación de citas, un "Servicio de Gestión de Cancelaciones" que aplica la política correspondiente, y un "Servicio de Gestión de Disponibilidad" que permite a los cuidadores actualizar sus horarios.
+
+* **Gestión de Estado:** El seguimiento y la actualización del estado de las citas y las solicitudes se gestionan en esta capa. Por ejemplo, cuando una cita es aceptada por un cuidador, este componente se encarga de actualizar su estado a "aceptada" y de coordinar la notificación al padre.
+
+* **Notificaciones y Alertas:** La gestión de las notificaciones que informan a los usuarios sobre eventos importantes de las citas (nuevas solicitudes, citas aceptadas o canceladas) es otra responsabilidad clave de esta capa. Esto implicará la creación y el envío de notificaciones push a través del servicio correspondiente.
+
+### Responsabilidad del Application Layer
+
+El Application Layer tiene la responsabilidad fundamental de orquestar la ejecución de los diferentes casos de uso del sistema de gestión de citas. Esto incluye acciones como la creación de solicitudes, la aceptación y cancelación de citas, y la actualización de sus estados a medida que avanzan por el sistema. En esencia, esta capa actúa como un intermediario, coordinando las interacciones entre la Capa de Interfaz (donde el usuario interactúa) y la Capa de Dominio (donde reside la lógica de negocio), sin implementar directamente las reglas de negocio que son la competencia de la capa de dominio.
+
+### 4.2.3.4. Infrastructure Layer 
+
+Esta capa fundamental proporciona la base técnica necesaria para el correcto funcionamiento de todas las demás capas de nuestro sistema de gestión de citas. Aquí se gestionan aspectos cruciales como la persistencia de los datos y la integración con otros bounded contexts para funcionalidades como la mensajería y los pagos.
+
+Elementos Clave
+
+* **Repositorios:** Los repositorios son los responsables de la persistencia de las entidades definidas en la Capa de Dominio de Appointments. Esto incluiría un Repositorio de Citas para guardar y recuperar la información de las citas, un Repositorio de Disponibilidad para gestionar la disponibilidad de los cuidadores, y un Repositorio de Solicitudes de Cita para administrar las solicitudes de los padres. Su función principal es abstraer la forma en que los datos se almacenan y se acceden en la base de datos.
+
+* **Integración con Otros Bounded Contexts:** Esta capa se encarga de gestionar la comunicación con los bounded contexts de Messaging (para habilitar la conversación al aceptar una cita) y Payments (para procesar pagos o penalizaciones por cancelación). Esto podría implicar el uso de eventos de dominio, colas de mensajes o llamadas a APIs de otros contextos.
+  
+* **Bases de Datos:** La configuración y gestión de las bases de datos son una parte integral de esta capa. Estas bases de datos son las encargadas de almacenar de forma segura y eficiente todos los datos esenciales del sistema de gestión de citas, incluyendo las citas, la disponibilidad y las solicitudes.
+
+### Responsabilidad del Infrastructure Layer
+
+La principal responsabilidad del Infrastructure Layer es asegurar que los datos del sistema de gestión de citas sean almacenados, recuperados y procesados de manera eficiente y confiable. Además, se encarga de establecer y mantener las conexiones necesarias con otros bounded contexts que son fundamentales para el funcionamiento del sistema de citas. Esto también incluye la configuración y administración de los servidores, las bases de datos y cualquier otro servicio esencial que proporcione el entorno de ejecución para nuestra aplicación.
+
+### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams 
+![Appointments Software Architecture Component Level Diagrams](Images/Bounded_Context/image4.2.3.5.png)
+### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams 
+### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams 
+![Appointments Domain Layer Class Diagrams](Images/Bounded_Context/image4.2.3.6.1.png)
+### 4.2.3.6.2. Bounded Context Database Design Diagram
+![Appointments Database Design Diagram](Images/Bounded_Context/image4.6.3.6.2.png)
+
+
+
+### 4.2.4.   Bounded Context: Bounded Context: Messaging
+### 4.2.4.1. Domain Layer  
+Esta capa representa el núcleo de la lógica de negocio de nuestra aplicación. En este contexto específico, el dominio de mensajería abarca las entidades fundamentales y las reglas de negocio esenciales que definen cómo los mensajes son creados, enviados y recibidos entre los usuarios de nuestro sistema.
+
+### Entidades Clave
+
+Dentro de este dominio, algunas entidades son cruciales para su funcionamiento:
+
+* **Mensaje:** Esta es la entidad central. Un mensaje encapsula la información que un usuario desea comunicar, incluyendo el texto en sí, el destinatario al que va dirigido, la fecha en que fue creado y su estado actual (por ejemplo, pendiente de envío, ya enviado, leído por el destinatario). Además, puede contener información adicional relevante, como un identificador único para rastrearlo o etiquetas para categorizarlo.
+
+* **Usuario:** Representa a cualquier actor dentro del sistema que tiene la capacidad de enviar o recibir mensajes. En nuestro caso, estos usuarios pueden ser tanto Padres como Cuidadores. Cada usuario se identifica por atributos como su nombre, dirección de correo electrónico, preferencias sobre cómo recibir notificaciones y un registro de todas sus interacciones previas.
+
+* **Conversación:** Un mensaje nunca existe de forma aislada; siempre está vinculado a una conversación. Una conversación representa una interacción continua entre dos o más usuarios a lo largo del tiempo. Cada conversación puede contener múltiples mensajes, y cada usuario puede participar en diversas conversaciones simultáneamente.
+
+### Reglas de Negocio
+
+Para asegurar la integridad y el correcto funcionamiento del sistema de mensajería, se aplican las siguientes reglas de negocio:
+
+* **Autenticación y Autorización:** Un mensaje solo puede ser enviado si el usuario que intenta hacerlo ha sido correctamente autenticado dentro del sistema y tiene la autorización necesaria para realizar esta acción.
+
+* **Gestión de Estado del Mensaje:** Los mensajes atraviesan un ciclo de vida con diferentes estados. Estos estados reflejan su progreso dentro del sistema (por ejemplo, inicialmente "pendiente" hasta que se envía, luego "enviado" y finalmente, potencialmente, "entregado" o "leído").
+
+* **Validación de Mensajes:** Antes de que un mensaje sea enviado, debe pasar por un proceso de validación. Esto asegura que cumple con ciertos criterios predefinidos, como no exceder una longitud máxima establecida o no contener palabras que hayan sido marcadas como prohibidas.
+
+* **Registro de Actividad:** Se mantiene un registro detallado de cada mensaje que se envía y se recibe. Este historial es fundamental para tener trazabilidad y para futuras auditorías o consultas.
+
+### Responsabilidad del Domain Layer
+
+La principal responsabilidad del Domain Layer es contener la lógica de negocio pura. Esto significa definir las reglas que dictan cómo y por qué ocurren ciertos eventos dentro del sistema, como la creación de un nuevo mensaje o la conclusión de una conversación. Además, aquí se definen las entidades que modelan la realidad de nuestro sistema de mensajería y las interacciones que se dan entre ellas.
+
+### 4.2.4.2.  Interface Layer 
+Esta capa está específicamente diseñada para facilitar la interacción directa de los usuarios con nuestro sistema. Actúa como la puerta de entrada a la aplicación, proporcionando los medios a través de los cuales los usuarios pueden acceder y utilizar la lógica subyacente.
+
+### Elementos Clave
+
+Dentro de Interface Layer, encontramos los siguientes elementos esenciales:
+
+* **Interfaz de Usuario (UI):** Implementada utilizando tecnologías modernas y reactivas como React o Flutter, la UI ofrece un entorno visual intuitivo para que los usuarios interactúen con la plataforma. A través de ella, los usuarios pueden realizar acciones clave como enviar mensajes, revisar el historial de conversaciones, visualizar notificaciones importantes y gestionar sus preferencias de configuración, incluyendo cómo desean recibir las notificaciones.
+
+* **API de Mensajes:** En el caso de que nuestro sistema siga una arquitectura RESTful, esta capa también expone una serie de endpoints de la API (Application Programming Interface). Estos endpoints definen cómo las aplicaciones, tanto móviles como web, pueden comunicarse con el sistema de mensajería de manera eficiente. Ejemplos incluyen un endpoint `POST /messages` para la acción de enviar un nuevo mensaje y un endpoint `GET /conversations` para recuperar la lista de todas las conversaciones en las que un usuario participa.
+
+* **Notificaciones:** Una funcionalidad crucial para mantener a los usuarios informados es el sistema de notificaciones. Esta capa se encarga de la presentación de alertas sobre nuevos mensajes a los usuarios en tiempo real. Esto puede lograrse a través de sistemas de notificaciones push que llegan directamente a sus dispositivos o mediante notificaciones visuales integradas dentro de la propia aplicación.
+
+### Responsabilidad del Interface Layer
+
+La principal responsabilidad del Interface Layer radica en presentar la información del sistema de una manera clara y fácilmente comprensible para el usuario. Esto implica mostrar los mensajes que han recibido, las notificaciones relevantes y proporcionar los mecanismos necesarios, como formularios, para que puedan iniciar nuevas comunicaciones. Adicionalmente, esta capa tiene la tarea de tomar las acciones e intenciones del usuario y traducirlas en comandos concretos que serán posteriormente procesados por la Capa de Aplicación.
+
+### 4.2.4.3.  Application Layer 
+Esta capa actúa como el cerebro coordinador entre las interacciones del usuario y la lógica fundamental de nuestro negocio. Es importante destacar que aquí no reside la lógica de negocio en sí misma, sino que esta capa se dedica a orquestar los diversos servicios que interactúan directamente con la Capa de Dominio para llevar a cabo operaciones específicas solicitadas por el usuario.
+
+### Elementos Clave
+
+Dentro del Application Layer, identificamos los siguientes componentes principales:
+
+* **Servicios de Aplicación:** Estos son los responsables de gestionar los flujos de trabajo y la lógica de negocio de alto nivel. Un ejemplo ilustrativo sería un "Servicio de Envío de Mensajes". Este servicio no solo se encarga de la creación del mensaje, sino que también coordina su envío, gestiona el proceso de validación para asegurar su corrección y realiza el seguimiento para confirmar que el mensaje ha sido entregado exitosamente al destinatario.
+
+* **Gestión de Estado:** El seguimiento y la actualización del estado de las conversaciones y los mensajes se gestionan en esta capa. Por ejemplo, una vez que el "Servicio de Envío de Mensajes" confirma que un mensaje ha sido enviado, este componente se encarga de actualizar su estado a "enviado" y, potencialmente, de desencadenar una notificación para el receptor.
+
+* **Notificaciones y Alertas:** La gestión de las notificaciones que informan a los usuarios sobre la llegada de nuevos mensajes es otra responsabilidad clave de esta capa. Esto puede implicar la creación y el envío de notificaciones push a sus dispositivos móviles o el envío de alertas a través de correo electrónico, dependiendo de las preferencias del usuario y la configuración del sistema.
+
+### Responsabilidad del Application Layer
+
+El Application Layer tiene la responsabilidad fundamental de orquestar la ejecución de los diferentes casos de uso del sistema. Esto incluye acciones como el envío de mensajes, el registro de nuevas conversaciones y la actualización del estado de los mensajes a medida que avanzan por el sistema. En esencia, esta capa actúa como un intermediario, coordinando las interacciones entre la Capa de Interfaz (donde el usuario interactúa) y la Capa de Dominio (donde reside la lógica de negocio), sin implementar directamente las reglas de negocio que son la competencia de la capa de dominio.
+
+
+### 4.2.4.4. Infrastructure Layer 
+Esta capa fundamental proporciona la base técnica necesaria para el correcto funcionamiento de todas las demás capas de nuestro sistema. Aquí se gestionan aspectos cruciales como la persistencia de los datos, la integración con servicios externos (como el envío de correos electrónicos o notificaciones push) y la configuración de toda la infraestructura subyacente, incluyendo servidores y otras dependencias técnicas.
+
+### Elementos Clave
+
+Dentro del Infrastructure Layer, encontramos los siguientes componentes esenciales:
+
+* **Repositorios:** Los repositorios son los responsables de la persistencia de las entidades definidas en la Capa de Dominio. En nuestro contexto de mensajería, esto podría incluir un Repositorio de Mensajes encargado de guardar y recuperar la información de los mensajes, un Repositorio de Usuarios para gestionar la información de los usuarios, y un Repositorio de Conversaciones para administrar los datos relacionados con las conversaciones. Su función principal es abstraer la forma en que los datos se almacenan y se acceden en la base de datos.
+
+* **Servicios de Mensajería Externa:** Si nuestro sistema requiere la interacción con servicios de terceros para funcionalidades como el envío de mensajes SMS o correos electrónicos, Infrastructure Layer se encarga de gestionar la integración con estos servicios externos, proporcionando las interfaces necesarias para su uso por parte de las otras capas.
+
+* **Bases de Datos:** La configuración y gestión de las bases de datos son una parte integral de esta capa. Estas bases de datos son las encargadas de almacenar de forma segura y eficiente todos los datos esenciales del sistema, incluyendo los mensajes, las conversaciones y las preferencias de los usuarios. La elección entre una base de datos relacional (como PostgreSQL o MySQL) o una base de datos NoSQL (como MongoDB o Cassandra) dependerá de las necesidades específicas de nuestro sistema en términos de escalabilidad, estructura de datos y rendimiento.
+
+### Responsabilidad del Infraestructure Layer
+
+La principal responsabilidad del Infraestructure Layer es asegurar que los datos del sistema sean almacenados, recuperados y procesados de manera eficiente y confiable. Además, se encarga de establecer y mantener las conexiones necesarias con cualquier servicio externo que sea fundamental para el funcionamiento del sistema. Esto también incluye la configuración y administración de los servidores, las bases de datos y cualquier otro servicio esencial que proporcione el entorno de ejecución para nuestra aplicación.
+
+### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams 
+![Bounded Context Software Architecture Component Level Diagrams](Images/Bounded_Context/imagen4.2.4.5.png)
+
+### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams 
+![Bounded Context Software Architecture Code Level Diagrams](Images/Bounded_Context/imagen4.2.4.6.png)
+
+### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams 
+![Bounded Context Domain Layer Class Diagrams](Images/Bounded_Context/imagen4.2.4.6.1.png)
+
+### 4.2.4.6.2. Bounded Context Database Design Diagram
+![Bounded Context Database Design Diagram](Images/Bounded_Context/imagen4.6.4.6.2.png)
+
+
+
+# Capítulo V: Solution UI/UX Design
+
+## 5.1. Product design
+
+El diseño del producto es una fase crucial en el desarrollo de SafeChild, ya que determina cómo los padres interactuarán con la plataforma, asegurando que la experiencia de usuario sea simple, eficiente y confiable. En este capítulo, detallamos el proceso de diseño seguido para SafeChild, desde las pautas de estilo general hasta la arquitectura de software y la base de datos. Cada sección refleja nuestro enfoque en crear una experiencia de usuario que priorice la facilidad de uso y la confianza en la conexión con niñeras y profesores calificados, tanto en la landing page como en las aplicaciones web.
+
+### 5.1.1. Style Guidelines
+
+En SafeChild, establecimos pautas de estilo claras para garantizar una experiencia visual coherente y profesional. Definimos tanto aspectos generales como específicos para la web, con el objetivo de transmitir confianza y accesibilidad a los usuarios.
+
+### 5.1.1.1. General Style Guidelines
+
+**Task:**
+En esta sección, se detallarán las directrices generales de estilo que guiarán el diseño y la presentación de SafeChild. Estas directrices asegurarán que todos los elementos visuales y textuales sean coherentes y alineados con la identidad de nuestra marca, proporcionando una experiencia de usuario fluida, confiable y profesional.
+
+**Insight:**
+La consistencia en el estilo y diseño es crucial para establecer una identidad de marca sólida y reconocible en SafeChild. Una guía de estilo clara ayuda a mantener la coherencia a lo largo del proyecto, asegurando que la plataforma refleje confianza y profesionalismo en cada interacción, facilitando la navegación y el uso para los padres que buscan cuidadores y profesores confiables.
+
+**Branding:**
+Nuestro logo representa a SafeChild mediante la imagen de dos manos que sostienen a un niño, con una casa y un oso de fondo. Este conjunto visual simboliza protección, cuidado y un entorno seguro, que son los pilares fundamentales de nuestra propuesta. Los colores celeste, blanco y celeste oscuro refuerzan sensaciones de calma, confianza y profesionalismo. La tipografía utilizada es moderna y accesible, asegurando legibilidad y fácil reconocimiento del nombre de la marca.
+
+<div align="center">
+<img src="assets/chapter05/SafechildLogo.png" alt="logo safe child" width="800"></a><br>
+<br>
+</div>
+
+**Typography:**
+Se seleccionó una tipografía moderna, limpia y accesible, diseñada para ser legible en dispositivos móviles y de escritorio. La elección de la tipografía tiene como objetivo mejorar la experiencia de lectura y navegación, asegurando que toda la información relevante sea clara para los usuarios.
+
+**Nunito**
+
+<div align="center">
+<img src="assets/chapter05/tipografia.png" alt="logo safe child" width="800"></a><br>
+<br>
+</div>
+
+Colors:
+
+La paleta de colores de SafeChild ha sido cuidadosamente seleccionada para transmitir una sensación de seguridad, confianza y serenidad. Estos tonos refuerzan la identidad visual de la plataforma y mejoran la experiencia del usuario, asegurando coherencia en todos los elementos gráficos.
+
+**#F7F6F6:** Utilizado como color de fondo neutro, este tono claro brinda una sensación de limpieza, orden y simplicidad, facilitando la lectura y reduciendo la fatiga visual.<br>
+**#4AADBE:** Este tono azul verdoso actúa como el color principal de la marca, evocando frescura, calma y confianza. Se aplica en botones, iconos destacados y elementos de navegación.<br>
+**#89CFD7:** Funciona como color complementario para aportar equilibrio visual. Su suavidad ayuda a destacar secciones secundarias sin robar protagonismo al contenido principal.<br>
+**#0D3A5A:** Este azul profundo garantiza una excelente legibilidad como color principal de texto. Además, aporta un contraste sobrio y profesional en toda la interfaz.<br>
+**#72C3CF:** Este color intermedio es empleado para generar dinamismo y variedad sin perder coherencia visual. Aparece en tarjetas informativas, íconos ilustrativos y transiciones.<br>
+**#ADE3E0:** Este tono claro y amigable refuerza la sensación de tranquilidad y cercanía. Se utiliza en fondos de secciones secundarias o elementos decorativos suaves.<br>
+
+<div align="center">
+<img src="assets/chapter05/colors.png" alt="logo safe child" width="800"></a><br>
+<br>
+</div>
+
+**Spacing:**
+Se utiliza un espaciado base de 4px para padding y margin en todos los elementos, lo que asegura una apariencia uniforme y ordenada en la interfaz. Este enfoque crea una estructura visual clara y organizada que facilita la navegación, mejorando la experiencia de usuario en dispositivos móviles y web.
+
+### 5.1.2. Information Architecture
+
+En SafeChild, buscamos ofrecer una plataforma intuitiva, segura y confiable para conectar a padres que buscan servicios de cuidado infantil y cuidadores que desean registrarse para ofrecer sus servicios. Debido a la naturaleza de los servicios que involucran cuidado infantil y transacciones seguras, la arquitectura de la información es clave para lograr nuestros objetivos. A continuación, se presenta el diseño y organización de la plataforma.
+
+<b> 1. Vista Home: </b>
+
+- Vista Previa de Cuidadores Disponibles: <br>
+  Muestra cuidadores destacados o populares para captar la atención de los padres que buscan servicios.
+- Registro de Cuidadores: <br>
+  Enlace directo para que nuevos cuidadores puedan registrarse en la plataforma y comenzar a ofrecer sus servicios.
+
+<b> 2. Buscar Cuidadores (Para Padres y Tutores): </b>
+
+- Categorías de Servicios: <br>
+  Sección que agrupa los servicios de cuidado infantil según las necesidades específicas: cuidado a tiempo completo, cuidado parcial, cuidado de niños con necesidades especiales, etc.
+- Filtros de Búsqueda: <br>
+  Herramientas que permiten a los padres filtrar cuidadores según criterios como experiencia, calificaciones, precio, ubicación y disponibilidad.
+- Vista Detallada de Perfiles: <br>
+  Cada cuidador cuenta con una página individual que muestra su experiencia, calificaciones, tarifas, disponibilidad y certificaciones.
+
+<b> 3. Registro de Cuidadores: </b>
+
+- Formulario de Registro: <br>
+  Formulario para que los cuidadores se registren en la plataforma, ingresando información como experiencia, habilidades, certificaciones y disponibilidad.
+- Gestión de Servicios: <br>
+  Una vez registrados, los cuidadores pueden crear o editar su perfil, subir certificaciones y gestionar su disponibilidad.
+- Historial de Servicios y Pagos: <br>
+  Los cuidadores pueden revisar un historial de los servicios que han realizado, las calificaciones obtenidas y los pagos recibidos.
+
+<b> 4. Reservar Servicios de Cuidado: </b>
+
+- Interfaz de Reserva: <br>
+  Una interfaz simple para que los padres seleccionen el cuidador, fecha y hora para reservar el servicio de cuidado infantil.
+- Vista Previa y Confirmación: <br>
+  Los padres pueden visualizar los detalles de la reserva antes de confirmar, incluyendo la tarifa total y la duración del servicio.
+
+### 5.1.2.1. Organization Systems
+
+El sistema de organización de SafeChild está diseñado para brindar la mejor experiencia posible tanto para los padres que buscan contratar servicios como para los cuidadores que desean ofrecerlos.
+
+<b> 1. Categorización de la Información: </b>
+
+- Perfiles de Cuidadores: <br>
+  Categorizados por experiencia, tipo de cuidado (niños pequeños, cuidado especializado, cuidado nocturno) y calificaciones.
+- Servicios de Cuidado: <br>
+  Categorizados por tiempo completo, medio tiempo, ocasional, etc.
+
+<b> 2. Filtros y Búsqueda: </b>
+
+- Filtros para Padres: <br>
+  Los padres pueden filtrar los cuidadores según la ubicación, experiencia, precio, calificaciones, disponibilidad y otros parámetros.
+
+<b> 3. Interfaz de Usuario Intuitiva: </b>
+
+- Menú Principal: <br>
+  Un menú claro y accesible que incluye las secciones clave: Buscar Cuidadores, Registro de Cuidadores, Historial de Servicios, y Perfil de Usuario.
+
+<b> 4. Funcionalidades Específicas: </b>
+
+- Perfiles de Cuidadores: <br>
+  Cada cuidador tiene una página individual que muestra su experiencia, calificaciones, tarifas y disponibilidad, junto con una opción para reservar un servicio.
+- Reservas: <br>
+  Los padres pueden gestionar y ver sus reservas previas, y repetir servicios con cuidadores específicos desde su historial.
+
+### 5.1.2.2. Labelling Systems
+
+Para mejorar la navegación y comprensión, SafeChild utilizará un sistema de etiquetado claro y descriptivo. Ejemplos de etiquetas incluyen:
+
+- Buscar Cuidadores
+- Registrar como Cuidador
+- Reserva de Servicios
+- Perfiles de Cuidadores
+- Historial de Servicios
+
+### 5.1.2.3. SEO Tags and Meta Tags
+
+<div align="center">
+<img src="assets/chapter05/metamobile.png" alt="logo safe child" width="800"></a><br>
+<br>
+</div>
+
+**Insight:**
+
+Estos metadatos mantienen la coherencia de SEO y marca con la versión web de SafeChild. Aunque no influyen en los motores de búsqueda tradicionales, resultan útiles para indexación interna, análisis y optimización en la tienda (ASO). Además, desde la consola de Google Play puedes completar y afinar el título, la descripción, los íconos y las capturas de pantalla para mejorar aún más la visibilidad.
+
+### 5.1.2.4. Searching Systems
+
+El sistema de búsqueda dentro de la aplicaion permitirá a los padres y cuidadores encontrar la información que necesitan de manera rápida y eficaz.
+
+<b> 1. Búsqueda por Tipo de Cuidado: </b> <br>
+Los padres pueden buscar cuidadores por tipo de cuidado, como "cuidado nocturno", "cuidado a tiempo completo" o "cuidado de niños con necesidades especiales".
+
+<b> 2. Búsqueda por Disponibilidad: </b> <br>
+Se ofrece una búsqueda avanzada que permite a los padres buscar cuidadores según la disponibilidad en días y horarios específicos.
+
+<b> 3. Búsqueda por Calificaciones: </b> <br>
+Los padres pueden buscar cuidadores con las mejores calificaciones y opiniones de otros usuarios.
+
+### 5.1.2.5. Navigation Systems
+
+El sistema de navegación está diseñado para ofrecer una experiencia fluida, fácil de usar y segura para ambos segmentos (padres y cuidadores).
+
+<b> 1. Menú Principal: </b> <br>
+El menú principal incluirá enlaces a las secciones más importantes: Inicio, Buscar Cuidadores, Registro de Cuidadores, Historial de Servicios y Perfil.
+
+<b> 2. Navegación Contextual: </b> <br>
+Cada sección principal tendrá submenús específicos para ayudar a los usuarios a acceder a opciones más detalladas dentro de la plataforma, como filtros de búsqueda o ajustes de perfil.
+
+<b> 3. Botones de Acción Destacados: </b> <br>
+Botones llamativos como "Buscar Cuidadores", "Registrar como Cuidador" y "Reservar Servicio" estarán estratégicamente ubicados para facilitar la interacción.
+
+<b> 4. Búsqueda y Filtros Visibles: </b> <br>
+La barra de búsqueda y los filtros estarán siempre visibles para que los usuarios puedan ajustar rápidamente los resultados y encontrar cuidadores de acuerdo a sus preferencias.
+
+<b> 5. Flujo de Navegación Intuitivo: </b> <br>
+Desde la búsqueda hasta la reserva de servicios, se establecerá un flujo lógico y claro que guía a los usuarios en cada etapa, con mensajes de acción y señales visuales que facilitan el proceso.
+
+### 5.1.3. Landing Page UI Design
+
+En esta sección, el equipo presentará la propuesta de Interfaz de Usuario para la Landing Page. Inicialmente, se ofrecerá una introducción que detallará cómo el equipo ha interpretado y aplicado las decisiones de diseño y la arquitectura de información previamente definidas en la elaboración visual de la página. Se mostrará la evolución del diseño, evidenciando la implementación de las Guías de Estilo y la Arquitectura de la Información en el prototipo desarrollado con Figma.
+
+### 5.1.3.1. Landing Page Wireframe
+
+La siguiente sección presenta el wireframe de la landing page diseñada para la aplicación. Este diseño tiene como objetivo principal captar la atención de nuevos usuarios, destacando los beneficios del servicio y facilitando el acceso a funciones clave como el registro, la información de contacto y las características del producto. La estructura propuesta incluye secciones como el encabezado de navegación, beneficios principales, suscripciones, testimonios de clientes y un formulario de contacto. Este wireframe proporciona una guía visual preliminar que servirá de base para el desarrollo de la interfaz de usuario final.
+
+![Landing Page Wireframe](assets/chapter05/landing_wireframe.png)
+
+
+### 5.1.3.2. Landing Page Mock-up
+
+En esta sección se presenta el mockup visual de la landing page, el cual representa una versión más detallada y cercana al producto final en comparación con el wireframe. Este diseño incorpora los elementos visuales clave como colores, tipografías, íconos e imágenes, alineados con la identidad visual de la plataforma SafeChild. El objetivo del mockup es mostrar cómo se verá la interfaz una vez implementada, permitiendo validar decisiones de diseño antes del desarrollo. Cada sección ha sido diseñada para garantizar una experiencia de usuario clara, accesible y centrada en la confianza y seguridad que la plataforma desea transmitir.
+
+![Landing Page Mock-up](assets/chapter05/landing_mockup.png)
+
+
+### 5.1.4. Mobile Applications UX/UI Design
+
+### 5.1.4.1. Mobile Applications Wireframes
+
+### 5.1.4.2. Mobile Applications Wireflow Diagrams
+
+En esta sección se presentan los wireflow de las aplicaciones móviles, que ilustran el flujo de interacción del usuario a través de las diferentes pantallas y funciones de la aplicación. Estos diagramas son esenciales para comprender cómo los usuarios navegarán por la plataforma, desde la pantalla de inicio hasta la comunicación entre usuarios. Cada paso del proceso está representado visualmente, lo que permite identificar posibles mejoras en la experiencia del usuario y garantizar que todas las funcionalidades estén claramente definidas y accesibles.
+
+#### User Goal 1: Un padre quiere contratar un(a) cuidador(a)
+
+#### Task Flow:
+1. Abrir la app y ver pantalla de inicio.
+2. Seleccionar **"Soy Padre"**.
+3. Iniciar sesión (o registrarse si no tiene cuenta).
+4. Ver lista de cuidadores disponibles según tipo de servicio.
+5. Seleccionar un cuidador.
+6. Ver detalles del cuidador.
+7. Confirmar datos y proceder al pago.
+8. Ingresar información de tarjeta.
+9. Confirmar el pago.
+10. Acceder a la sección de **Reservas** para ver el estado del servicio.
+
+![WIREFLOW 1](assets/chapter05/wireflows/wireflow1.png)
+
+#### User Goal 2: Un cuidador quiere ofrecer sus servicios
+
+#### Task Flow:
+1. Abrir la app y ver pantalla de inicio.
+2. Seleccionar **"Soy Cuidador(a)"**.
+3. Iniciar sesión (o registrarse si no tiene cuenta).
+4. Completar el formulario de registro incluyendo experiencia y tipo de servicio.
+5. Subir documentos necesarios.
+6. Acceder a **"Servicios Disponibles"**.
+7. Ver detalles del servicio solicitado por un padre.
+8. Aceptar o rechazar la solicitud.
+9. Acceder a la sección de **Mis servicios** para ver servicios aceptados.
+
+![WIREFLOW 2](assets/chapter05/wireflows/wireflow2.png)
+#### User Goal 3: Un usuario quiere comunicarse con el otro rol mediante chat
+
+#### Task Flow:
+1. Iniciar sesión como padre o cuidador.
+2. Acceder a la sección de **Chat Online**.
+3. Ver lista de contactos (padres o cuidadores según el rol).
+4. Seleccionar un contacto.
+5. Enviar y recibir mensajes en tiempo real.
+
+![WIREFLOW 3](assets/chapter05/wireflows/wireflow3.png)
+
+
+
+
+### 5.1.4.3. Mobile Applications Mock-ups
+
+
+
+### 5.1.4.4. Mobile Applications User Flow Diagrams
+
+En esta sección se presentan los diagramas de User Flow de las aplicaciones móviles, que detallan de manera visual y descriptiva las rutas que los usuarios siguen para cumplir sus objetivos principales (happy path) y las posibles rutas alternativas (unhappy paths).
+
+Cada User Flow se estructura en torno a un **User Goal** específico, previamente identificado en los wireflows de la sección anterior. Para cada uno de ellos se incluyen:
+
+- **Mock-ups de las vistas**: capturas de pantalla a modo de prototipo de alta fidelidad de cada paso clave en el flujo.
+- **Ruta esperada (Happy Path)**: el recorrido ideal sin incidencias, que permite al usuario completar la tarea con éxito.
+- **Rutas alternativas (Unhappy Paths)**: los caminos que surgen ante posibles errores o condiciones especiales.
+
+
+
+#### User Flow 1: Contratar un(a) cuidador(a)
+
+**User Goal:**  
+Un padre desea contratar los servicios de un(a) cuidador(a) confiable.
+
+**Task Flow:**
+1. El usuario accede a la pantalla de registro y completa los campos obligatorios (nombre, correo, contraseña, confirmar contraseña, celular).
+2. Avanza a la pantalla de inicio de sesión como Padre, ingresa correo y contraseña.
+3. Se muestra la lista de cuidadores disponibles, con opción de filtrar por tipo de servicio.
+4. Al seleccionar un cuidador, el sistema evalúa si el servicio sigue activo:
+- Si el servicio está disponible → se abre la pantalla de **Detalles del cuidador**, donde el padre puede ver biografía, tarifa y opciones **Reservar** o **Contactar**.
+- Si el servicio fue eliminado → aparece una pantalla de **error** con el mensaje:
+  > **"Error: El servicio ha sido eliminado por el usuario."**
+
+**Happy Path:**
+- Registro/login exitoso → selección de cuidador activo → visualización de detalles del servicio.
+
+**Unhappy Path:**
+- Servicio borrado por el cuidador antes de la selección → mensaje de error.
+
+![USER FLOW 1](assets/chapter05/userflows/UF1.png)
+
+#### User Flow 2: Ofrecer servicios (Cuidador(a))
+
+**User Goal:**  
+Un cuidador desea publicar sus servicios para recibir solicitudes de padres.
+
+**Task Flow:**
+1. El usuario ingresa a la pantalla de registro y completa sus datos (nombre, correo, contraseña, celular, experiencia previa, tipo de cuidado, carga de documentos).
+2. Avanza a la pantalla de inicio de sesión como Cuidador e ingresa sus credenciales.
+3. Se muestra la lista de **Servicios Disponibles**, con solicitudes de otros cuidadores con los datos de mayor relevancia (nombre, ubicación, calificación, fecha y horario).
+4. Al intentar agregar un nuevo servicio:
+- El sistema verifica que los documentos personales estén validados.
+- Si los documentos están completos y validados** → el servicio se añade correctamente a la lista.
+- Si falta validación de documentos → se muestra una pantalla de error con la notificación:
+  > **"Error: No puede agregar servicios sin antes validar o subir sus documentos personales."**
+
+**Happy Path (resumen):**
+- Registro/inicio de sesión exitoso → documentos validados → servicio agregado.
+
+**Unhappy Path relevante:**
+- Intento de agregar servicio sin haber validado documentos → mensaje de error claro.
+
+![USER FLOW 2](assets/chapter05/userflows/UF2.png)
+
+#### User Flow 3: Comunicación entre usuarios (Chat)
+
+**User Goal:**  
+Un usuario (padre o cuidador) quiere comunicarse en tiempo real con el otro rol.
+
+**Task Flow:**
+1. El usuario inicia sesión como padre o cuidador.
+2. En el menú principal selecciona **Chat Online**.
+3. Aparece la lista de contactos activos (cuidadores para padres, padres para cuidadores).
+4. Selecciona un contacto y abre la ventana de chat.
+5. Envía y recibe mensajes en tiempo real, con historial de conversación visible.
+
+**Happy Path:**
+- Inicio de sesión exitoso → acceso a chat → envío y recepción de mensajes.
+
+**Unhappy Paths:**
+- Fallo de red al enviar mensaje → alerta "Mensaje no enviado, inténtelo más tarde".
+
+![USER FLOW 3](assets/chapter05/userflows/UF3.png)
+
+
+
+### 5.1.4.5. Mobile Applications Prototyping
+
+
+
+
+# Capítulo VI: Product Implementation, Validation & Deployment
+
+## 6.1. Software Configuration Management
+
+### 6.1.1. Software Development Environment Configuration 
+
+Esta sección aborda la configuración de las herramientas necesarias para el desarrollo del software, organizadas de acuerdo con las distintas fases y actividades del proyecto.
+
+**Gestión de Proyectos**
+
+Para planificar y coordinar el desarrollo del software, incluyendo la asignación de tareas y el seguimiento del progreso, utilizamos:
+
+- Trello: Esta plataforma de gestión de proyectos basada en tableros nos ayuda a organizar tareas y colaborar en tiempo real, facilitando la visualización del avance y la coordinación entre los miembros del equipo.
+<td><img src="./assets/chapter06/trello.png" alt="auto" width="350"></td>
+
+  Link de Trello: [ Click aqui para ver el Trello](https://trello.com/invite/b/681b510bf50b705cf834a1d2/ATTI7e16229a5018f84fd61f1a2e59b3ed3a1CC3293D/agile-board-safechild-safegroup)
+
+**Diseño UX/UI**
+
+En esta sección nos centramos en la creación de interfaces atractivas e intuitivas, considerando las necesidades y preferencias de los usuarios. Las herramientas empleadas son:
+
+- Figma: Permite diseñar y compartir interfaces de usuario de manera colaborativa y eficiente.
+
+<td><img src="./assets/chapter06/figma.png" alt="auto" width="350"></td>
+
+  Link de figma: [ Click aqui para ver el Figma](https://www.figma.com/design/OsdXkbtYPJ2961luVVtQa4/SafeChild-Figma?node-id=11-2&t=ChaHyaCZm2qRNwnH-1)
+
+- Miro: Usado para la lluvia de ideas, definición de problemas y necesidades del cliente, así como la identificación de los Bounded Contexts del proyecto. Tambien se utlizó para crear diagramas UML y diagramas de flujo, ayudando a representar visualmente la arquitectura y los procesos del proyecto.
+
+<td><img src="./assets/chapter06/miro.png" alt="auto" width="200"></td>
+
+  Link de Miro:[ Click aqui para el Miro](https://miro.com/welcomeonboard/ejhTN05YVFhxa3p2b3IwTFdmWVI3R2p1TTJ0WXQ1N1RYZG5yY0xGVWI3a2xXOW5tR0JRamJ5YTVUREYxcjBUYzd3ZEZvR3ZzQW1XTlI0Zk5ITjlvZ044NThCUWdqSzB3MVB5aWU3UmJONi9XbTdZR2kybmNnemROVVo5MFNUSGRBS2NFMDFkcUNFSnM0d3FEN050ekl3PT0hdjE=?share_link_id=206065220670)
+
+- UXpressia: Herramienta para crear User Personas, Empathy Maps, Journey Maps e Impact Maps, facilitando una comprensión más profunda de los usuarios y sus necesidades.
+
+**Desarrollo de Software**
+
+Para el proceso de creación y programación del software móvil, utilizamos las siguientes herramientas y tecnologías:
+
+- Android Studio: Entorno de desarrollo oficial para Android que ofrece herramientas especializadas como emuladores, diseño visual de interfaces (UI), y compatibilidad directa con Kotlin. Permite una integración eficiente del ciclo de desarrollo, pruebas y despliegue de la aplicación móvil.
+
+<td><img src="./assets/chapter06/andoridst.png" alt="auto" width="200"></td>
+
+- GitHub: Plataforma para alojar el repositorio del proyecto y gestionar el control de versiones del código fuente y la documentación, facilitando la colaboración y el seguimiento de cambios.
+
+<td><img src="./assets/chapter06/github.png" alt="auto" width="200"></td>
+
+  Link: <https://github.com/>
+
+
+**Documentación de Software**
+
+La documentación técnica es crucial para el mantenimiento y comprensión del software. Utilizamos:
+
+- Markdown: Un lenguaje de marcado ligero y sencillo para crear documentos con formato, empleándose para redactar la documentación del proyecto de manera clara y estructurada.
+
+<td><img src="./assets/chapter06/md.png" alt="auto" width="200"></td>
+
+### 6.1.2. Source Code Management
+
+Durante el desarrollo de los sprints futuros, utilizaremos Git Flow para gestionar el desarrollo de nuevas características, realizar correcciones y preparar lanzamientos. Esta metodología proporciona una estructura organizada que mejora la colaboración y la comprensión del flujo de trabajo entre los desarrolladores. Al seguir Git Flow, garantizamos que todos los cambios se integren de manera eficiente, facilitando la coordinación del equipo y la entrega de un producto de alta calidad.
+
+**Repositorios GitHub**
+
+Los repositorios de GitHub que utilizaremos para cada uno de los productos del proyecto son los siguientes:
+
+- **Landing Page:** [Repositorio de GitHub - Landing Page](https://upc-pre-202501-1acc0238-356-safegroup.github.io/SafeChild_LandingPage.github.io/)
+- **Documentacion:** [Repositorio de GitHub - Report]()
+- **BackEnd API:** [Repositorio de GitHub - Backend API]()
+
+#### Implementación de Git Flow
+
+Git Flow se implementará como el **workflow principal** de control de versiones para gestionar eficientemente el desarrollo del software. La estructura de Git Flow organiza las ramas de la siguiente manera:
+
+- **Ramas Principales**:
+
+  - `master` o `main`: Contiene el código estable y listo para el despliegue en producción.
+  - `develop`: Rama de integración donde se consolidan las nuevas características que se preparan para el próximo lanzamiento.
+
+- **Ramas de Soporte**:
+
+  - **Feature branches:** Se crean desde `develop` para desarrollar nuevas características.
+
+    - Convención de nombres: `feature/[nombre-de-la-caracteristica]`
+    - Ejemplo:
+      ```bash
+      git checkout -b feature/autenticacion-usuario
+      git add .
+      git commit -m "feat: Implementa autenticación de usuario"
+      git push -u origin feature/autenticacion-usuario
+      ```
+
+  - **Release branches:** Se crean cuando una versión está lista para ser lanzada, permitiendo preparar la rama para la producción.
+
+    - Convención de nombres: `release/[version]`
+    - Ejemplo:
+      ```bash
+      git checkout -b release/1.0.0
+      ```
+
+  - **Hotfix branches:** Se utilizan para corregir problemas críticos en la rama `master` sin interrumpir el trabajo en `develop`.
+    - Convención de nombres: `hotfix/[version-fix]`
+    - Ejemplo:
+      ```bash
+      git checkout -b hotfix/1.0.1
+      git add .
+      git commit -m "fix: Corrige error crítico en autenticación"
+      git push -u origin hotfix/1.0.1
+      ```
+
+#### Flujo de Trabajo en Git Flow:
+
+1. **Desarrollo de Características (Feature)**: Las nuevas funcionalidades se desarrollan en ramas `feature` creadas a partir de `develop`. Una vez finalizadas, se fusionan de nuevo en `develop`.
+   ```bash
+   git checkout -b feature/[nombre-de-la-caracteristica]
+   git add .
+   git commit -m "feat: [descripcion-de-la-caracteristica]"
+   git push -u origin feature/[nombre-de-la-caracteristica]
+   ```
+
+**Convenciones de Commits**
+
+Para los nombres de los commits, usamos el estándar Conventional Commits, que proporciona una estructura clara para los mensajes en los commits, facilitando la colaboración y el seguimiento de cambios:
+
+- feat: Nueva característica
+
+```
+git commit -m "feat: [descripcion de la caracteristica]"
+```
+
+- fix: Corrección de errores
+
+```
+git commit -m "fix: [descripcion del error]"
+```
+
+- docs: Cambios en la documentación
+
+```
+git commit -m "docs: [descripcion de los cambios en la documentacion]"
+```
+
+- style: Cambios en el estilo
+
+```
+git commit -m "style: [descripcion de los cambios en el estilo que no afectan a la logica del codigo]"
+```
+
+- refactor: Refactorización del código
+
+```
+git commit -m "refactor: [descripcion de la refactorizacion]"
+```
+
+- test: Cambios en las pruebas
+
+```
+git commit -m "test: [descripcion de los cambios en las pruebas]"
+```
+
+- chore: Cambios en la configuración
+
+```
+git commit -m "chore: [descripcion de los cambios en la configuracion]"
+```
+
+Este modelo proporciona una estructura organizada que ayuda a los desarrolladores a entender el flujo de trabajo y colaborar de manera efectiva.
+
+
+### 6.1.3. Source Code Style Guide & Conventions 
+
+En el desarrollo de la app móvil de SafeChild utilizamos principalmente Kotlin, el Android SDK y librerías de Android Jetpack. Para garantizar la consistencia y calidad del código, se adoptan las siguientes convenciones:
+
+**Lenguajes y tecnologías**
+
+- **Kotlin:** <br> Lenguaje de programación moderno y conciso, totalmente interoperable con Java. Ofrece características de seguridad de tipo y null‑safety que reducen errores en tiempo de ejecución, junto con corutinas para manejo sencillo de operaciones asíncronas (por ejemplo llamadas a APIs o acceso a base de datos) sin bloqueos de la interfaz.
+- **Android SDK:** (API nivel mínimo acorde al mercado objetivo)
+<br>
+Conjunto de librerías y APIs base que permiten acceder a funcionalidades nativas de Android —como gestión de ciclo de vida de Activity/Fragment, dibujo en pantalla, acceso a sensores (GPS, cámara), almacenamiento, y servicios en segundo plano— asegurando compatibilidad con la mayoría de dispositivos en el mercado.
+- **Android Jetpack:** <br>Colección de bibliotecas y componentes recomendados por Google para simplificar patrones de arquitectura y acelerar el desarrollo: ViewModel, LiveData / StateFlow, Navigation, Hilt (DI), Retrofit (HTTP), Room (persistencia).
+- **Jetpack Compose** (UI declarativa):<br> Nuevo toolkit declarativo para construir interfaces en Kotlin puro. Permite describir la UI como funciones @Composable que reaccionan automáticamente a cambios de estado, reduciendo el boilerplate de XML y mejorando la legibilidad. Integra fácilmente animaciones y theming.
+- **XML Layouts** (UI tradicional):<br>
+Sistema basado en archivos .xml donde se definen jerarquías de vistas (View, ViewGroup) y estilos. Requiere findViewById o View Binding/DataBinding para conectar con el código. Ofrece separación clara entre vista y lógica, y sigue siendo compatible con la mayoría de librerías y patrones existentes.
+
+**Convenciones generales de Kotlin**
+
+- **Indentación:** 4 espacios por nivel.
+- **Sin punto y coma** al final de líneas.
+- **Nombres de ficheros:** Deben coincidir con el nombre de la clase o función pública que contienen.
+
+```
+// Archivo: LoginViewModel.kt
+class LoginViewModel @HiltViewModel constructor(
+    private val authRepo: AuthRepository
+) : ViewModel() { … }
+'
+```
+
+**Clases y objetos:** UpperCamelCase.
+
+**Funciones y propiedades:** lowerCamelCase.
+
+**Constantes:** UPPER_SNAKE_CASE y declaradas en companion object o en un objeto separado.
+
+```
+companion object {
+  const val BASE_URL = "https://api.safechild.com/"
+}
+```
+
+**Paquetes:** todo en minúsculas, separados por puntos, reflejando la capa y la funcionalidad.
+
+```
+com.safechild.mobile.ui.login
+com.safechild.mobile.data.payments
+com.safechild.mobile.domain.appointments
+```
+
+**Arquitectura y organización de carpetas**
+
+**Patrón MVVM**  (Model–View–ViewModel)
+
+```
+
+├─ data/           // Repositorios, mappers y fuentes de datos
+├─ domain/         // Use cases, entidades y lógica de negocio
+├─ ui/             // Activities/Fragments o Composables, adapters
+├─ di/             // Módulos de Hilt para inyección de dependencias
+└─ utils/          // Extensiones y helpers generales
+```
+**Feature modules (opcional):**  agrupar funcionalidades grandes en módulos Gradle independientes
+
+
+**UI (Jetpack Compose o XML)** 
+**Composables:** 
+
+Funciones anotadas con @Composable, UpperCamelCase.
+
+Parámetros nombrados y con valores por defecto cuando sea posible.
+
+kotlin
+Copiar
+Editar
+
+```
+@Composable
+fun ReservationItem(reservation: Reservation, onClick: () -> Unit) { … }
+```
+
+**Layouts XML:** 
+
+Archivos en res/layout/ con nombre feature_action_screen.xml (snake_case).
+
+IDs de vistas en snake_case:``` @+id/btn_confirm_reservation.```
+
+**Resumen**
+
+- Estructura del Proyecto: Mantener una estructura clara y consistente para los módulos, componentes y servicios.
+- Nombres de Archivos: Utilizar el formato kebab-case para nombres de archivos y carpetas.
+- Servicios: Seguir el patrón de inyección de dependencias para gestionar servicios y mantener una alta cohesión y bajo acoplamiento.
+
+### 6.1.4. Software Deployment Configuration
+Para el despliegue de la página de inicio del proyecto, hemos optado por **GitHub Pages**, una plataforma que ofrece alojamiento gratuito para sitios web estáticos directamente desde un repositorio de GitHub. Este enfoque permite gestionar y publicar de manera sencilla las versiones del proyecto, garantizando que el sitio web esté accesible en todo momento. A continuación, se detallan los pasos específicos para configurar y realizar el despliegue.
+
+#### Pasos para el despliegue en GitHub Pages:
+
+1. **Creación del repositorio en GitHub:**
+
+   - Primero, se debe crear un nuevo repositorio en GitHub. Asegúrate de que el repositorio sea público para que GitHub Pages pueda generar y alojar el sitio.
+   - Clona el repositorio a tu máquina local para realizar los desarrollos necesarios.
+   - **Ejemplo:**
+     ```bash
+     git clone https://upc-pre-202501-1acc0238-356-safegroup.github.io/SafeChild_LandingPage.github.io/
+
+2. **Desarrollo del sitio estático:**
+
+   - El desarrollo del **Landing Page** se realiza utilizando HTML, CSS y JavaScript. Estos archivos deben estar en la raíz del repositorio o en la carpeta `docs`, dependiendo de la configuración elegida para GitHub Pages.
+
+3. **Configuración de GitHub Pages:**
+
+   - Dirígete a la configuración del repositorio en GitHub:
+     - Ve a la pestaña `Settings`.
+     - Desplázate hacia abajo hasta la sección **GitHub Pages**.
+     - En el menú desplegable "Source", selecciona la rama `main` o `master` y la carpeta raíz (`/root`) o `docs/` si los archivos están organizados dentro de esa carpeta.
+   - Una vez seleccionado, GitHub Pages generará una URL para acceder a tu sitio web.
+
+4. **Subir y actualizar los archivos al repositorio:**
+
+   - Una vez que los archivos del proyecto estén listos, súbelos al repositorio. Para ello, puedes usar los siguientes comandos:
+     ```bash
+     git add .
+     git commit -m "Subida inicial del proyecto"
+     git push origin main
+     ```
+
+5. **Verificar el despliegue:**
+   - Después de haber configurado GitHub Pages y haber subido los archivos, espera unos minutos para que el sitio se despliegue. GitHub te proporcionará un enlace donde podrás verificar que el sitio web está activo.
+   - En este caso, el **Link del Landing Page desplegado** es:  
+     [Landing Page SafeChild](https://upc-pre-202501-1acc0238-356-safegroup.github.io/SafeChild_LandingPage.github.io/)
+
+## 6.2. Landing Page & Mobile Application Implementation 
+
+### 6.2.1. Sprint 1
+### 6.2.1.1. Sprint Planning 1
+<table>
+  <tr>
+    <th> Sprint # </th>
+    <th> Sprint 1 </th>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;" colspan="2"> Sprint Planning Background </td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;"> Date </td>
+    <td> 07/05/2025 </td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;"> Time </td>
+    <td> 19:00 horas (GMT-5) </td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;"> Location </td>
+    <td> Virtual (Google Meet) </td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;"> Prepared By </td>
+    <td> Gutierrez Garcia, Jose Eduardo </td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;"> Attendees (to planning meeting) </td>
+    <td>
+      Bernaola Pérez, André Arturo<br>
+      Gutierrez Garcia, Jose Eduardo<br>
+      Sanchez Ignacio, Jefrey Martin<br>
+      Velarde Luyo, Piero Alberto
+    </td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;"> Sprint 1 Review Summary </td>
+    <td> Al este ser nuestro primer sprint de desarrollo no existe un review summary del sprint </td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;"> Sprint 1 Retrospective Summary </td>
+    <td> Ya que es nuestro primer sprint aún no identificamos ningun plane de mejora. </td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;" colspan="2"> Sprint Goal & User Stories </td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;"> Sprint 1 Goal </td>
+    <td> Diseñar e implementar las secciones clave de la Landing Page y las pantallas de onboarding y registro en la app móvil, para que los usuarios puedan conocer la propuesta de valor de SafeChild y crear su cuenta desde el primer acceso. </td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;"> Sprint 1 Velocity </td>
+    <td> <strong>8 </strong><br> El equipo ha establecido una capacidad de 8 Story Points para este Sprint, en un tiempo de 2 semanas basada en la experiencia y la carga de trabajo estimada. </td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;"> Sum of Story Points </td>
+    <td> 8 </td>
+  </tr>
+</table>
+
+### 6.2.1.2. Sprint Backlog 1
+
+
+
+### 6.2.1.3. Development Evidence for Sprint Review 
+
+
+
+### 6.2.1.4. Testing Suite Evidence for Sprint Review
+
+
+Durante el Sprint 1, se implementaron una serie de pruebas unitarias (Unit Tests) que verificaron el correcto funcionamiento de las principales funcionalidades desarrolladas para la página de inicio. Estas pruebas son fundamentales para asegurar la estabilidad del código y la integridad de las nuevas características introducidas, permitiendo identificar posibles fallos antes del despliegue final. A continuación se presenta un resumen de los commits relacionados con los tests desarrollados y una explicación detallada de cada uno.
+
+| **Repository** | **Branch** | **Commit Id**                            | **Commit Message**                  | **Commit Message Body**                      | **Commited on (Date)** |
+| -------------- | ---------- | ---------------------------------------- | ----------------------------------- | -------------------------------------------- | ---------------------- |
+| Unit-Test      | main       | a | a | a | 09/05/2025             |
+
+### **6.2.1.5. Execution Evidence for Sprint Review**
+
+Durante el Sprint 1, el equipo logró desarrollar y desplegar la página de inicio (landing page) del proyecto. Las principales características implementadas incluyen el **Navbar**, la sección de **Home**, la sección **Why Choose Us?**, las **suscripciones**, las **reseñas**, y el **footer con el apartado de contacto**. Este progreso asegura que el sitio web cuenta con una estructura básica y funcional que puede ser mejorada en los sprints posteriores.
+
+La implementación fue exitosa y se cumplió con el objetivo de entregar una versión funcional del landing page. El sitio fue desplegado utilizando GitHub Pages, permitiendo que el equipo de desarrollo y los stakeholders puedan visualizar los resultados directamente desde un navegador web.
+
+A continuación, presentamos capturas de pantalla de las principales vistas implementadas en este Sprint:
+
+- **Navbar**:
+
+  ![Navbar](Images/nabvar-landing-page.png)
+
+- **Home**:
+
+  ![Home](Images/home-landingPage.png)
+
+- **Why Choose Us?**:
+
+  ![Why Choose Us?](Images/Why%20Choose%20Us-landingPage.png)
+
+- **Subscriptions**:
+
+  ![Subscriptions](Images/Suscription-landingpage.png)
+
+- **Reviews**:
+
+  ![Reviews](Images/review-landingPage.png)
+
+- **Footer and Contact**:
+
+  ![Footer and Contact](Images/footer-contact-landingPage.png)
+
+Link del landing page desplegado: https://upc-pre-202501-1acc0238-356-safegroup.github.io/SafeChild_LandingPage.github.io/
+
+### 6.2.1.6. Services Documentation Evidence for Sprint Review 
+
+En el alcance del sprint 1, se ha dado prioridad al desarrollo de la landing page y de la aplicación movil, lo que significa que en este sprint no se observa la utilización de servicios web.
+
+### 6.2.1.7. Software Deployment Evidence for Sprint Review 
+
+Durante este sprint, se ha completado el desarrollo de la landing page asi como la aplicación movil. Para el despliegue, se utilizaron las siguientes herramientas y servicios:
+
+  <li>Git: Sistema de control de versiones que utilizamos para trabajar de forma colaborativa y monitorear las versiones de la aplicación web en un repositorio remoto.</li>
+  <li>Gitflow: Este flujo de trabajo colaborativo nos ha permitido dividir el trabajo en ramas dentro de nuestro repositorio, lo que facilita la colaboración en el desarrollo.</li>
+  <li>GitHub: La plataforma que nos proporcionó la herramienta para crear nuestro repositorio y almacenar las versiones de nuestro proyecto.</li>
+  <li>GitHub Pages: Para desplegar la Landing page, el cual nos sirvio para, a partir de un código en un repositorio poder desplegar la página </li>
+
+### 6.2.1.8. Team Collaboration Insights during Sprint
+
+Para llevar a cabo este proyecto se usaron distintas herramientas como Visual Studio Code; junto con manejo de versiones en Git. En este caso se dividio la landing page y la aplicacion movil ambas mostradas anteriormente en sectores, a partir de esto cada uno presentó su parte y luego un miembro juntó las partes para finalmente tener el resultado deseado.
+
+<img src="./assets/Chapter06/commit1.png">
+
 
 ## Conclusiones
 ### Conclusiones y Recomendaciones
