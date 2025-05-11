@@ -1828,6 +1828,337 @@ La principal responsabilidad del Infraestructure Layer es asegurar que los datos
 ![Bounded Context Database Design Diagram](Images/Bounded_Context/imagen4.6.4.6.2.png)
 
 
+
+# Capítulo V: Solution UI/UX Design
+
+## 5.1. Product design
+
+El diseño del producto es una fase crucial en el desarrollo de SafeChild, ya que determina cómo los padres interactuarán con la plataforma, asegurando que la experiencia de usuario sea simple, eficiente y confiable. En este capítulo, detallamos el proceso de diseño seguido para SafeChild, desde las pautas de estilo general hasta la arquitectura de software y la base de datos. Cada sección refleja nuestro enfoque en crear una experiencia de usuario que priorice la facilidad de uso y la confianza en la conexión con niñeras y profesores calificados, tanto en la landing page como en las aplicaciones web.
+
+### 5.1.1. Style Guidelines
+
+En SafeChild, establecimos pautas de estilo claras para garantizar una experiencia visual coherente y profesional. Definimos tanto aspectos generales como específicos para la web, con el objetivo de transmitir confianza y accesibilidad a los usuarios.
+
+### 5.1.1.1. General Style Guidelines
+
+**Task:**
+En esta sección, se detallarán las directrices generales de estilo que guiarán el diseño y la presentación de SafeChild. Estas directrices asegurarán que todos los elementos visuales y textuales sean coherentes y alineados con la identidad de nuestra marca, proporcionando una experiencia de usuario fluida, confiable y profesional.
+
+**Insight:**
+La consistencia en el estilo y diseño es crucial para establecer una identidad de marca sólida y reconocible en SafeChild. Una guía de estilo clara ayuda a mantener la coherencia a lo largo del proyecto, asegurando que la plataforma refleje confianza y profesionalismo en cada interacción, facilitando la navegación y el uso para los padres que buscan cuidadores y profesores confiables.
+
+**Branding:**
+Nuestro logo representa a SafeChild mediante la imagen de dos manos que sostienen a un niño, con una casa y un oso de fondo. Este conjunto visual simboliza protección, cuidado y un entorno seguro, que son los pilares fundamentales de nuestra propuesta. Los colores celeste, blanco y celeste oscuro refuerzan sensaciones de calma, confianza y profesionalismo. La tipografía utilizada es moderna y accesible, asegurando legibilidad y fácil reconocimiento del nombre de la marca.
+
+<div align="center">
+<img src="assets/chapter05/SafechildLogo.png" alt="logo safe child" width="800"></a><br>
+<br>
+</div>
+
+**Typography:**
+Se seleccionó una tipografía moderna, limpia y accesible, diseñada para ser legible en dispositivos móviles y de escritorio. La elección de la tipografía tiene como objetivo mejorar la experiencia de lectura y navegación, asegurando que toda la información relevante sea clara para los usuarios.
+
+**Nunito**
+
+<div align="center">
+<img src="assets/chapter05/tipografia.png" alt="logo safe child" width="800"></a><br>
+<br>
+</div>
+
+Colors:
+
+La paleta de colores de SafeChild ha sido cuidadosamente seleccionada para transmitir una sensación de seguridad, confianza y serenidad. Estos tonos refuerzan la identidad visual de la plataforma y mejoran la experiencia del usuario, asegurando coherencia en todos los elementos gráficos.
+
+**#F7F6F6:** Utilizado como color de fondo neutro, este tono claro brinda una sensación de limpieza, orden y simplicidad, facilitando la lectura y reduciendo la fatiga visual.<br>
+**#4AADBE:** Este tono azul verdoso actúa como el color principal de la marca, evocando frescura, calma y confianza. Se aplica en botones, iconos destacados y elementos de navegación.<br>
+**#89CFD7:** Funciona como color complementario para aportar equilibrio visual. Su suavidad ayuda a destacar secciones secundarias sin robar protagonismo al contenido principal.<br>
+**#0D3A5A:** Este azul profundo garantiza una excelente legibilidad como color principal de texto. Además, aporta un contraste sobrio y profesional en toda la interfaz.<br>
+**#72C3CF:** Este color intermedio es empleado para generar dinamismo y variedad sin perder coherencia visual. Aparece en tarjetas informativas, íconos ilustrativos y transiciones.<br>
+**#ADE3E0:** Este tono claro y amigable refuerza la sensación de tranquilidad y cercanía. Se utiliza en fondos de secciones secundarias o elementos decorativos suaves.<br>
+
+<div align="center">
+<img src="assets/chapter05/colors.png" alt="logo safe child" width="800"></a><br>
+<br>
+</div>
+
+**Spacing:**
+Se utiliza un espaciado base de 4px para padding y margin en todos los elementos, lo que asegura una apariencia uniforme y ordenada en la interfaz. Este enfoque crea una estructura visual clara y organizada que facilita la navegación, mejorando la experiencia de usuario en dispositivos móviles y web.
+
+### 5.1.2. Information Architecture
+
+En SafeChild, buscamos ofrecer una plataforma intuitiva, segura y confiable para conectar a padres que buscan servicios de cuidado infantil y cuidadores que desean registrarse para ofrecer sus servicios. Debido a la naturaleza de los servicios que involucran cuidado infantil y transacciones seguras, la arquitectura de la información es clave para lograr nuestros objetivos. A continuación, se presenta el diseño y organización de la plataforma.
+
+<b> 1. Vista Home: </b>
+
+- Vista Previa de Cuidadores Disponibles: <br>
+  Muestra cuidadores destacados o populares para captar la atención de los padres que buscan servicios.
+- Registro de Cuidadores: <br>
+  Enlace directo para que nuevos cuidadores puedan registrarse en la plataforma y comenzar a ofrecer sus servicios.
+
+<b> 2. Buscar Cuidadores (Para Padres y Tutores): </b>
+
+- Categorías de Servicios: <br>
+  Sección que agrupa los servicios de cuidado infantil según las necesidades específicas: cuidado a tiempo completo, cuidado parcial, cuidado de niños con necesidades especiales, etc.
+- Filtros de Búsqueda: <br>
+  Herramientas que permiten a los padres filtrar cuidadores según criterios como experiencia, calificaciones, precio, ubicación y disponibilidad.
+- Vista Detallada de Perfiles: <br>
+  Cada cuidador cuenta con una página individual que muestra su experiencia, calificaciones, tarifas, disponibilidad y certificaciones.
+
+<b> 3. Registro de Cuidadores: </b>
+
+- Formulario de Registro: <br>
+  Formulario para que los cuidadores se registren en la plataforma, ingresando información como experiencia, habilidades, certificaciones y disponibilidad.
+- Gestión de Servicios: <br>
+  Una vez registrados, los cuidadores pueden crear o editar su perfil, subir certificaciones y gestionar su disponibilidad.
+- Historial de Servicios y Pagos: <br>
+  Los cuidadores pueden revisar un historial de los servicios que han realizado, las calificaciones obtenidas y los pagos recibidos.
+
+<b> 4. Reservar Servicios de Cuidado: </b>
+
+- Interfaz de Reserva: <br>
+  Una interfaz simple para que los padres seleccionen el cuidador, fecha y hora para reservar el servicio de cuidado infantil.
+- Vista Previa y Confirmación: <br>
+  Los padres pueden visualizar los detalles de la reserva antes de confirmar, incluyendo la tarifa total y la duración del servicio.
+
+### 5.1.2.1. Organization Systems
+
+El sistema de organización de SafeChild está diseñado para brindar la mejor experiencia posible tanto para los padres que buscan contratar servicios como para los cuidadores que desean ofrecerlos.
+
+<b> 1. Categorización de la Información: </b>
+
+- Perfiles de Cuidadores: <br>
+  Categorizados por experiencia, tipo de cuidado (niños pequeños, cuidado especializado, cuidado nocturno) y calificaciones.
+- Servicios de Cuidado: <br>
+  Categorizados por tiempo completo, medio tiempo, ocasional, etc.
+
+<b> 2. Filtros y Búsqueda: </b>
+
+- Filtros para Padres: <br>
+  Los padres pueden filtrar los cuidadores según la ubicación, experiencia, precio, calificaciones, disponibilidad y otros parámetros.
+
+<b> 3. Interfaz de Usuario Intuitiva: </b>
+
+- Menú Principal: <br>
+  Un menú claro y accesible que incluye las secciones clave: Buscar Cuidadores, Registro de Cuidadores, Historial de Servicios, y Perfil de Usuario.
+
+<b> 4. Funcionalidades Específicas: </b>
+
+- Perfiles de Cuidadores: <br>
+  Cada cuidador tiene una página individual que muestra su experiencia, calificaciones, tarifas y disponibilidad, junto con una opción para reservar un servicio.
+- Reservas: <br>
+  Los padres pueden gestionar y ver sus reservas previas, y repetir servicios con cuidadores específicos desde su historial.
+
+### 5.1.2.2. Labelling Systems
+
+Para mejorar la navegación y comprensión, SafeChild utilizará un sistema de etiquetado claro y descriptivo. Ejemplos de etiquetas incluyen:
+
+- Buscar Cuidadores
+- Registrar como Cuidador
+- Reserva de Servicios
+- Perfiles de Cuidadores
+- Historial de Servicios
+
+### 5.1.2.3. SEO Tags and Meta Tags
+
+<div align="center">
+<img src="assets/chapter05/metamobile.png" alt="logo safe child" width="800"></a><br>
+<br>
+</div>
+
+**Insight:**
+
+Estos metadatos mantienen la coherencia de SEO y marca con la versión web de SafeChild. Aunque no influyen en los motores de búsqueda tradicionales, resultan útiles para indexación interna, análisis y optimización en la tienda (ASO). Además, desde la consola de Google Play puedes completar y afinar el título, la descripción, los íconos y las capturas de pantalla para mejorar aún más la visibilidad.
+
+### 5.1.2.4. Searching Systems
+
+El sistema de búsqueda dentro de la aplicaion permitirá a los padres y cuidadores encontrar la información que necesitan de manera rápida y eficaz.
+
+<b> 1. Búsqueda por Tipo de Cuidado: </b> <br>
+Los padres pueden buscar cuidadores por tipo de cuidado, como "cuidado nocturno", "cuidado a tiempo completo" o "cuidado de niños con necesidades especiales".
+
+<b> 2. Búsqueda por Disponibilidad: </b> <br>
+Se ofrece una búsqueda avanzada que permite a los padres buscar cuidadores según la disponibilidad en días y horarios específicos.
+
+<b> 3. Búsqueda por Calificaciones: </b> <br>
+Los padres pueden buscar cuidadores con las mejores calificaciones y opiniones de otros usuarios.
+
+### 5.1.2.5. Navigation Systems
+
+El sistema de navegación está diseñado para ofrecer una experiencia fluida, fácil de usar y segura para ambos segmentos (padres y cuidadores).
+
+<b> 1. Menú Principal: </b> <br>
+El menú principal incluirá enlaces a las secciones más importantes: Inicio, Buscar Cuidadores, Registro de Cuidadores, Historial de Servicios y Perfil.
+
+<b> 2. Navegación Contextual: </b> <br>
+Cada sección principal tendrá submenús específicos para ayudar a los usuarios a acceder a opciones más detalladas dentro de la plataforma, como filtros de búsqueda o ajustes de perfil.
+
+<b> 3. Botones de Acción Destacados: </b> <br>
+Botones llamativos como "Buscar Cuidadores", "Registrar como Cuidador" y "Reservar Servicio" estarán estratégicamente ubicados para facilitar la interacción.
+
+<b> 4. Búsqueda y Filtros Visibles: </b> <br>
+La barra de búsqueda y los filtros estarán siempre visibles para que los usuarios puedan ajustar rápidamente los resultados y encontrar cuidadores de acuerdo a sus preferencias.
+
+<b> 5. Flujo de Navegación Intuitivo: </b> <br>
+Desde la búsqueda hasta la reserva de servicios, se establecerá un flujo lógico y claro que guía a los usuarios en cada etapa, con mensajes de acción y señales visuales que facilitan el proceso.
+
+### 5.1.3. Landing Page UI Design
+
+En esta sección, el equipo presentará la propuesta de Interfaz de Usuario para la Landing Page. Inicialmente, se ofrecerá una introducción que detallará cómo el equipo ha interpretado y aplicado las decisiones de diseño y la arquitectura de información previamente definidas en la elaboración visual de la página. Se mostrará la evolución del diseño, evidenciando la implementación de las Guías de Estilo y la Arquitectura de la Información en el prototipo desarrollado con Figma.
+
+### 5.1.3.1. Landing Page Wireframe
+
+La siguiente sección presenta el wireframe de la landing page diseñada para la aplicación. Este diseño tiene como objetivo principal captar la atención de nuevos usuarios, destacando los beneficios del servicio y facilitando el acceso a funciones clave como el registro, la información de contacto y las características del producto. La estructura propuesta incluye secciones como el encabezado de navegación, beneficios principales, suscripciones, testimonios de clientes y un formulario de contacto. Este wireframe proporciona una guía visual preliminar que servirá de base para el desarrollo de la interfaz de usuario final.
+
+![Landing Page Wireframe](assets/chapter05/landing_wireframe.png)
+
+
+### 5.1.3.2. Landing Page Mock-up
+
+En esta sección se presenta el mockup visual de la landing page, el cual representa una versión más detallada y cercana al producto final en comparación con el wireframe. Este diseño incorpora los elementos visuales clave como colores, tipografías, íconos e imágenes, alineados con la identidad visual de la plataforma SafeChild. El objetivo del mockup es mostrar cómo se verá la interfaz una vez implementada, permitiendo validar decisiones de diseño antes del desarrollo. Cada sección ha sido diseñada para garantizar una experiencia de usuario clara, accesible y centrada en la confianza y seguridad que la plataforma desea transmitir.
+
+![Landing Page Mock-up](assets/chapter05/landing_mockup.png)
+
+
+### 5.1.4. Mobile Applications UX/UI Design
+
+### 5.1.4.1. Mobile Applications Wireframes
+
+### 5.1.4.2. Mobile Applications Wireflow Diagrams
+
+En esta sección se presentan los wireflow de las aplicaciones móviles, que ilustran el flujo de interacción del usuario a través de las diferentes pantallas y funciones de la aplicación. Estos diagramas son esenciales para comprender cómo los usuarios navegarán por la plataforma, desde la pantalla de inicio hasta la comunicación entre usuarios. Cada paso del proceso está representado visualmente, lo que permite identificar posibles mejoras en la experiencia del usuario y garantizar que todas las funcionalidades estén claramente definidas y accesibles.
+
+#### User Goal 1: Un padre quiere contratar un(a) cuidador(a)
+
+#### Task Flow:
+1. Abrir la app y ver pantalla de inicio.
+2. Seleccionar **"Soy Padre"**.
+3. Iniciar sesión (o registrarse si no tiene cuenta).
+4. Ver lista de cuidadores disponibles según tipo de servicio.
+5. Seleccionar un cuidador.
+6. Ver detalles del cuidador.
+7. Confirmar datos y proceder al pago.
+8. Ingresar información de tarjeta.
+9. Confirmar el pago.
+10. Acceder a la sección de **Reservas** para ver el estado del servicio.
+
+![WIREFLOW 1](assets/chapter05/wireflows/wireflow1.png)
+
+#### User Goal 2: Un cuidador quiere ofrecer sus servicios
+
+#### Task Flow:
+1. Abrir la app y ver pantalla de inicio.
+2. Seleccionar **"Soy Cuidador(a)"**.
+3. Iniciar sesión (o registrarse si no tiene cuenta).
+4. Completar el formulario de registro incluyendo experiencia y tipo de servicio.
+5. Subir documentos necesarios.
+6. Acceder a **"Servicios Disponibles"**.
+7. Ver detalles del servicio solicitado por un padre.
+8. Aceptar o rechazar la solicitud.
+9. Acceder a la sección de **Mis servicios** para ver servicios aceptados.
+
+![WIREFLOW 2](assets/chapter05/wireflows/wireflow2.png)
+#### User Goal 3: Un usuario quiere comunicarse con el otro rol mediante chat
+
+#### Task Flow:
+1. Iniciar sesión como padre o cuidador.
+2. Acceder a la sección de **Chat Online**.
+3. Ver lista de contactos (padres o cuidadores según el rol).
+4. Seleccionar un contacto.
+5. Enviar y recibir mensajes en tiempo real.
+
+![WIREFLOW 3](assets/chapter05/wireflows/wireflow3.png)
+
+
+
+
+### 5.1.4.3. Mobile Applications Mock-ups
+
+
+
+### 5.1.4.4. Mobile Applications User Flow Diagrams
+
+En esta sección se presentan los diagramas de User Flow de las aplicaciones móviles, que detallan de manera visual y descriptiva las rutas que los usuarios siguen para cumplir sus objetivos principales (happy path) y las posibles rutas alternativas (unhappy paths).
+
+Cada User Flow se estructura en torno a un **User Goal** específico, previamente identificado en los wireflows de la sección anterior. Para cada uno de ellos se incluyen:
+
+- **Mock-ups de las vistas**: capturas de pantalla a modo de prototipo de alta fidelidad de cada paso clave en el flujo.
+- **Ruta esperada (Happy Path)**: el recorrido ideal sin incidencias, que permite al usuario completar la tarea con éxito.
+- **Rutas alternativas (Unhappy Paths)**: los caminos que surgen ante posibles errores o condiciones especiales.
+
+
+
+#### User Flow 1: Contratar un(a) cuidador(a)
+
+**User Goal:**  
+Un padre desea contratar los servicios de un(a) cuidador(a) confiable.
+
+**Task Flow:**
+1. El usuario accede a la pantalla de registro y completa los campos obligatorios (nombre, correo, contraseña, confirmar contraseña, celular).
+2. Avanza a la pantalla de inicio de sesión como Padre, ingresa correo y contraseña.
+3. Se muestra la lista de cuidadores disponibles, con opción de filtrar por tipo de servicio.
+4. Al seleccionar un cuidador, el sistema evalúa si el servicio sigue activo:
+- Si el servicio está disponible → se abre la pantalla de **Detalles del cuidador**, donde el padre puede ver biografía, tarifa y opciones **Reservar** o **Contactar**.
+- Si el servicio fue eliminado → aparece una pantalla de **error** con el mensaje:
+  > **"Error: El servicio ha sido eliminado por el usuario."**
+
+**Happy Path:**
+- Registro/login exitoso → selección de cuidador activo → visualización de detalles del servicio.
+
+**Unhappy Path:**
+- Servicio borrado por el cuidador antes de la selección → mensaje de error.
+
+![USER FLOW 1](assets/chapter05/userflows/UF1.png)
+
+#### User Flow 2: Ofrecer servicios (Cuidador(a))
+
+**User Goal:**  
+Un cuidador desea publicar sus servicios para recibir solicitudes de padres.
+
+**Task Flow:**
+1. El usuario ingresa a la pantalla de registro y completa sus datos (nombre, correo, contraseña, celular, experiencia previa, tipo de cuidado, carga de documentos).
+2. Avanza a la pantalla de inicio de sesión como Cuidador e ingresa sus credenciales.
+3. Se muestra la lista de **Servicios Disponibles**, con solicitudes de otros cuidadores con los datos de mayor relevancia (nombre, ubicación, calificación, fecha y horario).
+4. Al intentar agregar un nuevo servicio:
+- El sistema verifica que los documentos personales estén validados.
+- Si los documentos están completos y validados** → el servicio se añade correctamente a la lista.
+- Si falta validación de documentos → se muestra una pantalla de error con la notificación:
+  > **"Error: No puede agregar servicios sin antes validar o subir sus documentos personales."**
+
+**Happy Path (resumen):**
+- Registro/inicio de sesión exitoso → documentos validados → servicio agregado.
+
+**Unhappy Path relevante:**
+- Intento de agregar servicio sin haber validado documentos → mensaje de error claro.
+
+![USER FLOW 2](assets/chapter05/userflows/UF2.png)
+
+#### User Flow 3: Comunicación entre usuarios (Chat)
+
+**User Goal:**  
+Un usuario (padre o cuidador) quiere comunicarse en tiempo real con el otro rol.
+
+**Task Flow:**
+1. El usuario inicia sesión como padre o cuidador.
+2. En el menú principal selecciona **Chat Online**.
+3. Aparece la lista de contactos activos (cuidadores para padres, padres para cuidadores).
+4. Selecciona un contacto y abre la ventana de chat.
+5. Envía y recibe mensajes en tiempo real, con historial de conversación visible.
+
+**Happy Path:**
+- Inicio de sesión exitoso → acceso a chat → envío y recepción de mensajes.
+
+**Unhappy Paths:**
+- Fallo de red al enviar mensaje → alerta "Mensaje no enviado, inténtelo más tarde".
+
+![USER FLOW 3](assets/chapter05/userflows/UF3.png)
+
+
+
+### 5.1.4.5. Mobile Applications Prototyping
+
+
+
+
 # Capítulo VI: Product Implementation, Validation & Deployment
 
 ## 6.1. Software Configuration Management
@@ -2207,7 +2538,7 @@ Durante el Sprint 1, se implementaron una serie de pruebas unitarias (Unit Tests
 | -------------- | ---------- | ---------------------------------------- | ----------------------------------- | -------------------------------------------- | ---------------------- |
 | Unit-Test      | main       | a | a | a | 09/05/2025             |
 
-### **5.2.1.5. Execution Evidence for Sprint Review**
+### **6.2.1.5. Execution Evidence for Sprint Review**
 
 Durante el Sprint 1, el equipo logró desarrollar y desplegar la página de inicio (landing page) del proyecto. Las principales características implementadas incluyen el **Navbar**, la sección de **Home**, la sección **Why Choose Us?**, las **suscripciones**, las **reseñas**, y el **footer con el apartado de contacto**. Este progreso asegura que el sitio web cuenta con una estructura básica y funcional que puede ser mejorada en los sprints posteriores.
 
