@@ -659,7 +659,7 @@ En esta sección se presentan los wireflow de las aplicaciones móviles, que ilu
 9. Confirmar el pago.
 10. Acceder a la sección de **Reservas** para ver el estado del servicio.
 
-![WIREFLOW 1](assets/chapter05/user%20goals/wireflow1.png)
+![WIREFLOW 1](assets/chapter05/wireflows/wireflow1.png)
 
 #### User Goal 2: Un cuidador quiere ofrecer sus servicios
 
@@ -674,7 +674,7 @@ En esta sección se presentan los wireflow de las aplicaciones móviles, que ilu
 8. Aceptar o rechazar la solicitud.
 9. Acceder a la sección de **Mis servicios** para ver servicios aceptados.
 
-![WIREFLOW 2](assets/chapter05/user%20goals/wireflow2.png)
+![WIREFLOW 2](assets/chapter05/wireflows/wireflow2.png)
 #### User Goal 3: Un usuario quiere comunicarse con el otro rol mediante chat
 
 #### Task Flow:
@@ -684,14 +684,93 @@ En esta sección se presentan los wireflow de las aplicaciones móviles, que ilu
 4. Seleccionar un contacto.
 5. Enviar y recibir mensajes en tiempo real.
 
-![WIREFLOW 3](assets/chapter05/user%20goals/wireflow3.png)
+![WIREFLOW 3](assets/chapter05/wireflows/wireflow3.png)
 
 
 
 
 ### 5.1.4.3. Mobile Applications Mock-ups
 
+
+
 ### 5.1.4.4. Mobile Applications User Flow Diagrams
+
+En esta sección se presentan los diagramas de User Flow de las aplicaciones móviles, que detallan de manera visual y descriptiva las rutas que los usuarios siguen para cumplir sus objetivos principales (happy path) y las posibles rutas alternativas (unhappy paths).
+
+Cada User Flow se estructura en torno a un **User Goal** específico, previamente identificado en los wireflows de la sección anterior. Para cada uno de ellos se incluyen:
+
+- **Mock-ups de las vistas**: capturas de pantalla a modo de prototipo de alta fidelidad de cada paso clave en el flujo.
+- **Ruta esperada (Happy Path)**: el recorrido ideal sin incidencias, que permite al usuario completar la tarea con éxito.
+- **Rutas alternativas (Unhappy Paths)**: los caminos que surgen ante posibles errores o condiciones especiales.
+
+
+
+#### User Flow 1: Contratar un(a) cuidador(a)
+
+**User Goal:**  
+Un padre desea contratar los servicios de un(a) cuidador(a) confiable.
+
+**Task Flow:**
+1. El usuario accede a la pantalla de registro y completa los campos obligatorios (nombre, correo, contraseña, confirmar contraseña, celular).
+2. Avanza a la pantalla de inicio de sesión como Padre, ingresa correo y contraseña.
+3. Se muestra la lista de cuidadores disponibles, con opción de filtrar por tipo de servicio.
+4. Al seleccionar un cuidador, el sistema evalúa si el servicio sigue activo:
+  - Si el servicio está disponible → se abre la pantalla de **Detalles del cuidador**, donde el padre puede ver biografía, tarifa y opciones **Reservar** o **Contactar**.
+  - Si el servicio fue eliminado → aparece una pantalla de **error** con el mensaje:
+    > **"Error: El servicio ha sido eliminado por el usuario."**
+
+**Happy Path:**
+- Registro/login exitoso → selección de cuidador activo → visualización de detalles del servicio.
+
+**Unhappy Path:**
+- Servicio borrado por el cuidador antes de la selección → mensaje de error.
+
+![USER FLOW 1](assets/chapter05/userflows/UF1.png)
+
+#### User Flow 2: Ofrecer servicios (Cuidador(a))
+
+**User Goal:**  
+Un cuidador desea publicar sus servicios para recibir solicitudes de padres.
+
+**Task Flow:**
+1. El usuario ingresa a la pantalla de registro y completa sus datos (nombre, correo, contraseña, celular, experiencia previa, tipo de cuidado, carga de documentos).
+2. Avanza a la pantalla de inicio de sesión como Cuidador e ingresa sus credenciales.
+3. Se muestra la lista de **Servicios Disponibles**, con solicitudes de otros cuidadores con los datos de mayor relevancia (nombre, ubicación, calificación, fecha y horario).
+4. Al intentar agregar un nuevo servicio:
+  - El sistema verifica que los documentos personales estén validados.
+  - Si los documentos están completos y validados** → el servicio se añade correctamente a la lista.
+  - Si falta validación de documentos → se muestra una pantalla de error con la notificación:
+    > **"Error: No puede agregar servicios sin antes validar o subir sus documentos personales."**
+
+**Happy Path (resumen):**
+- Registro/inicio de sesión exitoso → documentos validados → servicio agregado.
+
+**Unhappy Path relevante:**
+- Intento de agregar servicio sin haber validado documentos → mensaje de error claro.
+
+![USER FLOW 2](assets/chapter05/userflows/UF2.png)
+
+#### User Flow 3: Comunicación entre usuarios (Chat)
+
+**User Goal:**  
+Un usuario (padre o cuidador) quiere comunicarse en tiempo real con el otro rol.
+
+**Task Flow:**
+1. El usuario inicia sesión como padre o cuidador.
+2. En el menú principal selecciona **Chat Online**.
+3. Aparece la lista de contactos activos (cuidadores para padres, padres para cuidadores).
+4. Selecciona un contacto y abre la ventana de chat.
+5. Envía y recibe mensajes en tiempo real, con historial de conversación visible.
+
+**Happy Path:**
+- Inicio de sesión exitoso → acceso a chat → envío y recepción de mensajes.
+
+**Unhappy Paths:**
+- Fallo de red al enviar mensaje → alerta "Mensaje no enviado, inténtelo más tarde".
+
+![USER FLOW 3](assets/chapter05/userflows/UF3.png)
+
+
 
 ### 5.1.4.5. Mobile Applications Prototyping
 
