@@ -2093,7 +2093,7 @@ Esta es la vista de detalles del cuidador seleccionado para el rol de padre.
 
 Esta es la vista de detalles del servicio seleccionado para el rol de cuidador.
 
-![Detalles Servicio Wireframe](assets/chapter05/wireframes/w-Detalles-Servicio.png)
+![Detalles Servicio Wireframe](assets/chapter05/wireframes/w-Detalle-Servicio.png)
 
 Esta es la vista de detalles de métodos de pago para ambos roles.
 
