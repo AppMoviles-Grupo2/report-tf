@@ -2059,6 +2059,66 @@ En esta sección se presenta el mockup visual de la landing page, el cual repres
 
 ### 5.1.4.1. Mobile Applications Wireframes
 
+Esta es la primera vista de nuestra aplicación, aquí el usuario escoge su rol.
+
+![Principal Wireframe](assets/chapter05/wireframes/w-Principal.png)
+
+Esta es la vista de inicio para el rol de padre.
+
+![Inicio Padre Wireframe](assets/chapter05/wireframes/w-Inicio-Padre.png)
+
+Esta es la vista de inicio para el rol de cuidador.
+
+![Inicio Cuidador Wireframe](assets/chapter05/wireframes/w-Inicio-Cuidador.png)
+
+Esta es la vista de registro para el rol de padre.
+
+![Registro Padre Wireframe](assets/chapter05/wireframes/w-Registro-Padre.png)
+
+Esta es la vista de registro para el rol de cuidador.
+
+![Registro Cuidador Wireframe](assets/chapter05/wireframes/w-Registro-Cuidador.png)
+
+Esta es la vista de busqueda de cuidadores para el rol de padre.
+
+![Lista Cuidadores Wireframe](assets/chapter05/wireframes/w-Lista-Cuidadores.png)
+
+Esta es la vista de servicios disponibles para el rol de cuidador.
+
+![Lista Servicios Wireframe](assets/chapter05/wireframes/w-Servicio-Cuidador.png)
+
+Esta es la vista de detalles del cuidador seleccionado para el rol de padre.
+
+![Detalles Cuidador Wireframe](assets/chapter05/wireframes/w-Detalles-Cuidador.png)
+
+Esta es la vista de detalles del servicio seleccionado para el rol de cuidador.
+
+![Detalles Servicio Wireframe](assets/chapter05/wireframes/w-Detalles-Servicio.png)
+
+Esta es la vista de detalles de métodos de pago para ambos roles.
+
+![Detalles Pagos Wireframe](assets/chapter05/wireframes/w-Pago.png)
+
+Esta es la vista de los servicios propios de rol de cuidador.
+
+![Mis Servicios Wireframe](assets/chapter05/wireframes/w-Mis-Servicios.png)
+
+Esta es la vista de los reservas propias de rol de padre.
+
+![Mis Reservas Wireframe](assets/chapter05/wireframes/w-Reservas.png)
+
+Esta es la vista de los chats del rol de padre.
+
+![Chats Padre Wireframe](assets/chapter05/wireframes/w-Chats-Padre.png)
+
+Esta es la vista de los chats del rol de cuidador.
+
+![Chats Cuidador Wireframe](assets/chapter05/wireframes/w-Chats-Cuidador.png)
+
+Esta es la vista detallada del chat para ambos roles.
+
+![Chat Wireframe](assets/chapter05/wireframes/w-Chat-Individual.png)
+
 ### 5.1.4.2. Mobile Applications Wireflow Diagrams
 
 En esta sección se presentan los wireflow de las aplicaciones móviles, que ilustran el flujo de interacción del usuario a través de las diferentes pantallas y funciones de la aplicación. Estos diagramas son esenciales para comprender cómo los usuarios navegarán por la plataforma, desde la pantalla de inicio hasta la comunicación entre usuarios. Cada paso del proceso está representado visualmente, lo que permite identificar posibles mejoras en la experiencia del usuario y garantizar que todas las funcionalidades estén claramente definidas y accesibles.
@@ -2109,6 +2169,69 @@ En esta sección se presentan los wireflow de las aplicaciones móviles, que ilu
 
 ### 5.1.4.3. Mobile Applications Mock-ups
 
+Esta es la primera vista de nuestra aplicación, aquí el usuario escoge su rol.
+
+![Principal Mock-Up](assets/chapter05/mock-ups/m-Principal.png)
+
+Esta es la vista de inicio para el rol de padre.
+
+![Inicio Padre Mock-Up](assets/chapter05/mock-ups/m-Inicio-Padre.png)
+
+Esta es la vista de inicio para el rol de cuidador.
+
+![Inicio Cuidador Mock-Up](assets/chapter05/mock-ups/m-Inicio-Cuidador.png)
+
+Esta es la vista de registro para el rol de padre.
+
+![Registro Padre Mock-Up](assets/chapter05/mock-ups/m-Registro-Padre.png)
+
+Esta es la vista de registro para el rol de cuidador.
+
+![Registro Cuidador Mock-Up](assets/chapter05/mock-ups/m-Registro-Cuidador.png)
+
+Esta es la vista de busqueda de cuidadores para el rol de padre.
+
+![Lista Cuidadores Mock-Up](assets/chapter05/mock-ups/m-Lista-Cuidadores.png)
+
+Esta es la vista de servicios disponibles para el rol de cuidador.
+
+![Lista Servicios Mock-Up](assets/chapter05/mock-ups/m-Servicio-Cuidador.png)
+
+Esta es la vista de detalles del cuidador seleccionado para el rol de padre.
+
+![Detalles Cuidador Mock-Up](assets/chapter05/mock-ups/m-Detalles-Cuidador.png)
+
+Esta es la vista de detalles del servicio seleccionado para el rol de cuidador.
+
+![Detalles Servicio Mock-Up](assets/chapter05/mock-ups/m-Detalles-Servicio.png)
+
+Esta es la vista de detalles de métodos de pago para ambos roles.
+
+![Detalles Pagos Mock-Up](assets/chapter05/mock-ups/m-Pago.png)
+
+Esta es la vista de los servicios propios de rol de cuidador.
+
+![Mis Servicios Mock-Up](assets/chapter05/mock-ups/m-Mis-Servicios.png)
+
+Esta es la vista de los reservas propias de rol de padre.
+
+![Mis Reservas Mock-Up](assets/chapter05/mock-ups/m-Reservas.png)
+
+Esta es la vista de los chats del rol de padre.
+
+![Chats Padre Mock-Up](assets/chapter05/mock-ups/m-Chats-Padre.png)
+
+Esta es la vista de los chats del rol de cuidador.
+
+![Chats Cuidador Mock-Up](assets/chapter05/mock-ups/m-Chats-Cuidador.png)
+
+Esta es la vista detallada del chat para el rol de padre.
+
+![Chat Padre Mock-Up](assets/chapter05/mock-ups/m-Chat-Padre.png)
+
+Esta es la vista detallada del chat para el rol de cuidador.
+
+![Chat Padre Mock-Up](assets/chapter05/mock-ups/m-Chat-Cuidador.png)
 
 
 ### 5.1.4.4. Mobile Applications User Flow Diagrams
