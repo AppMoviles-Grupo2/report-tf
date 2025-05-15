@@ -985,14 +985,142 @@ El diagrama ilustra el despliegue de un sistema distribuido conformado por disti
 ## 4.2. Tactical-Level Domain-Driven Design 
 
 ### 4.2.1.   Bounded Context: Bounded Context: User Management
-### 4.2.1.1. Domain Layer   
-### 4.2.1.2.  Interface Layer 
-### 4.2.1.3.  Application Layer 
-### 4.2.1.4. Infrastructure Layer 
-### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams 
-### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams 
-### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams 
+
+### 4.2.1.1. Domain Layer
+Esta capa modela los agregados raíz **Caregiver** y **Tutor**, con sus atributos, comportamientos y reglas de negocio.
+
+**Aggregate: Caregiver**  
+- **Descripción:** Representa al cuidador de la plataforma. Se mapea a la tabla `caregivers`.  
+
+| Atributo            | Tipo               | Descripción                                               |
+|---------------------|--------------------|-----------------------------------------------------------|
+| id                  | Long               | Identificador único (autogenerado)                        |
+| email               | EmailAddress (VO)  | Correo del cuidador (validado)                            |
+| completeName        | String             | Nombre completo                                           |
+| age                 | Integer            | Edad                                                      |
+| address             | String             | Dirección                                                 |
+| caregiverExperience | Integer            | Años de experiencia                                       |
+| completedServices   | Integer            | Número de servicios completados                           |
+| biography           | String             | Biografía breve                                           |
+| profileImage        | String             | URL de la imagen de perfil                                |
+| farePerHour         | BigDecimal         | Tarifa por hora                                           |
+| districtsScope      | String             | Distritos de cobertura                                    |
+| profileId           | Long               | FK a perfil (roles, certificaciones, etc.)                |
+| createdAt           | Date               | Fecha de creación                                         |
+| updatedAt           | Date               | Fecha de última actualización                             |
+
+**Métodos (comportamientos):**  
+- `updateFare(newFare: BigDecimal, newDistricts: String)`  
+- `updateBiography(newBio: String)`  
+
+
+**Aggregate: Tutor**  
+- **Descripción:** Representa al tutor de la plataforma. Se mapea a la tabla `tutors`.  
+
+| Atributo    | Tipo             | Descripción                                 |
+|-------------|------------------|---------------------------------------------|
+| id          | Long             | Identificador único (autogenerado)          |
+| fullName    | String           | Nombre completo                             |
+| email       | EmailAddress (VO)| Correo del tutor (validado)                 |
+| doc         | String           | Documento de identidad                      |
+| password    | Password (VO)    | Contraseña del tutor (validada)             |
+| number      | String           | Número de teléfono                          |
+| street      | String           | Calle / dirección                           |
+| district    | String           | Distrito de residencia                      |
+| role        | String           | Rol (p.ej. “TUTOR”)                         |
+| profileId   | Long             | FK a perfil (certificaciones, etc.)         |
+| createdAt   | Date             | Fecha de creación                           |
+| updatedAt   | Date             | Fecha de última actualización               |
+
+**Métodos (comportamientos):**  
+- `updateProfile(updatedInfo: TutorUpdateInfo)`  
+
+### 4.2.1.2.  Interface Layer
+
+Exposición de endpoints REST para **Caregivers** y **Tutors**.
+
+##### CaregiverController
+
+- **POST** `/api/v1/caregiver` — Crear cuidador  
+- **GET** `/api/v1/caregiver` — Listar todos  
+- **GET** `/api/v1/caregiver/{id}` — Obtener por ID  
+- **PATCH** `/api/v1/caregiver/place-fare` — Actualizar tarifa y distritos  
+- **PATCH** `/api/v1/caregiver/biography` — Actualizar biografía  
+- **GET** `/api/v1/caregiver/search?district=&sort=` — Buscar por distrito y orden  
+
+##### TutorController
+
+- **POST** `/api/v1/tutors` — Crear tutor  
+- **GET** `/api/v1/tutors` — Listar todos  
+- **GET** `/api/v1/tutors/{tutorId}` — Obtener tutor por ID  
+- **PUT** `/api/v1/tutors/{tutorId}` — Actualizar tutor completo  
+- **DELETE** `/api/v1/tutors/{tutorId}` — Eliminar tutor  
+
+**Dependencias clave (ambos):**  
+- `CaregiverCommandService`, `CaregiverQueryService`  
+- `TutorCommandService`, `TutorQueryService`  
+- Assemblers: `CreateCaregiverCommandAssembler`, `CaregiverResourceAssembler`,  
+  `CreateTutorCommandAssembler`, `TutorResourceAssembler`, etc.
+
+
+### 4.2.1.3.  Application Layer
+
+Orquesta comandos y consultas para ambos agregados.
+
+##### CaregiverCommandServiceImpl
+
+- `handle(CreateCaregiverCommand)`  
+- `handle(UpdateFareCommand)`  
+- `handle(UpdateBiographyCommand)`  
+
+##### CaregiverQueryServiceImpl
+
+- `getAllCaregivers()`  
+- `getById(id: Long)`  
+- `searchByDistrict(district: String, sort: String)`  
+
+##### TutorCommandServiceImpl
+
+- `handle(CreateTutorCommand)`  
+- `handle(UpdateTutorCommand)`  
+- `handle(DeleteTutorCommand)`  
+
+##### TutorQueryServiceImpl
+
+- `getAllTutors()`  
+- `getById(id: Long)`  
+
+### 4.2.1.4. Infrastructure Layer
+
+Implementa persistencia con JPA/Hibernate.
+
+##### CaregiverRepository
+
+- `findAll()`, `findById(Long)`, `save(Caregiver)`  
+- `findByDistrictsScopeContaining(String, Sort)`  
+- `existsByEmail(String)`  
+
+##### TutorRepository
+
+- `findAll()`, `findById(Long)`, `save(Tutor)`, `deleteById(Long)`  
+- `existsByEmail(String)`  
+
+### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+El diagrama de componentes muestra la arquitectura del bounded context de Payments, incluyendo los módulos y sus interacciones. Se muestra el uso del patrón CQRS, donde los comandos y consultas están separados.
+![Users Component Level Diagram](Images/C4%20Model/components/users.png)
+
+### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
+### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+Se han definido las siguientes clases en el Domain Layer para este bounded context:
+![Users Domain Layer Class Diagrams](Images/Bounded_Context/class%20diagrams/user_domain.png)
+
 ### 4.2.1.6.2. Bounded Context Database Design Diagram
+
+Se han definido las siguientes tablas en la base de datos para este bounded context:
+![Users Database Design Diagram](Images/Bounded_Context/database%20diagrams/caregivers.png)
+
 
 ### 4.2.2. Bounded Context: Payments
 
