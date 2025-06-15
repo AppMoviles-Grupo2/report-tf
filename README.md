@@ -56,8 +56,8 @@
 | Versión | Fecha | Autor | Descripción de la modificación |
 |----|----|----|----|
 | TB1 | 25/04/2025 | SafeGroup | Redacción de los Capítulos I: Presentación, II: Requirements Elicitation & Analysis, III: Requirements Specification, IV: Solution Software Design. |
-| TP1 | 10/05/2025 | SafeGroup | Redacción de el Capítulo IV: Solution Software Design, 4.2. Tactical-Level Domain-Driven Design, Capítulo V: Solution UI/UX Design, Capítulo VI: Product Implementation, Validation & Deployment, 6.1. Software Configuration Management, 6.2. Landing Page & Mobile Application Implementation 
-6.2.1. Sprint 1 |
+| TP1 | 10/05/2025 | SafeGroup | Redacción de el Capítulo IV: Solution Software Design, 4.2. Tactical-Level Domain-Driven Design, Capítulo V: Solution UI/UX Design, Capítulo VI: Product Implementation, Validation & Deployment, 6.1. Software Configuration Management, 6.2. Landing Page & Mobile Application Implementation 6.2.1. Sprint 1 |
+| TB2 | 16/06/2025 | SafeGroup | Redacción de el Capítulo VI: 6.2.2. Sprint 2, 6.3. Validation Interviews, 6.3.1. Diseño de Entrevistas. 6.3.2., Registro de Entrevistas. 6.3.3., Evaluaciones según heurísticas., 6.4. Video About-the-Product. |
 
 # Project Report Collaboration Insights
 
@@ -83,6 +83,20 @@ Además, se han generado los artefactos necesarios utilizando las herramientas r
 ![Insight4](./assets/intro/insight4.png)
 ![Insight5](./assets/intro/insight5.png)
 ![Insight6](./assets/intro/insight6.png)
+
+
+**TB2** Las tareas asignadas para la entrega del TB2 han sido completadas y documentadas de manera exhaustiva en el repositorio de GitHub de la organización del equipo: [https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/SafeGroup-report.git](https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/SafeGroup-report.git)
+
+Se redactaron y diagramaron los contenidos asignados a cada integrante en formato Markdown, con commits regulares para mantener un seguimiento preciso del progreso en el repositorio.
+
+Además, se han generado los artefactos necesarios utilizando las herramientas recomendadas, y se llevaron a cabo reuniones periódicas para coordinar el avance de los elementos del informe y comunicar los progresos del Sprint 2, centrado en el desarrollo de la aplicación Movil en Flutter y el deployment del backend.
+
+![Insight7](./assets/intro/insight7.png)
+![Insight8](./assets/intro/insight8.png)
+![Insight9](./assets/intro/insight9.png)
+
+
+
 # Contenido
 ## Tabla de contenidos
 - [**Registro de Versiones del Informe**](#registro-de-versiones-del-informe)
@@ -205,14 +219,28 @@ Además, se han generado los artefactos necesarios utilizando las herramientas r
     - [**6.1.4. Software Deployment Configuration**](#614-software-deployment-configuration)
   - [**6.2. Landing Page, Services & Mobile Application Implementation**](#52-landing-page-services--mobile-application-implementation)
     - [**6.2.1. Sprint 1**](#621-sprint-1)
-    - [**6.2.1.1. Sprint Planning 1**](#6211-sprint-planning-1)
-    - [**6.2.1.2. Sprint Backlog 1**](#6212-sprint-backlog-1)
-    - [**6.2.1.3. Development Evidence for Sprint Review**](#6213-development-evidence-for-sprint-review)
-    - [**6.2.1.4. Testing Suite Evidence for Sprint Review**](#6214-testing-suite-evidence-for-sprint-review)
-    - [**6.2.1.5. Execution Evidence for Sprint Review**](#6215-execution-evidence-for-sprint-review)
-    - [**6.2.1.6. Services Documentation Evidence for Sprint Review**](#6216-services-documentation-evidence-for-sprint-review)
-    - [**6.2.1.7. Software Deployment Evidence for Sprint Review**](#6217-software-deployment-evidence-for-sprint-review)
-    - [**6.2.1.8. Team Collaboration Insights during Sprint**](#6218-team-collaboration-insights-during-sprint)
+      - [**6.2.1.1. Sprint Planning 1**](#6211-sprint-planning-1)
+      - [**6.2.1.2. Sprint Backlog 1**](#6212-sprint-backlog-1)
+      - [**6.2.1.3. Development Evidence for Sprint Review**](#6213-development-evidence-for-sprint-review)
+      - [**6.2.1.4. Testing Suite Evidence for Sprint Review**](#6214-testing-suite-evidence-for-sprint-review)
+      - [**6.2.1.5. Execution Evidence for Sprint Review**](#6215-execution-evidence-for-sprint-review)
+      - [**6.2.1.6. Services Documentation Evidence for Sprint Review**](#6216-services-documentation-evidence-for-sprint-review)
+      - [**6.2.1.7. Software Deployment Evidence for Sprint Review**](#6217-software-deployment-evidence-for-sprint-review)
+      - [**6.2.1.8. Team Collaboration Insights during Sprint**](#6218-team-collaboration-insights-during-sprint)
+    - [**6.2.2. Sprint 2**](#622-sprint-2)
+      - [**6.2.2.1. Sprint Planning 2**](#6221-sprint-planning-2)
+      - [**6.2.2.2. Sprint Backlog 2**](#6222-sprint-backlog-2)
+      - [**6.2.2.3. Development Evidence for Sprint Review**](#6223-development-evidence-for-sprint-review)
+      - [**6.2.2.4. Testing Suite Evidence for Sprint Review**](#6224-testing-suite-evidence-for-sprint-review)
+      - [**6.2.2.5. Execution Evidence for Sprint Review**](#6225-execution-evidence-for-sprint-review)
+      - [**6.2.2.6. Services Documentation Evidence for Sprint Review**](#6226-services-documentation-evidence-for-sprint-review)
+      - [**6.2.2.7. Software Deployment Evidence for Sprint Review**](#6227-software-deployment-evidence-for-sprint-review)
+      - [**6.2.2.8. Team Collaboration Insights during Sprint**](#6228-team-collaboration-insights-during-sprint)
+    - [**6.3. Validation Interviews**](#63-validation-interviews)
+      - [**6.3.1. Diseño de Entrevistas**](#631-diseño-de-entrevistas)
+      - [**6.3.2. Registro de Entrevistas**](#632-registro-de-entrevistas)
+      - [**6.3.3. Evaluaciones según heurísticas**](#633-evaluaciones-según-heurísticas)
+    - [**6.4. Video About-the-Product**](#64-video-about-the-product)
 - [**Conclusiones**](#conclusiones)
 - [**Conclusiones y recomendaciones**](#conclusiones-y-recomendaciones)
 - [**Bibliografía**](#bibliografía)
