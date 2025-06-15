@@ -2891,11 +2891,61 @@ Para llevar a cabo este proyecto se usaron distintas herramientas como Visual St
 
 ### 6.2.2.7. Software Deployment Evidence for Sprint Review
 
+Durante el Sprint 2, se realizó el despliegue continuo del backend de SafeChild utilizando Azure App Services como plataforma de hosting y GitHub Actions como herramienta de automatización para la integración y entrega continua (CI/CD).
+
+Se configuró un pipeline de GitHub Actions que, al detectar cambios en la rama `feat/deploy`, compila el proyecto, ejecuta pruebas y despliega automáticamente la aplicación a Azure. Este flujo garantiza un proceso de despliegue eficiente, seguro y reproducible, alineado con buenas prácticas DevOps.
+
+#### Evidencias del Despliegue:
+-  Repositorio configurado con workflow `.yml` para CI/CD.
+-  Pipeline exitoso desde GitHub Actions al entorno productivo en Azure.
+-  Servicio backend expuesto mediante una URL pública y funcional.
+-  Variables de entorno configuradas de manera segura en Azure.
+-  Revisión de logs en Azure para validar correcto funcionamiento tras el despliegue.
+
+Este despliegue permite que el backend esté disponible 24/7 y sirva de base para la integración de la aplicación móvil desarrollada en paralelo.
+
+**Backend desplegado:**  
+[https://safechild-new-d9htajddfsgaaafr.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/](https://safechild-new-d9htajddfsgaaafr.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/)
+
+
 ### 6.2.2.8. Team Collaboration Insights during Sprint
+
 
 ## 6.3. Validation Interviews
 
+La etapa de Validación de Entrevistas se centra en recoger comentarios y observaciones directas de los usuarios para evaluar sus percepciones sobre el diseño, la usabilidad y las funcionalidades de la aplicación móvil SafeChild. El objetivo principal es confirmar que la experiencia ofrecida está bien alineada con las necesidades y expectativas de los diferentes tipos de usuarios. Esta fase emplea entrevistas estructuradas y pruebas de usabilidad sobre el prototipo funcional, con el fin de garantizar que SafeChild sea intuitiva, accesible desde dispositivos móviles, y cumpla eficazmente con los objetivos de proporcionar un servicio satisfactorio y adaptado a sus usuarios.
+
 ### 6.3.1. Diseño de Entrevistas
+
+En esta sección de Diseño de Entrevistas, se detalla la estructura y las preguntas utilizadas para recopilar información de los usuarios de SafeChild. El diseño incluye preguntas generales aplicables a todos los participantes, así como preguntas específicas para los distintos grupos de usuarios: padres de familia que buscan servicios de cuidado y enseñanza para sus niños, y cuidadores (niñeras y profesores) que ofrecen estos servicios a tiempo parcial.
+
+Estas preguntas buscan explorar áreas clave de la experiencia de usuario en dispositivos móviles, tales como la facilidad de navegación, claridad visual, tiempos de respuesta, accesibilidad y valor percibido del servicio.
+
+#### Segmento 1: Padres de familia que buscan servicio de niñeras y profesores a tiempo parcial
+
+- ¿Qué impresión general le dejó la aplicación móvil SafeChild?
+- ¿Le resultó visualmente atractiva la interfaz desde su celular?
+- ¿Le pareció fácil de navegar desde un dispositivo móvil?
+- ¿Qué opina sobre la disposición de los botones, menús y secciones?
+- ¿Cómo evalúa los colores y el estilo visual desde su celular?
+- ¿Qué información adicional considera necesaria que se muestre con mayor claridad?
+- ¿Qué tan cómoda le resultó la experiencia al reservar o buscar servicios desde su celular?
+- ¿Cree usted que la aplicación móvil cumple con los objetivos planteados?
+- ¿La recomendaría a otros padres de familia?
+- ¿Qué sugerencias nos daría para mejorar la experiencia móvil?
+
+#### Segmento 2: Niñeras y profesores que buscan conectarse con padres de familia
+
+- ¿Qué impresión general le dejó la aplicación móvil SafeChild?
+- ¿La interfaz le pareció clara y funcional en su celular?
+- ¿La navegación le resultó sencilla desde un dispositivo móvil?
+- ¿Cómo evalúa el uso de colores y diseño en la pantalla de su celular?
+- ¿Qué elementos considera importantes que deben aparecer en la app como cuidador?
+- ¿Le pareció fácil publicar o actualizar su perfil de cuidador?
+- ¿Pudo encontrar fácilmente la opción para comunicarse con padres?
+- ¿Cree usted que la aplicación móvil cumple con su propósito?
+- ¿La recomendaría a otros cuidadores o docentes?
+- ¿Qué aspectos sugeriría mejorar desde su experiencia como usuario móvil?
 
 
 ### 6.3.2. Registro de Entrevistas
