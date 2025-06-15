@@ -2510,8 +2510,8 @@ Durante el desarrollo de los sprints futuros, utilizaremos Git Flow para gestion
 Los repositorios de GitHub que utilizaremos para cada uno de los productos del proyecto son los siguientes:
 
 - **Landing Page:** [Repositorio de GitHub - Landing Page](https://upc-pre-202501-1acc0238-356-safegroup.github.io/SafeChild_LandingPage.github.io/)
-- **Documentacion:** [Repositorio de GitHub - Report]()
-- **BackEnd API:** [Repositorio de GitHub - Backend API]()
+- **Documentacion:** [Repositorio de GitHub - Report](https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/SafeGroup-report)
+- **BackEnd API:** [Repositorio de GitHub - Backend API](https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/SafeChild-Backend)
 
 #### Implementación de Git Flow
 
@@ -2939,7 +2939,7 @@ Repositorio para el BackEnd de la Aplicación Mobile:<br>
 **Anexo 6:**
 Deployments:<br>
 - **Landing Page**: [https://upc-pre-202501-1acc0238-356-safegroup.github.io/SafeChild_LandingPage.github.io/](https://upc-pre-202501-1acc0238-356-safegroup.github.io/SafeChild_LandingPage.github.io/)
-- **Backend**: [https://safechild-aeb7cxdtbwgcbcbc.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/](https://safechild-aeb7cxdtbwgcbcbc.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/)
+- **Backend**: [https://safechild-new-d9htajddfsgaaafr.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/](https://safechild-new-d9htajddfsgaaafr.canadacentral-01.azurewebsites.net/swagger-ui/index.html#//)
 
 **Anexo 7:**
 Figma para la Landing Page y Mobile<br>
