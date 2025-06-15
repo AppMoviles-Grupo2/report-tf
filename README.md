@@ -2875,6 +2875,36 @@ Para llevar a cabo este proyecto se usaron distintas herramientas como Visual St
 
 <img src="./assets/Chapter06/commit1.png">
 
+## 6.2.2. Sprint 2
+
+### 6.2.2.1. Sprint Planning 2
+
+### 6.2.2.2. Sprint Backlog 2
+
+### 6.2.2.3. Development Evidence for Sprint Review
+
+### 6.2.2.4. Testing Suite Evidence for Sprint Review
+
+### 6.2.2.5. Execution Evidence for Sprint Review
+
+### 6.2.2.6. Services Documentation Evidence for Sprint Review
+
+### 6.2.2.7. Software Deployment Evidence for Sprint Review
+
+### 6.2.2.8. Team Collaboration Insights during Sprint
+
+## 6.3. Validation Interviews
+
+### 6.3.1. Diseño de Entrevistas
+
+
+### 6.3.2. Registro de Entrevistas
+
+### 6.3.3. Evaluaciones según heurísticas
+
+## 6.4. Video About-the-Product
+
+
 ---
 
 
