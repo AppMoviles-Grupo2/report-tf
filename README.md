@@ -2921,6 +2921,18 @@ Para llevar a cabo este proyecto se usaron distintas herramientas como Visual St
 
 ### 6.2.2.4. Testing Suite Evidence for Sprint Review
 
+| Repository                                                       | Branch   | Commit Id | Commit Message                        | Commit Message Body | Committed on |
+|------------------------------------------------------------------|----------|-----------|---------------------------------------|---------------------|--------------|
+| https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/Testing | sprint-2 | 31d4bfc   | feat(sprint-2): add cucumber for US06 | -                   | 17/06/2025   |
+| https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/Testing | sprint-2 | de2d968   | feat(sprint-2): add cucumber for US09 | -                   | 17/06/2025   |
+| https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/Testing | sprint-2 | 0907857   | feat(sprint-2): add cucumber for US11 | -                   | 17/06/2025   |
+| https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/Testing | sprint-2 | ee87cfe   | feat(sprint-2): add cucumber for US12 | -                   | 17/06/2025   |
+| https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/Testing | sprint-2 | 6c69797   | feat(sprint-2): add cucumber for US15 | -                   | 17/06/2025   |
+| https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/Testing | sprint-2 | 9c83f4d   | feat(sprint-2): add cucumber for US16 | -                   | 17/06/2025   |
+| https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/Testing | sprint-2 | 538b874   | feat(sprint-2): add cucumber for US19 | -                   | 17/06/2025   |
+| https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/Testing | sprint-2 | ac3de3f   | feat(sprint-2): add cucumber for US21 | -                   | 17/06/2025   |
+| https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/Testing | sprint-2 | f56d83    | feat(sprint-2): add cucumber for US22 | -                   | 17/06/2025   |
+
 ### 6.2.2.5. Execution Evidence for Sprint Review
 
 ### 6.2.2.6. Services Documentation Evidence for Sprint Review
