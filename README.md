@@ -56,6 +56,8 @@
 | Versión | Fecha | Autor | Descripción de la modificación |
 |----|----|----|----|
 | TB1 | 25/04/2025 | SafeGroup | Redacción de los Capítulos I: Presentación, II: Requirements Elicitation & Analysis, III: Requirements Specification, IV: Solution Software Design. |
+| TP1 | 10/05/2025 | SafeGroup | Redacción de el Capítulo IV: Solution Software Design, 4.2. Tactical-Level Domain-Driven Design, Capítulo V: Solution UI/UX Design, Capítulo VI: Product Implementation, Validation & Deployment, 6.1. Software Configuration Management, 6.2. Landing Page & Mobile Application Implementation 6.2.1. Sprint 1 |
+| TB2 | 16/06/2025 | SafeGroup | Redacción de el Capítulo VI: 6.2.2. Sprint 2, 6.3. Validation Interviews, 6.3.1. Diseño de Entrevistas. 6.3.2., Registro de Entrevistas. 6.3.3., Evaluaciones según heurísticas., 6.4. Video About-the-Product. |
 
 # Project Report Collaboration Insights
 
@@ -71,6 +73,28 @@ Durante la fase de elaboración del informe, se realizaron las siguientes activi
 ![Insight1](./assets/intro/insight1.png)
 ![Insight2](./assets/intro/insight2.png)
 ![Insight3](./assets/intro/insight3.png)
+
+**TP1** Las tareas asignadas para la entrega del TP1 han sido completadas y documentadas de manera exhaustiva en el repositorio de GitHub de la organización del equipo: [https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/SafeGroup-report.git](https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/SafeGroup-report.git)
+
+Se redactaron y diagramaron los contenidos asignados a cada integrante en formato Markdown, con commits regulares para mantener un seguimiento preciso del progreso en el repositorio.
+
+Además, se han generado los artefactos necesarios utilizando las herramientas recomendadas, y se llevaron a cabo reuniones periódicas para coordinar el avance de los elementos del informe y comunicar los progresos del Sprint 1, centrado en el desarrollo de la aplicación Movil.
+
+![Insight4](./assets/intro/insight4.png)
+![Insight5](./assets/intro/insight5.png)
+![Insight6](./assets/intro/insight6.png)
+
+
+**TB2** Las tareas asignadas para la entrega del TB2 han sido completadas y documentadas de manera exhaustiva en el repositorio de GitHub de la organización del equipo: [https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/SafeGroup-report.git](https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/SafeGroup-report.git)
+
+Se redactaron y diagramaron los contenidos asignados a cada integrante en formato Markdown, con commits regulares para mantener un seguimiento preciso del progreso en el repositorio.
+
+Además, se han generado los artefactos necesarios utilizando las herramientas recomendadas, y se llevaron a cabo reuniones periódicas para coordinar el avance de los elementos del informe y comunicar los progresos del Sprint 2, centrado en el desarrollo de la aplicación Movil en Flutter y el deployment del backend.
+
+![Insight7](./assets/intro/insight7.png)
+![Insight8](./assets/intro/insight8.png)
+![Insight9](./assets/intro/insight9.png)
+
 
 
 # Contenido
@@ -195,14 +219,28 @@ Durante la fase de elaboración del informe, se realizaron las siguientes activi
     - [**6.1.4. Software Deployment Configuration**](#614-software-deployment-configuration)
   - [**6.2. Landing Page, Services & Mobile Application Implementation**](#52-landing-page-services--mobile-application-implementation)
     - [**6.2.1. Sprint 1**](#621-sprint-1)
-    - [**6.2.1.1. Sprint Planning 1**](#6211-sprint-planning-1)
-    - [**6.2.1.2. Sprint Backlog 1**](#6212-sprint-backlog-1)
-    - [**6.2.1.3. Development Evidence for Sprint Review**](#6213-development-evidence-for-sprint-review)
-    - [**6.2.1.4. Testing Suite Evidence for Sprint Review**](#6214-testing-suite-evidence-for-sprint-review)
-    - [**6.2.1.5. Execution Evidence for Sprint Review**](#6215-execution-evidence-for-sprint-review)
-    - [**6.2.1.6. Services Documentation Evidence for Sprint Review**](#6216-services-documentation-evidence-for-sprint-review)
-    - [**6.2.1.7. Software Deployment Evidence for Sprint Review**](#6217-software-deployment-evidence-for-sprint-review)
-    - [**6.2.1.8. Team Collaboration Insights during Sprint**](#6218-team-collaboration-insights-during-sprint)
+      - [**6.2.1.1. Sprint Planning 1**](#6211-sprint-planning-1)
+      - [**6.2.1.2. Sprint Backlog 1**](#6212-sprint-backlog-1)
+      - [**6.2.1.3. Development Evidence for Sprint Review**](#6213-development-evidence-for-sprint-review)
+      - [**6.2.1.4. Testing Suite Evidence for Sprint Review**](#6214-testing-suite-evidence-for-sprint-review)
+      - [**6.2.1.5. Execution Evidence for Sprint Review**](#6215-execution-evidence-for-sprint-review)
+      - [**6.2.1.6. Services Documentation Evidence for Sprint Review**](#6216-services-documentation-evidence-for-sprint-review)
+      - [**6.2.1.7. Software Deployment Evidence for Sprint Review**](#6217-software-deployment-evidence-for-sprint-review)
+      - [**6.2.1.8. Team Collaboration Insights during Sprint**](#6218-team-collaboration-insights-during-sprint)
+    - [**6.2.2. Sprint 2**](#622-sprint-2)
+      - [**6.2.2.1. Sprint Planning 2**](#6221-sprint-planning-2)
+      - [**6.2.2.2. Sprint Backlog 2**](#6222-sprint-backlog-2)
+      - [**6.2.2.3. Development Evidence for Sprint Review**](#6223-development-evidence-for-sprint-review)
+      - [**6.2.2.4. Testing Suite Evidence for Sprint Review**](#6224-testing-suite-evidence-for-sprint-review)
+      - [**6.2.2.5. Execution Evidence for Sprint Review**](#6225-execution-evidence-for-sprint-review)
+      - [**6.2.2.6. Services Documentation Evidence for Sprint Review**](#6226-services-documentation-evidence-for-sprint-review)
+      - [**6.2.2.7. Software Deployment Evidence for Sprint Review**](#6227-software-deployment-evidence-for-sprint-review)
+      - [**6.2.2.8. Team Collaboration Insights during Sprint**](#6228-team-collaboration-insights-during-sprint)
+    - [**6.3. Validation Interviews**](#63-validation-interviews)
+      - [**6.3.1. Diseño de Entrevistas**](#631-diseño-de-entrevistas)
+      - [**6.3.2. Registro de Entrevistas**](#632-registro-de-entrevistas)
+      - [**6.3.3. Evaluaciones según heurísticas**](#633-evaluaciones-según-heurísticas)
+    - [**6.4. Video About-the-Product**](#64-video-about-the-product)
 - [**Conclusiones**](#conclusiones)
 - [**Conclusiones y recomendaciones**](#conclusiones-y-recomendaciones)
 - [**Bibliografía**](#bibliografía)
@@ -212,11 +250,11 @@ Durante la fase de elaboración del informe, se realizaron las siguientes activi
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |----|----|----|
-|Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.| **Bernaola Pérez, André Arturo**<br>*TB1*<br>Aprendí a profundizar en el enfoque Lean UX y reforcé mis conocimientos sobre Problem Statements, Assumptions y Hypothesis Statements. Me aseguré de actualizar mis técnicas de investigación rápida, formulé hipótesis claras y utilicé el Lean UX Canvas para estructurar de forma efectiva el Capítulo I: Presentación. Durante el proceso puse en práctica herramientas colaborativas como Miro para diseñar flujos de usuario y validé mis ideas con el equipo antes de plasmarlas en el documento.<br></br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br>Actualicé mis habilidades de investigación de usuarios aprendiendo nuevas metodologías de entrevistas y análisis competitivo. Apliqué Needfinding en el Capítulo II, creando User Personas, User Journey Maps y Empathy Maps que reflejan los hallazgos de las entrevistas. Aprendí a sintetizar datos cuantitativos y cualitativos para definir el Ubiquitous Language y asegurarme de que todos los términos del dominio estuvieran claros y alineados con las necesidades reales de padres y cuidadores.<br></br>**Sanchez Ignacio, Jefrey Martin**<br>*TB1*<br>Actualicé mis conocimientos de Impact Mapping y priorización de funcionalidades, traduciendo los hallazgos de la etapa de análisis en User Stories y un Product Backlog consistente. Aprendí a definir To-Be Scenarios y a organizar el backlog por valor de negocio en el Capítulo III. En este proceso profundicé en técnicas de estimación ágil y priorización MoSCoW, asegurando que cada historia estuviera correctamente refinada y alineada con los objetivos SMART del proyecto. <br></br> **Velarde Luyo, Piero Alberto**<br>*TB1*<br>Aprendí y apliqué prácticas avanzadas de Domain-Driven Design: realicé EventStorming para descubrir Candidate Contexts, modelé Domain Message Flows y elaboré Bounded Context Canvases. Además, actualicé mis competencias en context mapping y diseñé diagramas de arquitectura de software en niveles de contexto, contenedor y despliegue para el Capítulo IV. Esto me permitió entender mejor cómo se comunican los distintos módulos y cómo garantizar la escalabilidad y mantenibilidad de la solución. | TB1: <br> Como equipo, actualizamos y aplicamos de manera integrada conceptos de Lean UX, investigación de usuarios, modelado de dominio y arquitectura de software. Cada uno fortaleció tanto su perfil profesional—desde entrevistas y mapeos hasta diseño de flujos de mensajes y diagramas de despliegue—como nuestra capacidad colectiva para construir una plataforma móvil robusta y centrada en las necesidades reales de padres y cuidadores. Este aprendizaje conjunto nos ha preparado para afrontar con metodología y rigor el desarrollo de la solución, mejorando nuestra colaboración, comunicación y alineación estratégica.|
+|Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.| **Bernaola Pérez, André Arturo**<br>*TB1*<br>Aprendí a profundizar en el enfoque Lean UX y reforcé mis conocimientos sobre Problem Statements, Assumptions y Hypothesis Statements. Me aseguré de actualizar mis técnicas de investigación rápida, formulé hipótesis claras y utilicé el Lean UX Canvas para estructurar de forma efectiva el Capítulo I: Presentación. Durante el proceso puse en práctica herramientas colaborativas como Miro para diseñar flujos de usuario y validé mis ideas con el equipo antes de plasmarlas en el documento.<br><br>*TP1*<br>Aprendí a profundizar en Domain‑Driven Design táctico al modelar el Bounded Context de Payments, actualicé mis conocimientos sobre las cuatro capas (Domain, Interface, Application, Infrastructure) y sobre diagramas de componentes y clases. Apliqué estas prácticas al diseñar en Figma las pantallas de pago y luego las implementé en React Native, integrando la lógica de transacciones y validación.<br><br>*TB2*<br>Aprendí a diseñar e implementar mecanismos de facturación recurrente y generación de recibos electrónicos, aplicando estándares de seguridad como tokenización de tarjetas y cifrado en tránsito. Actualicé mis conocimientos sobre flujos de pago avanzados, incorporando lógicas de cobro automático y manejo de errores transaccionales (por ejemplo, reintentos configurables y notificaciones de fallo). Apliqué estas prácticas al desarrollar el módulo de “Historial de Pagos” en React Native, consumiendo desde el backend nuevas APIs de suscripción y mostrando al usuario su balance y estado de facturación en tiempo real.<br></br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br>Actualicé mis habilidades de investigación de usuarios aprendiendo nuevas metodologías de entrevistas y análisis competitivo. Apliqué Needfinding en el Capítulo II, creando User Personas, User Journey Maps y Empathy Maps que reflejan los hallazgos de las entrevistas. Aprendí a sintetizar datos cuantitativos y cualitativos para definir el Ubiquitous Language y asegurarme de que todos los términos del dominio estuvieran claros y alineados con las necesidades reales de padres y cuidadores.<br><br>*TP1*<br>Actualicé mis habilidades de gestión ágil al liderar la Sprint 1: planifiqué el sprint, definí el backlog, documenté evidencias de desarrollo, pruebas y despliegue, y configuré el pipeline de CI/CD. Aprendí a estructurar la Information Architecture y el Product Design (wireframes, mock‑ups y guías de estilo) y llevé esos conceptos a la implementación de la landing page y la app móvil.<br><br>*TB2*<br>Aprendí a enriquecer el servicio de gestión de perfiles con endpoints de actualización parcial (PATCH) y subida de imágenes, validando formatos y tamaños en el backend. Actualicé mis técnicas de modelado de dominio al agregar Value Objects para fechas de nacimiento y direcciones normalizadas, garantizando consistencia y validación temprana. Apliqué esto creando un nuevo flujo de “Perfil Completo” en la app, donde el usuario puede modificar datos sensibles, cambiar contraseña y ver su historial de sesión, todo con retroalimentación instantánea mediante mensajes de éxito o error.<br></br>**Sanchez Ignacio, Jefrey Martin**<br>*TB1*<br>Actualicé mis conocimientos de Impact.<br><br>*TB2*<br>TEXTO Mapping y priorización de funcionalidades, traduciendo los hallazgos de la etapa de análisis en User Stories y un Product Backlog consistente. Aprendí a definir To-Be Scenarios y a organizar el backlog por valor de negocio en el Capítulo III. En este proceso profundicé en técnicas de estimación ágil y priorización MoSCoW, asegurando que cada historia estuviera correctamente refinada y alineada con los objetivos SMART del proyecto.<br><br>*TP1*<br>Aprendí nuevas técnicas avanzadas de UX/UI al crear wireflows, wireframes, user flow diagrams y prototipos interactivos en Figma, siguiendo las Style Guidelines. Apliqué estos conocimientos implementando los componentes de interfaz en React Native, validando su usabilidad y ajustando el diseño según el feedback recogido en pruebas rápidas.<br><br>*TB2*<br>Aprendí a integrar WebSockets para mensajería en tiempo real, habilitando notificaciones push tanto en Android como en iOS para alertar sobre nuevos mensajes. Actualicé mis conocimientos de patrones de diseño para mensajería, implementando colas de mensajes y confirmaciones de lectura (read receipts) con persistencia en el servidor. Apliqué estos conceptos al crear en React Native un chat bidireccional donde los tutores y cuidadores se comunican, incluyendo indicadores de escritura, estado online/offline y sincronización automática tras reconexión.<br></br> **Velarde Luyo, Piero Alberto**<br>*TB1*<br>Aprendí y apliqué prácticas avanzadas de Domain Driven Design: realicé EventStorming para descubrir Candidate Contexts, modelé Domain Message Flows y elaboré Bounded Context Canvases. Además, actualicé mis competencias en context mapping y diseñé diagramas de arquitectura de software en niveles de contexto, contenedor y despliegue para el Capítulo IV. Esto me permitió entender mejor cómo se comunican los distintos módulos y cómo garantizar la escalabilidad y mantenibilidad de la solución.<br><br>*TP1*<br> Reconocí la importancia del refinamiento de prototipos y navegación al mejorar los mock‑ups y la arquitectura de flujos de la app en Figma. Actualicé mis competencias en integración de notificaciones push y gestión de reservas, y apliqué estos conceptos programando la lógica de navegación y la conexión con el backend dentro de la aplicación móvil.<br><br>*TB2*<br>Aprendí a orquestar flujos de reserva contra calendarios externos (Google Calendar API), manejando zonas horarias y disponibilidades dinámicas. Actualicé mis competencias en diseño de eventos de dominio al implementar cancelaciones y reprogramaciones, con lógica que evita solapamientos y notifica automáticamente a ambas partes. Apliqué estas prácticas al construir la pantalla de “Mis Citas” en la app, que muestra un calendario interactivo, permite reprogramar con un par de taps y envía recordatorios vía notificación push y correo electrónico.| TB1: <br> Como equipo, actualizamos y aplicamos de manera integrada conceptos de Lean UX, investigación de usuarios, modelado de dominio y arquitectura de software. Cada uno fortaleció tanto su perfil profesional—desde entrevistas y mapeos hasta diseño de flujos de mensajes y diagramas de despliegue como nuestra capacidad colectiva para construir una plataforma móvil robusta y centrada en las necesidades reales de padres y cuidadores. Este aprendizaje conjunto nos ha preparado para afrontar con metodología y rigor el desarrollo de la solución, mejorando nuestra colaboración, comunicación y alineación estratégica.<br><br> TP1: <br> Como equipo, hemos consolidado y actualizado simultáneamente conceptos de Domain‑Driven Design táctico, UI/UX y prácticas de implementación y despliegue. Cada uno amplió su expertise desde la definición de arquitecturas y diagramas, pasando por el diseño de experiencias y la gestión de sprints, hasta la codificación de la app móvil lo que fortalece nuestro perfil profesional y garantiza una solución coherente, escalable y alineada con las necesidades de padres y cuidadores.<br><br> TB2: <br> El equipo consolidó sus habilidades técnicas y de diseño durante el Sprint 2, integrando flujos avanzados de facturación, gestión de perfiles, mensajería en tiempo real y orquestación de citas con APIs externas. Cada integrante aplicó patrones de Domain‑Driven Design y prácticas de implementación seguras —desde tokenización de pagos hasta Value Objects para validación de datos—, mejorando significativamente la robustez y la experiencia de usuario de la aplicación. Esta evolución demuestra la capacidad colectiva para afrontar retos complejos y proveer soluciones coherentes, escalables y alineadas con los objetivos del proyecto.|
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |----|----|----|
-|Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.|**Bernaola Pérez, André Arturo**<br>*TB1*<br>Aprendí a identificar tendencias emergentes en UX y metodologías ágiles revisando artículos y estudios de caso semanalmente, lo que me permitió actualizar mis técnicas en Lean UX y validación rápida; luego compartí estos aprendizajes con el equipo en sesiones quincenales de retroalimentación.<br></br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br>Reconocí la importancia de profundizar en investigación de usuarios, por lo que me inscribí en un curso avanzado de entrevistas cualitativas, exploré Figma y Miro con tutoriales diarios y documenté plantillas reutilizables para mapas de empatía y user journeys en nuestra wiki interna.<br></br>**Sanchez Ignacio, Jefrey Martin**<br>*TB1*<br>Aprendí nuevas prácticas de priorización de backlog al participar en un workshop de Product Discovery y actualicé mis conocimientos en Impact Mapping y Scrum; apliqué metodologías de estimación ágil (Planning Poker, T-shirt sizing) en nuestras sesiones de sprint para mejorar la precisión de los compromisos. <br></br> **Velarde Luyo, Piero Alberto**<br>*TB1*<br>Reconocí la necesidad de dominar Domain-Driven Design y me uní a un grupo de estudio sobre EventStorming, lo que me permitió actualizar mis competencias en context mapping y arquitectura de microservicios; luego modelé flujos de mensajes complejos y documenté cada bounded context en nuestra herramienta colaborativa. | TB1: <br> Como equipo, reafirmamos que el aprendizaje permanente es fundamental para mantenernos competitivos y mejorar la calidad de nuestro proyecto. Cada integrante adoptó hábitos de actualización continua y aplicó nuevas metodologías, fortaleciendo nuestras habilidades técnicas y nuestra capacidad de adaptación, colaboración y crecimiento conjunto en el desarrollo de la plataforma móvil de cuidado infantil.|
+|Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.|**Bernaola Pérez, André Arturo**<br>*TB1*<br>Aprendí a identificar tendencias emergentes en UX y metodologías ágiles revisando artículos y estudios de caso semanalmente, lo que me permitió actualizar mis técnicas en Lean UX y validación rápida; luego compartí estos aprendizajes con el equipo en sesiones quincenales de retroalimentación.<br><br>*TP1*<br>Reconoció que las prácticas de Domain‑Driven Design evolucionan constantemente, por lo que se suscribió a newsletters y asistió a webinars mensuales sobre patrones tácticos y microservicios. Documentó cada nueva técnica—como sagas y anti‑corrupción layers—y compartió resúmenes quincenales con el equipo para mantenernos al día.<br><br>*TB2*<br>Aprendí durante este sprint nuevos estándares de seguridad para pasarelas de pago, estudiando la normativa PCI‑DSS y explorando librerías actualizadas de tokenización. Me inscribí en un mini‑curso sobre integración con Stripe y practiqué la implementación de webhooks para automatizar notificaciones de pago.<br></br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br>Reconocí la importancia de profundizar en investigación de usuarios, por lo que me inscribí en un curso avanzado de entrevistas cualitativas, exploré Figma y Miro con tutoriales diarios y documenté plantillas reutilizables para mapas de empatía y user journeys en nuestra wiki interna.<br><br>*TP1*<br> Identificó la importancia de dominar DevOps y pipelines de CI/CD, así que completó un curso avanzado de GitHub Actions y Docker, actualizó nuestro entorno de despliegue con contenedores optimizados y escribió un tutorial interno para que todo el equipo siga las buenas prácticas.<br><br>*TB2*<br>Profundicé en técnicas de validación de formularios avanzadas, investigando la librería React Hook Form y su integración con esquemas de validación de Zod. Además, aprendí a manejar subida de archivos de perfil mediante AWS S3, revisando la documentación oficial y probando distintas configuraciones de CORS.<br></br>**Sanchez Ignacio, Jefrey Martin**<br>*TB1*<br>Aprendí nuevas prácticas de priorización de backlog al participar en un workshop de Product Discovery y actualicé mis conocimientos en Impact Mapping y Scrum; apliqué metodologías de estimación ágil (Planning Poker) en nuestras sesiones de sprint para mejorar la precisión de los compromisos.<br><br>*TP1*<br>Entendió que las tendencias de UX/UI y accesibilidad cambian con rapidez, por lo que participó en un workshop de diseño inclusivo y en un bootcamp de Figma avanzado. Apliqué lo aprendido mejorando la propiedad de estilos en nuestros mock‑ups.<br><br>*TB2*<br>Me capacité en tiempo real con WebSockets y Firebase Cloud Messaging, realizando un tutorial intensivo sobre patrones de mensajería asíncrona y reconexión automática. Probé varias estrategias de back‑off y validé su funcionamiento en dispositivos reales para mejorar la fiabilidad del chat.<br></br> **Velarde Luyo, Piero Alberto**<br>*TB1*<br>Reconocí la necesidad de dominar Domain Driven Design y me uní a un grupo de estudio sobre EventStorming, lo que me permitió actualizar mis competencias en context mapping y arquitectura de microservicios; luego modelé flujos de mensajes complejos y documenté cada bounded context en nuestra herramienta colaborativa.<br><br>*TP1*<br>Reconoció la evolución de las plataformas de mensajería y notificaciones push, investigó Firebase Cloud Messaging y APNs, actualizó nuestra estrategia de notificaciones en tiempo real y creó ejemplos de código reutilizables para el equipo, facilitando la adopción de estas tecnologías.<br><br>*TB2*<br>Estudié la API de Google Calendar y la librería node‑cron para orquestar eventos de cita y recordatorios. Construí varios prototipos de sincronización de zonas horarias y comprobé diferencias de comportamiento de la API en distintos entornos regionales. | TB1: <br> Como equipo, reafirmamos que el aprendizaje permanente es fundamental para mantenernos competitivos y mejorar la calidad de nuestro proyecto. Cada integrante adoptó hábitos de actualización continua y aplicó nuevas metodologías, fortaleciendo nuestras habilidades técnicas y nuestra capacidad de adaptación, colaboración y crecimiento conjunto en el desarrollo de la plataforma móvil de cuidado infantil.<br><br> TP1: <br> El equipo demostró un compromiso activo con el aprendizaje permanente, integrando nuevas metodologías y herramientas en su flujo de trabajo desde patrones de arquitectura y DevOps hasta diseño inclusivo y mensajería—lo que no solo fortalece nuestras competencias individuales, sino que garantiza que el proyecto evolucione con prácticas actuales y de alta calidad. <br><br> TB2: <br> El equipo reafirmó su compromiso con el aprendizaje continuo, incorporando nuevas normativas, librerías y APIs en cada módulo. Al adoptar prácticas de autoformación —cursos, tutoriales y documentación oficial— y compartir estos conocimientos, fortalecimos nuestra capacidad para responder ágilmente a retos técnicos y mejorar la calidad global de la solución.|
 
 ----
 
@@ -363,6 +401,7 @@ Nuestro segmento objetivo abarca a todos aquellos padres y tutores que buscan so
 
 ----
 
+
 # Capítulo II: Requirements Elicitation & Analysis
 
 ## 2.1. Competidores  
@@ -447,7 +486,9 @@ Evidencia de la reunión:
 
 ![Entrevista PadrePercy](./assets/chapter02//padre2.png)
 
-[Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/EUh7UP4-k9lMuQ89kiq1UAMBPgat9a-qKqgy2lS2vHiVIQ?e=n6sr0R&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+[Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/EUh7UP4-k9lMuQ89kiq1UAMBPgat9a-qKqgy2lS2vHiVIQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=eQj9Lx)
+
 
 Resumen de la entrevista:
 
@@ -510,7 +551,7 @@ Evidencia de la reunión:
 
 ![Entrevista Niñera Luhana](./assets/chapter02//interview-nanny-luhana.png)
 
-[Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/Efv_OrgSZbBGrfpy_SVrRicByILiDU8eVX9rmJgA5end0w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Z1Amf7)
+[Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/EZMIZYlvOU5Aj-lspt02Fo4Bm331p1AY5tCJ9yN61KWFLQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1UxEPL)
 
 Resumen de la entrevista:
 
@@ -530,7 +571,8 @@ Evidencia de la reunión:
 
 ![Entrevista Tutor Maria](./assets/chapter02/interview-tutor-maria.png)
 
-[Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/EX-yKJvqlTlEouJk0ZsbK0MBz-qj6ruc55VpnzD5c0jBTg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=3Kqvsk)
+
+[Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/EZMIZYlvOU5Aj-lspt02Fo4Bm331p1AY5tCJ9yN61KWFLQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1Z5w81)
 
 Resumen de la entrevista:
 
@@ -547,7 +589,9 @@ Durante la conversación, María Fernanda expresó su interés en las plataforma
 Evidencia de la reunión:
 
 ![Entrevista Tutor Harold](./assets/chapter02/interview-tutor-harold.png)
-[Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/EZlgjVykoLJGhhH0yrPGq-MBafxBGV6g5deLtFj8JcSaig?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vqEUPS)
+
+[Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/EXpBpL1wTs1GiecjecQBEmcBBt9ONU-HF3mZdgQhqskO9g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dq1DAU)
+
 
 Resumen de la entrevista:
 
@@ -731,6 +775,7 @@ Este lenguaje facilita la comprensión y el consenso en torno a los conceptos y 
 
 ----
 
+
 # Capítulo III: Requirements Specification
 
 ## 3.1. To-Be Scenario Mapping
@@ -832,10 +877,9 @@ Este lenguaje facilita la comprensión y el consenso en torno a los conceptos y 
 
 ![Impact Map](./assets/chapter03/ImpactMap.png)
 
+---
 
-----
-
-## Capítulo IV: Solution Software Design
+# Capítulo IV: Product Design
 
 ## 4.1. Strategic-Level Domain-Driven Design
 
@@ -974,6 +1018,8 @@ La siguiente image muestra la vista general de los bounded contexts.
 
 Una vez definidos los Bounded Contexts en la etapa previa, el equipo llevó a cabo una sesión de Domain Storytelling con el objetivo de modelar la interacción entre estos contextos para abordar distintos escenarios del negocio. Esta metodología facilitó una comprensión clara de los flujos de comunicación entre contextos, así como del comportamiento esperado del sistema desde el punto de vista de los usuarios. Durante la sesión, se enfocaron principalmente en el análisis de dos casos de uso significativos.
 
+
+**Usuario:**
 Usuario Final
 
 **Scenario:**
@@ -1220,8 +1266,6 @@ Este modelo de flujos documenta cómo el Tutor y el Cuidador intercambian mensaj
 ![DMFM3](./Images/DomainMessageFlow%20odeling/DMFM3.png)
 
 ### 4.1.1.3. Bounded Context Canvases
-
-En esta sección se describen en detalle los criterios aplicados a cada Bounded Context Canvas, una herramienta diseñada para estructurar y documentar de forma independiente cada contexto acotado. El proceso de definición de cada uno de estos canvases se orientó a resaltar su relevancia dentro de la arquitectura de la solución móvil, priorizando aquellos aspectos que garantizan una experiencia de usuario fluida y una integración sólida entre los distintos módulos de la aplicación. De este modo, cada contexto se concibe no solo como una unidad lógica de dominio, sino también como un componente clave para el correcto funcionamiento y escalabilidad de la plataforma móvil.
 
 #### **User Management**
 **Explicación de diseño:**  
@@ -1543,14 +1587,142 @@ El diagrama ilustra el despliegue de un sistema distribuido conformado por disti
 ## 4.2. Tactical-Level Domain-Driven Design 
 
 ### 4.2.1.   Bounded Context: Bounded Context: User Management
-### 4.2.1.1. Domain Layer   
-### 4.2.1.2.  Interface Layer 
-### 4.2.1.3.  Application Layer 
-### 4.2.1.4. Infrastructure Layer 
-### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams 
-### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams 
-### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams 
+
+### 4.2.1.1. Domain Layer
+Esta capa modela los agregados raíz **Caregiver** y **Tutor**, con sus atributos, comportamientos y reglas de negocio.
+
+**Aggregate: Caregiver**  
+- **Descripción:** Representa al cuidador de la plataforma. Se mapea a la tabla `caregivers`.  
+
+| Atributo            | Tipo               | Descripción                                               |
+|---------------------|--------------------|-----------------------------------------------------------|
+| id                  | Long               | Identificador único (autogenerado)                        |
+| email               | EmailAddress (VO)  | Correo del cuidador (validado)                            |
+| completeName        | String             | Nombre completo                                           |
+| age                 | Integer            | Edad                                                      |
+| address             | String             | Dirección                                                 |
+| caregiverExperience | Integer            | Años de experiencia                                       |
+| completedServices   | Integer            | Número de servicios completados                           |
+| biography           | String             | Biografía breve                                           |
+| profileImage        | String             | URL de la imagen de perfil                                |
+| farePerHour         | BigDecimal         | Tarifa por hora                                           |
+| districtsScope      | String             | Distritos de cobertura                                    |
+| profileId           | Long               | FK a perfil (roles, certificaciones, etc.)                |
+| createdAt           | Date               | Fecha de creación                                         |
+| updatedAt           | Date               | Fecha de última actualización                             |
+
+**Métodos (comportamientos):**  
+- `updateFare(newFare: BigDecimal, newDistricts: String)`  
+- `updateBiography(newBio: String)`  
+
+
+**Aggregate: Tutor**  
+- **Descripción:** Representa al tutor de la plataforma. Se mapea a la tabla `tutors`.  
+
+| Atributo    | Tipo             | Descripción                                 |
+|-------------|------------------|---------------------------------------------|
+| id          | Long             | Identificador único (autogenerado)          |
+| fullName    | String           | Nombre completo                             |
+| email       | EmailAddress (VO)| Correo del tutor (validado)                 |
+| doc         | String           | Documento de identidad                      |
+| password    | Password (VO)    | Contraseña del tutor (validada)             |
+| number      | String           | Número de teléfono                          |
+| street      | String           | Calle / dirección                           |
+| district    | String           | Distrito de residencia                      |
+| role        | String           | Rol (p.ej. “TUTOR”)                         |
+| profileId   | Long             | FK a perfil (certificaciones, etc.)         |
+| createdAt   | Date             | Fecha de creación                           |
+| updatedAt   | Date             | Fecha de última actualización               |
+
+**Métodos (comportamientos):**  
+- `updateProfile(updatedInfo: TutorUpdateInfo)`  
+
+### 4.2.1.2.  Interface Layer
+
+Exposición de endpoints REST para **Caregivers** y **Tutors**.
+
+##### CaregiverController
+
+- **POST** `/api/v1/caregiver` — Crear cuidador  
+- **GET** `/api/v1/caregiver` — Listar todos  
+- **GET** `/api/v1/caregiver/{id}` — Obtener por ID  
+- **PATCH** `/api/v1/caregiver/place-fare` — Actualizar tarifa y distritos  
+- **PATCH** `/api/v1/caregiver/biography` — Actualizar biografía  
+- **GET** `/api/v1/caregiver/search?district=&sort=` — Buscar por distrito y orden  
+
+##### TutorController
+
+- **POST** `/api/v1/tutors` — Crear tutor  
+- **GET** `/api/v1/tutors` — Listar todos  
+- **GET** `/api/v1/tutors/{tutorId}` — Obtener tutor por ID  
+- **PUT** `/api/v1/tutors/{tutorId}` — Actualizar tutor completo  
+- **DELETE** `/api/v1/tutors/{tutorId}` — Eliminar tutor  
+
+**Dependencias clave (ambos):**  
+- `CaregiverCommandService`, `CaregiverQueryService`  
+- `TutorCommandService`, `TutorQueryService`  
+- Assemblers: `CreateCaregiverCommandAssembler`, `CaregiverResourceAssembler`,  
+  `CreateTutorCommandAssembler`, `TutorResourceAssembler`, etc.
+
+
+### 4.2.1.3.  Application Layer
+
+Orquesta comandos y consultas para ambos agregados.
+
+##### CaregiverCommandServiceImpl
+
+- `handle(CreateCaregiverCommand)`  
+- `handle(UpdateFareCommand)`  
+- `handle(UpdateBiographyCommand)`  
+
+##### CaregiverQueryServiceImpl
+
+- `getAllCaregivers()`  
+- `getById(id: Long)`  
+- `searchByDistrict(district: String, sort: String)`  
+
+##### TutorCommandServiceImpl
+
+- `handle(CreateTutorCommand)`  
+- `handle(UpdateTutorCommand)`  
+- `handle(DeleteTutorCommand)`  
+
+##### TutorQueryServiceImpl
+
+- `getAllTutors()`  
+- `getById(id: Long)`  
+
+### 4.2.1.4. Infrastructure Layer
+
+Implementa persistencia con JPA/Hibernate.
+
+##### CaregiverRepository
+
+- `findAll()`, `findById(Long)`, `save(Caregiver)`  
+- `findByDistrictsScopeContaining(String, Sort)`  
+- `existsByEmail(String)`  
+
+##### TutorRepository
+
+- `findAll()`, `findById(Long)`, `save(Tutor)`, `deleteById(Long)`  
+- `existsByEmail(String)`  
+
+### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+El diagrama de componentes muestra la arquitectura del bounded context de Payments, incluyendo los módulos y sus interacciones. Se muestra el uso del patrón CQRS, donde los comandos y consultas están separados.
+![Users Component Level Diagram](Images/C4%20Model/components/users.png)
+
+### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
+### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+Se han definido las siguientes clases en el Domain Layer para este bounded context:
+![Users Domain Layer Class Diagrams](Images/Bounded_Context/class%20diagrams/user_domain.png)
+
 ### 4.2.1.6.2. Bounded Context Database Design Diagram
+
+Se han definido las siguientes tablas en la base de datos para este bounded context:
+![Users Database Design Diagram](Images/Bounded_Context/database%20diagrams/caregivers.png)
+
 
 ### 4.2.2. Bounded Context: Payments
 
@@ -1827,6 +1999,454 @@ La principal responsabilidad del Infraestructure Layer es asegurar que los datos
 ### 4.2.4.6.2. Bounded Context Database Design Diagram
 ![Bounded Context Database Design Diagram](Images/Bounded_Context/imagen4.6.4.6.2.png)
 
+----
+# Capítulo V: Solution UI/UX Design
+
+## 5.1. Product design
+
+El diseño del producto es una fase crucial en el desarrollo de SafeChild, ya que determina cómo los padres interactuarán con la plataforma, asegurando que la experiencia de usuario sea simple, eficiente y confiable. En este capítulo, detallamos el proceso de diseño seguido para SafeChild, desde las pautas de estilo general hasta la arquitectura de software y la base de datos. Cada sección refleja nuestro enfoque en crear una experiencia de usuario que priorice la facilidad de uso y la confianza en la conexión con niñeras y profesores calificados, tanto en la landing page como en las aplicaciones web.
+
+### 5.1.1. Style Guidelines
+
+En SafeChild, establecimos pautas de estilo claras para garantizar una experiencia visual coherente y profesional. Definimos tanto aspectos generales como específicos para la web, con el objetivo de transmitir confianza y accesibilidad a los usuarios.
+
+### 5.1.1.1. General Style Guidelines
+
+**Task:**
+En esta sección, se detallarán las directrices generales de estilo que guiarán el diseño y la presentación de SafeChild. Estas directrices asegurarán que todos los elementos visuales y textuales sean coherentes y alineados con la identidad de nuestra marca, proporcionando una experiencia de usuario fluida, confiable y profesional.
+
+**Insight:**
+La consistencia en el estilo y diseño es crucial para establecer una identidad de marca sólida y reconocible en SafeChild. Una guía de estilo clara ayuda a mantener la coherencia a lo largo del proyecto, asegurando que la plataforma refleje confianza y profesionalismo en cada interacción, facilitando la navegación y el uso para los padres que buscan cuidadores y profesores confiables.
+
+**Branding:**
+Nuestro logo representa a SafeChild mediante la imagen de dos manos que sostienen a un niño, con una casa y un oso de fondo. Este conjunto visual simboliza protección, cuidado y un entorno seguro, que son los pilares fundamentales de nuestra propuesta. Los colores celeste, blanco y celeste oscuro refuerzan sensaciones de calma, confianza y profesionalismo. La tipografía utilizada es moderna y accesible, asegurando legibilidad y fácil reconocimiento del nombre de la marca.
+
+<div align="center">
+<img src="assets/chapter05/SafechildLogo.png" alt="logo safe child" width="800"></a><br>
+<br>
+</div>
+
+**Typography:**
+Se seleccionó una tipografía moderna, limpia y accesible, diseñada para ser legible en dispositivos móviles y de escritorio. La elección de la tipografía tiene como objetivo mejorar la experiencia de lectura y navegación, asegurando que toda la información relevante sea clara para los usuarios.
+
+**Nunito**
+
+<div align="center">
+<img src="assets/chapter05/tipografia.png" alt="logo safe child" width="800"></a><br>
+<br>
+</div>
+
+Colors:
+
+La paleta de colores de SafeChild ha sido cuidadosamente seleccionada para transmitir una sensación de seguridad, confianza y serenidad. Estos tonos refuerzan la identidad visual de la plataforma y mejoran la experiencia del usuario, asegurando coherencia en todos los elementos gráficos.
+
+**#F7F6F6:** Utilizado como color de fondo neutro, este tono claro brinda una sensación de limpieza, orden y simplicidad, facilitando la lectura y reduciendo la fatiga visual.<br>
+**#4AADBE:** Este tono azul verdoso actúa como el color principal de la marca, evocando frescura, calma y confianza. Se aplica en botones, iconos destacados y elementos de navegación.<br>
+**#89CFD7:** Funciona como color complementario para aportar equilibrio visual. Su suavidad ayuda a destacar secciones secundarias sin robar protagonismo al contenido principal.<br>
+**#0D3A5A:** Este azul profundo garantiza una excelente legibilidad como color principal de texto. Además, aporta un contraste sobrio y profesional en toda la interfaz.<br>
+**#72C3CF:** Este color intermedio es empleado para generar dinamismo y variedad sin perder coherencia visual. Aparece en tarjetas informativas, íconos ilustrativos y transiciones.<br>
+**#ADE3E0:** Este tono claro y amigable refuerza la sensación de tranquilidad y cercanía. Se utiliza en fondos de secciones secundarias o elementos decorativos suaves.<br>
+
+<div align="center">
+<img src="assets/chapter05/colors.png" alt="logo safe child" width="800"></a><br>
+<br>
+</div>
+
+**Spacing:**
+Se utiliza un espaciado base de 4px para padding y margin en todos los elementos, lo que asegura una apariencia uniforme y ordenada en la interfaz. Este enfoque crea una estructura visual clara y organizada que facilita la navegación, mejorando la experiencia de usuario en dispositivos móviles y web.
+
+### 5.1.2. Information Architecture
+
+En SafeChild, buscamos ofrecer una plataforma intuitiva, segura y confiable para conectar a padres que buscan servicios de cuidado infantil y cuidadores que desean registrarse para ofrecer sus servicios. Debido a la naturaleza de los servicios que involucran cuidado infantil y transacciones seguras, la arquitectura de la información es clave para lograr nuestros objetivos. A continuación, se presenta el diseño y organización de la plataforma.
+
+<b> 1. Vista Home: </b>
+
+- Vista Previa de Cuidadores Disponibles: <br>
+  Muestra cuidadores destacados o populares para captar la atención de los padres que buscan servicios.
+- Registro de Cuidadores: <br>
+  Enlace directo para que nuevos cuidadores puedan registrarse en la plataforma y comenzar a ofrecer sus servicios.
+
+<b> 2. Buscar Cuidadores (Para Padres y Tutores): </b>
+
+- Categorías de Servicios: <br>
+  Sección que agrupa los servicios de cuidado infantil según las necesidades específicas: cuidado a tiempo completo, cuidado parcial, cuidado de niños con necesidades especiales, etc.
+- Filtros de Búsqueda: <br>
+  Herramientas que permiten a los padres filtrar cuidadores según criterios como experiencia, calificaciones, precio, ubicación y disponibilidad.
+- Vista Detallada de Perfiles: <br>
+  Cada cuidador cuenta con una página individual que muestra su experiencia, calificaciones, tarifas, disponibilidad y certificaciones.
+
+<b> 3. Registro de Cuidadores: </b>
+
+- Formulario de Registro: <br>
+  Formulario para que los cuidadores se registren en la plataforma, ingresando información como experiencia, habilidades, certificaciones y disponibilidad.
+- Gestión de Servicios: <br>
+  Una vez registrados, los cuidadores pueden crear o editar su perfil, subir certificaciones y gestionar su disponibilidad.
+- Historial de Servicios y Pagos: <br>
+  Los cuidadores pueden revisar un historial de los servicios que han realizado, las calificaciones obtenidas y los pagos recibidos.
+
+<b> 4. Reservar Servicios de Cuidado: </b>
+
+- Interfaz de Reserva: <br>
+  Una interfaz simple para que los padres seleccionen el cuidador, fecha y hora para reservar el servicio de cuidado infantil.
+- Vista Previa y Confirmación: <br>
+  Los padres pueden visualizar los detalles de la reserva antes de confirmar, incluyendo la tarifa total y la duración del servicio.
+
+### 5.1.2.1. Organization Systems
+
+El sistema de organización de SafeChild está diseñado para brindar la mejor experiencia posible tanto para los padres que buscan contratar servicios como para los cuidadores que desean ofrecerlos.
+
+<b> 1. Categorización de la Información: </b>
+
+- Perfiles de Cuidadores: <br>
+  Categorizados por experiencia, tipo de cuidado (niños pequeños, cuidado especializado, cuidado nocturno) y calificaciones.
+- Servicios de Cuidado: <br>
+  Categorizados por tiempo completo, medio tiempo, ocasional, etc.
+
+<b> 2. Filtros y Búsqueda: </b>
+
+- Filtros para Padres: <br>
+  Los padres pueden filtrar los cuidadores según la ubicación, experiencia, precio, calificaciones, disponibilidad y otros parámetros.
+
+<b> 3. Interfaz de Usuario Intuitiva: </b>
+
+- Menú Principal: <br>
+  Un menú claro y accesible que incluye las secciones clave: Buscar Cuidadores, Registro de Cuidadores, Historial de Servicios, y Perfil de Usuario.
+
+<b> 4. Funcionalidades Específicas: </b>
+
+- Perfiles de Cuidadores: <br>
+  Cada cuidador tiene una página individual que muestra su experiencia, calificaciones, tarifas y disponibilidad, junto con una opción para reservar un servicio.
+- Reservas: <br>
+  Los padres pueden gestionar y ver sus reservas previas, y repetir servicios con cuidadores específicos desde su historial.
+
+### 5.1.2.2. Labelling Systems
+
+Para mejorar la navegación y comprensión, SafeChild utilizará un sistema de etiquetado claro y descriptivo. Ejemplos de etiquetas incluyen:
+
+- Buscar Cuidadores
+- Registrar como Cuidador
+- Reserva de Servicios
+- Perfiles de Cuidadores
+- Historial de Servicios
+
+### 5.1.2.3. SEO Tags and Meta Tags
+
+<div align="center">
+<img src="assets/chapter05/metamobile.png" alt="logo safe child" width="800"></a><br>
+<br>
+</div>
+
+**Insight:**
+
+Estos metadatos mantienen la coherencia de SEO y marca con la versión web de SafeChild. Aunque no influyen en los motores de búsqueda tradicionales, resultan útiles para indexación interna, análisis y optimización en la tienda (ASO). Además, desde la consola de Google Play puedes completar y afinar el título, la descripción, los íconos y las capturas de pantalla para mejorar aún más la visibilidad.
+
+### 5.1.2.4. Searching Systems
+
+El sistema de búsqueda dentro de la aplicaion permitirá a los padres y cuidadores encontrar la información que necesitan de manera rápida y eficaz.
+
+<b> 1. Búsqueda por Tipo de Cuidado: </b> <br>
+Los padres pueden buscar cuidadores por tipo de cuidado, como "cuidado nocturno", "cuidado a tiempo completo" o "cuidado de niños con necesidades especiales".
+
+<b> 2. Búsqueda por Disponibilidad: </b> <br>
+Se ofrece una búsqueda avanzada que permite a los padres buscar cuidadores según la disponibilidad en días y horarios específicos.
+
+<b> 3. Búsqueda por Calificaciones: </b> <br>
+Los padres pueden buscar cuidadores con las mejores calificaciones y opiniones de otros usuarios.
+
+### 5.1.2.5. Navigation Systems
+
+El sistema de navegación está diseñado para ofrecer una experiencia fluida, fácil de usar y segura para ambos segmentos (padres y cuidadores).
+
+<b> 1. Menú Principal: </b> <br>
+El menú principal incluirá enlaces a las secciones más importantes: Inicio, Buscar Cuidadores, Registro de Cuidadores, Historial de Servicios y Perfil.
+
+<b> 2. Navegación Contextual: </b> <br>
+Cada sección principal tendrá submenús específicos para ayudar a los usuarios a acceder a opciones más detalladas dentro de la plataforma, como filtros de búsqueda o ajustes de perfil.
+
+<b> 3. Botones de Acción Destacados: </b> <br>
+Botones llamativos como "Buscar Cuidadores", "Registrar como Cuidador" y "Reservar Servicio" estarán estratégicamente ubicados para facilitar la interacción.
+
+<b> 4. Búsqueda y Filtros Visibles: </b> <br>
+La barra de búsqueda y los filtros estarán siempre visibles para que los usuarios puedan ajustar rápidamente los resultados y encontrar cuidadores de acuerdo a sus preferencias.
+
+<b> 5. Flujo de Navegación Intuitivo: </b> <br>
+Desde la búsqueda hasta la reserva de servicios, se establecerá un flujo lógico y claro que guía a los usuarios en cada etapa, con mensajes de acción y señales visuales que facilitan el proceso.
+
+### 5.1.3. Landing Page UI Design
+
+En esta sección, el equipo presentará la propuesta de Interfaz de Usuario para la Landing Page. Inicialmente, se ofrecerá una introducción que detallará cómo el equipo ha interpretado y aplicado las decisiones de diseño y la arquitectura de información previamente definidas en la elaboración visual de la página. Se mostrará la evolución del diseño, evidenciando la implementación de las Guías de Estilo y la Arquitectura de la Información en el prototipo desarrollado con Figma.
+
+### 5.1.3.1. Landing Page Wireframe
+
+La siguiente sección presenta el wireframe de la landing page diseñada para la aplicación. Este diseño tiene como objetivo principal captar la atención de nuevos usuarios, destacando los beneficios del servicio y facilitando el acceso a funciones clave como el registro, la información de contacto y las características del producto. La estructura propuesta incluye secciones como el encabezado de navegación, beneficios principales, suscripciones, testimonios de clientes y un formulario de contacto. Este wireframe proporciona una guía visual preliminar que servirá de base para el desarrollo de la interfaz de usuario final.
+
+![Landing Page Wireframe](assets/chapter05/landing_wireframe.png)
+
+
+### 5.1.3.2. Landing Page Mock-up
+
+En esta sección se presenta el mockup visual de la landing page, el cual representa una versión más detallada y cercana al producto final en comparación con el wireframe. Este diseño incorpora los elementos visuales clave como colores, tipografías, íconos e imágenes, alineados con la identidad visual de la plataforma SafeChild. El objetivo del mockup es mostrar cómo se verá la interfaz una vez implementada, permitiendo validar decisiones de diseño antes del desarrollo. Cada sección ha sido diseñada para garantizar una experiencia de usuario clara, accesible y centrada en la confianza y seguridad que la plataforma desea transmitir.
+
+![Landing Page Mock-up](assets/chapter05/landing_mockup.png)
+
+
+### 5.1.4. Mobile Applications UX/UI Design
+
+### 5.1.4.1. Mobile Applications Wireframes
+
+Esta es la primera vista de nuestra aplicación, aquí el usuario escoge su rol.
+
+![Principal Wireframe](assets/chapter05/wireframes/w-Principal.png)
+
+Esta es la vista de inicio para el rol de padre.
+
+![Inicio Padre Wireframe](assets/chapter05/wireframes/w-Inicio-Padre.png)
+
+Esta es la vista de inicio para el rol de cuidador.
+
+![Inicio Cuidador Wireframe](assets/chapter05/wireframes/w-Inicio-Cuidador.png)
+
+Esta es la vista de registro para el rol de padre.
+
+![Registro Padre Wireframe](assets/chapter05/wireframes/w-Registro-Padre.png)
+
+Esta es la vista de registro para el rol de cuidador.
+
+![Registro Cuidador Wireframe](assets/chapter05/wireframes/w-Registro-Cuidador.png)
+
+Esta es la vista de busqueda de cuidadores para el rol de padre.
+
+![Lista Cuidadores Wireframe](assets/chapter05/wireframes/w-Lista-Cuidadores.png)
+
+Esta es la vista de servicios disponibles para el rol de cuidador.
+
+![Lista Servicios Wireframe](assets/chapter05/wireframes/w-Servicio-Cuidador.png)
+
+Esta es la vista de detalles del cuidador seleccionado para el rol de padre.
+
+![Detalles Cuidador Wireframe](assets/chapter05/wireframes/w-Detalles-Cuidador.png)
+
+Esta es la vista de detalles del servicio seleccionado para el rol de cuidador.
+
+![Detalles Servicio Wireframe](assets/chapter05/wireframes/w-Detalle-Servicio.png)
+
+Esta es la vista de detalles de métodos de pago para ambos roles.
+
+![Detalles Pagos Wireframe](assets/chapter05/wireframes/w-Pago.png)
+
+Esta es la vista de los servicios propios de rol de cuidador.
+
+![Mis Servicios Wireframe](assets/chapter05/wireframes/w-Mis-Servicios.png)
+
+Esta es la vista de los reservas propias de rol de padre.
+
+![Mis Reservas Wireframe](assets/chapter05/wireframes/w-Reservas.png)
+
+Esta es la vista de los chats del rol de padre.
+
+![Chats Padre Wireframe](assets/chapter05/wireframes/w-Chats-Padre.png)
+
+Esta es la vista de los chats del rol de cuidador.
+
+![Chats Cuidador Wireframe](assets/chapter05/wireframes/w-Chats-Cuidador.png)
+
+Esta es la vista detallada del chat para ambos roles.
+
+![Chat Wireframe](assets/chapter05/wireframes/w-Chat-Individual.png)
+
+### 5.1.4.2. Mobile Applications Wireflow Diagrams
+
+En esta sección se presentan los wireflow de las aplicaciones móviles, que ilustran el flujo de interacción del usuario a través de las diferentes pantallas y funciones de la aplicación. Estos diagramas son esenciales para comprender cómo los usuarios navegarán por la plataforma, desde la pantalla de inicio hasta la comunicación entre usuarios. Cada paso del proceso está representado visualmente, lo que permite identificar posibles mejoras en la experiencia del usuario y garantizar que todas las funcionalidades estén claramente definidas y accesibles.
+
+#### User Goal 1: Un padre quiere contratar un(a) cuidador(a)
+
+#### Task Flow:
+1. Abrir la app y ver pantalla de inicio.
+2. Seleccionar **"Soy Padre"**.
+3. Iniciar sesión (o registrarse si no tiene cuenta).
+4. Ver lista de cuidadores disponibles según tipo de servicio.
+5. Seleccionar un cuidador.
+6. Ver detalles del cuidador.
+7. Confirmar datos y proceder al pago.
+8. Ingresar información de tarjeta.
+9. Confirmar el pago.
+10. Acceder a la sección de **Reservas** para ver el estado del servicio.
+
+![WIREFLOW 1](assets/chapter05/wireflows/wireflow1.png)
+
+#### User Goal 2: Un cuidador quiere ofrecer sus servicios
+
+#### Task Flow:
+1. Abrir la app y ver pantalla de inicio.
+2. Seleccionar **"Soy Cuidador(a)"**.
+3. Iniciar sesión (o registrarse si no tiene cuenta).
+4. Completar el formulario de registro incluyendo experiencia y tipo de servicio.
+5. Subir documentos necesarios.
+6. Acceder a **"Servicios Disponibles"**.
+7. Ver detalles del servicio solicitado por un padre.
+8. Aceptar o rechazar la solicitud.
+9. Acceder a la sección de **Mis servicios** para ver servicios aceptados.
+
+![WIREFLOW 2](assets/chapter05/wireflows/wireflow2.png)
+#### User Goal 3: Un usuario quiere comunicarse con el otro rol mediante chat
+
+#### Task Flow:
+1. Iniciar sesión como padre o cuidador.
+2. Acceder a la sección de **Chat Online**.
+3. Ver lista de contactos (padres o cuidadores según el rol).
+4. Seleccionar un contacto.
+5. Enviar y recibir mensajes en tiempo real.
+
+![WIREFLOW 3](assets/chapter05/wireflows/wireflow3.png)
+
+
+
+
+### 5.1.4.3. Mobile Applications Mock-ups
+
+Esta es la primera vista de nuestra aplicación, aquí el usuario escoge su rol.
+
+![Principal Mock-Up](assets/chapter05/mock-ups/m-Principal.png)
+
+Esta es la vista de inicio para el rol de padre.
+
+![Inicio Padre Mock-Up](assets/chapter05/mock-ups/m-Inicio-Padre.png)
+
+Esta es la vista de inicio para el rol de cuidador.
+
+![Inicio Cuidador Mock-Up](assets/chapter05/mock-ups/m-Inicio-Cuidador.png)
+
+Esta es la vista de registro para el rol de padre.
+
+![Registro Padre Mock-Up](assets/chapter05/mock-ups/m-Registro-Padre.png)
+
+Esta es la vista de registro para el rol de cuidador.
+
+![Registro Cuidador Mock-Up](assets/chapter05/mock-ups/m-Registro-Cuidador.png)
+
+Esta es la vista de busqueda de cuidadores para el rol de padre.
+
+![Lista Cuidadores Mock-Up](assets/chapter05/mock-ups/m-Lista-Cuidadores.png)
+
+Esta es la vista de servicios disponibles para el rol de cuidador.
+
+![Lista Servicios Mock-Up](assets/chapter05/mock-ups/m-Servicio-Cuidador.png)
+
+Esta es la vista de detalles del cuidador seleccionado para el rol de padre.
+
+![Detalles Cuidador Mock-Up](assets/chapter05/mock-ups/m-Detalles-Cuidador.png)
+
+Esta es la vista de detalles del servicio seleccionado para el rol de cuidador.
+
+![Detalles Servicio Mock-Up](assets/chapter05/mock-ups/m-Detalles-Servicio.png)
+
+Esta es la vista de detalles de métodos de pago para ambos roles.
+
+![Detalles Pagos Mock-Up](assets/chapter05/mock-ups/m-Pago.png)
+
+Esta es la vista de los servicios propios de rol de cuidador.
+
+![Mis Servicios Mock-Up](assets/chapter05/mock-ups/m-Mis-Servicios.png)
+
+Esta es la vista de los reservas propias de rol de padre.
+
+![Mis Reservas Mock-Up](assets/chapter05/mock-ups/m-Reservas.png)
+
+Esta es la vista de los chats del rol de padre.
+
+![Chats Padre Mock-Up](assets/chapter05/mock-ups/m-Chats-Padre.png)
+
+Esta es la vista de los chats del rol de cuidador.
+
+![Chats Cuidador Mock-Up](assets/chapter05/mock-ups/m-Chats-Cuidador.png)
+
+Esta es la vista detallada del chat para el rol de padre.
+
+![Chat Padre Mock-Up](assets/chapter05/mock-ups/m-Chat-Padre.png)
+
+Esta es la vista detallada del chat para el rol de cuidador.
+
+![Chat Padre Mock-Up](assets/chapter05/mock-ups/m-Chat-Cuidador.png)
+
+
+### 5.1.4.4. Mobile Applications User Flow Diagrams
+
+En esta sección se presentan los diagramas de User Flow de las aplicaciones móviles, que detallan de manera visual y descriptiva las rutas que los usuarios siguen para cumplir sus objetivos principales (happy path) y las posibles rutas alternativas (unhappy paths).
+
+Cada User Flow se estructura en torno a un **User Goal** específico, previamente identificado en los wireflows de la sección anterior. Para cada uno de ellos se incluyen:
+
+- **Mock-ups de las vistas**: capturas de pantalla a modo de prototipo de alta fidelidad de cada paso clave en el flujo.
+- **Ruta esperada (Happy Path)**: el recorrido ideal sin incidencias, que permite al usuario completar la tarea con éxito.
+- **Rutas alternativas (Unhappy Paths)**: los caminos que surgen ante posibles errores o condiciones especiales.
+
+
+
+#### User Flow 1: Contratar un(a) cuidador(a)
+
+**User Goal:**  
+Un padre desea contratar los servicios de un(a) cuidador(a) confiable.
+
+**Task Flow:**
+1. El usuario accede a la pantalla de registro y completa los campos obligatorios (nombre, correo, contraseña, confirmar contraseña, celular).
+2. Avanza a la pantalla de inicio de sesión como Padre, ingresa correo y contraseña.
+3. Se muestra la lista de cuidadores disponibles, con opción de filtrar por tipo de servicio.
+4. Al seleccionar un cuidador, el sistema evalúa si el servicio sigue activo:
+  - Si el servicio está disponible → se abre la pantalla de **Detalles del cuidador**, donde el padre puede ver biografía, tarifa y opciones **Reservar** o **Contactar**.
+  - Si el servicio fue eliminado → aparece una pantalla de **error** con el mensaje:
+    > **"Error: El servicio ha sido eliminado por el usuario."**
+
+**Happy Path:**
+- Registro/login exitoso → selección de cuidador activo → visualización de detalles del servicio.
+
+**Unhappy Path:**
+- Servicio borrado por el cuidador antes de la selección → mensaje de error.
+
+![USER FLOW 1](assets/chapter05/userflows/UF1.png)
+
+#### User Flow 2: Ofrecer servicios (Cuidador(a))
+
+**User Goal:**  
+Un cuidador desea publicar sus servicios para recibir solicitudes de padres.
+
+**Task Flow:**
+1. El usuario ingresa a la pantalla de registro y completa sus datos (nombre, correo, contraseña, celular, experiencia previa, tipo de cuidado, carga de documentos).
+2. Avanza a la pantalla de inicio de sesión como Cuidador e ingresa sus credenciales.
+3. Se muestra la lista de **Servicios Disponibles**, con solicitudes de otros cuidadores con los datos de mayor relevancia (nombre, ubicación, calificación, fecha y horario).
+4. Al intentar agregar un nuevo servicio:
+  - El sistema verifica que los documentos personales estén validados.
+  - Si los documentos están completos y validados** → el servicio se añade correctamente a la lista.
+  - Si falta validación de documentos → se muestra una pantalla de error con la notificación:
+    > **"Error: No puede agregar servicios sin antes validar o subir sus documentos personales."**
+
+**Happy Path (resumen):**
+- Registro/inicio de sesión exitoso → documentos validados → servicio agregado.
+
+**Unhappy Path relevante:**
+- Intento de agregar servicio sin haber validado documentos → mensaje de error claro.
+
+![USER FLOW 2](assets/chapter05/userflows/UF2.png)
+
+#### User Flow 3: Comunicación entre usuarios (Chat)
+
+**User Goal:**  
+Un usuario (padre o cuidador) quiere comunicarse en tiempo real con el otro rol.
+
+**Task Flow:**
+1. El usuario inicia sesión como padre o cuidador.
+2. En el menú principal selecciona **Chat Online**.
+3. Aparece la lista de contactos activos (cuidadores para padres, padres para cuidadores).
+4. Selecciona un contacto y abre la ventana de chat.
+5. Envía y recibe mensajes en tiempo real, con historial de conversación visible.
+
+**Happy Path:**
+- Inicio de sesión exitoso → acceso a chat → envío y recepción de mensajes.
+
+**Unhappy Paths:**
+- Fallo de red al enviar mensaje → alerta "Mensaje no enviado, inténtelo más tarde".
+
+![USER FLOW 3](assets/chapter05/userflows/UF3.png)
+
+---
 
 
 # Capítulo V: Solution UI/UX Design
@@ -2226,8 +2846,8 @@ Durante el desarrollo de los sprints futuros, utilizaremos Git Flow para gestion
 Los repositorios de GitHub que utilizaremos para cada uno de los productos del proyecto son los siguientes:
 
 - **Landing Page:** [Repositorio de GitHub - Landing Page](https://upc-pre-202501-1acc0238-356-safegroup.github.io/SafeChild_LandingPage.github.io/)
-- **Documentacion:** [Repositorio de GitHub - Report]()
-- **BackEnd API:** [Repositorio de GitHub - Backend API]()
+- **Documentacion:** [Repositorio de GitHub - Report](https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/SafeGroup-report)
+- **BackEnd API:** [Repositorio de GitHub - Backend API](https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/SafeChild-Backend)
 
 #### Implementación de Git Flow
 
@@ -2591,6 +3211,220 @@ Para llevar a cabo este proyecto se usaron distintas herramientas como Visual St
 
 <img src="./assets/Chapter06/commit1.png">
 
+## 6.2.2. Sprint 2
+
+### 6.2.2.1. Sprint Planning 2
+
+| **Sprint #**                           | Sprint 2                                                                                                                                                                                                                                                       |
+|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Sprint Planning Background**         | Este sprint se centra en completar el desarrollo de la aplicación móvil para el segmento de cuidadores y profesores, y en iniciar la primera versión de la aplicación para el segmento de padres o tutores, utilizando Flutter.                                |
+| **Date**                               | 2025-06-09                                                                                                                                                                                                                                                     |
+| **Time**                               | 9:00 PM                                                                                                                                                                                                                                                        |
+| **Location**                           | Reunión virtual a través de Google Meet                                                                                                                                                                                                                        |
+| **Prepared By**                        | André Bernaola, Jose Gutiérrez, Jefrey Sanchez, Piero Velarde                                                                                                                                                                                                  |
+| **Attendees**                          | André Bernaola, Jose Gutiérrez, Jefrey Sanchez, Piero Velarde                                                                                                                                                                                                  |
+| **Sprint n – 1 Review Summary**        | Durante el Sprint 1, se desarrolló la primera versión de la aplicación móvil en Kotlin para el segmento de cuidadores y profesores. Se implementaron las funcionalidades básicas, como el registro, la gestión de servicios y la visualización de solicitudes. |
+| **Sprint n – 1 Retrospective Summary** | El equipo destacó como acierto la buena organización y colaboración durante el desarrollo. Se identificó como oportunidad de mejora la necesidad de optimizar la comunicación para resolver bloqueos técnicos más rápidamente.                                 |
+| **Sprint Goal & User Stories**         |                                                                                                                                                                                                                                                                |
+| **Sprint n Goal**                      | Completar el desarrollo de la aplicación móvil para cuidadores y profesores, e iniciar la primera versión de la aplicación para padres o tutores.                                                                                                              |
+| **Sprint n Velocity**                  | 48 SP                                                                                                                                                                                                                                                          |
+| **Sum of Story Points**                | 47 Story Points para completar las tareas del Sprint Backlog 2.                                                                                                                                                                                                |
+
+### 6.2.2.2. Sprint Backlog 2
+
+| Sprint | User Story ID | User Story Title                     | Task ID | Task Title                                | Description                                                                                   | Est. (hrs) | Assigned To    | Status |
+|--------|---------------|--------------------------------------|---------|-------------------------------------------|-----------------------------------------------------------------------------------------------|------------|----------------|--------|
+| 2      | US06          | Registro del Usuario                 | T01     | Mejorar diseño del formulario             | Refinar la interfaz del registro: estilo, disposición, responsividad.                         | 1          | Jose Gutiérrez | Todo   |
+| 2      |               |                                      | T02     | Integrar IAM con el backend para registro | Implementar la integración del sistema IAM para gestionar la autenticación en el registro.    | 2          | Jose Gutiérrez | Todo   |
+| 2      | US09          | Actualización de cuenta del Tutor    | T03     | Ajustar diseño del perfil editable        | Mejorar layout, inputs y experiencia visual del formulario de edición.                        | 2          | Jose Gutiérrez | Todo   |
+| 2      | US11          | Filtrado de Búsqueda                 | T04     | Pulir interfaz de filtros                 | Optimizar disposición y estilos de los filtros (colores, botones, sliders).                   | 2          | Jefrey Sanchez | Todo   |
+| 2      | US12          | Visualización de Perfil              | T05     | Ajustar diseño del perfil del cuidador    | Mejorar tipografía, espaciado, colores y estructura visual.                                   | 1          | Piero Velarde  | Todo   |
+| 2      | US15          | Solicitud de Reserva                 | T06     | Refinar diseño del formulario de reserva  | Aplicar mejoras visuales: claridad, feedback visual, disposición.                             | 2          | Jose Gutiérrez | Todo   |
+| 2      | US16          | Actualización de Reserva             | T07     | Mejorar UI para modificación de reservas  | Ajustar flujo visual de cambios o cancelaciones.                                              | 2          | Jose Gutiérrez | Todo   |
+| 2      | US19          | Sistema de Comunicación              | T08     | Mejorar UI del chat                       | Refinar estilo de los mensajes, timestamps, burbujas y layout general.                        | 1          | Jefrey Sanchez | Todo   |
+| 2      | US21          | Sistema de Pagos                     | T09     | Pulir interfaz del proceso de pago        | Mejorar visual del checkout, formularios y confirmación.                                      | 2          | André Bernaola | Todo   |
+| 2      | US22          | Sistema de Reseñas                   | T10     | Mejorar diseño de la sección de reseñas   | Refinar inputs, estrellas, disposición y visibilidad de comentarios.                          | 1          | André Bernaola | Todo   |
+| 2      | US07          | Registro del Cuidador                | T29     | Crear formulario de registro de cuidador  | Implementar un formulario sencillo para que el cuidador cree una cuenta y complete lo básico. | 3          | Piero Velarde  | Todo   |
+| 2      | US10          | Actualización de cuenta del Cuidador | T30     | Permitir edición de perfil de cuidador    | Crear opción para actualizar datos ya registrados.                                            | 2          | Piero Velarde  | Todo   |
+| 2      | US13          | Ingreso de Horario de Disponibilidad | T31     | Formulario simple de horarios             | Permitir ingresar días y horas de disponibilidad sin validación avanzada.                     | 4          | Piero Velarde  | Todo   |
+| 2      | US14          | Gestión de Costos de Servicios       | T32     | Establecer tarifas básicas                | Permitir registrar el costo por hora o por sesión.                                            | 4          | Piero Velarde  | Todo   |
+| 2      | US17          | Vista de Solicitudes                 | T33     | Mostrar lista de solicitudes recibidas    | Crear una vista con las solicitudes que llegan al cuidador.                                   | 4          | Piero Velarde  | Todo   |
+| 2      | US18          | Gestión de Solicitudes               | T34     | Agregar botones Aceptar / Rechazar        | Permitir al cuidador aceptar o rechazar solicitudes.                                          | 4          | Piero Velarde  | Todo   |
+| 2      | US20          | Registro de Medios de Pago           | T35     | Formulario de cuenta bancaria o billetera | Permitir ingresar datos para recibir pagos como cuidador.                                     | 5          | André Bernaola | Todo   |
+| 2      | US23          | Visualización de Reseñas             | T36     | Mostrar reseñas recibidas por cuidadores  | Crear una sección simple para listar reseñas existentes.                                      | 3          | André Bernaola | Todo   |
+
+### 6.2.2.3. Development Evidence for Sprint Review
+
+En base a nuestro sprint anterior, se mejoro lo que es el backend. Para el presente sprint se inicio con la programación de la aplicación en kotlin y flutter.
+
+##### Evidencia del backend:
+
+<img src="./assets/chapter06/sprint2backend.png">
+
+#### Evidencia de la app mobile - kotlin
+
+<img src="./assets/chapter06/mobilekotlin.png">
+
+#### Evidencia de la app mobile - flutter
+
+<img src="./assets/chapter06/mobileflutter.png">
+
+
+### 6.2.2.4. Testing Suite Evidence for Sprint Review
+
+| Repository                                                       | Branch   | Commit Id | Commit Message                        | Commit Message Body | Committed on |
+|------------------------------------------------------------------|----------|-----------|---------------------------------------|---------------------|--------------|
+| https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/Testing | sprint-2 | 31d4bfc   | feat(sprint-2): add cucumber for US06 | -                   | 17/06/2025   |
+| https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/Testing | sprint-2 | de2d968   | feat(sprint-2): add cucumber for US09 | -                   | 17/06/2025   |
+| https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/Testing | sprint-2 | 0907857   | feat(sprint-2): add cucumber for US11 | -                   | 17/06/2025   |
+| https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/Testing | sprint-2 | ee87cfe   | feat(sprint-2): add cucumber for US12 | -                   | 17/06/2025   |
+| https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/Testing | sprint-2 | 6c69797   | feat(sprint-2): add cucumber for US15 | -                   | 17/06/2025   |
+| https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/Testing | sprint-2 | 9c83f4d   | feat(sprint-2): add cucumber for US16 | -                   | 17/06/2025   |
+| https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/Testing | sprint-2 | 538b874   | feat(sprint-2): add cucumber for US19 | -                   | 17/06/2025   |
+| https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/Testing | sprint-2 | ac3de3f   | feat(sprint-2): add cucumber for US21 | -                   | 17/06/2025   |
+| https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/Testing | sprint-2 | f56d83    | feat(sprint-2): add cucumber for US22 | -                   | 17/06/2025   |
+
+### 6.2.2.5. Execution Evidence for Sprint Review
+
+Como parte de las evidencias de ejecución se mostrara todo el RESTful API desplegado 
+
+<img src="./assets/chapter06/ejecucion1.png">
+
+<img src="./assets/chapter06/ejecucion2.png">
+
+<img src="./assets/chapter06/ejecucion3.png">
+
+<img src="./assets/chapter06/ejecucion4.png">
+
+<img src="./assets/chapter06/ejecucion5.png">
+
+
+### 6.2.2.6. Services Documentation Evidence for Sprint Review
+
+| Endpoint | Detalles |
+|----------|----------|
+| /card/{cardId} | Obtiene una tarjeta por ID |
+| /{profileId} (CardsController) | Obtiene tarjetas por ID de perfil |
+| /{cardId} (PUT) | Actualiza tarjeta |
+| /{cardId} (DELETE) | Elimina tarjeta |
+| /sign-in | Inicio de sesión |
+| /sign-up | Registro de usuario |
+| /{userId} (UsersController) | Obtiene usuario por ID |
+| /chats/{userId} | Lista de chats del usuario |
+| /{userId}/{otherUserId} | Mensajes entre usuarios |
+| /send | Envío de mensaje |
+| /{profileId} (PaymentsController) | Consulta de pagos |
+| /{profileId} (ProfilesController) | Obtiene perfil por ID |
+| /{profileId} (DELETE, Profiles) | Elimina perfil |
+| /reservations/caregiver/{caregiverId} | Reservas de cuidador |
+| /reservations/tutor/{tutorId} | Reservas de tutor |
+| /reservations/{reservationId}/status/{status} | Actualiza estado de reserva |
+| /biography | Actualiza biografía del cuidador |
+| /place-fare | Actualiza tarifa del cuidador |
+| /{caregiverId} (CaregiverController) | Cuidador por ID |
+| /search | Búsqueda de cuidadores |
+| /{caregiverId} (CaregiverSchedule) | Horario por cuidador |
+| /{caregiverScheduleId} (DELETE) | Elimina horario del cuidador |
+| /{tutorId} | Tutor por ID |
+| /{tutorId} (PUT) | Actualiza tutor |
+| /{tutorId} (DELETE) | Elimina tutor |
+
+---
+
+
+| Endpoint | Operaciones | Parámetros | URL |
+|----------|-------------|------------|-----|
+| /card/{cardId} | GET | cardId | /card/{cardId} |
+| /{profileId} | GET (Cards) | profileId | /card/{profileId} |
+| /{cardId} | PUT / DELETE | cardId | /card/{cardId} |
+| /sign-in | POST | email, password | /sign-in |
+| /sign-up | POST | user data | /sign-up |
+| /{userId} | GET (Users) | userId | /users/{userId} |
+| /chats/{userId} | GET | userId | /messages/chats/{userId} |
+| /{userId}/{otherUserId} | GET | userId, otherUserId | /messages/{userId}/{otherUserId} |
+| /send | POST | message | /messages/send |
+| /{profileId} | GET (Payments) | profileId | /payments/{profileId} |
+| /{profileId} | GET / DELETE (Profiles) | profileId | /profiles/{profileId} |
+| /reservations/caregiver/{caregiverId} | GET | caregiverId | /reservations/caregiver/{caregiverId} |
+| /reservations/tutor/{tutorId} | GET | tutorId | /reservations/tutor/{tutorId} |
+| /reservations/{reservationId}/status/{status} | PATCH | reservationId, status | /reservations/{reservationId}/status/{status} |
+| /biography | PATCH | biography | /caregiver/biography |
+| /place-fare | PATCH | fare | /caregiver/place-fare |
+| /{caregiverId} | GET (Caregiver) | caregiverId | /caregiver/{caregiverId} |
+| /search | GET | filters | /caregiver/search |
+| /{caregiverId} | GET (Schedule) | caregiverId | /caregiver-schedule/{caregiverId} |
+| /{caregiverScheduleId} | DELETE | caregiverScheduleId | /caregiver-schedule/{caregiverScheduleId} |
+| /{tutorId} | GET / PUT / DELETE | tutorId | /tutors/{tutorId} |
+
+
+### 6.2.2.7. Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 2, se realizó el despliegue continuo del backend de SafeChild utilizando Azure App Services como plataforma de hosting y GitHub Actions como herramienta de automatización para la integración y entrega continua (CI/CD).
+
+Se configuró un pipeline de GitHub Actions que, al detectar cambios en la rama `feat/deploy`, compila el proyecto, ejecuta pruebas y despliega automáticamente la aplicación a Azure. Este flujo garantiza un proceso de despliegue eficiente, seguro y reproducible, alineado con buenas prácticas DevOps.
+
+#### Evidencias del Despliegue:
+-  Repositorio configurado con workflow `.yml` para CI/CD.
+-  Pipeline exitoso desde GitHub Actions al entorno productivo en Azure.
+-  Servicio backend expuesto mediante una URL pública y funcional.
+-  Variables de entorno configuradas de manera segura en Azure.
+-  Revisión de logs en Azure para validar correcto funcionamiento tras el despliegue.
+
+Este despliegue permite que el backend esté disponible 24/7 y sirva de base para la integración de la aplicación móvil desarrollada en paralelo.
+
+**Backend desplegado:**  
+[https://safechild-new-d9htajddfsgaaafr.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/](https://safechild-new-d9htajddfsgaaafr.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/)
+
+
+### 6.2.2.8. Team Collaboration Insights during Sprint
+
+
+## 6.3. Validation Interviews
+
+La etapa de Validación de Entrevistas se centra en recoger comentarios y observaciones directas de los usuarios para evaluar sus percepciones sobre el diseño, la usabilidad y las funcionalidades de la aplicación móvil SafeChild. El objetivo principal es confirmar que la experiencia ofrecida está bien alineada con las necesidades y expectativas de los diferentes tipos de usuarios. Esta fase emplea entrevistas estructuradas y pruebas de usabilidad sobre el prototipo funcional, con el fin de garantizar que SafeChild sea intuitiva, accesible desde dispositivos móviles, y cumpla eficazmente con los objetivos de proporcionar un servicio satisfactorio y adaptado a sus usuarios.
+
+### 6.3.1. Diseño de Entrevistas
+
+En esta sección de Diseño de Entrevistas, se detalla la estructura y las preguntas utilizadas para recopilar información de los usuarios de SafeChild. El diseño incluye preguntas generales aplicables a todos los participantes, así como preguntas específicas para los distintos grupos de usuarios: padres de familia que buscan servicios de cuidado y enseñanza para sus niños, y cuidadores (niñeras y profesores) que ofrecen estos servicios a tiempo parcial.
+
+Estas preguntas buscan explorar áreas clave de la experiencia de usuario en dispositivos móviles, tales como la facilidad de navegación, claridad visual, tiempos de respuesta, accesibilidad y valor percibido del servicio.
+
+#### Segmento 1: Padres de familia que buscan servicio de niñeras y profesores a tiempo parcial
+
+- ¿Qué impresión general le dejó la aplicación móvil SafeChild?
+- ¿Le resultó visualmente atractiva la interfaz desde su celular?
+- ¿Le pareció fácil de navegar desde un dispositivo móvil?
+- ¿Qué opina sobre la disposición de los botones, menús y secciones?
+- ¿Cómo evalúa los colores y el estilo visual desde su celular?
+- ¿Qué información adicional considera necesaria que se muestre con mayor claridad?
+- ¿Qué tan cómoda le resultó la experiencia al reservar o buscar servicios desde su celular?
+- ¿Cree usted que la aplicación móvil cumple con los objetivos planteados?
+- ¿La recomendaría a otros padres de familia?
+- ¿Qué sugerencias nos daría para mejorar la experiencia móvil?
+
+#### Segmento 2: Niñeras y profesores que buscan conectarse con padres de familia
+
+- ¿Qué impresión general le dejó la aplicación móvil SafeChild?
+- ¿La interfaz le pareció clara y funcional en su celular?
+- ¿La navegación le resultó sencilla desde un dispositivo móvil?
+- ¿Cómo evalúa el uso de colores y diseño en la pantalla de su celular?
+- ¿Qué elementos considera importantes que deben aparecer en la app como cuidador?
+- ¿Le pareció fácil publicar o actualizar su perfil de cuidador?
+- ¿Pudo encontrar fácilmente la opción para comunicarse con padres?
+- ¿Cree usted que la aplicación móvil cumple con su propósito?
+- ¿La recomendaría a otros cuidadores o docentes?
+- ¿Qué aspectos sugeriría mejorar desde su experiencia como usuario móvil?
+
+
+### 6.3.2. Registro de Entrevistas
+
+### 6.3.3. Evaluaciones según heurísticas
+
+## 6.4. Video About-the-Product
+
+
+---
+
 
 ## Conclusiones
 ### Conclusiones y Recomendaciones
@@ -2599,8 +3433,12 @@ Para llevar a cabo este proyecto se usaron distintas herramientas como Visual St
 
 El equipo ha demostrado una sólida adopción del aprendizaje continuo al integrar nuevas metodologías (Lean UX, investigación cualitativa, DDD y estimaciones ágiles) en el proyecto, lo que ha mejorado nuestra capacidad de colaboración, la calidad de los entregables y la alineación con las necesidades de padres y cuidadores.
 
+La incorporación de hábitos de aprendizaje continuo a lo largo del proyecto ha fortalecido nuestras capacidades técnicas y metodológicas, permitiéndonos adaptarnos ágilmente a nuevas herramientas y prácticas (DDD, DevOps, UX inclusivo, mensajería en tiempo real). Este compromiso con la actualización permanente ha elevado la calidad del entregable y ha consolidado una cultura colaborativa de mejora constante.
+
 **Recomendación**
 Establecer un ritual mensual de “lunch & learn” interno en el que cada miembro comparta un concepto, herramienta o práctica reciente y cómo aplicarla al proyecto, asegurando así la difusión constante de conocimiento y la retroalimentación colectiva.
+
+Formalizar un programa de aprendizaje continuo: destinar horas mensuales de “tiempo de innovación” para formación, establecer objetivos de desarrollo individual y grupal, y crear un seguimiento periódico (por ejemplo, un dashboard de competencias) que garantice la evolución sostenida de habilidades y la aplicación directa de nuevos conocimientos al proyecto.
 
 ## Bibliografía
 
@@ -2611,3 +3449,46 @@ Marin, H. M. (2022, 23 junio). “Uno de los grandes desafíos es reducir la bre
 Condiciones de vida en el Perú: impacto económico de los servicios de cuidado infantil. (2021). En Instituto Nacional de Estadística E Informática (INEI). Recuperado 22 de agosto de 2024, de https://www.inei.gob.pe
 
 ## Anexos
+
+**Anexo 1:**
+
+**Entrevias de Needfinding**
+
+Entrevistas Segmento Padres/Tutores:<br>
+- [`https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/EUh7UP4-k9lMuQ89kiq1UAMBPgat9a-qKqgy2lS2vHiVIQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=eQj9Lx`](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/EUh7UP4-k9lMuQ89kiq1UAMBPgat9a-qKqgy2lS2vHiVIQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=eQj9Lx)
+- [`https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/Ed1EXGsOr_5Fput7D5RylqMBsPxXP3pxvtZ5IYdrwConoQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=YSnGq0`](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/Ed1EXGsOr_5Fput7D5RylqMBsPxXP3pxvtZ5IYdrwConoQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=YSnGq0)
+- [`https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/EbHaOnY2YVpJhJRipImGlyEBz_owqfz2X9TBAa_WFK-sRg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=xmtzLJ`](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/EbHaOnY2YVpJhJRipImGlyEBz_owqfz2X9TBAa_WFK-sRg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=xmtzLJ)
+
+Entrevistas Cuidadores/Educadores:<br>
+- [`https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/EZMIZYlvOU5Aj-lspt02Fo4Bm331p1AY5tCJ9yN61KWFLQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1UxEPL`]()
+- [`https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/EZMIZYlvOU5Aj-lspt02Fo4Bm331p1AY5tCJ9yN61KWFLQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1UxEPL`](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/EZMIZYlvOU5Aj-lspt02Fo4Bm331p1AY5tCJ9yN61KWFLQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1UxEPL)
+- [`https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/EZMIZYlvOU5Aj-lspt02Fo4Bm331p1AY5tCJ9yN61KWFLQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1Z5w81`](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/EZMIZYlvOU5Aj-lspt02Fo4Bm331p1AY5tCJ9yN61KWFLQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1Z5w81)
+- [`https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/EXpBpL1wTs1GiecjecQBEmcBBt9ONU-HF3mZdgQhqskO9g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dq1DAU`](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/EXpBpL1wTs1GiecjecQBEmcBBt9ONU-HF3mZdgQhqskO9g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dq1DAU)
+
+**Anexo 2:**
+
+Link de la organizacion en GitHub SafeGroup:<br> 
+[https://github.com/upc-pre-202501-1acc0238-356-SafeGroup](https://github.com/upc-pre-202501-1acc0238-356-SafeGroup)
+
+**Anexo 3:**
+
+Repositorio en GitHub para el reporte:<br> 
+[https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/SafeGroup-report](https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/SafeGroup-report)
+
+**Anexo 4:**
+
+Repositorio en GitHub para la Landing Page:<br>
+[https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/SafeChild_LandingPage.github.io](https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/SafeChild_LandingPage.github.io)
+
+**Anexo 5:**
+Repositorio para el BackEnd de la Aplicación Mobile:<br>
+[https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/SafeChild-Backend](https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/SafeChild-Backend)
+
+**Anexo 6:**
+Deployments:<br>
+- **Landing Page**: [https://upc-pre-202501-1acc0238-356-safegroup.github.io/SafeChild_LandingPage.github.io/](https://upc-pre-202501-1acc0238-356-safegroup.github.io/SafeChild_LandingPage.github.io/)
+- **Backend**: [https://safechild-new-d9htajddfsgaaafr.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/](https://safechild-new-d9htajddfsgaaafr.canadacentral-01.azurewebsites.net/swagger-ui/index.html#//)
+
+**Anexo 7:**
+Figma para la Landing Page y Mobile<br>
+[https://www.figma.com/design/rrvgqWRu9dWuFae7MNdCsY/safechild-figma-guia?node-id=3014-2&t=USE2mBw7NmoGuFvg-1](https://www.figma.com/design/rrvgqWRu9dWuFae7MNdCsY/safechild-figma-guia?node-id=3014-2&t=USE2mBw7NmoGuFvg-1)
