@@ -2965,6 +2965,62 @@ Como parte de las evidencias de ejecución se mostrara todo el RESTful API despl
 
 ### 6.2.2.6. Services Documentation Evidence for Sprint Review
 
+| Endpoint | Detalles |
+|----------|----------|
+| /card/{cardId} | Obtiene una tarjeta por ID |
+| /{profileId} (CardsController) | Obtiene tarjetas por ID de perfil |
+| /{cardId} (PUT) | Actualiza tarjeta |
+| /{cardId} (DELETE) | Elimina tarjeta |
+| /sign-in | Inicio de sesión |
+| /sign-up | Registro de usuario |
+| /{userId} (UsersController) | Obtiene usuario por ID |
+| /chats/{userId} | Lista de chats del usuario |
+| /{userId}/{otherUserId} | Mensajes entre usuarios |
+| /send | Envío de mensaje |
+| /{profileId} (PaymentsController) | Consulta de pagos |
+| /{profileId} (ProfilesController) | Obtiene perfil por ID |
+| /{profileId} (DELETE, Profiles) | Elimina perfil |
+| /reservations/caregiver/{caregiverId} | Reservas de cuidador |
+| /reservations/tutor/{tutorId} | Reservas de tutor |
+| /reservations/{reservationId}/status/{status} | Actualiza estado de reserva |
+| /biography | Actualiza biografía del cuidador |
+| /place-fare | Actualiza tarifa del cuidador |
+| /{caregiverId} (CaregiverController) | Cuidador por ID |
+| /search | Búsqueda de cuidadores |
+| /{caregiverId} (CaregiverSchedule) | Horario por cuidador |
+| /{caregiverScheduleId} (DELETE) | Elimina horario del cuidador |
+| /{tutorId} | Tutor por ID |
+| /{tutorId} (PUT) | Actualiza tutor |
+| /{tutorId} (DELETE) | Elimina tutor |
+
+---
+
+
+| Endpoint | Operaciones | Parámetros | URL |
+|----------|-------------|------------|-----|
+| /card/{cardId} | GET | cardId | /card/{cardId} |
+| /{profileId} | GET (Cards) | profileId | /card/{profileId} |
+| /{cardId} | PUT / DELETE | cardId | /card/{cardId} |
+| /sign-in | POST | email, password | /sign-in |
+| /sign-up | POST | user data | /sign-up |
+| /{userId} | GET (Users) | userId | /users/{userId} |
+| /chats/{userId} | GET | userId | /messages/chats/{userId} |
+| /{userId}/{otherUserId} | GET | userId, otherUserId | /messages/{userId}/{otherUserId} |
+| /send | POST | message | /messages/send |
+| /{profileId} | GET (Payments) | profileId | /payments/{profileId} |
+| /{profileId} | GET / DELETE (Profiles) | profileId | /profiles/{profileId} |
+| /reservations/caregiver/{caregiverId} | GET | caregiverId | /reservations/caregiver/{caregiverId} |
+| /reservations/tutor/{tutorId} | GET | tutorId | /reservations/tutor/{tutorId} |
+| /reservations/{reservationId}/status/{status} | PATCH | reservationId, status | /reservations/{reservationId}/status/{status} |
+| /biography | PATCH | biography | /caregiver/biography |
+| /place-fare | PATCH | fare | /caregiver/place-fare |
+| /{caregiverId} | GET (Caregiver) | caregiverId | /caregiver/{caregiverId} |
+| /search | GET | filters | /caregiver/search |
+| /{caregiverId} | GET (Schedule) | caregiverId | /caregiver-schedule/{caregiverId} |
+| /{caregiverScheduleId} | DELETE | caregiverScheduleId | /caregiver-schedule/{caregiverScheduleId} |
+| /{tutorId} | GET / PUT / DELETE | tutorId | /tutors/{tutorId} |
+
+
 ### 6.2.2.7. Software Deployment Evidence for Sprint Review
 
 Durante el Sprint 2, se realizó el despliegue continuo del backend de SafeChild utilizando Azure App Services como plataforma de hosting y GitHub Actions como herramienta de automatización para la integración y entrega continua (CI/CD).
