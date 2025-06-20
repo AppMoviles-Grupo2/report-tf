@@ -2919,6 +2919,21 @@ Para llevar a cabo este proyecto se usaron distintas herramientas como Visual St
 
 ### 6.2.2.3. Development Evidence for Sprint Review
 
+En base a nuestro sprint anterior, se mejoro lo que es el backend. Para el presente sprint se inicio con la programación de la aplicación en kotlin y flutter.
+
+##### Evidencia del backend:
+
+<img src="./assets/chapter06/sprint2backend.png">
+
+#### Evidencia de la app mobile - kotlin
+
+<img src="./assets/chapter06/mobilekotlin.png">
+
+#### Evidencia de la app mobile - flutter
+
+<img src="./assets/chapter06/mobileflutter.png">
+
+
 ### 6.2.2.4. Testing Suite Evidence for Sprint Review
 
 | Repository                                                       | Branch   | Commit Id | Commit Message                        | Commit Message Body | Committed on |
