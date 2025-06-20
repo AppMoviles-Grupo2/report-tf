@@ -486,7 +486,9 @@ Evidencia de la reunión:
 
 ![Entrevista PadrePercy](./assets/chapter02//padre2.png)
 
+
 [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/EUh7UP4-k9lMuQ89kiq1UAMBPgat9a-qKqgy2lS2vHiVIQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=eQj9Lx)
+
 
 Resumen de la entrevista:
 
@@ -569,6 +571,7 @@ Evidencia de la reunión:
 
 ![Entrevista Tutor Maria](./assets/chapter02/interview-tutor-maria.png)
 
+
 [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/EZMIZYlvOU5Aj-lspt02Fo4Bm331p1AY5tCJ9yN61KWFLQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1Z5w81)
 
 Resumen de la entrevista:
@@ -586,7 +589,9 @@ Durante la conversación, María Fernanda expresó su interés en las plataforma
 Evidencia de la reunión:
 
 ![Entrevista Tutor Harold](./assets/chapter02/interview-tutor-harold.png)
+
 [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/EXpBpL1wTs1GiecjecQBEmcBBt9ONU-HF3mZdgQhqskO9g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dq1DAU)
+
 
 Resumen de la entrevista:
 
