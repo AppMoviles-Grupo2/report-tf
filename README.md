@@ -2950,6 +2950,19 @@ En base a nuestro sprint anterior, se mejoro lo que es el backend. Para el prese
 
 ### 6.2.2.5. Execution Evidence for Sprint Review
 
+Como parte de las evidencias de ejecución se mostrara todo el RESTful API desplegado 
+
+<img src="./assets/chapter06/ejecucion1.png">
+
+<img src="./assets/chapter06/ejecucion2.png">
+
+<img src="./assets/chapter06/ejecucion3.png">
+
+<img src="./assets/chapter06/ejecucion4.png">
+
+<img src="./assets/chapter06/ejecucion5.png">
+
+
 ### 6.2.2.6. Services Documentation Evidence for Sprint Review
 
 ### 6.2.2.7. Software Deployment Evidence for Sprint Review
