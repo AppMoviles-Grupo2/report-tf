@@ -2807,20 +2807,33 @@ Para el despliegue de la página de inicio del proyecto, hemos optado por **GitH
 
 ### 6.2.1.2. Sprint Backlog 1
 
+### 6.2.1.2. Sprint Backlog 1
+
+| Sprint | User Story ID | User Story Title                                 | Task ID | Task Title                             | Description                                                                                   | Est. (hrs) | Assigned To    | Status |
+|--------|----------------|--------------------------------------------------|---------|----------------------------------------|-----------------------------------------------------------------------------------------------|------------|----------------|--------|
+| 1      | US01           | Landing Page - Sección de Inicio                 | T01     | Diseñar UI del Home                    | Crear el diseño visual inicial de la sección principal (Home) de la landing page.             | 2          | Jose Gutiérrez | Done   |
+| 1      | US02           | Landing Page - Navbar                            | T02     | Implementar navegación superior        | Desarrollar la barra de navegación superior con anclajes funcionales.                         | 1          | Andre Bernaola | Done   |
+| 1      | US03           | Landing Page - Sección "Why Choose Us?"          | T03     | Diseñar y maquetar sección beneficios  | Mostrar razones para elegir el servicio, con iconos y texto atractivo.                        | 1          | Piero Velarde  | Done   |
+| 1      | US04           | Landing Page - Suscripciones                     | T04     | Implementar planes de suscripción      | Mostrar planes de pago disponibles para usuarios con estilos responsivos.                     | 1          | Jefrey Sanchez | Done   |
+| 1      | US05           | Landing Page - Footer y Contacto                 | T05     | Diseñar e implementar sección footer   | Incluir información de contacto, redes sociales y estructura básica del pie de página.        | 1          | Jose Gutiérrez | Done   |
+| 1      | US06           | App móvil - Pantalla de Onboarding               | T06     | Diseñar pantallas introductorias       | Crear pantallas que expliquen la propuesta de valor a los nuevos usuarios.                    | 1          | Andre Bernaola | Done   |
+| 1      | US07           | App móvil - Pantalla de Registro                 | T07     | Diseñar e implementar formulario       | Crear pantalla con formulario para registro de nuevos usuarios en la app móvil.               | 1          | Piero Velarde  | Done   |
 
 
 ### 6.2.1.3. Development Evidence for Sprint Review 
 
+#### Evidencia del desarrollo
+
+<img src="./assets/chapter06/develop1.png" alt="Evidencia de desarrollo Sprint 1" width="600">
 
 
 ### 6.2.1.4. Testing Suite Evidence for Sprint Review
-
 
 Durante el Sprint 1, se implementaron una serie de pruebas unitarias (Unit Tests) que verificaron el correcto funcionamiento de las principales funcionalidades desarrolladas para la página de inicio. Estas pruebas son fundamentales para asegurar la estabilidad del código y la integridad de las nuevas características introducidas, permitiendo identificar posibles fallos antes del despliegue final. A continuación se presenta un resumen de los commits relacionados con los tests desarrollados y una explicación detallada de cada uno.
 
 | **Repository** | **Branch** | **Commit Id**                            | **Commit Message**                  | **Commit Message Body**                      | **Commited on (Date)** |
 | -------------- | ---------- | ---------------------------------------- | ----------------------------------- | -------------------------------------------- | ---------------------- |
-| Unit-Test      | main       | a | a | a | 09/05/2025             |
+| Unit-Test      | main       | kj4356 | feat: add tests |  | 09/05/2025             |
 
 ### **5.2.1.5. Execution Evidence for Sprint Review**
 
@@ -2873,7 +2886,7 @@ Durante este sprint, se ha completado el desarrollo de la landing page asi como 
 
 Para llevar a cabo este proyecto se usaron distintas herramientas como Visual Studio Code; junto con manejo de versiones en Git. En este caso se dividio la landing page y la aplicacion movil ambas mostradas anteriormente en sectores, a partir de esto cada uno presentó su parte y luego un miembro juntó las partes para finalmente tener el resultado deseado.
 
-<img src="./assets/Chapter06/commit1.png">
+<img src="./assets/Chapter06/commits.png">
 
 ## 6.2.2. Sprint 2
 
@@ -2899,7 +2912,7 @@ Para llevar a cabo este proyecto se usaron distintas herramientas como Visual St
 | Sprint | User Story ID | User Story Title                     | Task ID | Task Title                                | Description                                                                                   | Est. (hrs) | Assigned To    | Status |
 |--------|---------------|--------------------------------------|---------|-------------------------------------------|-----------------------------------------------------------------------------------------------|------------|----------------|--------|
 | 2      | US06          | Registro del Usuario                 | T01     | Mejorar diseño del formulario             | Refinar la interfaz del registro: estilo, disposición, responsividad.                         | 1          | Jose Gutiérrez | Todo   |
-| 2      |               |                                      | T02     | Integrar IAM con el backend para registro | Implementar la integración del sistema IAM para gestionar la autenticación en el registro.    | 2          | Jose Gutiérrez | Todo   |
+| 2      |         US06      |             Registro del Usuario                          | T02     | Integrar IAM con el backend para registro | Implementar la integración del sistema IAM para gestionar la autenticación en el registro.    | 2          | Jose Gutiérrez | Todo   |
 | 2      | US09          | Actualización de cuenta del Tutor    | T03     | Ajustar diseño del perfil editable        | Mejorar layout, inputs y experiencia visual del formulario de edición.                        | 2          | Jose Gutiérrez | Todo   |
 | 2      | US11          | Filtrado de Búsqueda                 | T04     | Pulir interfaz de filtros                 | Optimizar disposición y estilos de los filtros (colores, botones, sliders).                   | 2          | Jefrey Sanchez | Todo   |
 | 2      | US12          | Visualización de Perfil              | T05     | Ajustar diseño del perfil del cuidador    | Mejorar tipografía, espaciado, colores y estructura visual.                                   | 1          | Piero Velarde  | Todo   |
@@ -3083,6 +3096,109 @@ Estas preguntas buscan explorar áreas clave de la experiencia de usuario en dis
 ### 6.3.2. Registro de Entrevistas
 
 ### 6.3.3. Evaluaciones según heurísticas
+
+## Anexo: Evaluación según Heurísticas
+
+### SITE o APP A EVALUAR:
+**SafeChild Mobile App**
+
+
+### TAREAS A EVALUAR
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+1. Registro de un usuario nuevo  
+2. Publicación de un servicio (cuidadores/tutores)  
+3. Búsqueda de un cuidador por distrito  
+4. Reserva de un servicio  
+5. Cancelación de una reserva  
+6. Agregar ítems al historial de pagos  
+7. Pago de un servicio  
+8. Chat entre padre y cuidador  
+
+**No están incluidas en esta versión de la evaluación las siguientes tareas:**
+1. Compartir reservas entre usuarios  
+2. Presentar ofertas de último minuto  
+3. Administrar puntos de fidelización  
+4. Guardar alertas de servicios  
+
+
+### ESCALA DE SEVERIDAD
+
+| Nivel | Descripción                                                                                                                                                                                                 |
+|-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1     | **Problema superficial:** Fácilmente superable, ocurre rara vez. No urgente.                                                                                                                               |
+| 2     | **Problema menor:** Ocurre algo más frecuentemente o es algo más difícil de superar. Prioridad baja para el siguiente release.                                                                              |
+| 3     | **Problema mayor:** Ocurre con frecuencia o los usuarios no pueden resolverlo sin ayuda. Prioridad alta.                                                                                                   |
+| 4     | **Problema muy grave:** Impide continuar con la tarea. Debe corregirse antes del lanzamiento.                                                                                                              |
+
+
+### TABLA RESUMEN
+
+| # | Problema                                                                                                 | Severidad | Heurística / Principio violado                                         |
+|---|----------------------------------------------------------------------------------------------------------|-----------|-------------------------------------------------------------------------|
+| 1 | No hay botón “Volver” en el flujo de reserva (p. ej. volver a lista de cuidadores)                     | 3         | Libertad y control del usuario                                          |
+| 2 | Al publicar un servicio, se repiten campos de “Experiencia” en dos secciones                             | 2         | Consistencia y estándares                                               |
+| 3 | Imágenes de perfil en la lista de cuidadores no incluyen texto alternativo (`alt`)                      | 3         | Diseño inclusivo (Comparable experience for assistive tech users)       |
+| 4 | En la sección de “Mis Reservas” aparece “Ver más” sin contenido adicional                               | 3         | Arquitectura de la información (Is it usable?)                          |
+| 5 | La pantalla de confirmación de pago omite el desglose de tarifas y comisión de la plataforma            | 2         | Arquitectura de la información (Is it findable?)                        |
+
+
+### DESCRIPCIÓN DE PROBLEMAS
+
+#### PROBLEMA #1  
+**Título:** Falta control “Volver” durante el flujo de reserva  
+**Severidad:** 3  
+**Heurística violada:** Libertad y control del usuario  
+**Descripción:**  
+Cuando el padre selecciona un cuidador y completa la fecha/hora, no existe un botón para regresar a la lista de cuidadores sin perder los datos ingresados. Esto obliga al usuario a cancelar todo el proceso o cerrar la app para volver a empezar.  
+*(Incluir captura de pantalla ilustrando la ausencia del botón “Volver”.)*  
+**Recomendación:**  
+Agregar un botón o enlace “← Volver a cuidadores” en la cabecera de la pantalla de reserva que conserve el estado previo.
+
+
+#### PROBLEMA #2  
+**Título:** Campos de “Experiencia” duplicados en el formulario de publicación  
+**Severidad:** 2  
+**Heurística violada:** Consistencia y estándares  
+**Descripción:**  
+Al registrar un nuevo servicio, el formulario solicita la “Experiencia (años)” tanto al inicio como al final de la sección “Información del cuidador”. Esto confunde al usuario y aumenta innecesariamente la longitud del formulario.  
+*(Incluir captura de pantalla del formulario con los dos campos de “Experiencia”.)*  
+**Recomendación:**  
+Eliminar uno de los dos campos duplicados y mantener sólo el necesario, ajustando el flujo para que sea más claro.
+
+
+#### PROBLEMA #3  
+**Título:** Imágenes de perfil sin atributo `alt`  
+**Severidad:** 3  
+**Heurística violada:** Diseño inclusivo  
+**Descripción:**  
+En la pantalla de búsqueda de cuidadores, las imágenes de perfil se cargan sin texto alternativo en el HTML. Esto impide que usuarios con lectores de pantalla sepan quién es el cuidador.  
+*(Incluir fragmento de código o inspección que muestre la etiqueta `<img>` sin `alt`.)*  
+**Recomendación:**  
+Agregar siempre el atributo `alt="Foto de perfil de {nombre}"` a las imágenes para mejorar la accesibilidad.
+
+
+#### PROBLEMA #4  
+**Título:** “Ver más” sin contenido adicional en “Mis Reservas”  
+**Severidad:** 3  
+**Heurística violada:** Arquitectura de la información  
+**Descripción:**  
+La sección “Mis Reservas” muestra un botón “Ver más” que, al pulsarlo, no despliega ni carga reservas adicionales. Esto genera frustración e incertidumbre.  
+*(Incluir captura de pantalla con el botón “Ver más”.)*  
+**Recomendación:**  
+O bien eliminar el botón si no hay más elementos, o implementarlo adecuadamente para paginar o cargar reservas adicionales.
+
+
+#### PROBLEMA #5  
+**Título:** Falta desglose de tarifas en pantalla de confirmación de pago  
+**Severidad:** 2  
+**Heurística violada:** Arquitectura de la información  
+**Descripción:**  
+Al pagar un servicio, la pantalla de confirmación sólo muestra el total. No se visualiza el detalle de la tarifa base, la comisión de la plataforma ni los impuestos.  
+*(Incluir captura de pantalla de la confirmación de pago.)*  
+**Recomendación:**  
+Mostrar un desglose detallado debajo del total: tarifa del cuidador, comisión de SafeChild y cualquier impuesto, para mejorar la transparencia.
+
+
 
 ## 6.4. Video About-the-Product
 
