@@ -3164,6 +3164,65 @@ Como sugerencia principal, André recomendó incluir un apartado de comentarios 
 
 Finalmente, afirmó que recomendaría la aplicación a otros padres, ya que cumple con su objetivo de facilitar el contacto con cuidadores y le ha resultado útil para encontrar opciones económicas y eficientes.
 
+**Entrevista 3 - Padre de familia**
+
+- Nombre: 
+- Apellidos: 
+- Edad:  años
+
+Evidencia de la reunión:
+
+![Entrevista Padre3](./assets/chapter06//entrevista_p3.png)
+
+[Link]()
+
+Resumen de la entrevista:
+
+**Segmento 2: Niñeras/Profesores**
+
+**Entrevista 1 - Niñera**
+
+- Nombre: 
+- Apellidos: 
+- Edad:  años
+
+Evidencia de la reunión:
+
+![Entrevista nina1](./assets/chapter06//entrevista_n1.png)
+
+[Link]()
+
+Resumen de la entrevista:
+
+**Entrevista 2 - Niñera**
+
+- Nombre: 
+- Apellidos: 
+- Edad:  años
+
+Evidencia de la reunión:
+
+![Entrevista nina2](./assets/chapter06//entrevista_n2.png)
+
+[Link]()
+
+Resumen de la entrevista:
+
+**Entrevista 3 - Niñera**
+
+- Nombre: 
+- Apellidos: 
+- Edad:  años
+
+Evidencia de la reunión:
+
+![Entrevista nina3](./assets/chapter06//entrevista_n3.png)
+
+[Link]()
+
+Resumen de la entrevista:
+
+
 ### 6.3.3. Evaluaciones según heurísticas
 
 ## Anexo: Evaluación según Heurísticas
@@ -3270,6 +3329,14 @@ Mostrar un desglose detallado debajo del total: tarifa del cuidador, comisión d
 
 
 ## 6.4. Video About-the-Product
+En esta sección se presenta el video “About-the-Product”, el cual resume las principales características, funcionalidades y beneficios de la plataforma SafeChild. El video muestra el proceso de uso tanto para padres como para cuidadores, destacando la facilidad de registro, la búsqueda y reserva de servicios, la gestión de pagos y la comunicación segura entre usuarios. Además, se incluyen ejemplos prácticos de la experiencia en la aplicación móvil y la landing page, permitiendo visualizar cómo SafeChild contribuye a conectar familias con cuidadores calificados de manera eficiente y confiable. Este recurso audiovisual complementa la documentación escrita y facilita la comprensión del producto para todos los interesado
+![about](./assets/chapter06/about.png)
+
+Link del video: <br>
+[https://youtu.be/rQrGdrBOpUc](https://youtu.be/rQrGdrBOpUc)
+
+
+
 
 
 ---
