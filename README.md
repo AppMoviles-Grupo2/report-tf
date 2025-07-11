@@ -3095,6 +3095,54 @@ Estas preguntas buscan explorar áreas clave de la experiencia de usuario en dis
 
 ### 6.3.2. Registro de Entrevistas
 
+**Segmento 1: Tutores/Padres**
+
+**Entrevista 1 - Padre de familia**
+
+- Nombre: Farid
+- Apellidos: Briceño
+- Edad: 27 años
+
+Evidencia de la reunión:
+
+![Entrevista PadreFarid](./assets/chapter06//entrevista_briceño.png)
+
+[Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/ERbbgGqe_v9PomkIt2QJcokBM3NC3z6BKY_XeFSbEXSsCw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=dmLPgo)
+
+Resumen de la entrevista:
+
+Farid, padre de un niño de 3 años, probó la aplicación SafeChild y quedó satisfecho con su funcionamiento general. Señala que la app cumple con lo prometido, permitiéndole registrarse de manera rápida y acceder fácilmente a la reserva de cuidadores, lo cual considera muy útil para padres ocupados como él.
+
+Destacó que la interfaz es visualmente agradable, incluso en horarios nocturnos, y que la navegación entre menús y pantallas fue sencilla gracias al diseño intuitivo de los botones. Sin embargo, Farid sugiere incorporar un apartado visible con certificados y estudios de los cuidadores, ya que eso generaría mayor confianza al momento de decidir a quién contratar.
+
+Respecto a la experiencia de reserva, la calificó como rápida, directa y cómoda desde el celular. También comentó que recomendaría la aplicación a otros padres de familia, especialmente a quienes disponen de poco tiempo para buscar cuidadores por otros medios.
+
+En resumen, Farid considera que la app es funcional, útil y bien diseñada. Su principal recomendación para mejorarla es añadir la visualización de certificaciones y estudios formales de los cuidadores, a fin de reforzar la confianza y la seguridad del servicio ofrecido.
+
+**Entrevista 2 - Padre de familia**
+
+- Nombre: Andree
+- Apellidos: Quispe
+- Edad: 28 años
+
+Evidencia de la reunión:
+
+![Entrevista PadreAndree](./assets/chapter06//entrevista_quispe.png)
+
+[Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113324_upc_edu_pe/EaRmMy7r7RtAnD8IWHlmf8QBG_hthZjRZGvjVCoHbBqmKw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=kisTYp)
+
+Resumen de la entrevista:
+
+André, padre de dos hijos de 28 años, probó la aplicación SafeChild y compartió una experiencia positiva en general. Señaló que la aplicación fue de gran ayuda para acceder fácilmente a servicios de cuidado infantil, y que le resultó útil y funcional para conectar con cuidadores de manera rápida y confiable.
+
+Resaltó que la interfaz le pareció atractiva y amigable a la vista, con colores como el verde agua que contrastan bien con el fondo blanco, lo cual facilita su lectura. También valoró que los botones sean grandes y visibles, lo cual es importante para él, ya que usa lentes y agradece una buena accesibilidad visual.
+
+En cuanto a la navegación, comentó que fue fluida y sin errores, con buena adaptación a la pantalla de su dispositivo móvil. Afirmó que la experiencia de búsqueda y reserva fue muy accesible y rápida, destacando la ventaja de usar una app en lugar de una página web.
+
+Como sugerencia principal, André recomendó incluir un apartado de comentarios o reseñas debajo de las calificaciones de los cuidadores, ya que eso permitiría conocer experiencias detalladas de otros padres. También sugirió implementar filtros o categorías por tipo de cuidador, como por ejemplo para servicios específicos según la edad o el género del niño.
+
+Finalmente, afirmó que recomendaría la aplicación a otros padres, ya que cumple con su objetivo de facilitar el contacto con cuidadores y le ha resultado útil para encontrar opciones económicas y eficientes.
+
 ### 6.3.3. Evaluaciones según heurísticas
 
 ## Anexo: Evaluación según Heurísticas
