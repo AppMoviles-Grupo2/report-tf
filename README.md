@@ -3166,17 +3166,23 @@ Finalmente, afirmó que recomendaría la aplicación a otros padres, ya que cump
 
 **Entrevista 3 - Padre de familia**
 
-- Nombre: 
-- Apellidos: 
-- Edad:  años
+- Nombre: Rodolfo
+- Apellidos: Moreno
+- Edad:  56 años
 
 Evidencia de la reunión:
 
-![Entrevista Padre3](./assets/chapter06//entrevista_p3.png)
+![Entrevista Padre3](./assets/chapter06/entrevista_p3.png)
 
-[Link]()
+[Link](https://youtu.be/hVMnN481FCo?si=Z3piPx1USm61zu_Y)
 
 Resumen de la entrevista:
+
+El entrevistado Rodolfo Moreno, de 56 años, evaluó positivamente la experiencia general con la aplicación móvil SafeChild. Destacó que la plataforma le pareció útil, visualmente atractiva y fácil de usar, incluso para usuarios con poca experiencia tecnológica. Afirmó que la navegación es intuitiva, con una correcta disposición de botones y menús, y resaltó la armonía visual de los colores, los cuales transmiten confianza.
+
+Consideró que la aplicación cumple con su propósito de conectar familias con cuidadores de forma rápida y segura. Sugirió mostrar con mayor claridad la experiencia y certificación de los cuidadores desde el listado de perfiles y no solo dentro de ellos. También recomendó mejorar el sistema de notificaciones inteligentes y visibilizar más el sistema de calificación de los cuidadores.
+
+En conclusión, Rodolfo expresó que recomendaría SafeChild a otros padres, especialmente a quienes necesitan apoyo en la gestión del cuidado de sus hijos, resaltando la comodidad del sistema de reservas y la confianza que genera la plataforma.
 
 **Segmento 2: Niñeras/Profesores**
 
@@ -3200,31 +3206,38 @@ En resumen, Anyeli recomendaría sin dudarlo esta aplicación a otros cuidadores
 
 **Entrevista 2 - Niñera**
 
-- Nombre: 
-- Apellidos: 
-- Edad:  años
+- Nombre: Nasthya
+- Apellidos: Del Carpio
+- Edad: 23 años
 
 Evidencia de la reunión:
 
-![Entrevista nina2](./assets/chapter06//entrevista_n2.png)
-
-[Link]()
+![Entrevista nina2](./assets/chapter06/entrevista_n2.png)
+[Link](https://youtu.be/r4_XGKJzpPg)
 
 Resumen de la entrevista:
 
-**Entrevista 3 - Niñera**
+**Entrevista 3 - Niñero**
 
-- Nombre: 
-- Apellidos: 
-- Edad:  años
+- Nombre: Maurizzio
+- Apellidos: Puente
+- Edad: 22 años
 
 Evidencia de la reunión:
 
-![Entrevista nina3](./assets/chapter06//entrevista_n3.png)
+![Entrevista nina3](./assets/chapter06/entrevista_n3.png)
 
-[Link]()
+[Link](https://youtu.be/eyNE92yfvMU)
 
 Resumen de la entrevista:
+
+El cuidador entrevistado, Maurizzio, brindó una evaluación positiva sobre la aplicación móvil SafeChild. Señaló que la plataforma ofrece una experiencia clara y profesional, especialmente pensada para facilitar el trabajo tanto a cuidadores como a padres. Destacó la interfaz limpia y funcional, con una navegación intuitiva y accesible desde dispositivos móviles.
+
+Maurizzio valoró positivamente el uso de colores y el diseño visual, afirmando que transmiten confianza y no saturan la vista. Sobre las funciones clave, mencionó que considera importante tener un perfil completo, un sistema de mensajería directa con padres, un calendario de reservas, y un espacio para recibir comentarios de las familias.
+
+También resaltó la facilidad para publicar y actualizar su perfil, así como la buena visibilidad de las opciones de comunicación. En cuanto al propósito de la app, aseguró que cumple con lo que promete y la recomendaría a otros cuidadores o docentes.
+
+Finalmente, como sugerencia de mejora, propuso incluir notificaciones personalizadas que alerten cuando un padre interactúa con su perfil, para mejorar la comunicación y el seguimiento.
 
 
 ### 6.3.3. Evaluaciones según heurísticas
