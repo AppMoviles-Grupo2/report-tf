@@ -3368,10 +3368,27 @@ El equipo ha demostrado una sólida adopción del aprendizaje continuo al integr
 
 La incorporación de hábitos de aprendizaje continuo a lo largo del proyecto ha fortalecido nuestras capacidades técnicas y metodológicas, permitiéndonos adaptarnos ágilmente a nuevas herramientas y prácticas (DDD, DevOps, UX inclusivo, mensajería en tiempo real). Este compromiso con la actualización permanente ha elevado la calidad del entregable y ha consolidado una cultura colaborativa de mejora constante.
 
+La culminación del proyecto SafeChild ha representado una experiencia integral de aprendizaje y crecimiento profesional para todo el equipo. A lo largo de cada fase, hemos enfrentado retos técnicos y de gestión que nos permitieron poner en práctica metodologías ágiles, diseño centrado en el usuario y principios sólidos de arquitectura de software. La colaboración constante y la apertura al feedback nos ayudaron a superar obstáculos, mejorar la calidad del producto y fortalecer nuestras habilidades tanto individuales como colectivas. Este proceso nos ha preparado para afrontar proyectos de mayor complejidad en el futuro, con una visión más estratégica y una cultura de mejora continua.
+
 **Recomendación**
 Establecer un ritual mensual de “lunch & learn” interno en el que cada miembro comparta un concepto, herramienta o práctica reciente y cómo aplicarla al proyecto, asegurando así la difusión constante de conocimiento y la retroalimentación colectiva.
 
 Formalizar un programa de aprendizaje continuo: destinar horas mensuales de “tiempo de innovación” para formación, establecer objetivos de desarrollo individual y grupal, y crear un seguimiento periódico (por ejemplo, un dashboard de competencias) que garantice la evolución sostenida de habilidades y la aplicación directa de nuevos conocimientos al proyecto.
+
+Para futuros proyectos, sugerimos mantener la cultura de autoevaluación y retrospectiva al cierre de cada ciclo, identificando aprendizajes clave y áreas de mejora. Además, recomendamos documentar y compartir las mejores prácticas y lecciones aprendidas en un repositorio común del equipo, facilitando la transferencia de conocimiento y la rápida adaptación de nuevos integrantes. Finalmente, es importante seguir explorando nuevas tecnologías y tendencias del sector, participando en comunidades y eventos que permitan mantenernos actualizados y competitivos en el mercado profesional.
+
+### Video About The Team
+
+![alt text](image.png)
+
+En esta sección se presenta el video “About The Team”, el cual documenta y resume el proceso de trabajo colaborativo llevado a cabo por el equipo durante el desarrollo del proyecto SafeChild. El video incluye escenas reales de sesiones de trabajo, reuniones de coordinación y momentos clave de la interacción entre los integrantes, mostrando la dinámica de colaboración, la toma de decisiones y la resolución de retos técnicos y organizativos.
+
+A lo largo del video, se complementa la narrativa visual con una voz en off que explica las distintas etapas del proyecto, desde la planificación inicial hasta la implementación y validación del producto. Además, cada miembro del equipo brinda su testimonio ante cámara, describiendo las actividades específicas que realizó, los logros alcanzados en relación a los student outcomes y las competencias profesionales desarrolladas durante el proceso.
+
+Este recurso audiovisual no solo evidencia el compromiso y la dedicación del equipo, sino que también refleja el aprendizaje conjunto, la mejora continua y la consolidación de habilidades técnicas y blandas fundamentales para el desempeño profesional en el ámbito del desarrollo de software.
+
+Link del video:
+[https://youtu.be/ZLv0cHUI_ZI](https://youtu.be/ZLv0cHUI_ZI)
 
 ## Bibliografía
 
