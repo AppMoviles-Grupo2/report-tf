@@ -3193,7 +3193,7 @@ Destacó que la interfaz visualmente atractiva fue de gran ayuda, ya que los col
 
 En resumen, Anyeli recomendaría sin dudarlo esta aplicación a otros cuidadores. Su facilidad de uso y la versatilidad para ofrecer servicios la convierten en una herramienta muy valiosa. No encontró ninguna necesidad de mejora significativa en la aplicación.
 
-![Entrevista nina1](./assets/chapter06//entrevista_n1.png)
+![Entrevista nina1](./assets/chapter06//entrevista_peña.png)
 
 [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211a620_upc_edu_pe/EfNVGrs5fSxBp66efFC_XQkB0P-umBL1npOnHfYieRdpaw?e=jftuWy)
 
