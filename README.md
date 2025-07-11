@@ -3330,8 +3330,12 @@ Repositorio en GitHub para la Landing Page:<br>
 [https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/SafeChild_LandingPage.github.io](https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/SafeChild_LandingPage.github.io)
 
 **Anexo 5:**
-Repositorio para el BackEnd de la Aplicación Mobile:<br>
-[https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/SafeChild-Backend](https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/SafeChild-Backend)
+Repositorio para el BackEnd de la Aplicación Mobile Kotlin:<br>
+[https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/SafeChild-Mobile.git](https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/SafeChild-Mobile.git)
+
+Repositorio para el BackEnd de la Aplicación Mobile Flutter:<br>
+[https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/SafeChild---flutter.git](https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/SafeChild---flutter.git)
+
 
 **Anexo 6:**
 Deployments:<br>
