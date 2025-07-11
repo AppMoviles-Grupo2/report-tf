@@ -3187,17 +3187,16 @@ Resumen de la entrevista:
 - Edad: 20 años
 
 Evidencia de la reunión:
-Anyeli, una estudiante que trabaja como niñera en su tiempo libre, ha quedado encantada con la aplicación. La encontró muy intuitiva, funcional y práctica para encontrar nuevas oportunidades de cuidado infantil.
-
-Destacó que la interfaz visualmente atractiva fue de gran ayuda, ya que los colores vibrantes la guiaron fácilmente y le permitieron entender rápidamente la función de cada botón. Además, valoró enormemente la flexibilidad que ofrece la aplicación para seleccionar los días y turnos en los que desea trabajar, lo que le permite organizar sus servicios de niñera sin que interfieran con sus estudios.
-
-En resumen, Anyeli recomendaría sin dudarlo esta aplicación a otros cuidadores. Su facilidad de uso y la versatilidad para ofrecer servicios la convierten en una herramienta muy valiosa. No encontró ninguna necesidad de mejora significativa en la aplicación.
-
 ![Entrevista nina1](./assets/chapter06//entrevista_peña.png)
 
 [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211a620_upc_edu_pe/EfNVGrs5fSxBp66efFC_XQkB0P-umBL1npOnHfYieRdpaw?e=jftuWy)
 
 Resumen de la entrevista:
+Anyeli, una estudiante que trabaja como niñera en su tiempo libre, ha quedado encantada con la aplicación. La encontró muy intuitiva, funcional y práctica para encontrar nuevas oportunidades de cuidado infantil.
+
+Destacó que la interfaz visualmente atractiva fue de gran ayuda, ya que los colores vibrantes la guiaron fácilmente y le permitieron entender rápidamente la función de cada botón. Además, valoró enormemente la flexibilidad que ofrece la aplicación para seleccionar los días y turnos en los que desea trabajar, lo que le permite organizar sus servicios de niñera sin que interfieran con sus estudios.
+
+En resumen, Anyeli recomendaría sin dudarlo esta aplicación a otros cuidadores. Su facilidad de uso y la versatilidad para ofrecer servicios la convierten en una herramienta muy valiosa. No encontró ninguna necesidad de mejora significativa en la aplicación.
 
 **Entrevista 2 - Niñera**
 
