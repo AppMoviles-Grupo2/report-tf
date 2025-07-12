@@ -2862,32 +2862,6 @@ Durante el Sprint 1, el equipo logró desarrollar y desplegar la página de inic
 
 La implementación fue exitosa y se cumplió con el objetivo de entregar una versión funcional del landing page. El sitio fue desplegado utilizando GitHub Pages, permitiendo que el equipo de desarrollo y los stakeholders puedan visualizar los resultados directamente desde un navegador web.
 
-A continuación, presentamos capturas de pantalla de las principales vistas implementadas en este Sprint:
-
-- **Navbar**:
-
-  ![Navbar](Images/nabvar-landing-page.png)
-
-- **Home**:
-
-  ![Home](Images/home-landingPage.png)
-
-- **Why Choose Us?**:
-
-  ![Why Choose Us?](Images/Why%20Choose%20Us-landingPage.png)
-
-- **Subscriptions**:
-
-  ![Subscriptions](Images/Suscription-landingpage.png)
-
-- **Reviews**:
-
-  ![Reviews](Images/review-landingPage.png)
-
-- **Footer and Contact**:
-
-  ![Footer and Contact](Images/footer-contact-landingPage.png)
-
 Link del landing page desplegado: https://upc-pre-202501-1acc0238-356-safegroup.github.io/SafeChild_LandingPage.github.io/
 
 ### 6.2.1.6. Services Documentation Evidence for Sprint Review 
