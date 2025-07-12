@@ -2895,8 +2895,8 @@ Para llevar a cabo este proyecto se usaron distintas herramientas como Visual St
 | **Location**                           | Reunión virtual a través de Google Meet                                                                                                                                                                                                                        |
 | **Prepared By**                        | André Bernaola, Jose Gutiérrez, Jefrey Sanchez, Piero Velarde                                                                                                                                                                                                  |
 | **Attendees**                          | André Bernaola, Jose Gutiérrez, Jefrey Sanchez, Piero Velarde                                                                                                                                                                                                  |
-| **Sprint n – 1 Review Summary**        | Durante el Sprint 1, se desarrolló la primera versión de la aplicación móvil en Kotlin para el segmento de cuidadores y profesores. Se implementaron las funcionalidades básicas, como el registro, la gestión de servicios y la visualización de solicitudes. |
-| **Sprint n – 1 Retrospective Summary** | El equipo destacó como acierto la buena organización y colaboración durante el desarrollo. Se identificó como oportunidad de mejora la necesidad de optimizar la comunicación para resolver bloqueos técnicos más rápidamente.                                 |
+| **Sprint n – 2 Review Summary**        | Durante el Sprint 1, se desarrolló la primera versión de la aplicación móvil en Kotlin para el segmento de cuidadores y profesores. Se implementaron las funcionalidades básicas, como el registro, la gestión de servicios y la visualización de solicitudes. |
+| **Sprint n – 2 Retrospective Summary** | El equipo destacó como acierto la buena organización y colaboración durante el desarrollo. Se identificó como oportunidad de mejora la necesidad de optimizar la comunicación para resolver bloqueos técnicos más rápidamente.                                 |
 | **Sprint Goal & User Stories**         |                                                                                                                                                                                                                                                                |
 | **Sprint n Goal**                      | Completar el desarrollo de la aplicación móvil para cuidadores y profesores, e iniciar la primera versión de la aplicación para padres o tutores.                                                                                                              |
 | **Sprint n Velocity**                  | 48 SP                                                                                                                                                                                                                                                          |
@@ -3047,8 +3047,179 @@ Este despliegue permite que el backend esté disponible 24/7 y sirva de base par
 **Backend desplegado:**  
 [https://safechild-new-d9htajddfsgaaafr.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/](https://safechild-new-d9htajddfsgaaafr.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/)
 
-
 ### 6.2.2.8. Team Collaboration Insights during Sprint
+![insights1](/assets/chapter06/insai1.png)
+![insights2](/assets/chapter06/insai2.png)
+![insights3](/assets/chapter06/insai3.png)
+
+## 6.2.3. Sprint 3
+
+### 6.2.3.1. Sprint Planning 3
+
+| **Sprint #**                           | Sprint 3                                                                                                                                                                                                                                                       |
+|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Sprint Planning Background**         | Este sprint se centra en completar el desarrollo de la aplicación móvil para el segmento de cuidadores y profesores, y en iniciar la primera versión de la aplicación para el segmento de padres o tutores, utilizando Flutter.                                |
+| **Date**                               | 2025-01-11                                                                                                                                                                                                                                                     |
+| **Time**                               | 9:00 PM                                                                                                                                                                                                                                                        |
+| **Location**                           | Reunión virtual a través de Google Meet                                                                                                                                                                                                                        |
+| **Prepared By**                        | André Bernaola, Jose Gutiérrez, Jefrey Sanchez, Piero Velarde                                                                                                                                                                                                  |
+| **Attendees**                          | André Bernaola, Jose Gutiérrez, Jefrey Sanchez, Piero Velarde                                                                                                                                                                                                  |
+| **Sprint n – 3 Review Summary**        | Durante el Sprint 3, se desarrolló la primera versión de la aplicación móvil en Kotlin para el segmento de cuidadores y profesores. Se implementaron las funcionalidades básicas, como el registro, la gestión de servicios y la visualización de solicitudes. |
+| **Sprint n – 3 Retrospective Summary** | El equipo destacó como acierto la buena organización y colaboración durante el desarrollo. Se identificó como oportunidad de mejora la necesidad de optimizar la comunicación para resolver bloqueos técnicos más rápidamente.                                 |
+| **Sprint Goal & User Stories**         |                                                                                                                                                                                                                                                                |
+| **Sprint n Goal**                      | Completar el desarrollo de la aplicación móvil para cuidadores y profesores, e iniciar la primera versión de la aplicación para padres o tutores.                                                                                                              |
+| **Sprint n Velocity**                  | 48 SP                                                                                                                                                                                                                                                          |
+| **Sum of Story Points**                | 47 Story Points para completar las tareas del Sprint Backlog 2.                                                                                                                                                                                                |
+
+### 6.2.3.2. Sprint Backlog 3
+
+| Sprint | User Story ID | User Story Title                     | Task ID | Task Title                                | Description                                                                                   | Est. (hrs) | Assigned To    | Status |
+|--------|---------------|--------------------------------------|---------|-------------------------------------------|-----------------------------------------------------------------------------------------------|------------|----------------|--------|
+| 2      | US06          | Registro del Usuario                 | T01     | Mejorar diseño del formulario             | Refinar la interfaz del registro: estilo, disposición, responsividad.                         | 1          | Jose Gutiérrez | Todo   |
+| 2      |         US06      |             Registro del Usuario                          | T02     | Integrar IAM con el backend para registro | Implementar la integración del sistema IAM para gestionar la autenticación en el registro.    | 2          | Jose Gutiérrez | Todo   |
+| 2      | US09          | Actualización de cuenta del Tutor    | T03     | Ajustar diseño del perfil editable        | Mejorar layout, inputs y experiencia visual del formulario de edición.                        | 2          | Jose Gutiérrez | Todo   |
+| 2      | US11          | Filtrado de Búsqueda                 | T04     | Pulir interfaz de filtros                 | Optimizar disposición y estilos de los filtros (colores, botones, sliders).                   | 2          | Jefrey Sanchez | Todo   |
+| 2      | US12          | Visualización de Perfil              | T05     | Ajustar diseño del perfil del cuidador    | Mejorar tipografía, espaciado, colores y estructura visual.                                   | 1          | Piero Velarde  | Todo   |
+| 2      | US15          | Solicitud de Reserva                 | T06     | Refinar diseño del formulario de reserva  | Aplicar mejoras visuales: claridad, feedback visual, disposición.                             | 2          | Jose Gutiérrez | Todo   |
+| 2      | US16          | Actualización de Reserva             | T07     | Mejorar UI para modificación de reservas  | Ajustar flujo visual de cambios o cancelaciones.                                              | 2          | Jose Gutiérrez | Todo   |
+| 2      | US19          | Sistema de Comunicación              | T08     | Mejorar UI del chat                       | Refinar estilo de los mensajes, timestamps, burbujas y layout general.                        | 1          | Jefrey Sanchez | Todo   |
+| 2      | US21          | Sistema de Pagos                     | T09     | Pulir interfaz del proceso de pago        | Mejorar visual del checkout, formularios y confirmación.                                      | 2          | André Bernaola | Todo   |
+| 2      | US22          | Sistema de Reseñas                   | T10     | Mejorar diseño de la sección de reseñas   | Refinar inputs, estrellas, disposición y visibilidad de comentarios.                          | 1          | André Bernaola | Todo   |
+| 2      | US07          | Registro del Cuidador                | T29     | Crear formulario de registro de cuidador  | Implementar un formulario sencillo para que el cuidador cree una cuenta y complete lo básico. | 3          | Piero Velarde  | Todo   |
+| 2      | US10          | Actualización de cuenta del Cuidador | T30     | Permitir edición de perfil de cuidador    | Crear opción para actualizar datos ya registrados.                                            | 2          | Piero Velarde  | Todo   |
+| 2      | US13          | Ingreso de Horario de Disponibilidad | T31     | Formulario simple de horarios             | Permitir ingresar días y horas de disponibilidad sin validación avanzada.                     | 4          | Piero Velarde  | Todo   |
+| 2      | US14          | Gestión de Costos de Servicios       | T32     | Establecer tarifas básicas                | Permitir registrar el costo por hora o por sesión.                                            | 4          | Piero Velarde  | Todo   |
+| 2      | US17          | Vista de Solicitudes                 | T33     | Mostrar lista de solicitudes recibidas    | Crear una vista con las solicitudes que llegan al cuidador.                                   | 4          | Piero Velarde  | Todo   |
+| 2      | US18          | Gestión de Solicitudes               | T34     | Agregar botones Aceptar / Rechazar        | Permitir al cuidador aceptar o rechazar solicitudes.                                          | 4          | Piero Velarde  | Todo   |
+| 2      | US20          | Registro de Medios de Pago           | T35     | Formulario de cuenta bancaria o billetera | Permitir ingresar datos para recibir pagos como cuidador.                                     | 5          | André Bernaola | Todo   |
+| 2      | US23          | Visualización de Reseñas             | T36     | Mostrar reseñas recibidas por cuidadores  | Crear una sección simple para listar reseñas existentes.                                      | 3          | André Bernaola | Todo   |
+
+### 6.2.3.3. Development Evidence for Sprint Review
+
+En base a nuestro sprint anterior, se mejoro lo que es el backend. Para el presente sprint se inicio con la programación de la aplicación en kotlin y flutter.
+
+##### Evidencia del backend:
+
+<img src="./assets/chapter06/sprint2backend.png">
+
+#### Evidencia de la app mobile - kotlin
+
+<img src="./assets/chapter06/mobilekotlin.png">
+
+#### Evidencia de la app mobile - flutter
+
+<img src="./assets/chapter06/mobileflutter.png">
+
+
+### 6.2.2.3. Testing Suite Evidence for Sprint Review
+
+| Repository                                                       | Branch   | Commit Id | Commit Message                        | Commit Message Body | Committed on |
+|------------------------------------------------------------------|----------|-----------|---------------------------------------|---------------------|--------------|
+| https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/Testing | sprint-2 | 31d4bfc   | feat(sprint-2): add cucumber for US06 | -                   | 17/06/2025   |
+| https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/Testing | sprint-2 | de2d968   | feat(sprint-2): add cucumber for US09 | -                   | 17/06/2025   |
+| https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/Testing | sprint-2 | 0907857   | feat(sprint-2): add cucumber for US11 | -                   | 17/06/2025   |
+| https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/Testing | sprint-2 | ee87cfe   | feat(sprint-2): add cucumber for US12 | -                   | 17/06/2025   |
+| https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/Testing | sprint-2 | 6c69797   | feat(sprint-2): add cucumber for US15 | -                   | 17/06/2025   |
+| https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/Testing | sprint-2 | 9c83f4d   | feat(sprint-2): add cucumber for US16 | -                   | 17/06/2025   |
+| https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/Testing | sprint-2 | 538b874   | feat(sprint-2): add cucumber for US19 | -                   | 17/06/2025   |
+| https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/Testing | sprint-2 | ac3de3f   | feat(sprint-2): add cucumber for US21 | -                   | 17/06/2025   |
+| https://github.com/upc-pre-202501-1acc0238-356-SafeGroup/Testing | sprint-2 | f56d83    | feat(sprint-2): add cucumber for US22 | -                   | 17/06/2025   |
+
+### 6.2.3.5. Execution Evidence for Sprint Review
+
+Como parte de las evidencias de ejecución se mostrara todo el RESTful API desplegado 
+
+<img src="./assets/chapter06/ejecucion1.png">
+
+<img src="./assets/chapter06/ejecucion2.png">
+
+<img src="./assets/chapter06/ejecucion3.png">
+
+<img src="./assets/chapter06/ejecucion4.png">
+
+<img src="./assets/chapter06/ejecucion5.png">
+
+
+### 6.2.2.3. Services Documentation Evidence for Sprint Review
+
+| Endpoint | Detalles |
+|----------|----------|
+| /card/{cardId} | Obtiene una tarjeta por ID |
+| /{profileId} (CardsController) | Obtiene tarjetas por ID de perfil |
+| /{cardId} (PUT) | Actualiza tarjeta |
+| /{cardId} (DELETE) | Elimina tarjeta |
+| /sign-in | Inicio de sesión |
+| /sign-up | Registro de usuario |
+| /{userId} (UsersController) | Obtiene usuario por ID |
+| /chats/{userId} | Lista de chats del usuario |
+| /{userId}/{otherUserId} | Mensajes entre usuarios |
+| /send | Envío de mensaje |
+| /{profileId} (PaymentsController) | Consulta de pagos |
+| /{profileId} (ProfilesController) | Obtiene perfil por ID |
+| /{profileId} (DELETE, Profiles) | Elimina perfil |
+| /reservations/caregiver/{caregiverId} | Reservas de cuidador |
+| /reservations/tutor/{tutorId} | Reservas de tutor |
+| /reservations/{reservationId}/status/{status} | Actualiza estado de reserva |
+| /biography | Actualiza biografía del cuidador |
+| /place-fare | Actualiza tarifa del cuidador |
+| /{caregiverId} (CaregiverController) | Cuidador por ID |
+| /search | Búsqueda de cuidadores |
+| /{caregiverId} (CaregiverSchedule) | Horario por cuidador |
+| /{caregiverScheduleId} (DELETE) | Elimina horario del cuidador |
+| /{tutorId} | Tutor por ID |
+| /{tutorId} (PUT) | Actualiza tutor |
+| /{tutorId} (DELETE) | Elimina tutor |
+
+---
+
+
+| Endpoint | Operaciones | Parámetros | URL |
+|----------|-------------|------------|-----|
+| /card/{cardId} | GET | cardId | /card/{cardId} |
+| /{profileId} | GET (Cards) | profileId | /card/{profileId} |
+| /{cardId} | PUT / DELETE | cardId | /card/{cardId} |
+| /sign-in | POST | email, password | /sign-in |
+| /sign-up | POST | user data | /sign-up |
+| /{userId} | GET (Users) | userId | /users/{userId} |
+| /chats/{userId} | GET | userId | /messages/chats/{userId} |
+| /{userId}/{otherUserId} | GET | userId, otherUserId | /messages/{userId}/{otherUserId} |
+| /send | POST | message | /messages/send |
+| /{profileId} | GET (Payments) | profileId | /payments/{profileId} |
+| /{profileId} | GET / DELETE (Profiles) | profileId | /profiles/{profileId} |
+| /reservations/caregiver/{caregiverId} | GET | caregiverId | /reservations/caregiver/{caregiverId} |
+| /reservations/tutor/{tutorId} | GET | tutorId | /reservations/tutor/{tutorId} |
+| /reservations/{reservationId}/status/{status} | PATCH | reservationId, status | /reservations/{reservationId}/status/{status} |
+| /biography | PATCH | biography | /caregiver/biography |
+| /place-fare | PATCH | fare | /caregiver/place-fare |
+| /{caregiverId} | GET (Caregiver) | caregiverId | /caregiver/{caregiverId} |
+| /search | GET | filters | /caregiver/search |
+| /{caregiverId} | GET (Schedule) | caregiverId | /caregiver-schedule/{caregiverId} |
+| /{caregiverScheduleId} | DELETE | caregiverScheduleId | /caregiver-schedule/{caregiverScheduleId} |
+| /{tutorId} | GET / PUT / DELETE | tutorId | /tutors/{tutorId} |
+
+
+### 6.2.3.7. Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 3, se realizó el despliegue continuo del backend de SafeChild utilizando Azure App Services como plataforma de hosting y GitHub Actions como herramienta de automatización para la integración y entrega continua (CI/CD).
+
+Se configuró un pipeline de GitHub Actions que, al detectar cambios en la rama `feat/deploy`, compila el proyecto, ejecuta pruebas y despliega automáticamente la aplicación a Azure. Este flujo garantiza un proceso de despliegue eficiente, seguro y reproducible, alineado con buenas prácticas DevOps.
+
+#### Evidencias del Despliegue:
+-  Repositorio configurado con workflow `.yml` para CI/CD.
+-  Pipeline exitoso desde GitHub Actions al entorno productivo en Azure.
+-  Servicio backend expuesto mediante una URL pública y funcional.
+-  Variables de entorno configuradas de manera segura en Azure.
+-  Revisión de logs en Azure para validar correcto funcionamiento tras el despliegue.
+
+Este despliegue permite que el backend esté disponible 24/7 y sirva de base para la integración de la aplicación móvil desarrollada en paralelo.
+
+**Backend desplegado:**  
+[https://safechild-lastdeploy-a8ahd7ccc8b4cjb3.canadacentral-01.azurewebsites.net/swagger-ui/index.html#](https://safechild-lastdeploy-a8ahd7ccc8b4cjb3.canadacentral-01.azurewebsites.net/swagger-ui/index.html#)
+
+### 6.2.3.8. Team Collaboration Insights during Sprint
+![insights1](/assets/chapter06/insai1.png)
+![insights2](/assets/chapter06/insai2.png)
+![insights3](/assets/chapter06/insai3.png)
 
 
 ## 6.3. Validation Interviews
